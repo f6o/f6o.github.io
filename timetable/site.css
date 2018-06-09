@@ -12,6 +12,8 @@ body {
 textarea {
     width: 90%;
     height: 20em;
+    font-family: monospace;
+    font-size: 1.2em;
 }
 div#output { font-family : monospace; }
 
