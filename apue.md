@@ -20,7 +20,10 @@
 
 * Read
 
+## Chapter 6 System Data Files and Information
+
+* Read
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMDAxMzc5NDQsLTk2Nzk3MzM1NiwtMT
-Y4NDY3MjcxNywtMTk5NDUyNjIwMl19
+eyJoaXN0b3J5IjpbLTE2MTU1OTk0NjMsLTIwMDAxMzc5NDQsLT
+k2Nzk3MzM1NiwtMTY4NDY3MjcxNywtMTk5NDUyNjIwMl19
 -->
