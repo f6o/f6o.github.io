@@ -3,7 +3,7 @@
 * My notes on the book, Advanced Programming in the UNIX® Environment, Third Edition
 * [Table of Contents](http://apuebook.com/toc3e.html)
 
-## Chapter 2 UNIX standardization and Imprementations
+## Chapter 2 UNIX Standardization and Imprementations
 
 * Read
 
@@ -17,7 +17,9 @@
 
 ## Chapter 5 Standard I/O Library
 
+* Read
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkwNjkwNzk2NCwtMTY4NDY3MjcxNywtMT
+eyJoaXN0b3J5IjpbLTk2Nzk3MzM1NiwtMTY4NDY3MjcxNywtMT
 k5NDUyNjIwMl19
 -->
