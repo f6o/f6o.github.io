@@ -5,21 +5,21 @@
 
 ## Chapter 2
 
-* Not reading
+* Read
 
 ## Chapter 3
 
-* Ok
+* Do excercises.
 
 ## Chapter 4
 
-* Ok
+* 4.13
 
 ## Chapter 5
 
 * Ok
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2ODQ2NzI3MTcsLTE5OTQ1MjYyMDJdfQ
-==
+eyJoaXN0b3J5IjpbNDkyNzk3Nzk5LC0xNjg0NjcyNzE3LC0xOT
+k0NTI2MjAyXX0=
 -->
