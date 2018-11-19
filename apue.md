@@ -14,12 +14,13 @@
 ## Chapter 4 Files and Directories
 
 * Read section 4.14 File System
+* Insert some figures
 
 ## Chapter 5 Standard I/O Library
 
 * Read
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk2Nzk3MzM1NiwtMTY4NDY3MjcxNywtMT
-k5NDUyNjIwMl19
+eyJoaXN0b3J5IjpbLTIwMDAxMzc5NDQsLTk2Nzk3MzM1NiwtMT
+Y4NDY3MjcxNywtMTk5NDUyNjIwMl19
 -->
