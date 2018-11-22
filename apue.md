@@ -62,7 +62,7 @@ int linkat(int olddirfd, const char* oldpath, int newdirfd, const char* newpath,
 > 
 > The interpretation of `newpath` is as for `oldpath`, except that a relative pathname is interpreted relative to the directory referered to by the file descriptor `newdirfd`.
 
-最後の部分は、newpath の解釈について、`oldpath`と同じだけど、 `newdirfd` が参照するディレクトリに対して relative だと
+最後の部分は、newpath の解釈について、 `newdirfd` が参照するディレクトリに対して relative だというところ以外は `oldpath` と一緒。
 
 ### unlink もしくはファイル削除
 * TODO: スティッキービットの働き
@@ -81,8 +81,8 @@ int linkat(int olddirfd, const char* oldpath, int newdirfd, const char* newpath,
 
 * Read
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjE0ODYzNjQ3LDQyNjM5ODA0NywxNzA5Mz
-MwMjMsLTUzMDM1OTQ3NCwtMTYxNTU5OTQ2MywtMjAwMDEzNzk0
-NCwtOTY3OTczMzU2LC0xNjg0NjcyNzE3LC0xOTk0NTI2MjAyXX
-0=
+eyJoaXN0b3J5IjpbLTcxMTYyNDQzNiw0MjYzOTgwNDcsMTcwOT
+MzMDIzLC01MzAzNTk0NzQsLTE2MTU1OTk0NjMsLTIwMDAxMzc5
+NDQsLTk2Nzk3MzM1NiwtMTY4NDY3MjcxNywtMTk5NDUyNjIwMl
+19
 -->
