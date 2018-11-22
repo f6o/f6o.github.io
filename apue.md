@@ -53,13 +53,16 @@ link は簡単なので、linkat について。
 int linkat(int olddirfd, const char* oldpath, int newdirfd, const char* newpath, int flags);
 ``
 
-`man 2 linkat`
+#### `man 2 linkat`
 > If the pathname given in `oldpath` is relative, then it is interpreted relative to the directory reffered to by the file descriptor, `olddirfd`  (rather than relative to the c.w.d. of the calling process, as is done by link() for a relative path name).
+> 
 > If `oldpath` is relative and `olddirfd` is special value `AT_FDCWD`, then `oldpath` is interpreted relative to the c.w.d. of the calling process.
+> 
 > If `oldpath` is absolute, then `olddirfd` is ignored.
+> 
 > The interpretation of `newpath` is as for `oldpath`, except that a relative pathname is interpreted relative to the directory referered to by the file descriptor `newdirfd`.
 
-最後の部分は、newpath/oldpath の解釈について。どちらも newdirfd が参照するディレクトリに対して relative だということのはず。
+最後の部分は、newpath の解釈について、`oldpath`と同じだけど、 `newdirfd` が参照するディレクトリに対して relative だと
 
 ### unlink もしくはファイル削除
 * TODO: スティッキービットの働き
@@ -78,7 +81,8 @@ int linkat(int olddirfd, const char* oldpath, int newdirfd, const char* newpath,
 
 * Read
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDI2Mzk4MDQ3LDE3MDkzMzAyMywtNTMwMz
-U5NDc0LC0xNjE1NTk5NDYzLC0yMDAwMTM3OTQ0LC05Njc5NzMz
-NTYsLTE2ODQ2NzI3MTcsLTE5OTQ1MjYyMDJdfQ==
+eyJoaXN0b3J5IjpbMjE0ODYzNjQ3LDQyNjM5ODA0NywxNzA5Mz
+MwMjMsLTUzMDM1OTQ3NCwtMTYxNTU5OTQ2MywtMjAwMDEzNzk0
+NCwtOTY3OTczMzU2LC0xNjg0NjcyNzE3LC0xOTk0NTI2MjAyXX
+0=
 -->
