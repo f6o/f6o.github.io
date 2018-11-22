@@ -20,9 +20,11 @@
 * struct stat では st_nlink (基本システムデータ型 nlink_t)
 * リンクカウントが0のときにファイルは削除できる
 	* 「ファイルのアンリンク操作」 != 「ファイルに割り当てられたブロックの削除」
+
 ### symbolic links
 * ファイルの実内容 = データブロックとしてシンボリックファイルが指すファイル名を格納する
 * iノード内のファイル種類は S_IFLINK となる
+
 ### inodes
 ファイルに関するすべての情報は iノードにあるので、ディレクトリエントリにはファイル名とiノード番号（ino_t 型）しかない。
 * ファイル種類
@@ -30,8 +32,10 @@
 * ファイルサイズ
 * ファイルのデータブロックへのポインタ
 * etc...
+
 ### ln がファイルシステムを跨げないのは inodes のため
 ディレクトリエントリ内のiノードは同じファイルシステム内のiノードを指す
+
 ### ファイルシステムを変えずにファイル名を変える
 * 既存のiノードを指す新たなディレクトリエントリを作成する
 * 古いディレクトリエントリをアンリンクする
@@ -74,7 +78,7 @@ int linkat(int olddirfd, const char* oldpath, int newdirfd, const char* newpath,
 
 * Read
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTcwOTMzMDIzLC01MzAzNTk0NzQsLTE2MT
-U1OTk0NjMsLTIwMDAxMzc5NDQsLTk2Nzk3MzM1NiwtMTY4NDY3
-MjcxNywtMTk5NDUyNjIwMl19
+eyJoaXN0b3J5IjpbNDI2Mzk4MDQ3LDE3MDkzMzAyMywtNTMwMz
+U5NDc0LC0xNjE1NTk5NDYzLC0yMDAwMTM3OTQ0LC05Njc5NzMz
+NTYsLTE2ODQ2NzI3MTcsLTE5OTQ1MjYyMDJdfQ==
 -->
