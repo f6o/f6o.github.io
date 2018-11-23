@@ -22,7 +22,7 @@
 * ファイルの所有者
 * ディレクトリの所有者
 * スーパーユーザ
-典型的な利用例としては `/tmp` などのテンポラリディレクトリ	
+典型的な利用例としては `/tmp` などのテンポラリディレクトリ.
 
 * [A fast file system for UNIX](./fastfilesystemforunix) メモ
 
@@ -92,8 +92,8 @@ int linkat(int olddirfd, const char* oldpath, int newdirfd, const char* newpath,
 
 * Read
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0ODUwODY0MDAsLTcxMTYyNDQzNiw0Mj
-YzOTgwNDcsMTcwOTMzMDIzLC01MzAzNTk0NzQsLTE2MTU1OTk0
-NjMsLTIwMDAxMzc5NDQsLTk2Nzk3MzM1NiwtMTY4NDY3MjcxNy
-wtMTk5NDUyNjIwMl19
+eyJoaXN0b3J5IjpbLTMyNzgxMjA0MiwtNzExNjI0NDM2LDQyNj
+M5ODA0NywxNzA5MzMwMjMsLTUzMDM1OTQ3NCwtMTYxNTU5OTQ2
+MywtMjAwMDEzNzk0NCwtOTY3OTczMzU2LC0xNjg0NjcyNzE3LC
+0xOTk0NTI2MjAyXX0=
 -->
