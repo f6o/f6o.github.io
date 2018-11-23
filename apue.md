@@ -91,6 +91,8 @@ btrfs での cloning はディスクブロックを共有する独立したフ�
 	inodesが複数あるということ?
 	`cp --reflink` が使えるようになっている
 
+> By cloning, the file system does not create a new link poiting to an existing inode; instead, it creates a new inode 
+
 ### linkat
 link は簡単なので、linkat について。
 ``
@@ -123,7 +125,7 @@ int linkat(int olddirfd, const char* oldpath, int newdirfd, const char* newpath,
 
 * Read
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjQ3MDYyODk1LDE5MzcyMDI3ODMsNzQ5ND
+eyJoaXN0b3J5IjpbNTkzODUzNTg0LDE5MzcyMDI3ODMsNzQ5ND
 A1OTQ2LC0zMjQ1OTgzOCwxOTU4MTAwNjYyLC0zMjc4MTIwNDIs
 LTcxMTYyNDQzNiw0MjYzOTgwNDcsMTcwOTMzMDIzLC01MzAzNT
 k0NzQsLTE2MTU1OTk0NjMsLTIwMDAxMzc5NDQsLTk2Nzk3MzM1
