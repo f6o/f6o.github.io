@@ -84,7 +84,9 @@
 * Chris Mason (laster joining Oracle, ReiserFS for SUSE の人)
 * ZSF をもとに [wikipedia](https://en.wikipedia.org/wiki/ZFS), [日本語](https://ja.wikipedia.org/wiki/ZFS)
 * [wikipedia](https://en.wikipedia.org/wiki/Btrfs), [日本語](https://ja.wikipedia.org/wiki/Btrfs)
-* 
+
+##### クローンニング clonening
+ハードリンクだと同じファイルの別名、とい
 
 ### linkat
 link は簡単なので、linkat について。
@@ -118,7 +120,7 @@ int linkat(int olddirfd, const char* oldpath, int newdirfd, const char* newpath,
 
 * Read
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNDQwMjU4ODEsMTkzNzIwMjc4Myw3ND
+eyJoaXN0b3J5IjpbLTE1NTUzMTIyNDAsMTkzNzIwMjc4Myw3ND
 k0MDU5NDYsLTMyNDU5ODM4LDE5NTgxMDA2NjIsLTMyNzgxMjA0
 MiwtNzExNjI0NDM2LDQyNjM5ODA0NywxNzA5MzMwMjMsLTUzMD
 M1OTQ3NCwtMTYxNTU5OTQ2MywtMjAwMDEzNzk0NCwtOTY3OTcz
