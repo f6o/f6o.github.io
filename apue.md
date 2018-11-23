@@ -76,6 +76,13 @@
 * `stat ./testdir` でファイルについて調べられる
 * `stat -f ./testdir` でファイルシステムについて調べられる
 * Chrostini 上(Linux penguin 4.14.74-07727-g7815dfea1ba2 #1 SMP PREEMPT Tue Oct 16 17:26:41 PDT 2018 aarch64 GNU/Linux)だとファイルシステムは`btrfs` でリンク数は1だった
+* `link` 関数で貼ると 2 になった
+
+#### btrfs
+* Linux 向けのfile system
+* zfs を参考に copy-on-write な
+* [Wikipedia 英語](https://en.wikipedia.org/wiki/Btrfs), [日本語](https://ja.wikipedia.org/wiki/Btrfs)
+* 
 
 ### linkat
 link は簡単なので、linkat について。
@@ -109,9 +116,9 @@ int linkat(int olddirfd, const char* oldpath, int newdirfd, const char* newpath,
 
 * Read
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzQ5NDA1OTQ2LC0zMjQ1OTgzOCwxOTU4MT
-AwNjYyLC0zMjc4MTIwNDIsLTcxMTYyNDQzNiw0MjYzOTgwNDcs
-MTcwOTMzMDIzLC01MzAzNTk0NzQsLTE2MTU1OTk0NjMsLTIwMD
-AxMzc5NDQsLTk2Nzk3MzM1NiwtMTY4NDY3MjcxNywtMTk5NDUy
-NjIwMl19
+eyJoaXN0b3J5IjpbLTcyNzE3MzIxMCw3NDk0MDU5NDYsLTMyND
+U5ODM4LDE5NTgxMDA2NjIsLTMyNzgxMjA0MiwtNzExNjI0NDM2
+LDQyNjM5ODA0NywxNzA5MzMwMjMsLTUzMDM1OTQ3NCwtMTYxNT
+U5OTQ2MywtMjAwMDEzNzk0NCwtOTY3OTczMzU2LC0xNjg0Njcy
+NzE3LC0xOTk0NTI2MjAyXX0=
 -->
