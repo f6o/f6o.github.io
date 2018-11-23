@@ -80,7 +80,8 @@
 
 #### btrfs
 * Linux 向けのfile system
-* zfs を参考に copy-on-write な
+* zfs [](https://en.wikipedia.org/wiki/ZFS), [日本語](https://ja.wikipedia.org/wiki/ZFS) を参考にしている
+* copy-on-write でスナップショットも取れる
 * [Wikipedia 英語](https://en.wikipedia.org/wiki/Btrfs), [日本語](https://ja.wikipedia.org/wiki/Btrfs)
 * 
 
@@ -116,9 +117,9 @@ int linkat(int olddirfd, const char* oldpath, int newdirfd, const char* newpath,
 
 * Read
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTcyNzE3MzIxMCw3NDk0MDU5NDYsLTMyND
-U5ODM4LDE5NTgxMDA2NjIsLTMyNzgxMjA0MiwtNzExNjI0NDM2
-LDQyNjM5ODA0NywxNzA5MzMwMjMsLTUzMDM1OTQ3NCwtMTYxNT
-U5OTQ2MywtMjAwMDEzNzk0NCwtOTY3OTczMzU2LC0xNjg0Njcy
-NzE3LC0xOTk0NTI2MjAyXX0=
+eyJoaXN0b3J5IjpbLTE0NjQyNDg3MDUsNzQ5NDA1OTQ2LC0zMj
+Q1OTgzOCwxOTU4MTAwNjYyLC0zMjc4MTIwNDIsLTcxMTYyNDQz
+Niw0MjYzOTgwNDcsMTcwOTMzMDIzLC01MzAzNTk0NzQsLTE2MT
+U1OTk0NjMsLTIwMDAxMzc5NDQsLTk2Nzk3MzM1NiwtMTY4NDY3
+MjcxNywtMTk5NDUyNjIwMl19
 -->
