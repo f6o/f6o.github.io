@@ -23,9 +23,11 @@
 	* ディスク装置用
 	* 固定でbuffered, FreeBSDだと文字型特殊ファイルに移っている
 * 文字型特殊ファイル
-	* でぃすお
+	* ディスク装置用
 	* 可変でunbuffered
 * FIFO
+	* プロセス間通信
+	* 名前付きパイプ (section 15.5)
 * ソケット
 * シンボリックリンク
 
@@ -108,8 +110,8 @@ int linkat(int olddirfd, const char* oldpath, int newdirfd, const char* newpath,
 
 * Read
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTQxMjc4MjU2LC0zMjc4MTIwNDIsLTcxMT
-YyNDQzNiw0MjYzOTgwNDcsMTcwOTMzMDIzLC01MzAzNTk0NzQs
-LTE2MTU1OTk0NjMsLTIwMDAxMzc5NDQsLTk2Nzk3MzM1NiwtMT
-Y4NDY3MjcxNywtMTk5NDUyNjIwMl19
+eyJoaXN0b3J5IjpbMTk1ODEwMDY2MiwtMzI3ODEyMDQyLC03MT
+E2MjQ0MzYsNDI2Mzk4MDQ3LDE3MDkzMzAyMywtNTMwMzU5NDc0
+LC0xNjE1NTk5NDYzLC0yMDAwMTM3OTQ0LC05Njc5NzMzNTYsLT
+E2ODQ2NzI3MTcsLTE5OTQ1MjYyMDJdfQ==
 -->
