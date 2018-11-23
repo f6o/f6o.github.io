@@ -93,7 +93,7 @@ btrfs での cloning はディスクブロックを共有する独立したフ�
 
 > By cloning, the file system does not create a new link poiting to an existing inode; instead, it creates a new inode tha initially share the same disk blocks with the original file.
 
-> The actual data blocks are not duplicated; at the same time, due to 
+> The actual data blocks are not duplicated; at the same time, due to the copy-on-write nature of Btrfs, modifications to any of cloned files are not visible to the original files and vice versa.
 
 ### linkat
 link は簡単なので、linkat について。
@@ -127,7 +127,7 @@ int linkat(int olddirfd, const char* oldpath, int newdirfd, const char* newpath,
 
 * Read
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk5MDY3ODQ5NSwxOTM3MjAyNzgzLDc0OT
+eyJoaXN0b3J5IjpbMTcwMDE5ODg3MywxOTM3MjAyNzgzLDc0OT
 QwNTk0NiwtMzI0NTk4MzgsMTk1ODEwMDY2MiwtMzI3ODEyMDQy
 LC03MTE2MjQ0MzYsNDI2Mzk4MDQ3LDE3MDkzMzAyMywtNTMwMz
 U5NDc0LC0xNjE1NTk5NDYzLC0yMDAwMTM3OTQ0LC05Njc5NzMz
