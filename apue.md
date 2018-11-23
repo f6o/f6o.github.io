@@ -94,8 +94,6 @@ int linkat(int olddirfd, const char* oldpath, int newdirfd, const char* newpath,
 最後の部分は、newpath の解釈について、 `newdirfd` が参照するディレクトリに対して relative だというところ以外は `oldpath` と一緒。
 
 ### unlink もしくはファイル削除
-* TODO: スティッキービットの働き
-* TODO: アンリンクするための条件
 * リンクカウントが0になったときだけ、ファイルの内容が削除できる
 * プロセスがファイルを開いている状態では、ファイルの内容を削除しない
 1. ファイルをクローズすると、カーネルは対象のファイルを開いているプロセス数を数える
@@ -110,8 +108,8 @@ int linkat(int olddirfd, const char* oldpath, int newdirfd, const char* newpath,
 
 * Read
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk1ODEwMDY2MiwtMzI3ODEyMDQyLC03MT
-E2MjQ0MzYsNDI2Mzk4MDQ3LDE3MDkzMzAyMywtNTMwMzU5NDc0
-LC0xNjE1NTk5NDYzLC0yMDAwMTM3OTQ0LC05Njc5NzMzNTYsLT
-E2ODQ2NzI3MTcsLTE5OTQ1MjYyMDJdfQ==
+eyJoaXN0b3J5IjpbLTMyNDU5ODM4LDE5NTgxMDA2NjIsLTMyNz
+gxMjA0MiwtNzExNjI0NDM2LDQyNjM5ODA0NywxNzA5MzMwMjMs
+LTUzMDM1OTQ3NCwtMTYxNTU5OTQ2MywtMjAwMDEzNzk0NCwtOT
+Y3OTczMzU2LC0xNjg0NjcyNzE3LC0xOTk0NTI2MjAyXX0=
 -->
