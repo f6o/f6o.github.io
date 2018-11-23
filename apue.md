@@ -45,6 +45,7 @@
 * [A fast file system for UNIX](./fastfilesystemforunix) メモ
 
 ### hard links
+* 
 * iノードはディレクトリからの被参照数を表すリンクカウントを持つ
 * struct stat では st_nlink (基本システムデータ型 nlink_t)
 * リンクカウントが0のときにファイルは削除できる
@@ -108,8 +109,9 @@ int linkat(int olddirfd, const char* oldpath, int newdirfd, const char* newpath,
 
 * Read
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMyNDU5ODM4LDE5NTgxMDA2NjIsLTMyNz
-gxMjA0MiwtNzExNjI0NDM2LDQyNjM5ODA0NywxNzA5MzMwMjMs
-LTUzMDM1OTQ3NCwtMTYxNTU5OTQ2MywtMjAwMDEzNzk0NCwtOT
-Y3OTczMzU2LC0xNjg0NjcyNzE3LC0xOTk0NTI2MjAyXX0=
+eyJoaXN0b3J5IjpbNzQ5NDA1OTQ2LC0zMjQ1OTgzOCwxOTU4MT
+AwNjYyLC0zMjc4MTIwNDIsLTcxMTYyNDQzNiw0MjYzOTgwNDcs
+MTcwOTMzMDIzLC01MzAzNTk0NzQsLTE2MTU1OTk0NjMsLTIwMD
+AxMzc5NDQsLTk2Nzk3MzM1NiwtMTY4NDY3MjcxNywtMTk5NDUy
+NjIwMl19
 -->
