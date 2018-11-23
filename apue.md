@@ -13,6 +13,11 @@
 
 ## Chapter 4 Files and Directories
 
+## ファイルの種類
+* レギュラファイル
+* ディレクトリファイル
+* ブロック型特殊ｆ
+
 ## sticky bit `S_ISVTX`
 ### 歴史
 ファイルのtext部分 （=命令列）がメモリのスワップエリアに保存され、プログラムだと起動が早くなる。
@@ -92,8 +97,8 @@ int linkat(int olddirfd, const char* oldpath, int newdirfd, const char* newpath,
 
 * Read
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMyNzgxMjA0MiwtNzExNjI0NDM2LDQyNj
-M5ODA0NywxNzA5MzMwMjMsLTUzMDM1OTQ3NCwtMTYxNTU5OTQ2
-MywtMjAwMDEzNzk0NCwtOTY3OTczMzU2LC0xNjg0NjcyNzE3LC
-0xOTk0NTI2MjAyXX0=
+eyJoaXN0b3J5IjpbLTMwNTQ5MTM2OSwtMzI3ODEyMDQyLC03MT
+E2MjQ0MzYsNDI2Mzk4MDQ3LDE3MDkzMzAyMywtNTMwMzU5NDc0
+LC0xNjE1NTk5NDYzLC0yMDAwMTM3OTQ0LC05Njc5NzMzNTYsLT
+E2ODQ2NzI3MTcsLTE5OTQ1MjYyMDJdfQ==
 -->
