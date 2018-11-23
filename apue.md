@@ -13,6 +13,17 @@
 
 ## Chapter 4 Files and Directories
 
+## sticky bit `S_ISVTX`
+### 歴史
+ファイルのtext部分 （=命令列）がメモリのスワップエリアに保存され、プログラムだと起動が早くなる。
+スワップエリアに張り付くので sticky
+### ディレクトリに対するsticky bit
+スティッキービットが設定されているディレクトリでは、書き出し権限を持つユーザで、以下の条件のいずれかを満たすならディレクトリ内のファイルの削除・名前変更をできる
+* ファイルの所有者
+* ディレクトリの所有者
+* スーパーユーザ
+典型的な利用例としては `/tmp` などのテンポラリディレクトリ	
+
 * [A fast file system for UNIX](./fastfilesystemforunix) メモ
 
 ### hard links
@@ -81,8 +92,8 @@ int linkat(int olddirfd, const char* oldpath, int newdirfd, const char* newpath,
 
 * Read
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTcxMTYyNDQzNiw0MjYzOTgwNDcsMTcwOT
-MzMDIzLC01MzAzNTk0NzQsLTE2MTU1OTk0NjMsLTIwMDAxMzc5
-NDQsLTk2Nzk3MzM1NiwtMTY4NDY3MjcxNywtMTk5NDUyNjIwMl
-19
+eyJoaXN0b3J5IjpbLTE0ODUwODY0MDAsLTcxMTYyNDQzNiw0Mj
+YzOTgwNDcsMTcwOTMzMDIzLC01MzAzNTk0NzQsLTE2MTU1OTk0
+NjMsLTIwMDAxMzc5NDQsLTk2Nzk3MzM1NiwtMTY4NDY3MjcxNy
+wtMTk5NDUyNjIwMl19
 -->
