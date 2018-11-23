@@ -81,9 +81,8 @@
 #### btrfs
 * Linux 向けのfile system
 * Ohad Rodeh (IBM の研究者)の2007 USENIX
-* Chris Mason (laster joining Oracle, ReiserFS for )
-* zfs [wikipedia](https://en.wikipedia.org/wiki/ZFS), [日本語](https://ja.wikipedia.org/wiki/ZFS)
-* copy-on-write でスナップショットも取れる
+* Chris Mason (laster joining Oracle, ReiserFS for SUSE の人)
+* ZSF をもとに [wikipedia](https://en.wikipedia.org/wiki/ZFS), [日本語](https://ja.wikipedia.org/wiki/ZFS)
 * [wikipedia](https://en.wikipedia.org/wiki/Btrfs), [日本語](https://ja.wikipedia.org/wiki/Btrfs)
 * 
 
@@ -119,9 +118,9 @@ int linkat(int olddirfd, const char* oldpath, int newdirfd, const char* newpath,
 
 * Read
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ2OTc3MjExNSwxOTM3MjAyNzgzLDc0OT
-QwNTk0NiwtMzI0NTk4MzgsMTk1ODEwMDY2MiwtMzI3ODEyMDQy
-LC03MTE2MjQ0MzYsNDI2Mzk4MDQ3LDE3MDkzMzAyMywtNTMwMz
-U5NDc0LC0xNjE1NTk5NDYzLC0yMDAwMTM3OTQ0LC05Njc5NzMz
-NTYsLTE2ODQ2NzI3MTcsLTE5OTQ1MjYyMDJdfQ==
+eyJoaXN0b3J5IjpbLTEyNDQwMjU4ODEsMTkzNzIwMjc4Myw3ND
+k0MDU5NDYsLTMyNDU5ODM4LDE5NTgxMDA2NjIsLTMyNzgxMjA0
+MiwtNzExNjI0NDM2LDQyNjM5ODA0NywxNzA5MzMwMjMsLTUzMD
+M1OTQ3NCwtMTYxNTU5OTQ2MywtMjAwMDEzNzk0NCwtOTY3OTcz
+MzU2LC0xNjg0NjcyNzE3LC0xOTk0NTI2MjAyXX0=
 -->
