@@ -15,8 +15,14 @@
 
 ## ファイルの種類
 * レギュラファイル
+	* バイナリとテキストの区別はないけど、実行バイナリはカーネルが認識する必要があるので云々
 * ディレクトリファイル
-* ブロック型特殊ｆ
+	* ファイル名とファイル情報へのポインタ(=iノードへのポインタ)
+* ブロック型特殊ファイル
+* 文字型特殊ファイル
+* FIFO
+* ソケット
+* シンボリックリンク
 
 ## sticky bit `S_ISVTX`
 ### 歴史
@@ -97,7 +103,7 @@ int linkat(int olddirfd, const char* oldpath, int newdirfd, const char* newpath,
 
 * Read
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMwNTQ5MTM2OSwtMzI3ODEyMDQyLC03MT
+eyJoaXN0b3J5IjpbLTM5MzY2OTg1NCwtMzI3ODEyMDQyLC03MT
 E2MjQ0MzYsNDI2Mzk4MDQ3LDE3MDkzMzAyMywtNTMwMzU5NDc0
 LC0xNjE1NTk5NDYzLC0yMDAwMTM3OTQ0LC05Njc5NzMzNTYsLT
 E2ODQ2NzI3MTcsLTE5OTQ1MjYyMDJdfQ==
