@@ -140,8 +140,9 @@ int linkat(int olddirfd, const char* oldpath, int newdirfd, const char* newpath,
 
 #### 時刻の変更
 
-* `utimensat`関数は, ファイルをオープンし、記述子を渡す必要がある
-* `futimens`
+* `utimensat`関数はファイルパスを指定する
+* `futimens`関数はファイルをオープンし、記述子を指定する
+	* これらは
 * 
 
 
@@ -154,7 +155,7 @@ int linkat(int olddirfd, const char* oldpath, int newdirfd, const char* newpath,
 
 * Read
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0MjMxODYzNDMsMTQzNDk2NDAxLC0xOD
+eyJoaXN0b3J5IjpbLTIwNjk5MTE0ODEsMTQzNDk2NDAxLC0xOD
 c4MDkzNjQxLC0xMjYyMjE4NjQ4LC0zOTg5MDc1OTAsLTEyNjIy
 MTg2NDgsMjgzNzUxNTY0LDE5MzcyMDI3ODMsNzQ5NDA1OTQ2LC
 0zMjQ1OTgzOCwxOTU4MTAwNjYyLC0zMjc4MTIwNDIsLTcxMTYy
