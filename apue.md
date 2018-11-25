@@ -129,7 +129,7 @@ int linkat(int olddirfd, const char* oldpath, int newdirfd, const char* newpath,
 |`st_mtim`|データの最終修正時刻|`write`|デフォルト|
 |`st_ctim`|iノード状態の変更時刻|`chmod`,`chown`|`-c`|
 
-ファイルシステム上ででーiノードへの変更
+ファイルシステム上では、ファイルデータとiノードは別に管理しているので、iノードの変更時刻もトラックする必要がある。
 
 
 ## Chapter 5 Standard I/O Library
@@ -140,11 +140,11 @@ int linkat(int olddirfd, const char* oldpath, int newdirfd, const char* newpath,
 
 * Read
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3NzU3Mzk0NTUsLTEyNjIyMTg2NDgsLT
-M5ODkwNzU5MCwtMTI2MjIxODY0OCwyODM3NTE1NjQsMTkzNzIw
-Mjc4Myw3NDk0MDU5NDYsLTMyNDU5ODM4LDE5NTgxMDA2NjIsLT
-MyNzgxMjA0MiwtNzExNjI0NDM2LDQyNjM5ODA0NywxNzA5MzMw
-MjMsLTUzMDM1OTQ3NCwtMTYxNTU5OTQ2MywtMjAwMDEzNzk0NC
-wtOTY3OTczMzU2LC0xNjg0NjcyNzE3LC0xOTk0NTI2MjAyXX0=
+eyJoaXN0b3J5IjpbMTQxMjQxNDU3NiwtMTI2MjIxODY0OCwtMz
+k4OTA3NTkwLC0xMjYyMjE4NjQ4LDI4Mzc1MTU2NCwxOTM3MjAy
+NzgzLDc0OTQwNTk0NiwtMzI0NTk4MzgsMTk1ODEwMDY2MiwtMz
+I3ODEyMDQyLC03MTE2MjQ0MzYsNDI2Mzk4MDQ3LDE3MDkzMzAy
+MywtNTMwMzU5NDc0LC0xNjE1NTk5NDYzLC0yMDAwMTM3OTQ0LC
+05Njc5NzMzNTYsLTE2ODQ2NzI3MTcsLTE5OTQ1MjYyMDJdfQ==
 
 -->
