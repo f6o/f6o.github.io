@@ -140,6 +140,8 @@ int linkat(int olddirfd, const char* oldpath, int newdirfd, const char* newpath,
 
 #### 時刻の変更
 
+* utimensat/
+
 
 
 ## Chapter 5 Standard I/O Library
@@ -150,7 +152,7 @@ int linkat(int olddirfd, const char* oldpath, int newdirfd, const char* newpath,
 
 * Read
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY2NTkyOTY4MSwxNDM0OTY0MDEsLTE4Nz
+eyJoaXN0b3J5IjpbMTA4Nzg0ODM1MiwxNDM0OTY0MDEsLTE4Nz
 gwOTM2NDEsLTEyNjIyMTg2NDgsLTM5ODkwNzU5MCwtMTI2MjIx
 ODY0OCwyODM3NTE1NjQsMTkzNzIwMjc4Myw3NDk0MDU5NDYsLT
 MyNDU5ODM4LDE5NTgxMDA2NjIsLTMyNzgxMjA0MiwtNzExNjI0
