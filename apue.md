@@ -119,8 +119,11 @@ int linkat(int olddirfd, const char* oldpath, int newdirfd, const char* newpath,
 * リンクカウントが0になったときだけ、ファイルの内容が削除できる
 * プロセスがファイルを開いている状態では、ファイルの内容を削除しない
 1. ファイルをクローズすると、カーネルは対象のファイルを開いているプロセス数を数える
-1. この個数が0になると、次にリンクカウントを検査する
-1. そのカウントが0なら削除する
+2. この個数が0になると、次にリンクカウントを検査する
+3. そのカウントが0なら削除する
+
+### ファイルの時刻
+* `\
 
 ## Chapter 5 Standard I/O Library
 
@@ -130,10 +133,11 @@ int linkat(int olddirfd, const char* oldpath, int newdirfd, const char* newpath,
 
 * Read
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNjIyMTg2NDgsLTM5ODkwNzU5MCwtMT
-I2MjIxODY0OCwyODM3NTE1NjQsMTkzNzIwMjc4Myw3NDk0MDU5
-NDYsLTMyNDU5ODM4LDE5NTgxMDA2NjIsLTMyNzgxMjA0MiwtNz
-ExNjI0NDM2LDQyNjM5ODA0NywxNzA5MzMwMjMsLTUzMDM1OTQ3
-NCwtMTYxNTU5OTQ2MywtMjAwMDEzNzk0NCwtOTY3OTczMzU2LC
-0xNjg0NjcyNzE3LC0xOTk0NTI2MjAyXX0=
+eyJoaXN0b3J5IjpbLTE5NjQ0ODkxMzYsLTEyNjIyMTg2NDgsLT
+M5ODkwNzU5MCwtMTI2MjIxODY0OCwyODM3NTE1NjQsMTkzNzIw
+Mjc4Myw3NDk0MDU5NDYsLTMyNDU5ODM4LDE5NTgxMDA2NjIsLT
+MyNzgxMjA0MiwtNzExNjI0NDM2LDQyNjM5ODA0NywxNzA5MzMw
+MjMsLTUzMDM1OTQ3NCwtMTYxNTU5OTQ2MywtMjAwMDEzNzk0NC
+wtOTY3OTczMzU2LC0xNjg0NjcyNzE3LC0xOTk0NTI2MjAyXX0=
+
 -->
