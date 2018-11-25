@@ -30,12 +30,12 @@
 * 150MB のファイルシステムだと、4MBのiノードインデックスと146MBのデータ領域に分かれる
 * 同じフォルダ内でも iノードインデックスが連続しない
 	* consecutiveness が大事
-* 
+* データ領域の割当
 
 ## New file system organization
 ## Performance
 ## File system functional enhancements
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzMTM5ODMzNDAsMTQyNTE1OTUxNiw5OD
-M5MjI2ODcsLTI3NDIyMDgzMV19
+eyJoaXN0b3J5IjpbLTI0MDYyNzg1NCwxNDI1MTU5NTE2LDk4Mz
+kyMjY4NywtMjc0MjIwODMxXX0=
 -->
