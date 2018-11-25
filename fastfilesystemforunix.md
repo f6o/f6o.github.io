@@ -19,11 +19,13 @@
 * パーティションはファイルシステムを持つが、複数のパーティションを跨ぐことはない
 ### superblock
 * file system 内のデータブロック数
+* ファイルの最大数 a count of the maximum number of files
+* 
 
 ## New file system organization
 ## Performance
 ## File system functional enhancements
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExNDUzNTg4MjMsOTgzOTIyNjg3LC0yNz
-QyMjA4MzFdfQ==
+eyJoaXN0b3J5IjpbNTg1NTc5MDM2LDk4MzkyMjY4NywtMjc0Mj
+IwODMxXX0=
 -->
