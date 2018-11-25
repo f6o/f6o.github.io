@@ -31,11 +31,13 @@
 * 同じフォルダ内でも iノードインデックスが連続しない
 	* consecutiveness が大事
 * データ領域の割当
+	* 1回あたりのdisk transactionで512バイト以上は転送しない
+	* 同じシリンダ上に次のデータブロックが無いことが多い
 
 ## New file system organization
 ## Performance
 ## File system functional enhancements
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI0MDYyNzg1NCwxNDI1MTU5NTE2LDk4Mz
+eyJoaXN0b3J5IjpbLTU5MDU1MzUxNywxNDI1MTU5NTE2LDk4Mz
 kyMjY4NywtMjc0MjIwODMxXX0=
 -->
