@@ -140,7 +140,9 @@ int linkat(int olddirfd, const char* oldpath, int newdirfd, const char* newpath,
 
 #### 時刻の変更
 
-* utimensat/
+* `utimensat`関数は, ファイルをオープンし、記述子を渡す必要がある
+* `futimens`
+* 
 
 
 
@@ -152,11 +154,11 @@ int linkat(int olddirfd, const char* oldpath, int newdirfd, const char* newpath,
 
 * Read
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA4Nzg0ODM1MiwxNDM0OTY0MDEsLTE4Nz
-gwOTM2NDEsLTEyNjIyMTg2NDgsLTM5ODkwNzU5MCwtMTI2MjIx
-ODY0OCwyODM3NTE1NjQsMTkzNzIwMjc4Myw3NDk0MDU5NDYsLT
-MyNDU5ODM4LDE5NTgxMDA2NjIsLTMyNzgxMjA0MiwtNzExNjI0
-NDM2LDQyNjM5ODA0NywxNzA5MzMwMjMsLTUzMDM1OTQ3NCwtMT
-YxNTU5OTQ2MywtMjAwMDEzNzk0NCwtOTY3OTczMzU2LC0xNjg0
-NjcyNzE3XX0=
+eyJoaXN0b3J5IjpbLTE0MjMxODYzNDMsMTQzNDk2NDAxLC0xOD
+c4MDkzNjQxLC0xMjYyMjE4NjQ4LC0zOTg5MDc1OTAsLTEyNjIy
+MTg2NDgsMjgzNzUxNTY0LDE5MzcyMDI3ODMsNzQ5NDA1OTQ2LC
+0zMjQ1OTgzOCwxOTU4MTAwNjYyLC0zMjc4MTIwNDIsLTcxMTYy
+NDQzNiw0MjYzOTgwNDcsMTcwOTMzMDIzLC01MzAzNTk0NzQsLT
+E2MTU1OTk0NjMsLTIwMDAxMzc5NDQsLTk2Nzk3MzM1NiwtMTY4
+NDY3MjcxN119
 -->
