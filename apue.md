@@ -125,7 +125,11 @@ int linkat(int olddirfd, const char* oldpath, int newdirfd, const char* newpath,
 ### ファイルの時刻
 |フィールド|意味|例|`ls (1)`のオプション|
 |--|--|--|--|
-|`st_|  |
+|`st_atim`|データへの最終アクセス時刻|`read`|`-u`|
+|`st_mtim`|データの最終修正時刻|`write`|デフォルト|
+|`st_ctim`|iノード状態の変更時刻|`chmod`,`chown`|`-c`|
+
+ファイルシステム上ででーiノードへの変更
 
 
 ## Chapter 5 Standard I/O Library
@@ -136,7 +140,7 @@ int linkat(int olddirfd, const char* oldpath, int newdirfd, const char* newpath,
 
 * Read
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0MTQ0MjEwMDQsLTEyNjIyMTg2NDgsLT
+eyJoaXN0b3J5IjpbLTE3NzU3Mzk0NTUsLTEyNjIyMTg2NDgsLT
 M5ODkwNzU5MCwtMTI2MjIxODY0OCwyODM3NTE1NjQsMTkzNzIw
 Mjc4Myw3NDk0MDU5NDYsLTMyNDU5ODM4LDE5NTgxMDA2NjIsLT
 MyNzgxMjA0MiwtNzExNjI0NDM2LDQyNjM5ODA0NywxNzA5MzMw
