@@ -21,12 +21,14 @@
 * file system 内のデータブロック数
 * ファイルの最大数 a count of the maximum number of files
 * フリーリスト: ファイルシステム内の空きブロックのリスト
-
+### この節内での定義
+* ファイルの先頭8バイト: iノード (ファイルの情報, )
+* 
 
 ## New file system organization
 ## Performance
 ## File system functional enhancements
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg0NzE1MTE2OSwxNDI1MTU5NTE2LDk4Mz
-kyMjY4NywtMjc0MjIwODMxXX0=
+eyJoaXN0b3J5IjpbLTE1ODk0MzkxMzgsMTQyNTE1OTUxNiw5OD
+M5MjI2ODcsLTI3NDIyMDgzMV19
 -->
