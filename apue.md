@@ -140,14 +140,55 @@ int linkat(int olddirfd, const char* oldpath, int newdirfd, const char* newpath,
 
 #### 時刻の変更
 
+```
+#include <sys/stat.h>
+int futimes(int fd, const struct timespec times[2]);
+int utimensat(int dirfd, const char *path, const struct timespec times[2], int flags);
+
+stuct timespec {
+   time_t tv_sec;
+   long   tv_nsec;
+};
+```
+
+```
+#include <sys/time.h>
+int utimes(const char *pathname, const struct timeval times[2]);
+
+struct timeval {
+	long tv_sec;
+	long tv_usec;
+}
+```
+* どの関数も`times[0]`が最終アクセス時刻, `times[1]`が最終変更時刻
 * `utimensat`関数はファイルパスを指定する
 * `futimens`関数はファイルをオープンし、記述子を指定する
 	* これらはPOSIX.1由来
-	* Portable operating system interfaces, Stallman が IEEE に提案したもの
-	* 異なるOSでもアプリケーションを移植性の高いものにするためのOSのAPI仕様
-* 
+* `utimes` 関数はファイルパスを指定する
+	* iノードの状態変更時刻は ctime は、`utimes`を呼び出すと更新されるので、指定できない
 
+#### メモ: 仕様について
+　* Portable operating system interfaces, Stallman が IEEE に提案したもの
+		* 異なるOSでもアプリケーションを移植性の高いものにするためのOSのAPI仕様
+		* IEEE Std 1003.1
+		* この本で説明されているのは POSIX.1 2008
+　* Single UNIX Specification の XSIオプション
+		* POSIX.1のスーパーセット
+		* POSIX.1 のオプション: XSI (X/Open System Interface)
+		* メッセージキュー, データベース, IPC, syslog など...?
+		* UNIXシステムと呼ばれたいなら、XSI適合でなきゃいけない
+		* 2008年に改定基本仕様イシュー7 == POSIX.1 2008
+		* 2010年にX/Open curses を追加した SUSv4 が公開 (SUSv3 は2001年)
 
+### 4.21 `mkdir`, `mkdirat`, `rmdir`
+
+* 新規作成のときには, 実行フラグも忘れずに (演習4.16)
+
+### 4.22 ディレクトリの読み取り
+
+* ディレクトリを直接 `read` できないようになった
+* ファイルシステムの実装依存のところが多い
+* POSIX.1 に定義したAPIを使ってね
 
 ## Chapter 5 Standard I/O Library
 
@@ -157,7 +198,7 @@ int linkat(int olddirfd, const char* oldpath, int newdirfd, const char* newpath,
 
 * Read
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNTU3Mzc4NzEsMTQzNDk2NDAxLC0xOD
+eyJoaXN0b3J5IjpbLTEwMjQ0OTU0NjcsMTQzNDk2NDAxLC0xOD
 c4MDkzNjQxLC0xMjYyMjE4NjQ4LC0zOTg5MDc1OTAsLTEyNjIy
 MTg2NDgsMjgzNzUxNTY0LDE5MzcyMDI3ODMsNzQ5NDA1OTQ2LC
 0zMjQ1OTgzOCwxOTU4MTAwNjYyLC0zMjc4MTIwNDIsLTcxMTYy
