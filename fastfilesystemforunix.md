@@ -17,11 +17,11 @@
 * Bell 研究所で開発された file system
 * ドライブは１つ以上のパーティションでわけられる
 * パーティションはファイルシステムを持つが、複数のパーティションを跨ぐことはない
-### superblock
+### スーパーブロック
 * file system 内のデータブロック数
 * ファイルの最大数 a count of the maximum number of files
 * フリーリスト: ファイルシステム内の空きブロックのリスト
-### この節内での定義
+### 伝統的なファイルシステムについて
 * ファイルの先頭8バイト: iノード (ファイルの情報, 間接的に furthur data blocks のインデックスを持つ)
 * 512 byte ブロックのファイルシステムだと、
 	* a singly indirect block contains 128 further block addresses
@@ -33,12 +33,12 @@
 * データ領域の割当
 	* 1回あたりのdisk transactionで512バイト以上は転送しない
 	* 同じシリンダ上に次のデータブロックが無いことが多く、512バイト間隔でシークが行われる
-	* 読み取り優先？のシステムだと、小さいブロックサイズと頻繁なシークはするー
+	* 読み取り優先？のシステムだと、小さいブロックサイズと頻繁なシークはファイルシステムのスループットを悪くする（当たり前）
 
 ## New file system organization
 ## Performance
 ## File system functional enhancements
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzc5ODgxMjQ2LDIxMjcyMjI4ODksMTQyNT
-E1OTUxNiw5ODM5MjI2ODcsLTI3NDIyMDgzMV19
+eyJoaXN0b3J5IjpbMTU0OTQ4Njg5MywyMTI3MjIyODg5LDE0Mj
+UxNTk1MTYsOTgzOTIyNjg3LC0yNzQyMjA4MzFdfQ==
 -->
