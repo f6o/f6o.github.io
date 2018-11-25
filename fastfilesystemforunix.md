@@ -32,12 +32,12 @@
 	* consecutiveness が大事
 * データ領域の割当
 	* 1回あたりのdisk transactionで512バイト以上は転送しない
-	* 同じシリンダ上に次のデータブロックが無いことが多い
+	* 同じシリンダ上に次のデータブロックが無いことが多く、512バイト間隔でシークが行われる
 
 ## New file system organization
 ## Performance
 ## File system functional enhancements
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU5MDU1MzUxNywxNDI1MTU5NTE2LDk4Mz
+eyJoaXN0b3J5IjpbMjEyNzIyMjg4OSwxNDI1MTU5NTE2LDk4Mz
 kyMjY4NywtMjc0MjIwODMxXX0=
 -->
