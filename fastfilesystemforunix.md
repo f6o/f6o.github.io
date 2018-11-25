@@ -14,9 +14,12 @@
 * Pechura83 こと [Estimating file access time of floppy disks](https://dl.acm.org/citation.cfm?id=358425&preflayout=flat)
 
 ## Old file system
+* Bell 研究所で開発された file system
+* 
+
 ## New file system organization
 ## Performance
 ## File system functional enhancements
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI3NDIyMDgzMV19
+eyJoaXN0b3J5IjpbLTEyNTU0Njg3MjcsLTI3NDIyMDgzMV19
 -->
