@@ -142,7 +142,8 @@ int linkat(int olddirfd, const char* oldpath, int newdirfd, const char* newpath,
 
 * `utimensat`関数はファイルパスを指定する
 * `futimens`関数はファイルをオープンし、記述子を指定する
-	* これらは
+	* これらはPOSIX.1由来
+	* 
 * 
 
 
@@ -155,7 +156,7 @@ int linkat(int olddirfd, const char* oldpath, int newdirfd, const char* newpath,
 
 * Read
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNjk5MTE0ODEsMTQzNDk2NDAxLC0xOD
+eyJoaXN0b3J5IjpbLTE4MDA0NTgzNTEsMTQzNDk2NDAxLC0xOD
 c4MDkzNjQxLC0xMjYyMjE4NjQ4LC0zOTg5MDc1OTAsLTEyNjIy
 MTg2NDgsMjgzNzUxNTY0LDE5MzcyMDI3ODMsNzQ5NDA1OTQ2LC
 0zMjQ1OTgzOCwxOTU4MTAwNjYyLC0zMjc4MTIwNDIsLTcxMTYy
