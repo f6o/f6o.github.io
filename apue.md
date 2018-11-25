@@ -1,7 +1,6 @@
 
 
-#
- APUE memo
+# APUE memo
 
 * My notes on the book, Advanced Programming in the UNIX® Environment, Third Edition
 * [Table of Contents](http://apuebook.com/toc3e.html)
@@ -131,10 +130,10 @@ int linkat(int olddirfd, const char* oldpath, int newdirfd, const char* newpath,
 
 * Read
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM5ODkwNzU5MCwtMTI2MjIxODY0OCwyOD
-M3NTE1NjQsMTkzNzIwMjc4Myw3NDk0MDU5NDYsLTMyNDU5ODM4
-LDE5NTgxMDA2NjIsLTMyNzgxMjA0MiwtNzExNjI0NDM2LDQyNj
-M5ODA0NywxNzA5MzMwMjMsLTUzMDM1OTQ3NCwtMTYxNTU5OTQ2
-MywtMjAwMDEzNzk0NCwtOTY3OTczMzU2LC0xNjg0NjcyNzE3LC
-0xOTk0NTI2MjAyXX0=
+eyJoaXN0b3J5IjpbLTEyNjIyMTg2NDgsLTM5ODkwNzU5MCwtMT
+I2MjIxODY0OCwyODM3NTE1NjQsMTkzNzIwMjc4Myw3NDk0MDU5
+NDYsLTMyNDU5ODM4LDE5NTgxMDA2NjIsLTMyNzgxMjA0MiwtNz
+ExNjI0NDM2LDQyNjM5ODA0NywxNzA5MzMwMjMsLTUzMDM1OTQ3
+NCwtMTYxNTU5OTQ2MywtMjAwMDEzNzk0NCwtOTY3OTczMzU2LC
+0xNjg0NjcyNzE3LC0xOTk0NTI2MjAyXX0=
 -->
