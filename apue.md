@@ -131,12 +131,14 @@ int linkat(int olddirfd, const char* oldpath, int newdirfd, const char* newpath,
 
 ファイルシステム上では、ファイルデータとiノードは別に管理しているので、iノードの変更時刻もトラックする必要がある。
 また、iノードアクセス時刻は管理しない（また`access` や `stat` はどの時刻も変えない）。
+
 #### ディレクトリエントリへの追加/変更
 * ディレクトリはファイルとiノードの対応 = ディレクトリエントリを収めたファイル
 * ディレクトリエントリへの追加・変更・削除は、そのディレクトリの a/c/mtime に影響がある。
 	* ファイルの新規作成には、ディレクトリエントリの追加を必要とするので、時刻の更新がある
 	* ファイルの読み書きでは、そのディレクトリにはなんの影響も与えない
 
+#### 時刻の変更
 
 
 
@@ -148,11 +150,11 @@ int linkat(int olddirfd, const char* oldpath, int newdirfd, const char* newpath,
 
 * Read
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQzNDk2NDAxLC0xODc4MDkzNjQxLC0xMj
-YyMjE4NjQ4LC0zOTg5MDc1OTAsLTEyNjIyMTg2NDgsMjgzNzUx
-NTY0LDE5MzcyMDI3ODMsNzQ5NDA1OTQ2LC0zMjQ1OTgzOCwxOT
-U4MTAwNjYyLC0zMjc4MTIwNDIsLTcxMTYyNDQzNiw0MjYzOTgw
-NDcsMTcwOTMzMDIzLC01MzAzNTk0NzQsLTE2MTU1OTk0NjMsLT
-IwMDAxMzc5NDQsLTk2Nzk3MzM1NiwtMTY4NDY3MjcxNywtMTk5
-NDUyNjIwMl19
+eyJoaXN0b3J5IjpbMTY2NTkyOTY4MSwxNDM0OTY0MDEsLTE4Nz
+gwOTM2NDEsLTEyNjIyMTg2NDgsLTM5ODkwNzU5MCwtMTI2MjIx
+ODY0OCwyODM3NTE1NjQsMTkzNzIwMjc4Myw3NDk0MDU5NDYsLT
+MyNDU5ODM4LDE5NTgxMDA2NjIsLTMyNzgxMjA0MiwtNzExNjI0
+NDM2LDQyNjM5ODA0NywxNzA5MzMwMjMsLTUzMDM1OTQ3NCwtMT
+YxNTU5OTQ2MywtMjAwMDEzNzk0NCwtOTY3OTczMzU2LC0xNjg0
+NjcyNzE3XX0=
 -->
