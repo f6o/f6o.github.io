@@ -24,15 +24,15 @@
 ### この節内での定義
 * ファイルの先頭8バイト: iノード (ファイルの情報, 間接的に furthur data blocks のインデックスを持つ)
 * 512 byte ブロックのファイルシステムだと、
-* a singly indirect block contains 128 further block addresses
-* a doubly indirect block contains 128 addresses of further singly indirect blocks
-* a triply indirect block contain 128 addresses of further doubly indirect blocks
-* 
+	* a singly indirect block contains 128 further block addresses
+	* a doubly indirect block contains 128 addresses of further singly indirect blocks
+	* a triply indirect block contain 128 addresses of further doubly indirect blocks
+* 150MB のファイルシステムだと、4MBのiノードと146MBのデータ領域に分かれる
 
 ## New file system organization
 ## Performance
 ## File system functional enhancements
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzE2MTg1ODUwLDE0MjUxNTk1MTYsOTgzOT
-IyNjg3LC0yNzQyMjA4MzFdfQ==
+eyJoaXN0b3J5IjpbLTY1NzY2MzczMCwxNDI1MTU5NTE2LDk4Mz
+kyMjY4NywtMjc0MjIwODMxXX0=
 -->
