@@ -29,13 +29,13 @@
 	* a triply indirect block contain 128 addresses of further doubly indirect blocks
 * 150MB のファイルシステムだと、4MBのiノードインデックスと146MBのデータ領域に分かれる
 * 同じフォルダ内でも iノードインデックスが連続しない
-* consecutiveness が大事
+	* consecutiveness が大事
 * 
 
 ## New file system organization
 ## Performance
 ## File system functional enhancements
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MjA4NTI1NjQsMTQyNTE1OTUxNiw5OD
+eyJoaXN0b3J5IjpbLTEzMTM5ODMzNDAsMTQyNTE1OTUxNiw5OD
 M5MjI2ODcsLTI3NDIyMDgzMV19
 -->
