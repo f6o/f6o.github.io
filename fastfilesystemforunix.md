@@ -16,11 +16,12 @@
 ## Old file system
 * Bell 研究所で開発された file system
 * ドライブは１つ以上のパーティションでわけられる
-* パーティションはファイルシステムを持つが、複数のぱーてぃ
+* パーティションはファイルシステムを持つが、複数のパーティションを跨ぐことはない
+* 
 
 ## New file system organization
 ## Performance
 ## File system functional enhancements
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTcxMjA5OTAwLC0yNzQyMjA4MzFdfQ==
+eyJoaXN0b3J5IjpbOTgzOTIyNjg3LC0yNzQyMjA4MzFdfQ==
 -->
