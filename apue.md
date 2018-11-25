@@ -134,7 +134,8 @@ int linkat(int olddirfd, const char* oldpath, int newdirfd, const char* newpath,
 #### ディレクトリエントリへの追加/変更
 * ディレクトリはファイルとiノードの対応 = ディレクトリエントリを収めたファイル
 * ディレクトリエントリへの追加・変更・削除は、そのディレクトリの a/c/mtime に影響がある。
-	* ファイルの新規作成はディレクトリエントリの追加を必要とするので
+	* ファイルの新規作成には、ディレクトリエントリの追加を必要とするので、時刻の更新がある
+	* ファイルの読み書きでは、そのディレクトリにはなんの影響も与えない
 
 
 
@@ -147,11 +148,11 @@ int linkat(int olddirfd, const char* oldpath, int newdirfd, const char* newpath,
 
 * Read
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIyMTU2MzU1NiwtMTg3ODA5MzY0MSwtMT
-I2MjIxODY0OCwtMzk4OTA3NTkwLC0xMjYyMjE4NjQ4LDI4Mzc1
-MTU2NCwxOTM3MjAyNzgzLDc0OTQwNTk0NiwtMzI0NTk4MzgsMT
-k1ODEwMDY2MiwtMzI3ODEyMDQyLC03MTE2MjQ0MzYsNDI2Mzk4
-MDQ3LDE3MDkzMzAyMywtNTMwMzU5NDc0LC0xNjE1NTk5NDYzLC
-0yMDAwMTM3OTQ0LC05Njc5NzMzNTYsLTE2ODQ2NzI3MTcsLTE5
-OTQ1MjYyMDJdfQ==
+eyJoaXN0b3J5IjpbMTQzNDk2NDAxLC0xODc4MDkzNjQxLC0xMj
+YyMjE4NjQ4LC0zOTg5MDc1OTAsLTEyNjIyMTg2NDgsMjgzNzUx
+NTY0LDE5MzcyMDI3ODMsNzQ5NDA1OTQ2LC0zMjQ1OTgzOCwxOT
+U4MTAwNjYyLC0zMjc4MTIwNDIsLTcxMTYyNDQzNiw0MjYzOTgw
+NDcsMTcwOTMzMDIzLC01MzAzNTk0NzQsLTE2MTU1OTk0NjMsLT
+IwMDAxMzc5NDQsLTk2Nzk3MzM1NiwtMTY4NDY3MjcxNywtMTk5
+NDUyNjIwMl19
 -->
