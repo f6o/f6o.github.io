@@ -33,11 +33,12 @@
 * データ領域の割当
 	* 1回あたりのdisk transactionで512バイト以上は転送しない
 	* 同じシリンダ上に次のデータブロックが無いことが多く、512バイト間隔でシークが行われる
+	* 読み取り優先？のｓブロックサイズが小さく、
 
 ## New file system organization
 ## Performance
 ## File system functional enhancements
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjEyNzIyMjg4OSwxNDI1MTU5NTE2LDk4Mz
-kyMjY4NywtMjc0MjIwODMxXX0=
+eyJoaXN0b3J5IjpbLTczMDE5OTQ5NSwyMTI3MjIyODg5LDE0Mj
+UxNTk1MTYsOTgzOTIyNjg3LC0yNzQyMjA4MzFdfQ==
 -->
