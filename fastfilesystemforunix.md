@@ -23,13 +23,14 @@
 * フリーリスト: ファイルシステム内の空きブロックのリスト
 ### この節内での定義
 * ファイルの先頭8バイト: iノード (ファイルの情報, 間接的に furthur data blocks のインデックスを持つ)
-* 512 byte ブロックのファイルシステムだと、１
+* 512 byte ブロックのファイルシステムだと、
+* a singly
 * 
 
 ## New file system organization
 ## Performance
 ## File system functional enhancements
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MDUzMzM5MDcsMTQyNTE1OTUxNiw5OD
-M5MjI2ODcsLTI3NDIyMDgzMV19
+eyJoaXN0b3J5IjpbLTEyNDUyNTkyMywxNDI1MTU5NTE2LDk4Mz
+kyMjY4NywtMjc0MjIwODMxXX0=
 -->
