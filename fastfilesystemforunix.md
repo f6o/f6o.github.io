@@ -17,11 +17,13 @@
 * Bell 研究所で開発された file system
 * ドライブは１つ以上のパーティションでわけられる
 * パーティションはファイルシステムを持つが、複数のパーティションを跨ぐことはない
-* 
+### superblock
+* file system 内のデータブロック数
 
 ## New file system organization
 ## Performance
 ## File system functional enhancements
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTgzOTIyNjg3LC0yNzQyMjA4MzFdfQ==
+eyJoaXN0b3J5IjpbLTExNDUzNTg4MjMsOTgzOTIyNjg3LC0yNz
+QyMjA4MzFdfQ==
 -->
