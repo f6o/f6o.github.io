@@ -203,7 +203,7 @@ struct dirent {
                                               by all filesystem types */
     char           d_name[256]; /* Null-terminated filename */
 };
-``
+```
 
 * `d_off` フィールドについて
 > The value returned in `d_off` is the same as would be returned by calling `telldir`(3) at the current position in the directory stream.
@@ -219,7 +219,7 @@ struct dirent {
 
 * Read
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc0ODM5NTMyMCwxMjk1NjAyNzIwLDEwNz
+eyJoaXN0b3J5IjpbLTY1NTE3NDg4OCwxMjk1NjAyNzIwLDEwNz
 gxOTUwNCwtMTIzNTIzNTYyMCwtOTk2MzI0MTQ3LDE0MzQ5NjQw
 MSwtMTg3ODA5MzY0MSwtMTI2MjIxODY0OCwtMzk4OTA3NTkwLC
 0xMjYyMjE4NjQ4LDI4Mzc1MTU2NCwxOTM3MjAyNzgzLDc0OTQw
