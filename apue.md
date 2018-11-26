@@ -168,17 +168,18 @@ struct timeval {
 	* iノードの状態変更時刻は ctime は、`utimes`を呼び出すと更新されるので、指定できない
 
 #### メモ: 仕様について
-　* Portable operating system interfaces, Stallman が IEEE に提案したもの
-		* 異なるOSでもアプリケーションを移植性の高いものにするためのOSのAPI仕様
-		* IEEE Std 1003.1
-		* この本で説明されているのは POSIX.1 2008
-　* Single UNIX Specification の XSIオプション
-		* POSIX.1のスーパーセット
-		* POSIX.1 のオプション: XSI (X/Open System Interface)
-		* メッセージキュー, データベース, IPC, syslog など...?
-		* UNIXシステムと呼ばれたいなら、XSI適合でなきゃいけない
-		* 2008年に改定基本仕様イシュー7 == POSIX.1 2008
-		* 2010年にX/Open curses を追加した SUSv4 が公開 (SUSv3 は2001年)
+
+* Portable operating system interfaces, Stallman が IEEE に提案したもの
+	* 異なるOSでもアプリケーションを移植性の高いものにするためのOSのAPI仕様
+	* IEEE Std 1003.1
+	* この本で説明されているのは POSIX.1 2008
+* Single UNIX Specification の XSIオプション
+	* POSIX.1のスーパーセット
+	* POSIX.1 のオプション: XSI (X/Open System Interface)
+	* メッセージキュー, データベース, IPC, syslog など...?
+	* UNIXシステムと呼ばれたいなら、XSI適合でなきゃいけない
+	* 2008年に改定基本仕様イシュー7 == POSIX.1 2008
+	* 2010年にX/Open curses を追加した SUSv4 が公開 (SUSv3 は2001年)
 
 ### 4.21 `mkdir`, `mkdirat`, `rmdir`
 
@@ -216,7 +217,7 @@ struct timeval {
 
 * Read
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzMTU1OTIxODAsMTI5NTYwMjcyMCwxMD
+eyJoaXN0b3J5IjpbLTE2NDczMjU2ODQsMTI5NTYwMjcyMCwxMD
 c4MTk1MDQsLTEyMzUyMzU2MjAsLTk5NjMyNDE0NywxNDM0OTY0
 MDEsLTE4NzgwOTM2NDEsLTEyNjIyMTg2NDgsLTM5ODkwNzU5MC
 wtMTI2MjIxODY0OCwyODM3NTE1NjQsMTkzNzIwMjc4Myw3NDk0
