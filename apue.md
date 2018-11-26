@@ -123,7 +123,7 @@ int linkat(int olddirfd, const char* oldpath, int newdirfd, const char* newpath,
 
 #### 演習4.8 なぜ df / なぜ du じゃない？
 
-* du だとファイルがオープンされ、
+* du だとファイルがオープンされ、プログラム実行中に実体が削除されてしまう？
 
 ### ファイルの時刻
 
@@ -230,11 +230,11 @@ struct dirent {
 
 * Read
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjEzNTI3NTM1MCw1MTkxNzIxNDYsMTc1Nz
-Y2NTcxNiwtMTE4NDkyMzY4NiwxMjk1NjAyNzIwLDEwNzgxOTUw
-NCwtMTIzNTIzNTYyMCwtOTk2MzI0MTQ3LDE0MzQ5NjQwMSwtMT
-g3ODA5MzY0MSwtMTI2MjIxODY0OCwtMzk4OTA3NTkwLC0xMjYy
-MjE4NjQ4LDI4Mzc1MTU2NCwxOTM3MjAyNzgzLDc0OTQwNTk0Ni
-wtMzI0NTk4MzgsMTk1ODEwMDY2MiwtMzI3ODEyMDQyLC03MTE2
-MjQ0MzZdfQ==
+eyJoaXN0b3J5IjpbMzg3NTgyNDA3LDUxOTE3MjE0NiwxNzU3Nj
+Y1NzE2LC0xMTg0OTIzNjg2LDEyOTU2MDI3MjAsMTA3ODE5NTA0
+LC0xMjM1MjM1NjIwLC05OTYzMjQxNDcsMTQzNDk2NDAxLC0xOD
+c4MDkzNjQxLC0xMjYyMjE4NjQ4LC0zOTg5MDc1OTAsLTEyNjIy
+MTg2NDgsMjgzNzUxNTY0LDE5MzcyMDI3ODMsNzQ5NDA1OTQ2LC
+0zMjQ1OTgzOCwxOTU4MTAwNjYyLC0zMjc4MTIwNDIsLTcxMTYy
+NDQzNl19
 -->
