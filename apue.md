@@ -194,7 +194,7 @@ struct timeval {
 * `struct dirent` の実体は `/usr/include/aarch64-linux-gnu/bits/dirent.h` で定義されている
 * `man readdir` がよさげ
 
-``
+```
 struct dirent {
     ino_t          d_ino;       /* Inode number */
     off_t          d_off;       /* Not an offset; see below */
@@ -219,11 +219,11 @@ struct dirent {
 
 * Read
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDU3NjgxNDEwLDEyOTU2MDI3MjAsMTA3OD
-E5NTA0LC0xMjM1MjM1NjIwLC05OTYzMjQxNDcsMTQzNDk2NDAx
-LC0xODc4MDkzNjQxLC0xMjYyMjE4NjQ4LC0zOTg5MDc1OTAsLT
-EyNjIyMTg2NDgsMjgzNzUxNTY0LDE5MzcyMDI3ODMsNzQ5NDA1
-OTQ2LC0zMjQ1OTgzOCwxOTU4MTAwNjYyLC0zMjc4MTIwNDIsLT
-cxMTYyNDQzNiw0MjYzOTgwNDcsMTcwOTMzMDIzLC01MzAzNTk0
-NzRdfQ==
+eyJoaXN0b3J5IjpbMTc0ODM5NTMyMCwxMjk1NjAyNzIwLDEwNz
+gxOTUwNCwtMTIzNTIzNTYyMCwtOTk2MzI0MTQ3LDE0MzQ5NjQw
+MSwtMTg3ODA5MzY0MSwtMTI2MjIxODY0OCwtMzk4OTA3NTkwLC
+0xMjYyMjE4NjQ4LDI4Mzc1MTU2NCwxOTM3MjAyNzgzLDc0OTQw
+NTk0NiwtMzI0NTk4MzgsMTk1ODEwMDY2MiwtMzI3ODEyMDQyLC
+03MTE2MjQ0MzYsNDI2Mzk4MDQ3LDE3MDkzMzAyMywtNTMwMzU5
+NDc0XX0=
 -->
