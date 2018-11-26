@@ -122,8 +122,8 @@ int linkat(int olddirfd, const char* oldpath, int newdirfd, const char* newpath,
 3. そのカウントが0なら削除する
 
 ### ファイルの時刻
-|フィールド|意味|例|`ls (1)`のオプション|
-|--|--| -- | -- |
+| フィールド | 意味 | 例 |`ls (1)`のオプション|
+| -- | -- | -- | -- |
 |`st_atim`|データへの最終アクセス時刻|`read`|`-u`|
 |`st_mtim`|データの最終修正時刻|`write`|デフォルト|
 |`st_ctim`|iノード状態の変更時刻|`chmod`,`chown`|`-c`|
@@ -215,11 +215,11 @@ struct timeval {
 
 * Read
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3NjE5NDIxMTIsMTI5NTYwMjcyMCwxMD
-c4MTk1MDQsLTEyMzUyMzU2MjAsLTk5NjMyNDE0NywxNDM0OTY0
-MDEsLTE4NzgwOTM2NDEsLTEyNjIyMTg2NDgsLTM5ODkwNzU5MC
-wtMTI2MjIxODY0OCwyODM3NTE1NjQsMTkzNzIwMjc4Myw3NDk0
-MDU5NDYsLTMyNDU5ODM4LDE5NTgxMDA2NjIsLTMyNzgxMjA0Mi
-wtNzExNjI0NDM2LDQyNjM5ODA0NywxNzA5MzMwMjMsLTUzMDM1
-OTQ3NF19
+eyJoaXN0b3J5IjpbMTY4NTg3ODU4NiwxMjk1NjAyNzIwLDEwNz
+gxOTUwNCwtMTIzNTIzNTYyMCwtOTk2MzI0MTQ3LDE0MzQ5NjQw
+MSwtMTg3ODA5MzY0MSwtMTI2MjIxODY0OCwtMzk4OTA3NTkwLC
+0xMjYyMjE4NjQ4LDI4Mzc1MTU2NCwxOTM3MjAyNzgzLDc0OTQw
+NTk0NiwtMzI0NTk4MzgsMTk1ODEwMDY2MiwtMzI3ODEyMDQyLC
+03MTE2MjQ0MzYsNDI2Mzk4MDQ3LDE3MDkzMzAyMywtNTMwMzU5
+NDc0XX0=
 -->
