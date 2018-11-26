@@ -207,9 +207,14 @@ struct dirent {
 
 * `d_off` フィールドについて
 > The value returned in `d_off` is the same as would be returned by calling `telldir`(3) at the current position in the directory stream.
-* `man ftw` file tree walk という実装ｇ
+* `man ftw` file tree walk という実装がある (X/Open Portability Guide)
 * 直接は関係ないけど、効率のいいファイルシステム内の「歩き方」についての論文
 	* An Efficient File Hierarchy Walker (1989) by Glenn S. Fowler , David G. Korn , K. -phong V [PDF](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.119.7085&rep=rep1&type=pdf)
+
+### chdir/fchdir/getcwd
+* chdir でプロセスのカレントワーキングディレクトリを変更できる
+* シェルは実行プロセスを立ち上げるよね
+* cd は組み込みじゃないと、chd
 
 ## Chapter 5 Standard I/O Library
 
@@ -219,7 +224,7 @@ struct dirent {
 
 * Read
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMzU3MDI0OTAsLTExODQ5MjM2ODYsMT
+eyJoaXN0b3J5IjpbLTIwMzUzMjUzNzMsLTExODQ5MjM2ODYsMT
 I5NTYwMjcyMCwxMDc4MTk1MDQsLTEyMzUyMzU2MjAsLTk5NjMy
 NDE0NywxNDM0OTY0MDEsLTE4NzgwOTM2NDEsLTEyNjIyMTg2ND
 gsLTM5ODkwNzU5MCwtMTI2MjIxODY0OCwyODM3NTE1NjQsMTkz
