@@ -188,7 +188,7 @@ struct timeval {
 * ディレクトリを直接 `read` できないようになった
 * ファイルシステムの実装依存のところが多い
 * POSIX.1 に定義したAPIを使ってね
-* 
+* `DIR` は `/usr/include/dirent.h` で typedef されたもの
 
 
 
@@ -200,7 +200,7 @@ struct timeval {
 
 * Read
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMxMjUzMzU3NSwtMTIzNTIzNTYyMCwtOT
+eyJoaXN0b3J5IjpbMTU5MjU5NzkwOCwtMTIzNTIzNTYyMCwtOT
 k2MzI0MTQ3LDE0MzQ5NjQwMSwtMTg3ODA5MzY0MSwtMTI2MjIx
 ODY0OCwtMzk4OTA3NTkwLC0xMjYyMjE4NjQ4LDI4Mzc1MTU2NC
 wxOTM3MjAyNzgzLDc0OTQwNTk0NiwtMzI0NTk4MzgsMTk1ODEw
