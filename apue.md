@@ -121,6 +121,10 @@ int linkat(int olddirfd, const char* oldpath, int newdirfd, const char* newpath,
 2. この個数が0になると、次にリンクカウントを検査する
 3. そのカウントが0なら削除する
 
+#### 演習4.8 なぜ df / なぜ du じゃない？
+
+* du だとファイルオープンされ、リンクカウントが更新されないから？
+
 ### ファイルの時刻
 
 | フィールド | 意味 | 例 | `ls (1)`のオプション |
@@ -226,11 +230,11 @@ struct dirent {
 
 * Read
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTE5MTcyMTQ2LDE3NTc2NjU3MTYsLTExOD
-Q5MjM2ODYsMTI5NTYwMjcyMCwxMDc4MTk1MDQsLTEyMzUyMzU2
-MjAsLTk5NjMyNDE0NywxNDM0OTY0MDEsLTE4NzgwOTM2NDEsLT
-EyNjIyMTg2NDgsLTM5ODkwNzU5MCwtMTI2MjIxODY0OCwyODM3
-NTE1NjQsMTkzNzIwMjc4Myw3NDk0MDU5NDYsLTMyNDU5ODM4LD
-E5NTgxMDA2NjIsLTMyNzgxMjA0MiwtNzExNjI0NDM2LDQyNjM5
-ODA0N119
+eyJoaXN0b3J5IjpbMTkyNjEwNDU1Miw1MTkxNzIxNDYsMTc1Nz
+Y2NTcxNiwtMTE4NDkyMzY4NiwxMjk1NjAyNzIwLDEwNzgxOTUw
+NCwtMTIzNTIzNTYyMCwtOTk2MzI0MTQ3LDE0MzQ5NjQwMSwtMT
+g3ODA5MzY0MSwtMTI2MjIxODY0OCwtMzk4OTA3NTkwLC0xMjYy
+MjE4NjQ4LDI4Mzc1MTU2NCwxOTM3MjAyNzgzLDc0OTQwNTk0Ni
+wtMzI0NTk4MzgsMTk1ODEwMDY2MiwtMzI3ODEyMDQyLC03MTE2
+MjQ0MzZdfQ==
 -->
