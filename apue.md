@@ -203,7 +203,9 @@ struct timeval {
 ``
 * `d_off` フィールドについて
 > The value returned in `d_off` is the same as would be returned by calling `telldir`(3) at the current position in the directory stream.
-* 直接は関係ないけど、効率のいいファイルシステム内の「あ
+* 直接は関係ないけど、効率のいいファイルシステム内の「歩き方」についての論文
+	* An Efficient File Hierarchy Walker (1989) by Glenn S. Fowler , David G. Korn , K. -phong V
+	* http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.119.7085&rep=rep1&type=pdf
 
 ## Chapter 5 Standard I/O Library
 
@@ -213,11 +215,11 @@ struct timeval {
 
 * Read
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNTYwNzUxNTcsMTA3ODE5NTA0LC0xMj
-M1MjM1NjIwLC05OTYzMjQxNDcsMTQzNDk2NDAxLC0xODc4MDkz
-NjQxLC0xMjYyMjE4NjQ4LC0zOTg5MDc1OTAsLTEyNjIyMTg2ND
-gsMjgzNzUxNTY0LDE5MzcyMDI3ODMsNzQ5NDA1OTQ2LC0zMjQ1
-OTgzOCwxOTU4MTAwNjYyLC0zMjc4MTIwNDIsLTcxMTYyNDQzNi
-w0MjYzOTgwNDcsMTcwOTMzMDIzLC01MzAzNTk0NzQsLTE2MTU1
-OTk0NjNdfQ==
+eyJoaXN0b3J5IjpbMTI5NTYwMjcyMCwxMDc4MTk1MDQsLTEyMz
+UyMzU2MjAsLTk5NjMyNDE0NywxNDM0OTY0MDEsLTE4NzgwOTM2
+NDEsLTEyNjIyMTg2NDgsLTM5ODkwNzU5MCwtMTI2MjIxODY0OC
+wyODM3NTE1NjQsMTkzNzIwMjc4Myw3NDk0MDU5NDYsLTMyNDU5
+ODM4LDE5NTgxMDA2NjIsLTMyNzgxMjA0MiwtNzExNjI0NDM2LD
+QyNjM5ODA0NywxNzA5MzMwMjMsLTUzMDM1OTQ3NCwtMTYxNTU5
+OTQ2M119
 -->
