@@ -124,6 +124,7 @@ int linkat(int olddirfd, const char* oldpath, int newdirfd, const char* newpath,
 * 演習4.8 なぜ df / なぜ du じゃない？
 	* du だとファイルがオープンされ、プログラム実行中に実体が削除されてしまう？
 * 演習 4.9 unlink関数ではなぜファイル自体の状態変更時刻が変わる？
+	* リンクカウントの変更で iノードが更新されるから
 
 ### ファイルの時刻
 
@@ -230,11 +231,11 @@ struct dirent {
 
 * Read
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzM2NTkzNTQyLDUxOTE3MjE0NiwxNzU3Nj
-Y1NzE2LC0xMTg0OTIzNjg2LDEyOTU2MDI3MjAsMTA3ODE5NTA0
-LC0xMjM1MjM1NjIwLC05OTYzMjQxNDcsMTQzNDk2NDAxLC0xOD
-c4MDkzNjQxLC0xMjYyMjE4NjQ4LC0zOTg5MDc1OTAsLTEyNjIy
-MTg2NDgsMjgzNzUxNTY0LDE5MzcyMDI3ODMsNzQ5NDA1OTQ2LC
-0zMjQ1OTgzOCwxOTU4MTAwNjYyLC0zMjc4MTIwNDIsLTcxMTYy
-NDQzNl19
+eyJoaXN0b3J5IjpbLTEyMzUyMzk0NTgsNTE5MTcyMTQ2LDE3NT
+c2NjU3MTYsLTExODQ5MjM2ODYsMTI5NTYwMjcyMCwxMDc4MTk1
+MDQsLTEyMzUyMzU2MjAsLTk5NjMyNDE0NywxNDM0OTY0MDEsLT
+E4NzgwOTM2NDEsLTEyNjIyMTg2NDgsLTM5ODkwNzU5MCwtMTI2
+MjIxODY0OCwyODM3NTE1NjQsMTkzNzIwMjc4Myw3NDk0MDU5ND
+YsLTMyNDU5ODM4LDE5NTgxMDA2NjIsLTMyNzgxMjA0MiwtNzEx
+NjI0NDM2XX0=
 -->
