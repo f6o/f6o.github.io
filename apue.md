@@ -207,6 +207,7 @@ struct dirent {
 
 * `d_off` フィールドについて
 > The value returned in `d_off` is the same as would be returned by calling `telldir`(3) at the current position in the directory stream.
+* `man ftw` file 
 * 直接は関係ないけど、効率のいいファイルシステム内の「歩き方」についての論文
 	* An Efficient File Hierarchy Walker (1989) by Glenn S. Fowler , David G. Korn , K. -phong V
 	* http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.119.7085&rep=rep1&type=pdf
@@ -219,7 +220,7 @@ struct dirent {
 
 * Read
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY1NTE3NDg4OCwxMjk1NjAyNzIwLDEwNz
+eyJoaXN0b3J5IjpbLTM4MzQwNzQxNywxMjk1NjAyNzIwLDEwNz
 gxOTUwNCwtMTIzNTIzNTYyMCwtOTk2MzI0MTQ3LDE0MzQ5NjQw
 MSwtMTg3ODA5MzY0MSwtMTI2MjIxODY0OCwtMzk4OTA3NTkwLC
 0xMjYyMjE4NjQ4LDI4Mzc1MTU2NCwxOTM3MjAyNzgzLDc0OTQw
