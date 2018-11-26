@@ -203,6 +203,7 @@ struct timeval {
 ``
 * `d_off` フィールドについて
 > The value returned in `d_off` is the same as would be returned by calling `telldir`(3) at the current position in the directory stream.
+* 直接は関係ないけど、効率のいいファイルシステム内の「あ
 
 ## Chapter 5 Standard I/O Library
 
@@ -212,11 +213,11 @@ struct timeval {
 
 * Read
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA3ODE5NTA0LC0xMjM1MjM1NjIwLC05OT
-YzMjQxNDcsMTQzNDk2NDAxLC0xODc4MDkzNjQxLC0xMjYyMjE4
-NjQ4LC0zOTg5MDc1OTAsLTEyNjIyMTg2NDgsMjgzNzUxNTY0LD
-E5MzcyMDI3ODMsNzQ5NDA1OTQ2LC0zMjQ1OTgzOCwxOTU4MTAw
-NjYyLC0zMjc4MTIwNDIsLTcxMTYyNDQzNiw0MjYzOTgwNDcsMT
-cwOTMzMDIzLC01MzAzNTk0NzQsLTE2MTU1OTk0NjMsLTIwMDAx
-Mzc5NDRdfQ==
+eyJoaXN0b3J5IjpbLTEyNTYwNzUxNTcsMTA3ODE5NTA0LC0xMj
+M1MjM1NjIwLC05OTYzMjQxNDcsMTQzNDk2NDAxLC0xODc4MDkz
+NjQxLC0xMjYyMjE4NjQ4LC0zOTg5MDc1OTAsLTEyNjIyMTg2ND
+gsMjgzNzUxNTY0LDE5MzcyMDI3ODMsNzQ5NDA1OTQ2LC0zMjQ1
+OTgzOCwxOTU4MTAwNjYyLC0zMjc4MTIwNDIsLTcxMTYyNDQzNi
+w0MjYzOTgwNDcsMTcwOTMzMDIzLC01MzAzNTk0NzQsLTE2MTU1
+OTk0NjNdfQ==
 -->
