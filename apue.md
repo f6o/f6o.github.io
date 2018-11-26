@@ -201,6 +201,8 @@ struct timeval {
                char           d_name[256]; /* Null-terminated filename */
            };
 ``
+* `d_off` フィールドについて
+> The value returned in `d_off` is the same as would be returned by calling `telldir`(3)
 
 ## Chapter 5 Standard I/O Library
 
@@ -210,7 +212,7 @@ struct timeval {
 
 * Read
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI0NjM3OTkwLC0xMjM1MjM1NjIwLC05OT
+eyJoaXN0b3J5IjpbNjk0MDg0NDUwLC0xMjM1MjM1NjIwLC05OT
 YzMjQxNDcsMTQzNDk2NDAxLC0xODc4MDkzNjQxLC0xMjYyMjE4
 NjQ4LC0zOTg5MDc1OTAsLTEyNjIyMTg2NDgsMjgzNzUxNTY0LD
 E5MzcyMDI3ODMsNzQ5NDA1OTQ2LC0zMjQ1OTgzOCwxOTU4MTAw
