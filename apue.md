@@ -212,9 +212,10 @@ struct dirent {
 	* An Efficient File Hierarchy Walker (1989) by Glenn S. Fowler , David G. Korn , K. -phong V [PDF](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.119.7085&rep=rep1&type=pdf)
 
 ### chdir/fchdir/getcwd
-* chdir でプロセスのカレントワーキングディレクトリを変更できる
+* chdir でプロセスのカレントワーキングディレクトリ(CWD)を変更できる
 * シェルは実行プロセスを立ち上げるよね
-* cd は組み込みじゃないと、chd
+* 新しいプロセスで chdir してもシェルのCWDは変わらない
+* cd は組み込みじゃないと、だめ
 
 ## Chapter 5 Standard I/O Library
 
@@ -224,11 +225,11 @@ struct dirent {
 
 * Read
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMzUzMjUzNzMsLTExODQ5MjM2ODYsMT
-I5NTYwMjcyMCwxMDc4MTk1MDQsLTEyMzUyMzU2MjAsLTk5NjMy
-NDE0NywxNDM0OTY0MDEsLTE4NzgwOTM2NDEsLTEyNjIyMTg2ND
-gsLTM5ODkwNzU5MCwtMTI2MjIxODY0OCwyODM3NTE1NjQsMTkz
-NzIwMjc4Myw3NDk0MDU5NDYsLTMyNDU5ODM4LDE5NTgxMDA2Nj
-IsLTMyNzgxMjA0MiwtNzExNjI0NDM2LDQyNjM5ODA0NywxNzA5
-MzMwMjNdfQ==
+eyJoaXN0b3J5IjpbLTgxNDQxNjk1MCwtMTE4NDkyMzY4NiwxMj
+k1NjAyNzIwLDEwNzgxOTUwNCwtMTIzNTIzNTYyMCwtOTk2MzI0
+MTQ3LDE0MzQ5NjQwMSwtMTg3ODA5MzY0MSwtMTI2MjIxODY0OC
+wtMzk4OTA3NTkwLC0xMjYyMjE4NjQ4LDI4Mzc1MTU2NCwxOTM3
+MjAyNzgzLDc0OTQwNTk0NiwtMzI0NTk4MzgsMTk1ODEwMDY2Mi
+wtMzI3ODEyMDQyLC03MTE2MjQ0MzYsNDI2Mzk4MDQ3LDE3MDkz
+MzAyM119
 -->
