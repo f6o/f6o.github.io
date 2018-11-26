@@ -190,20 +190,7 @@ struct timeval {
 * POSIX.1 に定義したAPIを使ってね
 * `DIR` は `/usr/include/dirent.h` で typedef されたもの
 * `struct dirent` の実体は `/usr/include/aarch64-linux-gnu/bits/dirent.h` で定義されている
-```
-struct dirent
-  {
-#ifndef __USE_FILE_OFFSET64
-    __ino_t d_ino;
-    __off_t d_off;
-#else
-    __ino64_t d_ino;
-    __off64_t d_off;
-#endif
-    unsigned short int d_reclen;
-    unsigned char d_type;
-    char d_name[256];           /* We must not include limits.h! */
-  };```
+* `man readdir` 
 
 
 ## Chapter 5 Standard I/O Library
@@ -214,7 +201,7 @@ struct dirent
 
 * Read
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjE0MzcxMTE3NywtMTIzNTIzNTYyMCwtOT
+eyJoaXN0b3J5IjpbLTkwMTkzMzA2NSwtMTIzNTIzNTYyMCwtOT
 k2MzI0MTQ3LDE0MzQ5NjQwMSwtMTg3ODA5MzY0MSwtMTI2MjIx
 ODY0OCwtMzk4OTA3NTkwLC0xMjYyMjE4NjQ4LDI4Mzc1MTU2NC
 wxOTM3MjAyNzgzLDc0OTQwNTk0NiwtMzI0NTk4MzgsMTk1ODEw
