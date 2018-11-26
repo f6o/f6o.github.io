@@ -207,10 +207,9 @@ struct dirent {
 
 * `d_off` フィールドについて
 > The value returned in `d_off` is the same as would be returned by calling `telldir`(3) at the current position in the directory stream.
-* `man ftw` file tree walk という実装
+* `man ftw` file tree walk という実装ｇ
 * 直接は関係ないけど、効率のいいファイルシステム内の「歩き方」についての論文
-	* An Efficient File Hierarchy Walker (1989) by Glenn S. Fowler , David G. Korn , K. -phong V
-	* http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.119.7085&rep=rep1&type=pdf
+	* An Efficient File Hierarchy Walker (1989) by Glenn S. Fowler , David G. Korn , K. -phong V [PDF](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.119.7085&rep=rep1&type=pdf)
 
 ## Chapter 5 Standard I/O Library
 
@@ -220,11 +219,11 @@ struct dirent {
 
 * Read
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExODQ5MjM2ODYsMTI5NTYwMjcyMCwxMD
-c4MTk1MDQsLTEyMzUyMzU2MjAsLTk5NjMyNDE0NywxNDM0OTY0
-MDEsLTE4NzgwOTM2NDEsLTEyNjIyMTg2NDgsLTM5ODkwNzU5MC
-wtMTI2MjIxODY0OCwyODM3NTE1NjQsMTkzNzIwMjc4Myw3NDk0
-MDU5NDYsLTMyNDU5ODM4LDE5NTgxMDA2NjIsLTMyNzgxMjA0Mi
-wtNzExNjI0NDM2LDQyNjM5ODA0NywxNzA5MzMwMjMsLTUzMDM1
-OTQ3NF19
+eyJoaXN0b3J5IjpbLTIxMzU3MDI0OTAsLTExODQ5MjM2ODYsMT
+I5NTYwMjcyMCwxMDc4MTk1MDQsLTEyMzUyMzU2MjAsLTk5NjMy
+NDE0NywxNDM0OTY0MDEsLTE4NzgwOTM2NDEsLTEyNjIyMTg2ND
+gsLTM5ODkwNzU5MCwtMTI2MjIxODY0OCwyODM3NTE1NjQsMTkz
+NzIwMjc4Myw3NDk0MDU5NDYsLTMyNDU5ODM4LDE5NTgxMDA2Nj
+IsLTMyNzgxMjA0MiwtNzExNjI0NDM2LDQyNjM5ODA0NywxNzA5
+MzMwMjNdfQ==
 -->
