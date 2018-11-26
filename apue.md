@@ -193,16 +193,18 @@ struct timeval {
 * `DIR` は `/usr/include/dirent.h` で typedef されたもの
 * `struct dirent` の実体は `/usr/include/aarch64-linux-gnu/bits/dirent.h` で定義されている
 * `man readdir` がよさげ
+
 ``
-           struct dirent {
-               ino_t          d_ino;       /* Inode number */
-               off_t          d_off;       /* Not an offset; see below */
-               unsigned short d_reclen;    /* Length of this record (WARN: size in bytes!) */
-               unsigned char  d_type;      /* Type of file; not supported
+struct dirent {
+    ino_t          d_ino;       /* Inode number */
+    off_t          d_off;       /* Not an offset; see below */
+    unsigned short d_reclen;    /* Length of this record (WARN: size in bytes!) */
+    unsigned char  d_type;      /* Type of file; not supported
                                               by all filesystem types */
-               char           d_name[256]; /* Null-terminated filename */
-           };
+    char           d_name[256]; /* Null-terminated filename */
+};
 ``
+
 * `d_off` フィールドについて
 > The value returned in `d_off` is the same as would be returned by calling `telldir`(3) at the current position in the directory stream.
 * 直接は関係ないけど、効率のいいファイルシステム内の「歩き方」についての論文
@@ -217,11 +219,11 @@ struct timeval {
 
 * Read
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NDczMjU2ODQsMTI5NTYwMjcyMCwxMD
-c4MTk1MDQsLTEyMzUyMzU2MjAsLTk5NjMyNDE0NywxNDM0OTY0
-MDEsLTE4NzgwOTM2NDEsLTEyNjIyMTg2NDgsLTM5ODkwNzU5MC
-wtMTI2MjIxODY0OCwyODM3NTE1NjQsMTkzNzIwMjc4Myw3NDk0
-MDU5NDYsLTMyNDU5ODM4LDE5NTgxMDA2NjIsLTMyNzgxMjA0Mi
-wtNzExNjI0NDM2LDQyNjM5ODA0NywxNzA5MzMwMjMsLTUzMDM1
-OTQ3NF19
+eyJoaXN0b3J5IjpbNDU3NjgxNDEwLDEyOTU2MDI3MjAsMTA3OD
+E5NTA0LC0xMjM1MjM1NjIwLC05OTYzMjQxNDcsMTQzNDk2NDAx
+LC0xODc4MDkzNjQxLC0xMjYyMjE4NjQ4LC0zOTg5MDc1OTAsLT
+EyNjIyMTg2NDgsMjgzNzUxNTY0LDE5MzcyMDI3ODMsNzQ5NDA1
+OTQ2LC0zMjQ1OTgzOCwxOTU4MTAwNjYyLC0zMjc4MTIwNDIsLT
+cxMTYyNDQzNiw0MjYzOTgwNDcsMTcwOTMzMDIzLC01MzAzNTk0
+NzRdfQ==
 -->
