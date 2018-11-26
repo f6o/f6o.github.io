@@ -123,7 +123,7 @@ int linkat(int olddirfd, const char* oldpath, int newdirfd, const char* newpath,
 
 #### 演習4.8 なぜ df / なぜ du じゃない？
 
-* du だとファイルオープンされ、リンクカウントが更新されないから？
+* du だとファイルがオープンされ、
 
 ### ファイルの時刻
 
@@ -230,7 +230,7 @@ struct dirent {
 
 * Read
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkyNjEwNDU1Miw1MTkxNzIxNDYsMTc1Nz
+eyJoaXN0b3J5IjpbMjEzNTI3NTM1MCw1MTkxNzIxNDYsMTc1Nz
 Y2NTcxNiwtMTE4NDkyMzY4NiwxMjk1NjAyNzIwLDEwNzgxOTUw
 NCwtMTIzNTIzNTYyMCwtOTk2MzI0MTQ3LDE0MzQ5NjQwMSwtMT
 g3ODA5MzY0MSwtMTI2MjIxODY0OCwtMzk4OTA3NTkwLC0xMjYy
