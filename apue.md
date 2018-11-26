@@ -124,9 +124,9 @@ int linkat(int olddirfd, const char* oldpath, int newdirfd, const char* newpath,
 ### ファイルの時刻
 | フィールド | 意味 | 例 |`ls (1)`のオプション|
 | -- | -- | -- | -- |
-| `st_atim` | データへの最終アクセス時刻|`read`|`-u`|
-| `st_mtim` | データの最終修正時刻 |`write`|デフォルト|
-| `st_ctim` | iノード状態の変更時刻 |`chmod`,`chown`|`-c`|
+| `st_atim` | データへの最終アクセス時刻 | `read` | `-u` |
+| `st_mtim` | データの最終修正時刻 | `write` | デフォルト |
+| `st_ctim` | iノード状態の変更時刻 | `chmod`,`chown` | `-c` |
 
 ファイルシステム上では、ファイルデータとiノードは別に管理しているので、iノードの変更時刻もトラックする必要がある。
 また、iノードアクセス時刻は管理しない（また`access` や `stat` はどの時刻も変えない）。
@@ -215,11 +215,11 @@ struct timeval {
 
 * Read
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1NzQ0MjA4NTgsMTI5NTYwMjcyMCwxMD
-c4MTk1MDQsLTEyMzUyMzU2MjAsLTk5NjMyNDE0NywxNDM0OTY0
-MDEsLTE4NzgwOTM2NDEsLTEyNjIyMTg2NDgsLTM5ODkwNzU5MC
-wtMTI2MjIxODY0OCwyODM3NTE1NjQsMTkzNzIwMjc4Myw3NDk0
-MDU5NDYsLTMyNDU5ODM4LDE5NTgxMDA2NjIsLTMyNzgxMjA0Mi
-wtNzExNjI0NDM2LDQyNjM5ODA0NywxNzA5MzMwMjMsLTUzMDM1
-OTQ3NF19
+eyJoaXN0b3J5IjpbMTI4MTI2NjUyLDEyOTU2MDI3MjAsMTA3OD
+E5NTA0LC0xMjM1MjM1NjIwLC05OTYzMjQxNDcsMTQzNDk2NDAx
+LC0xODc4MDkzNjQxLC0xMjYyMjE4NjQ4LC0zOTg5MDc1OTAsLT
+EyNjIyMTg2NDgsMjgzNzUxNTY0LDE5MzcyMDI3ODMsNzQ5NDA1
+OTQ2LC0zMjQ1OTgzOCwxOTU4MTAwNjYyLC0zMjc4MTIwNDIsLT
+cxMTYyNDQzNiw0MjYzOTgwNDcsMTcwOTMzMDIzLC01MzAzNTk0
+NzRdfQ==
 -->
