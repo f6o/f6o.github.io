@@ -189,7 +189,8 @@ struct timeval {
 * ファイルシステムの実装依存のところが多い
 * POSIX.1 に定義したAPIを使ってね
 * `DIR` は `/usr/include/dirent.h` で typedef されたもの
-
+* `struct dirent` の実体は `/usr/include/aarch64-linux-gnu/bits/dirent.h` で定義されている
+* 
 
 
 ## Chapter 5 Standard I/O Library
@@ -200,11 +201,11 @@ struct timeval {
 
 * Read
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU5MjU5NzkwOCwtMTIzNTIzNTYyMCwtOT
-k2MzI0MTQ3LDE0MzQ5NjQwMSwtMTg3ODA5MzY0MSwtMTI2MjIx
-ODY0OCwtMzk4OTA3NTkwLC0xMjYyMjE4NjQ4LDI4Mzc1MTU2NC
-wxOTM3MjAyNzgzLDc0OTQwNTk0NiwtMzI0NTk4MzgsMTk1ODEw
-MDY2MiwtMzI3ODEyMDQyLC03MTE2MjQ0MzYsNDI2Mzk4MDQ3LD
-E3MDkzMzAyMywtNTMwMzU5NDc0LC0xNjE1NTk5NDYzLC0yMDAw
-MTM3OTQ0XX0=
+eyJoaXN0b3J5IjpbLTE0MDQxNjA5MjIsLTEyMzUyMzU2MjAsLT
+k5NjMyNDE0NywxNDM0OTY0MDEsLTE4NzgwOTM2NDEsLTEyNjIy
+MTg2NDgsLTM5ODkwNzU5MCwtMTI2MjIxODY0OCwyODM3NTE1Nj
+QsMTkzNzIwMjc4Myw3NDk0MDU5NDYsLTMyNDU5ODM4LDE5NTgx
+MDA2NjIsLTMyNzgxMjA0MiwtNzExNjI0NDM2LDQyNjM5ODA0Ny
+wxNzA5MzMwMjMsLTUzMDM1OTQ3NCwtMTYxNTU5OTQ2MywtMjAw
+MDEzNzk0NF19
 -->
