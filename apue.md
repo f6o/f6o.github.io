@@ -213,9 +213,9 @@ struct dirent {
 
 ### chdir/fchdir/getcwd
 * chdir でプロセスのカレントワーキングディレクトリ(CWD)を変更できる
-* シェルは実行プロセスを立ち上げるよね
+* でも、シェルは実行プロセスを立ち上げるよね
 * 新しいプロセスで chdir してもシェルのCWDは変わらない
-* cd は組み込みじゃないと、だめ
+* cd は組み込みコマンドじゃないといけない
 
 ## Chapter 5 Standard I/O Library
 
@@ -225,7 +225,7 @@ struct dirent {
 
 * Read
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgxNDQxNjk1MCwtMTE4NDkyMzY4NiwxMj
+eyJoaXN0b3J5IjpbMTc1NzY2NTcxNiwtMTE4NDkyMzY4NiwxMj
 k1NjAyNzIwLDEwNzgxOTUwNCwtMTIzNTIzNTYyMCwtOTk2MzI0
 MTQ3LDE0MzQ5NjQwMSwtMTg3ODA5MzY0MSwtMTI2MjIxODY0OC
 wtMzk4OTA3NTkwLC0xMjYyMjE4NjQ4LDI4Mzc1MTU2NCwxOTM3
