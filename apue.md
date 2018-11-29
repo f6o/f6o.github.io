@@ -5,15 +5,14 @@
 * My notes on the book, Advanced Programming in the UNIX® Environment, Third Edition
 * [Table of Contents](http://apuebook.com/toc3e.html)
 
-
-
-## Chapter 2 UNIX Standardization and Imprementations
-
-* Read
-
-## Chapter 3 File I/O
-
-* Do excercises.
+* Chapter 2 UNIX Standardization and Imprementations
+	* refer as needed
+* Chapter 3 File I/O
+	* do exercise
+* Chapter 4 Files and Directories
+	* do exercise
+* [Chapter 5 Standard I/O Library](./apue_ch05)
+* Chapter 6 System Data Files and Information
 
 ## Chapter 4 Files and Directories
 
@@ -225,11 +224,8 @@ struct dirent {
 * cd は組み込みコマンドじゃないといけない
 * pushd/popd はこれを使っている？
 
-## Chapter 6 System Data Files and Information
-
-* Read
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUxNzY5NDg0OSwtMTIzNTIzOTQ1OCw1MT
+eyJoaXN0b3J5IjpbLTU0MzI4MTI4MiwtMTIzNTIzOTQ1OCw1MT
 kxNzIxNDYsMTc1NzY2NTcxNiwtMTE4NDkyMzY4NiwxMjk1NjAy
 NzIwLDEwNzgxOTUwNCwtMTIzNTIzNTYyMCwtOTk2MzI0MTQ3LD
 E0MzQ5NjQwMSwtMTg3ODA5MzY0MSwtMTI2MjIxODY0OCwtMzk4
