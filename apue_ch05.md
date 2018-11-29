@@ -14,6 +14,10 @@
 #include <wchar.h>
 int fwide(FILE *stream, int mode);
 ```
+
+* `fopen` で `FILE *` を返す
+* `FILE`  = sで管理される
+	* ファイル記述子
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIzMDU3NTc3NSwxMjA3MjEyNDU5XX0=
+eyJoaXN0b3J5IjpbMjA4ODU5Mzc4MCwxMjA3MjEyNDU5XX0=
 -->
