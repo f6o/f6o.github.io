@@ -68,8 +68,9 @@ int fwide(FILE *stream, int mode);
 
 * 対応するファイルがないファイルストリーム
 * バッファを割り当てて、ストリーム操作を行う
-* もじれ
+* 文字列作成
+* ファイルではなく、メモリを使うので、一時ファイルを使う場合に使
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg0OTI5NDIwOSw4NzYyMDkyNywxMjA3Mj
-EyNDU5XX0=
+eyJoaXN0b3J5IjpbNDgyMjE5NzIzLDg3NjIwOTI3LDEyMDcyMT
+I0NTldfQ==
 -->
