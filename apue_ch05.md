@@ -78,10 +78,13 @@ int fwide(FILE *stream, int mode);
 	* 標準入出力ライブラリのバッファとアプリ側の行バッファ
 * AT & T Fast I/O ライブラリ `fio`
 	* grep が 3倍
-* Korn,		
+* Korn and Vo 1991 sfio		
 * Krieger, Stumm, and Unrau 1992 メモリマップとファイル `mmap`
 	* Alloc tream Interface
+* ポータブルなライブラリ
+	* uClibc C ライブラリ
+	* Newlibc C ライブラリ
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk0MTk4NDc1NCw4NzYyMDkyNywxMjA3Mj
+eyJoaXN0b3J5IjpbMTg5Nzc2MjM4MCw4NzYyMDkyNywxMjA3Mj
 EyNDU5XX0=
 -->
