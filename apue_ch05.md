@@ -74,8 +74,11 @@ int fwide(FILE *stream, int mode);
 ## 5.15 欠点
 
 * `fgets` と `fputs` ではデータは2回コピーされる
-* 
+	* カーネルと標準入出力ライブラリのバッファの間
+	* 標準入出力ライブラリのバッファとアプリ側の行バッファ
+	* AT & T Fast I/O ライブラリ
+		* grep が 3
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNjg0NTUyODgsODc2MjA5MjcsMTIwNz
-IxMjQ1OV19
+eyJoaXN0b3J5IjpbNTMwMjg5Nzc5LDg3NjIwOTI3LDEyMDcyMT
+I0NTldfQ==
 -->
