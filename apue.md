@@ -5,6 +5,8 @@
 * My notes on the book, Advanced Programming in the UNIX® Environment, Third Edition
 * [Table of Contents](http://apuebook.com/toc3e.html)
 
+
+
 ## Chapter 2 UNIX Standardization and Imprementations
 
 * Read
@@ -223,17 +225,15 @@ struct dirent {
 * cd は組み込みコマンドじゃないといけない
 * pushd/popd はこれを使っている？
 
-[Chapter 5 Standard I/O Library](./apue_ch05)
-
 ## Chapter 6 System Data Files and Information
 
 * Read
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5MjMyMzM5NjAsLTEyMzUyMzk0NTgsNT
-E5MTcyMTQ2LDE3NTc2NjU3MTYsLTExODQ5MjM2ODYsMTI5NTYw
-MjcyMCwxMDc4MTk1MDQsLTEyMzUyMzU2MjAsLTk5NjMyNDE0Ny
-wxNDM0OTY0MDEsLTE4NzgwOTM2NDEsLTEyNjIyMTg2NDgsLTM5
-ODkwNzU5MCwtMTI2MjIxODY0OCwyODM3NTE1NjQsMTkzNzIwMj
-c4Myw3NDk0MDU5NDYsLTMyNDU5ODM4LDE5NTgxMDA2NjIsLTMy
-NzgxMjA0Ml19
+eyJoaXN0b3J5IjpbLTUxNzY5NDg0OSwtMTIzNTIzOTQ1OCw1MT
+kxNzIxNDYsMTc1NzY2NTcxNiwtMTE4NDkyMzY4NiwxMjk1NjAy
+NzIwLDEwNzgxOTUwNCwtMTIzNTIzNTYyMCwtOTk2MzI0MTQ3LD
+E0MzQ5NjQwMSwtMTg3ODA5MzY0MSwtMTI2MjIxODY0OCwtMzk4
+OTA3NTkwLC0xMjYyMjE4NjQ4LDI4Mzc1MTU2NCwxOTM3MjAyNz
+gzLDc0OTQwNTk0NiwtMzI0NTk4MzgsMTk1ODEwMDY2MiwtMzI3
+ODEyMDQyXX0=
 -->
