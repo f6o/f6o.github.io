@@ -57,7 +57,9 @@ int fwide(FILE *stream, int mode);
 * 標準エラー出力はアンバッファド
 * 端末が絡む標準入出力は行バッファリング
 * そうでない場合は完全バッファリング
-* ISO C での要求: 
+* ISO C での要求もあるよ
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODc2MjA5MjcsMTIwNzIxMjQ1OV19
+eyJoaXN0b3J5IjpbLTE2NDk0MTI5MDYsODc2MjA5MjcsMTIwNz
+IxMjQ1OV19
 -->
