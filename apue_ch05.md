@@ -59,7 +59,13 @@ int fwide(FILE *stream, int mode);
 * そうでない場合は完全バッファリング
 * ISO C での要求もあるよ
 
+## 5.xx 
+
+## 5.14 メモリストリーム
+
+* 対応するファイルがないファイルストリーム
+* バッファを割り当てて、ストリーム操作を行う
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NDk0MTI5MDYsODc2MjA5MjcsMTIwNz
-IxMjQ1OV19
+eyJoaXN0b3J5IjpbLTg2MTk4MTg3OSw4NzYyMDkyNywxMjA3Mj
+EyNDU5XX0=
 -->
