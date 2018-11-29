@@ -22,6 +22,7 @@ int fwide(FILE *stream, int mode);
 	* バッファサイズ
 	* バッファ内の文字数
 	* エラーフラグ
+	* 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg1NDcyNzIwNSwxMjA3MjEyNDU5XX0=
+eyJoaXN0b3J5IjpbLTQ2OTM3MTk3MywxMjA3MjEyNDU5XX0=
 -->
