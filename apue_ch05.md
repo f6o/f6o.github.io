@@ -24,7 +24,7 @@ int fwide(FILE *stream, int mode);
 	* エラーフラグ
 * `FILE` については `man 3 stdio` をみるといい
 
-> A stream is associated with an external file (which may be a physical device) by opening a file, which may involve creating a new file. Creating an 	existing file causes its former contents 
+> A stream is associated with an external file (which may be a physical device) by opening a file, which may involve creating a new file. Creating an 	existing file causes its former contents to be discarded. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMjUwMjkzMjMsMTIwNzIxMjQ1OV19
+eyJoaXN0b3J5IjpbLTIzNjI3MDA3MiwxMjA3MjEyNDU5XX0=
 -->
