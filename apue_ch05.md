@@ -12,8 +12,8 @@
 ```
 #include <stdio.h>
 #include <wchar.h>
-int fwide(FILE *fp, int mode);
+int fwide(FILE *stream, int mode);
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMzNDA5Mjk3MSwxMjA3MjEyNDU5XX0=
+eyJoaXN0b3J5IjpbLTIzMDU3NTc3NSwxMjA3MjEyNDU5XX0=
 -->
