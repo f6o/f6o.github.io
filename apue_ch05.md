@@ -11,8 +11,9 @@
 		* 関数`fwide`
 ```
 #include <stdio.h>
-#includ
+#include <wchar.h>
+int fwide(FILE *fp, int mode);
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMTk3NDU4ODcsMTIwNzIxMjQ1OV19
+eyJoaXN0b3J5IjpbMTMzNDA5Mjk3MSwxMjA3MjEyNDU5XX0=
 -->
