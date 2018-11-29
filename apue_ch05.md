@@ -76,9 +76,12 @@ int fwide(FILE *stream, int mode);
 * `fgets` と `fputs` ではデータは2回コピーされる
 	* カーネルと標準入出力ライブラリのバッファの間
 	* 標準入出力ライブラリのバッファとアプリ側の行バッファ
-	* AT & T Fast I/O ライブラリ
-		* grep が 3
+* AT & T Fast I/O ライブラリ `fio`
+	* grep が 3倍
+* Korn,		
+* Krieger, Stumm, and Unrau 1992 メモリマップとファイル `mmap`
+	* Alloc tream Interface
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTMwMjg5Nzc5LDg3NjIwOTI3LDEyMDcyMT
-I0NTldfQ==
+eyJoaXN0b3J5IjpbLTk0MTk4NDc1NCw4NzYyMDkyNywxMjA3Mj
+EyNDU5XX0=
 -->
