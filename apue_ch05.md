@@ -59,6 +59,11 @@ int fwide(FILE *stream, int mode);
 * そうでない場合は完全バッファリング
 * ISO C での要求もあるよ
 
+### バッファ方法の設定
+
+* `setbuf` バッファのオン・オフ
+* `setvbuf` 
+
 ## 5.xx いろいろ
 
 * K&R も合わせて読むと良さそう
@@ -89,7 +94,7 @@ int fwide(FILE *stream, int mode);
 	* uClibc C ライブラリhttps://uclibc.org/
 	* Newlibc C ライブラリ https://www.sourceware.org/newlib/libc.html
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk0ODU3OTEwMywxOTAxMTYwODk0LC0xOD
-AyODU3NjQyLC04MDA1NjQ5MiwxODk3NzYyMzgwLDg3NjIwOTI3
-LDEyMDcyMTI0NTldfQ==
+eyJoaXN0b3J5IjpbLTU2MDg5NzE0LC05NDg1NzkxMDMsMTkwMT
+E2MDg5NCwtMTgwMjg1NzY0MiwtODAwNTY0OTIsMTg5Nzc2MjM4
+MCw4NzYyMDkyNywxMjA3MjEyNDU5XX0=
 -->
