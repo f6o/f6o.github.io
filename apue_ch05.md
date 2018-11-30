@@ -81,12 +81,13 @@ int fwide(FILE *stream, int mode);
 * Korn and Vo 1991 sfio		
 * Krieger, Stumm, and Unrau 1992 メモリマップとファイル `mmap`
 	* Alloc Stream ~~Interface~~ Facility
-	* https://ieeexplore.ieee.org/document/268889/authors
+	* https://ieeexplore.ieee.org/document/268889/
+	* http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.28.9828&rep=rep1&type=pdf
 * ポータブルなライブラリ
 	* uClibc C ライブラリhttps://uclibc.org/
 	* Newlibc C ライブラリ https://www.sourceware.org/newlib/libc.html
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI4NzIxMTE0NiwtMTgwMjg1NzY0MiwtOD
+eyJoaXN0b3J5IjpbMTkwMTE2MDg5NCwtMTgwMjg1NzY0MiwtOD
 AwNTY0OTIsMTg5Nzc2MjM4MCw4NzYyMDkyNywxMjA3MjEyNDU5
 XX0=
 -->
