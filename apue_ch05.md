@@ -96,7 +96,7 @@ int fwide(FILE *stream, int mode);
 	* `man 3 exit` によると
 	> All open `stdio (3)` streams are flushed and closed.
 
-## 5.6 ストリームの読み書き
+## 5.6-5.8 文字出力
 
 ### 入力
 
@@ -110,6 +110,11 @@ int fwide(FILE *stream, int mode);
 * `fputc`
 * `putchar`
 
+### 行単位の入出力
+
+### 効率
+
+## バイナリ操作
 
 ## 5.xx いろいろ
 
@@ -141,7 +146,7 @@ int fwide(FILE *stream, int mode);
 	* uClibc C ライブラリhttps://uclibc.org/
 	* Newlibc C ライブラリ https://www.sourceware.org/newlib/libc.html
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM5Mjg0MjQzNiwyMTQwNzE5NjU2LC01Nj
+eyJoaXN0b3J5IjpbLTQ1NTkzODk1NywyMTQwNzE5NjU2LC01Nj
 A4OTcxNCwtOTQ4NTc5MTAzLDE5MDExNjA4OTQsLTE4MDI4NTc2
 NDIsLTgwMDU2NDkyLDE4OTc3NjIzODAsODc2MjA5MjcsMTIwNz
 IxMjQ1OV19
