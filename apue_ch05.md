@@ -61,8 +61,31 @@ int fwide(FILE *stream, int mode);
 
 ### バッファ方法の設定
 
-* `setbuf` バッファのオン・オフ
-* `setvbuf` 
+* `setbuf` バッファリングのオン・オフ
+* `setvbuf` バッファリングのモード変更/バッファ割当 
+	* ストリームをオープンした後で、ストリーム操作をする前
+* `stdio.h` に `BUFSIZ` を定義している
+* バッファの自動割付をした場合は、`fflush` を呼ぶこと
+
+## 5.5 オープン
+
+* `fopen`
+* `freopen`閉じて、開き直す
+	* 用途: 既に開かれたストリームやstdin, stdout, stderr に対してファイルを割り当てる
+* `fdopen` 記述子をストリームに割り当てる	
+	* ネットワークソケット, パイプ用
+
+### オープンのモード
+
+* 読み込み/書き出し/追記
+* `fdopen` は開かれている記述子に対する操作なので制約がある
+	* 書き出しで開いても 0 まで切り詰めはできない
+	* 追記で開いても、ファイルは新規作成されない
+	* `man fdopen`
+> The `fdopen()` function associates a stream with the exsisting file descriptor, `fd`. The `mode` of the stream (...) must be compatible with the mode of the file descriptor.
+> The file position indicator of the new stream is set to that belonging to `fd`, and the error and end-of-file indicators are cleared.
+> Modes "w" or "w+" do not cause transaction of the file.
+> The file descriptor is not dup'ed, and will be closed when the stream created by `fdopen` is closed.  ...
 
 ## 5.xx いろいろ
 
@@ -94,7 +117,7 @@ int fwide(FILE *stream, int mode);
 	* uClibc C ライブラリhttps://uclibc.org/
 	* Newlibc C ライブラリ https://www.sourceware.org/newlib/libc.html
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU2MDg5NzE0LC05NDg1NzkxMDMsMTkwMT
-E2MDg5NCwtMTgwMjg1NzY0MiwtODAwNTY0OTIsMTg5Nzc2MjM4
-MCw4NzYyMDkyNywxMjA3MjEyNDU5XX0=
+eyJoaXN0b3J5IjpbMjE0MDcxOTY1NiwtNTYwODk3MTQsLTk0OD
+U3OTEwMywxOTAxMTYwODk0LC0xODAyODU3NjQyLC04MDA1NjQ5
+MiwxODk3NzYyMzgwLDg3NjIwOTI3LDEyMDcyMTI0NTldfQ==
 -->
