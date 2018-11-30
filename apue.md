@@ -16,10 +16,11 @@
 * [Chapter 5 Standard I/O Library](./apue_ch05)
 * Chapter 6 System Data Files and Information
 	* read
+* Chapter 7 Process Environment
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ2NjUxMzc0Miw4NzQxNTMwNCwtMTIzNT
+eyJoaXN0b3J5IjpbMjA3MDAxNjg5Niw4NzQxNTMwNCwtMTIzNT
 IzOTQ1OCw1MTkxNzIxNDYsMTc1NzY2NTcxNiwtMTE4NDkyMzY4
 NiwxMjk1NjAyNzIwLDEwNzgxOTUwNCwtMTIzNTIzNTYyMCwtOT
 k2MzI0MTQ3LDE0MzQ5NjQwMSwtMTg3ODA5MzY0MSwtMTI2MjIx
