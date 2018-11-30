@@ -93,7 +93,7 @@ int fwide(FILE *stream, int mode);
 	* バッファ内にある出力データは flush, 入力データは破棄
 	* ライブラリがストリームにバッファを自動割付した場合は、そのバッファを開放する
 * `exit` を呼ぶか, `main` 関数から戻り、プロセスが正常終了する
-	* バッファ内にある書き出していないデータがあるすべての
+	* バッファ内にある書き出していないデータがあるすべての標準
 
 ## 5.xx いろいろ
 
@@ -125,8 +125,8 @@ int fwide(FILE *stream, int mode);
 	* uClibc C ライブラリhttps://uclibc.org/
 	* Newlibc C ライブラリ https://www.sourceware.org/newlib/libc.html
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODEwOTM2Mjg0LDIxNDA3MTk2NTYsLTU2MD
-g5NzE0LC05NDg1NzkxMDMsMTkwMTE2MDg5NCwtMTgwMjg1NzY0
-MiwtODAwNTY0OTIsMTg5Nzc2MjM4MCw4NzYyMDkyNywxMjA3Mj
-EyNDU5XX0=
+eyJoaXN0b3J5IjpbLTE1MzgwMTEwNzksMjE0MDcxOTY1NiwtNT
+YwODk3MTQsLTk0ODU3OTEwMywxOTAxMTYwODk0LC0xODAyODU3
+NjQyLC04MDA1NjQ5MiwxODk3NzYyMzgwLDg3NjIwOTI3LDEyMD
+cyMTI0NTldfQ==
 -->
