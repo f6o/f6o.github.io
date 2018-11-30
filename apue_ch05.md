@@ -80,7 +80,7 @@ int fwide(FILE *stream, int mode);
 	* grep が 3倍
 * Korn and Vo 1991 sfio
 	* Wikipedia https://en.wikipedia.org/wiki/C_file_input/output
-	* 
+	* http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.51.6574
 * Krieger, Stumm, and Unrau 1992 メモリマップとファイル `mmap`
 	* Alloc Stream ~~Interface~~ Facility
 	* https://ieeexplore.ieee.org/document/268889/
@@ -89,7 +89,7 @@ int fwide(FILE *stream, int mode);
 	* uClibc C ライブラリhttps://uclibc.org/
 	* Newlibc C ライブラリ https://www.sourceware.org/newlib/libc.html
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwNDM4OTYzMTEsMTkwMTE2MDg5NCwtMT
-gwMjg1NzY0MiwtODAwNTY0OTIsMTg5Nzc2MjM4MCw4NzYyMDky
-NywxMjA3MjEyNDU5XX0=
+eyJoaXN0b3J5IjpbLTk0ODU3OTEwMywxOTAxMTYwODk0LC0xOD
+AyODU3NjQyLC04MDA1NjQ5MiwxODk3NzYyMzgwLDg3NjIwOTI3
+LDEyMDcyMTI0NTldfQ==
 -->
