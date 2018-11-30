@@ -82,9 +82,9 @@ int fwide(FILE *stream, int mode);
 * Krieger, Stumm, and Unrau 1992 メモリマップとファイル `mmap`
 	* Alloc Stream Interface
 * ポータブルなライブラリ
-	* uClibc C ライブラリ
+	* uClibc C ライブラリhttps://uclibc.org/
 	* Newlibc C ライブラリ https://www.sourceware.org/newlib/libc.html
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU5NTQ0NjAzMywtODAwNTY0OTIsMTg5Nz
+eyJoaXN0b3J5IjpbLTc2MTQ3NTg1NywtODAwNTY0OTIsMTg5Nz
 c2MjM4MCw4NzYyMDkyNywxMjA3MjEyNDU5XX0=
 -->
