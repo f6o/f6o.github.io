@@ -87,6 +87,10 @@ int fwide(FILE *stream, int mode);
 > Modes "w" or "w+" do not cause transaction of the file.
 > The file descriptor is not dup'ed, and will be closed when the stream created by `fdopen` is closed.  ...
 
+### ファイルのクローズ
+
+* ファイルのクローズ前に、バッファ内にある出力データは flush され、
+
 ## 5.xx いろいろ
 
 * K&R も合わせて読むと良さそう
@@ -117,7 +121,8 @@ int fwide(FILE *stream, int mode);
 	* uClibc C ライブラリhttps://uclibc.org/
 	* Newlibc C ライブラリ https://www.sourceware.org/newlib/libc.html
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjE0MDcxOTY1NiwtNTYwODk3MTQsLTk0OD
-U3OTEwMywxOTAxMTYwODk0LC0xODAyODU3NjQyLC04MDA1NjQ5
-MiwxODk3NzYyMzgwLDg3NjIwOTI3LDEyMDcyMTI0NTldfQ==
+eyJoaXN0b3J5IjpbMTkzNTU4NDk0OCwyMTQwNzE5NjU2LC01Nj
+A4OTcxNCwtOTQ4NTc5MTAzLDE5MDExNjA4OTQsLTE4MDI4NTc2
+NDIsLTgwMDU2NDkyLDE4OTc3NjIzODAsODc2MjA5MjcsMTIwNz
+IxMjQ1OV19
 -->
