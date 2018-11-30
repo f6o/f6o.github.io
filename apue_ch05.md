@@ -114,7 +114,16 @@ int fwide(FILE *stream, int mode);
 
 ### 効率
 
-## バイナリ操作
+## 5.9-5.10 バイナリ操作
+
+* fread
+* fseek
+
+## 書式付き入出力
+
+* printf
+
+
 
 ## 5.xx いろいろ
 
@@ -146,8 +155,8 @@ int fwide(FILE *stream, int mode);
 	* uClibc C ライブラリhttps://uclibc.org/
 	* Newlibc C ライブラリ https://www.sourceware.org/newlib/libc.html
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ1NTkzODk1NywyMTQwNzE5NjU2LC01Nj
-A4OTcxNCwtOTQ4NTc5MTAzLDE5MDExNjA4OTQsLTE4MDI4NTc2
-NDIsLTgwMDU2NDkyLDE4OTc3NjIzODAsODc2MjA5MjcsMTIwNz
-IxMjQ1OV19
+eyJoaXN0b3J5IjpbOTAwMzUyNTY1LDIxNDA3MTk2NTYsLTU2MD
+g5NzE0LC05NDg1NzkxMDMsMTkwMTE2MDg5NCwtMTgwMjg1NzY0
+MiwtODAwNTY0OTIsMTg5Nzc2MjM4MCw4NzYyMDkyNywxMjA3Mj
+EyNDU5XX0=
 -->
