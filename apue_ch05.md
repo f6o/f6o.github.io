@@ -80,11 +80,11 @@ int fwide(FILE *stream, int mode);
 	* grep が 3倍
 * Korn and Vo 1991 sfio		
 * Krieger, Stumm, and Unrau 1992 メモリマップとファイル `mmap`
-	* Alloc tream Interface
+	* Alloc Stream Interface
 * ポータブルなライブラリ
-	* uClibc C ライブラリ
-	* Newlibc C ライブラリ
+	* uClibc C ライブラリ (組み込み向け)
+	* Newlibc C ライブラリ 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg5Nzc2MjM4MCw4NzYyMDkyNywxMjA3Mj
-EyNDU5XX0=
+eyJoaXN0b3J5IjpbLTgwMDU2NDkyLDE4OTc3NjIzODAsODc2Mj
+A5MjcsMTIwNzIxMjQ1OV19
 -->
