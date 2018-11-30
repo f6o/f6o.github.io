@@ -11,7 +11,7 @@
 	* refer as needed
 * Chapter 3 File I/O
 	* do exercise
-* Chapter 4 Files and Directories
+* [Chapter 4 Files and Directories](./apue_ch04)
 	* do exercise
 * [Chapter 5 Standard I/O Library](./apue_ch05)
 * Chapter 6 System Data Files and Information
@@ -19,11 +19,11 @@
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4NDM0MjQ2NDksODc0MTUzMDQsLTEyMz
-UyMzk0NTgsNTE5MTcyMTQ2LDE3NTc2NjU3MTYsLTExODQ5MjM2
-ODYsMTI5NTYwMjcyMCwxMDc4MTk1MDQsLTEyMzUyMzU2MjAsLT
-k5NjMyNDE0NywxNDM0OTY0MDEsLTE4NzgwOTM2NDEsLTEyNjIy
-MTg2NDgsLTM5ODkwNzU5MCwtMTI2MjIxODY0OCwyODM3NTE1Nj
-QsMTkzNzIwMjc4Myw3NDk0MDU5NDYsLTMyNDU5ODM4LDE5NTgx
-MDA2NjJdfQ==
+eyJoaXN0b3J5IjpbMTQ2NjUxMzc0Miw4NzQxNTMwNCwtMTIzNT
+IzOTQ1OCw1MTkxNzIxNDYsMTc1NzY2NTcxNiwtMTE4NDkyMzY4
+NiwxMjk1NjAyNzIwLDEwNzgxOTUwNCwtMTIzNTIzNTYyMCwtOT
+k2MzI0MTQ3LDE0MzQ5NjQwMSwtMTg3ODA5MzY0MSwtMTI2MjIx
+ODY0OCwtMzk4OTA3NTkwLC0xMjYyMjE4NjQ4LDI4Mzc1MTU2NC
+wxOTM3MjAyNzgzLDc0OTQwNTk0NiwtMzI0NTk4MzgsMTk1ODEw
+MDY2Ml19
 -->
