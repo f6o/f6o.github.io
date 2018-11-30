@@ -89,7 +89,10 @@ int fwide(FILE *stream, int mode);
 
 ### ファイルのクローズ
 
-* ファイルのクローズ前に、バッファ内にある出力データは flush され、
+* ファイルのクローズ前
+	* バッファ内にある出力データは flush, 入力データは破棄
+	* ライブラリがストリームにバッファを自動割付した場合は、そのバッファを開放する
+* `exit` を呼ぶか, `main` 関数から正常にカエルと
 
 ## 5.xx いろいろ
 
@@ -121,8 +124,8 @@ int fwide(FILE *stream, int mode);
 	* uClibc C ライブラリhttps://uclibc.org/
 	* Newlibc C ライブラリ https://www.sourceware.org/newlib/libc.html
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkzNTU4NDk0OCwyMTQwNzE5NjU2LC01Nj
-A4OTcxNCwtOTQ4NTc5MTAzLDE5MDExNjA4OTQsLTE4MDI4NTc2
-NDIsLTgwMDU2NDkyLDE4OTc3NjIzODAsODc2MjA5MjcsMTIwNz
-IxMjQ1OV19
+eyJoaXN0b3J5IjpbMjY3NjM0OTI2LDIxNDA3MTk2NTYsLTU2MD
+g5NzE0LC05NDg1NzkxMDMsMTkwMTE2MDg5NCwtMTgwMjg1NzY0
+MiwtODAwNTY0OTIsMTg5Nzc2MjM4MCw4NzYyMDkyNywxMjA3Mj
+EyNDU5XX0=
 -->
