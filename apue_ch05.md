@@ -134,6 +134,8 @@ int fwide(FILE *stream, int mode);
 
 * `gets(char *buf)` はバッファオーバーフローを起こすので使わない
 	* Communications of the ACM vol.32, no.6, 1989
+	* https://cacm.acm.org/magazines/1989/6
+	* 
 
 ### 効率
 
@@ -175,8 +177,8 @@ int fwide(FILE *stream, int mode);
 	* uClibc C ライブラリhttps://uclibc.org/
 	* Newlibc C ライブラリ https://www.sourceware.org/newlib/libc.html
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIwNzIxNDgwMiwtMTgxNzY0NTk4MiwyMT
-QwNzE5NjU2LC01NjA4OTcxNCwtOTQ4NTc5MTAzLDE5MDExNjA4
-OTQsLTE4MDI4NTc2NDIsLTgwMDU2NDkyLDE4OTc3NjIzODAsOD
-c2MjA5MjcsMTIwNzIxMjQ1OV19
+eyJoaXN0b3J5IjpbLTk0NjA0ODM4NSwxMjA3MjE0ODAyLC0xOD
+E3NjQ1OTgyLDIxNDA3MTk2NTYsLTU2MDg5NzE0LC05NDg1Nzkx
+MDMsMTkwMTE2MDg5NCwtMTgwMjg1NzY0MiwtODAwNTY0OTIsMT
+g5Nzc2MjM4MCw4NzYyMDkyNywxMjA3MjEyNDU5XX0=
 -->
