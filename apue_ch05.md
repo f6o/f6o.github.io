@@ -136,6 +136,10 @@ int fwide(FILE *stream, int mode);
 	* Communications of the ACM vol.32, no.6, 1989
 	* https://cacm.acm.org/magazines/1989/6
 	* fingerd というユーザ情報管理のプログラムで `gets` を使っていた
+	* ワームはバッファオーバーフローを意図的に引き起こして、スタックフレームを書き換え、プログラムの振る舞いを変えた。
+	* 
+
+> 
 
 ### 効率
 
@@ -177,7 +181,7 @@ int fwide(FILE *stream, int mode);
 	* uClibc C ライブラリhttps://uclibc.org/
 	* Newlibc C ライブラリ https://www.sourceware.org/newlib/libc.html
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2MjQ3MDQyNzUsLTk0NjA0ODM4NSwxMj
+eyJoaXN0b3J5IjpbLTExMDQ0OTc1MzQsLTk0NjA0ODM4NSwxMj
 A3MjE0ODAyLC0xODE3NjQ1OTgyLDIxNDA3MTk2NTYsLTU2MDg5
 NzE0LC05NDg1NzkxMDMsMTkwMTE2MDg5NCwtMTgwMjg1NzY0Mi
 wtODAwNTY0OTIsMTg5Nzc2MjM4MCw4NzYyMDkyNywxMjA3MjEy
