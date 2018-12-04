@@ -103,7 +103,8 @@ int fwide(FILE *stream, int mode);
 * 直接入出力 direct I/O
 	* いろいろな呼び方
 	* これは ISO C の用語
-	* 他にはバイナリ, オブジェクト単位, レコード志向, 
+	* 他にはバイナリ, オブジェクト単位, レコード志向, 構造志向などなど
+* 書式付きもあるよ `printf` や `scanf`
 
 ### 入力
 
@@ -159,8 +160,8 @@ int fwide(FILE *stream, int mode);
 	* uClibc C ライブラリhttps://uclibc.org/
 	* Newlibc C ライブラリ https://www.sourceware.org/newlib/libc.html
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM0NzczOTQ1OCwtMTgxNzY0NTk4MiwyMT
-QwNzE5NjU2LC01NjA4OTcxNCwtOTQ4NTc5MTAzLDE5MDExNjA4
-OTQsLTE4MDI4NTc2NDIsLTgwMDU2NDkyLDE4OTc3NjIzODAsOD
-c2MjA5MjcsMTIwNzIxMjQ1OV19
+eyJoaXN0b3J5IjpbLTEyMDc5NTI1MzgsLTE4MTc2NDU5ODIsMj
+E0MDcxOTY1NiwtNTYwODk3MTQsLTk0ODU3OTEwMywxOTAxMTYw
+ODk0LC0xODAyODU3NjQyLC04MDA1NjQ5MiwxODk3NzYyMzgwLD
+g3NjIwOTI3LDEyMDcyMTI0NTldfQ==
 -->
