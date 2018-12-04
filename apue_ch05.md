@@ -112,7 +112,9 @@ int fwide(FILE *stream, int mode);
 * `getc` はマクロで実装してもよい
 * `fgetc` はマクロで実装してはいけない
 
-
+* `getc` には副作用のある式は渡さない (マクロ展開で、複数回実行される)
+* `fgetc` は関数であることが保証されるので、そのアドレスを他の関数に渡せる
+* 呼び出しの時間を考えると、`getc` より `fgetc` のほうが時間がかかる（はず
 
 ### 出力
 
@@ -162,8 +164,8 @@ int fwide(FILE *stream, int mode);
 	* uClibc C ライブラリhttps://uclibc.org/
 	* Newlibc C ライブラリ https://www.sourceware.org/newlib/libc.html
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDQyNzQ0MDQ2LC0xODE3NjQ1OTgyLDIxND
-A3MTk2NTYsLTU2MDg5NzE0LC05NDg1NzkxMDMsMTkwMTE2MDg5
-NCwtMTgwMjg1NzY0MiwtODAwNTY0OTIsMTg5Nzc2MjM4MCw4Nz
-YyMDkyNywxMjA3MjEyNDU5XX0=
+eyJoaXN0b3J5IjpbLTE1MzQzMDg3OTcsLTE4MTc2NDU5ODIsMj
+E0MDcxOTY1NiwtNTYwODk3MTQsLTk0ODU3OTEwMywxOTAxMTYw
+ODk0LC0xODAyODU3NjQyLC04MDA1NjQ5MiwxODk3NzYyMzgwLD
+g3NjIwOTI3LDEyMDcyMTI0NTldfQ==
 -->
