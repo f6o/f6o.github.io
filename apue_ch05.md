@@ -98,6 +98,9 @@ int fwide(FILE *stream, int mode);
 
 ## 5.6-5.8 文字出力
 
+* 文字単位
+* ぎょ
+
 ### 入力
 
 * `getc`
@@ -152,8 +155,8 @@ int fwide(FILE *stream, int mode);
 	* uClibc C ライブラリhttps://uclibc.org/
 	* Newlibc C ライブラリ https://www.sourceware.org/newlib/libc.html
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MTc2NDU5ODIsMjE0MDcxOTY1NiwtNT
-YwODk3MTQsLTk0ODU3OTEwMywxOTAxMTYwODk0LC0xODAyODU3
-NjQyLC04MDA1NjQ5MiwxODk3NzYyMzgwLDg3NjIwOTI3LDEyMD
-cyMTI0NTldfQ==
+eyJoaXN0b3J5IjpbLTE2NjM0NDA5MjYsLTE4MTc2NDU5ODIsMj
+E0MDcxOTY1NiwtNTYwODk3MTQsLTk0ODU3OTEwMywxOTAxMTYw
+ODk0LC0xODAyODU3NjQyLC04MDA1NjQ5MiwxODk3NzYyMzgwLD
+g3NjIwOTI3LDEyMDcyMTI0NTldfQ==
 -->
