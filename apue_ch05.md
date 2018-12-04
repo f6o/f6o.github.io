@@ -136,9 +136,7 @@ int fwide(FILE *stream, int mode);
 	* [Communications of the ACM vol.32, no.6, 1989](https://cacm.acm.org/magazines/1989/6)
 	* fingerd というユーザ情報管理のプログラムで `gets` を使っていた
 > This daemon program accepts connection from remote programs, reads a single line of input, and then sends back output matching the received request.
-
 	* ワームはバッファオーバーフローを意図的に引き起こして、スタックフレームを書き換え、プログラムの振る舞いを変えた。
-	* 
 
 > 
 
@@ -182,9 +180,9 @@ int fwide(FILE *stream, int mode);
 	* uClibc C ライブラリhttps://uclibc.org/
 	* Newlibc C ライブラリ https://www.sourceware.org/newlib/libc.html
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTYyNDg2MTc1LC0xMTA0NDk3NTM0LC05ND
-YwNDgzODUsMTIwNzIxNDgwMiwtMTgxNzY0NTk4MiwyMTQwNzE5
-NjU2LC01NjA4OTcxNCwtOTQ4NTc5MTAzLDE5MDExNjA4OTQsLT
-E4MDI4NTc2NDIsLTgwMDU2NDkyLDE4OTc3NjIzODAsODc2MjA5
-MjcsMTIwNzIxMjQ1OV19
+eyJoaXN0b3J5IjpbMjMwMjIwNzgxLDk2MjQ4NjE3NSwtMTEwND
+Q5NzUzNCwtOTQ2MDQ4Mzg1LDEyMDcyMTQ4MDIsLTE4MTc2NDU5
+ODIsMjE0MDcxOTY1NiwtNTYwODk3MTQsLTk0ODU3OTEwMywxOT
+AxMTYwODk0LC0xODAyODU3NjQyLC04MDA1NjQ5MiwxODk3NzYy
+MzgwLDg3NjIwOTI3LDEyMDcyMTI0NTldfQ==
 -->
