@@ -138,8 +138,6 @@ int fwide(FILE *stream, int mode);
 > This daemon program accepts connection from remote programs, reads a single line of input, and then sends back output matching the received request.
 	* ワームはバッファオーバーフローを意図的に引き起こして、スタックフレームを書き換え、プログラムの振る舞いを変えた。
 
-> 
-
 ### 効率
 
 ## 5.9-5.10 バイナリ操作
@@ -180,9 +178,9 @@ int fwide(FILE *stream, int mode);
 	* uClibc C ライブラリhttps://uclibc.org/
 	* Newlibc C ライブラリ https://www.sourceware.org/newlib/libc.html
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjMwMjIwNzgxLDk2MjQ4NjE3NSwtMTEwND
-Q5NzUzNCwtOTQ2MDQ4Mzg1LDEyMDcyMTQ4MDIsLTE4MTc2NDU5
-ODIsMjE0MDcxOTY1NiwtNTYwODk3MTQsLTk0ODU3OTEwMywxOT
-AxMTYwODk0LC0xODAyODU3NjQyLC04MDA1NjQ5MiwxODk3NzYy
-MzgwLDg3NjIwOTI3LDEyMDcyMTI0NTldfQ==
+eyJoaXN0b3J5IjpbODQ4NjYxNDc5LDIzMDIyMDc4MSw5NjI0OD
+YxNzUsLTExMDQ0OTc1MzQsLTk0NjA0ODM4NSwxMjA3MjE0ODAy
+LC0xODE3NjQ1OTgyLDIxNDA3MTk2NTYsLTU2MDg5NzE0LC05ND
+g1NzkxMDMsMTkwMTE2MDg5NCwtMTgwMjg1NzY0MiwtODAwNTY0
+OTIsMTg5Nzc2MjM4MCw4NzYyMDkyNywxMjA3MjEyNDU5XX0=
 -->
