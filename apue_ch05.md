@@ -135,7 +135,7 @@ int fwide(FILE *stream, int mode);
 * `gets(char *buf)` はバッファオーバーフローを起こすので使わない
 	* Communications of the ACM vol.32, no.6, 1989
 	* https://cacm.acm.org/magazines/1989/6
-	* 
+	* fingerd というユーザ情報管理のプログラムで `gets` を使っていた
 
 ### 効率
 
@@ -177,8 +177,9 @@ int fwide(FILE *stream, int mode);
 	* uClibc C ライブラリhttps://uclibc.org/
 	* Newlibc C ライブラリ https://www.sourceware.org/newlib/libc.html
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk0NjA0ODM4NSwxMjA3MjE0ODAyLC0xOD
-E3NjQ1OTgyLDIxNDA3MTk2NTYsLTU2MDg5NzE0LC05NDg1Nzkx
-MDMsMTkwMTE2MDg5NCwtMTgwMjg1NzY0MiwtODAwNTY0OTIsMT
-g5Nzc2MjM4MCw4NzYyMDkyNywxMjA3MjEyNDU5XX0=
+eyJoaXN0b3J5IjpbLTE2MjQ3MDQyNzUsLTk0NjA0ODM4NSwxMj
+A3MjE0ODAyLC0xODE3NjQ1OTgyLDIxNDA3MTk2NTYsLTU2MDg5
+NzE0LC05NDg1NzkxMDMsMTkwMTE2MDg5NCwtMTgwMjg1NzY0Mi
+wtODAwNTY0OTIsMTg5Nzc2MjM4MCw4NzYyMDkyNywxMjA3MjEy
+NDU5XX0=
 -->
