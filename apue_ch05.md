@@ -106,11 +106,13 @@ int fwide(FILE *stream, int mode);
 	* 他にはバイナリ, オブジェクト単位, レコード志向, 構造志向などなど
 * 書式付きもあるよ `printf` や `scanf`
 
-### 入力
+### 入力 `getc`, `fgetc`, `getchar`
 
-* `getc`
-* `fgetc`
-* `getchar`
+* `getc(stdin)` = `getchar()`
+* `getc` はマクロで実装してもよい
+* `fgetc` はマクロで実装してはいけない
+
+
 
 ### 出力
 
@@ -160,8 +162,8 @@ int fwide(FILE *stream, int mode);
 	* uClibc C ライブラリhttps://uclibc.org/
 	* Newlibc C ライブラリ https://www.sourceware.org/newlib/libc.html
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMDc5NTI1MzgsLTE4MTc2NDU5ODIsMj
-E0MDcxOTY1NiwtNTYwODk3MTQsLTk0ODU3OTEwMywxOTAxMTYw
-ODk0LC0xODAyODU3NjQyLC04MDA1NjQ5MiwxODk3NzYyMzgwLD
-g3NjIwOTI3LDEyMDcyMTI0NTldfQ==
+eyJoaXN0b3J5IjpbNDQyNzQ0MDQ2LC0xODE3NjQ1OTgyLDIxND
+A3MTk2NTYsLTU2MDg5NzE0LC05NDg1NzkxMDMsMTkwMTE2MDg5
+NCwtMTgwMjg1NzY0MiwtODAwNTY0OTIsMTg5Nzc2MjM4MCw4Nz
+YyMDkyNywxMjA3MjEyNDU5XX0=
 -->
