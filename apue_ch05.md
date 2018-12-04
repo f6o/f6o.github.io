@@ -116,7 +116,10 @@ int fwide(FILE *stream, int mode);
 * `fgetc` は関数であることが保証されるので、そのアドレスを他の関数に渡せる
 * 呼び出しの時間を考えると、`getc` より `fgetc` のほうが時間がかかる（はず）
 
-* エラー処理 `ferror(FILE *fp)`
+* エラー判定 `ferror(FILE *fp)`
+* ファイル末尾判定 `feof(FILE *fp)`
+* フラグのクリア `clearerr(FILE *fp)`
+* 
 
 ### 出力
 
@@ -166,7 +169,7 @@ int fwide(FILE *stream, int mode);
 	* uClibc C ライブラリhttps://uclibc.org/
 	* Newlibc C ライブラリ https://www.sourceware.org/newlib/libc.html
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUwOTU4NzI0MiwtMTgxNzY0NTk4MiwyMT
+eyJoaXN0b3J5IjpbMTcyNjYwNzMyMywtMTgxNzY0NTk4MiwyMT
 QwNzE5NjU2LC01NjA4OTcxNCwtOTQ4NTc5MTAzLDE5MDExNjA4
 OTQsLTE4MDI4NTc2NDIsLTgwMDU2NDkyLDE4OTc3NjIzODAsOD
 c2MjA5MjcsMTIwNzIxMjQ1OV19
