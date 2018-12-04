@@ -119,7 +119,8 @@ int fwide(FILE *stream, int mode);
 * エラー判定 `ferror(FILE *fp)`
 * ファイル末尾判定 `feof(FILE *fp)`
 * フラグのクリア `clearerr(FILE *fp)`
-* 
+
+* `ungetc(int c, FILE *fp)`
 
 ### 出力
 
@@ -169,8 +170,8 @@ int fwide(FILE *stream, int mode);
 	* uClibc C ライブラリhttps://uclibc.org/
 	* Newlibc C ライブラリ https://www.sourceware.org/newlib/libc.html
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTcyNjYwNzMyMywtMTgxNzY0NTk4MiwyMT
-QwNzE5NjU2LC01NjA4OTcxNCwtOTQ4NTc5MTAzLDE5MDExNjA4
-OTQsLTE4MDI4NTc2NDIsLTgwMDU2NDkyLDE4OTc3NjIzODAsOD
-c2MjA5MjcsMTIwNzIxMjQ1OV19
+eyJoaXN0b3J5IjpbMTQ0NzE3Njc4LC0xODE3NjQ1OTgyLDIxND
+A3MTk2NTYsLTU2MDg5NzE0LC05NDg1NzkxMDMsMTkwMTE2MDg5
+NCwtMTgwMjg1NzY0MiwtODAwNTY0OTIsMTg5Nzc2MjM4MCw4Nz
+YyMDkyNywxMjA3MjEyNDU5XX0=
 -->
