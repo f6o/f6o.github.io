@@ -120,15 +120,20 @@ int fwide(FILE *stream, int mode);
 * ファイル末尾判定 `feof(FILE *fp)`
 * フラグのクリア `clearerr(FILE *fp)`
 
-* `ungetc(int c, FILE *fp)`
+* 読み戻し関数 `ungetc(int c, FILE *fp)`
+* ストリームバッファに戻す
+* `EOF` は戻せないが、末尾に達したときに文字を戻すことができる。
+* `ungetc` に成功すると、フラグはクリアされるから
 
-### 出力
+### 出力 `putc`, `fputc`, `putchar`
 
-* `putc`
-* `fputc`
-* `putchar`
+* `putchar(c)` = `putc(c,stdout)`
+* マクロで実装できるかどうか (入力関数と同様)
 
 ### 行単位の入出力
+
+* `gets(char *buf)` はバッファオーバーフローを起こすので使わない
+	* Communications of the ACM vol.32, no.6, 1989
 
 ### 効率
 
@@ -170,8 +175,8 @@ int fwide(FILE *stream, int mode);
 	* uClibc C ライブラリhttps://uclibc.org/
 	* Newlibc C ライブラリ https://www.sourceware.org/newlib/libc.html
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ0NzE3Njc4LC0xODE3NjQ1OTgyLDIxND
-A3MTk2NTYsLTU2MDg5NzE0LC05NDg1NzkxMDMsMTkwMTE2MDg5
-NCwtMTgwMjg1NzY0MiwtODAwNTY0OTIsMTg5Nzc2MjM4MCw4Nz
-YyMDkyNywxMjA3MjEyNDU5XX0=
+eyJoaXN0b3J5IjpbMTIwNzIxNDgwMiwtMTgxNzY0NTk4MiwyMT
+QwNzE5NjU2LC01NjA4OTcxNCwtOTQ4NTc5MTAzLDE5MDExNjA4
+OTQsLTE4MDI4NTc2NDIsLTgwMDU2NDkyLDE4OTc3NjIzODAsOD
+c2MjA5MjcsMTIwNzIxMjQ1OV19
 -->
