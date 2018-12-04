@@ -133,10 +133,10 @@ int fwide(FILE *stream, int mode);
 ### 行単位の入出力
 
 * `gets(char *buf)` はバッファオーバーフローを起こすので使わない
-	* Communications of the ACM vol.32, no.6, 1989
-	* https://cacm.acm.org/magazines/1989/6
+	* [Communications of the ACM vol.32, no.6, 1989](https://cacm.acm.org/magazines/1989/6)
 	* fingerd というユーザ情報管理のプログラムで `gets` を使っていた
-	* > This daemon program accepts connection from remote programs, reads a single line of input, and then sends back output matc
+> This daemon program accepts connection from remote programs, reads a single line of input, and then sends back output matching the received request.
+
 	* ワームはバッファオーバーフローを意図的に引き起こして、スタックフレームを書き換え、プログラムの振る舞いを変えた。
 	* 
 
@@ -182,9 +182,9 @@ int fwide(FILE *stream, int mode);
 	* uClibc C ライブラリhttps://uclibc.org/
 	* Newlibc C ライブラリ https://www.sourceware.org/newlib/libc.html
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIxMTE1MzA0MywtMTEwNDQ5NzUzNCwtOT
-Q2MDQ4Mzg1LDEyMDcyMTQ4MDIsLTE4MTc2NDU5ODIsMjE0MDcx
-OTY1NiwtNTYwODk3MTQsLTk0ODU3OTEwMywxOTAxMTYwODk0LC
-0xODAyODU3NjQyLC04MDA1NjQ5MiwxODk3NzYyMzgwLDg3NjIw
-OTI3LDEyMDcyMTI0NTldfQ==
+eyJoaXN0b3J5IjpbOTYyNDg2MTc1LC0xMTA0NDk3NTM0LC05ND
+YwNDgzODUsMTIwNzIxNDgwMiwtMTgxNzY0NTk4MiwyMTQwNzE5
+NjU2LC01NjA4OTcxNCwtOTQ4NTc5MTAzLDE5MDExNjA4OTQsLT
+E4MDI4NTc2NDIsLTgwMDU2NDkyLDE4OTc3NjIzODAsODc2MjA5
+MjcsMTIwNzIxMjQ1OV19
 -->
