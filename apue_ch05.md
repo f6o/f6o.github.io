@@ -158,7 +158,7 @@ int fwide(FILE *stream, int mode);
 |  .065 | .051 | .017 |
 |  .058 | .047 | .016 |
 
-#### `echo.c`: 
+#### `echo.c`: 関数かもしれない ver
 
 | real | user | system |
 |  .060 | .050 | .015 |
@@ -227,11 +227,11 @@ int fwide(FILE *stream, int mode);
 	* uClibc C ライブラリhttps://uclibc.org/
 	* Newlibc C ライブラリ https://www.sourceware.org/newlib/libc.html
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1MDU0Mjc3MTAsLTEyNDc2NDYxOTAsNT
-c4NzM5NjMzLDEwODQwOTI4NDcsMTc1MjQ2MTAyMywtOTg2MzUx
-OTgsLTc1OTc3ODA3LDEzMDYxNDgwODMsODQ4NjYxNDc5LDIzMD
-IyMDc4MSw5NjI0ODYxNzUsLTExMDQ0OTc1MzQsLTk0NjA0ODM4
-NSwxMjA3MjE0ODAyLC0xODE3NjQ1OTgyLDIxNDA3MTk2NTYsLT
-U2MDg5NzE0LC05NDg1NzkxMDMsMTkwMTE2MDg5NCwtMTgwMjg1
-NzY0Ml19
+eyJoaXN0b3J5IjpbLTYyMDk0MDkwMywtMTI0NzY0NjE5MCw1Nz
+g3Mzk2MzMsMTA4NDA5Mjg0NywxNzUyNDYxMDIzLC05ODYzNTE5
+OCwtNzU5Nzc4MDcsMTMwNjE0ODA4Myw4NDg2NjE0NzksMjMwMj
+IwNzgxLDk2MjQ4NjE3NSwtMTEwNDQ5NzUzNCwtOTQ2MDQ4Mzg1
+LDEyMDcyMTQ4MDIsLTE4MTc2NDU5ODIsMjE0MDcxOTY1NiwtNT
+YwODk3MTQsLTk0ODU3OTEwMywxOTAxMTYwODk0LC0xODAyODU3
+NjQyXX0=
 -->
