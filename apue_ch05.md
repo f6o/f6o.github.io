@@ -141,6 +141,10 @@ int fwide(FILE *stream, int mode);
 ### 効率
 
 * time で計ったけど、`getc`/`putc` は関数とマクロではあんまり大差なさそう
+* システムコールはコストがかかる操作
+* 
+
+
 * 読み込んだファイル `5717  34215 387669 /var/log/dpkg.log` 
 * `/dev/null` に読み捨て
 
@@ -223,11 +227,11 @@ int fwide(FILE *stream, int mode);
 	* uClibc C ライブラリhttps://uclibc.org/
 	* Newlibc C ライブラリ https://www.sourceware.org/newlib/libc.html
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTc4NzM5NjMzLDEwODQwOTI4NDcsMTc1Mj
-Q2MTAyMywtOTg2MzUxOTgsLTc1OTc3ODA3LDEzMDYxNDgwODMs
-ODQ4NjYxNDc5LDIzMDIyMDc4MSw5NjI0ODYxNzUsLTExMDQ0OT
-c1MzQsLTk0NjA0ODM4NSwxMjA3MjE0ODAyLC0xODE3NjQ1OTgy
-LDIxNDA3MTk2NTYsLTU2MDg5NzE0LC05NDg1NzkxMDMsMTkwMT
-E2MDg5NCwtMTgwMjg1NzY0MiwtODAwNTY0OTIsMTg5Nzc2MjM4
-MF19
+eyJoaXN0b3J5IjpbLTE1MTE5NjgyMDgsNTc4NzM5NjMzLDEwOD
+QwOTI4NDcsMTc1MjQ2MTAyMywtOTg2MzUxOTgsLTc1OTc3ODA3
+LDEzMDYxNDgwODMsODQ4NjYxNDc5LDIzMDIyMDc4MSw5NjI0OD
+YxNzUsLTExMDQ0OTc1MzQsLTk0NjA0ODM4NSwxMjA3MjE0ODAy
+LC0xODE3NjQ1OTgyLDIxNDA3MTk2NTYsLTU2MDg5NzE0LC05ND
+g1NzkxMDMsMTkwMTE2MDg5NCwtMTgwMjg1NzY0MiwtODAwNTY0
+OTJdfQ==
 -->
