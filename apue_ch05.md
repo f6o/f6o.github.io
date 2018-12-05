@@ -143,19 +143,21 @@ int fwide(FILE *stream, int mode);
 * TODO: `echo.c` と `echof.c` の比較
 	* time で計ったけど、あんまり大差なさそう
 
-| source | real | user | system | 
-| `echof.c` |  .068 | .058 | .014 |
-| `echof.c` |  .057 | .049 | .014 |
-| `echof.c` |  .058 | .046 | .014 |
-| `echof.c` |  .065 | .053 | .020 |
-| `echof.c` |  .065 | .051 | .017 |
-| `echof.c` |  .058 | .047 | .016 |
-| `echo.c` |  .060 | .050 | .015 |
-| `echo.c` |  .062 | .052 | .014 |
-| `echo.c` |  .058 | .046 | .016 |
-| `echo.c` |  .055 | .042 | .018 |
-| `echo.c` |  .055 | .046 | .013 |
-| `echo.c` |  .056 | .047 | .012 |
+| real | user | system | 
+|  .068 | .058 | .014 |
+|  .057 | .049 | .014 |
+|  .058 | .046 | .014 |
+|  .065 | .053 | .020 |
+|  .065 | .051 | .017 |
+|  .058 | .047 | .016 |
+
+| real | user | system |
+|  .060 | .050 | .015 |
+|  .062 | .052 | .014 |
+|  .058 | .046 | .016 |
+|  .055 | .042 | .018 |
+|  .055 | .046 | .013 |
+|  .056 | .047 | .012 |
 
 ## 5.9-5.10 バイナリ操作
 
@@ -195,10 +197,10 @@ int fwide(FILE *stream, int mode);
 	* uClibc C ライブラリhttps://uclibc.org/
 	* Newlibc C ライブラリ https://www.sourceware.org/newlib/libc.html
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM4OTA1NzkyMCwxMzA2MTQ4MDgzLDg0OD
-Y2MTQ3OSwyMzAyMjA3ODEsOTYyNDg2MTc1LC0xMTA0NDk3NTM0
-LC05NDYwNDgzODUsMTIwNzIxNDgwMiwtMTgxNzY0NTk4MiwyMT
-QwNzE5NjU2LC01NjA4OTcxNCwtOTQ4NTc5MTAzLDE5MDExNjA4
-OTQsLTE4MDI4NTc2NDIsLTgwMDU2NDkyLDE4OTc3NjIzODAsOD
-c2MjA5MjcsMTIwNzIxMjQ1OV19
+eyJoaXN0b3J5IjpbLTc1OTc3ODA3LDEzMDYxNDgwODMsODQ4Nj
+YxNDc5LDIzMDIyMDc4MSw5NjI0ODYxNzUsLTExMDQ0OTc1MzQs
+LTk0NjA0ODM4NSwxMjA3MjE0ODAyLC0xODE3NjQ1OTgyLDIxND
+A3MTk2NTYsLTU2MDg5NzE0LC05NDg1NzkxMDMsMTkwMTE2MDg5
+NCwtMTgwMjg1NzY0MiwtODAwNTY0OTIsMTg5Nzc2MjM4MCw4Nz
+YyMDkyNywxMjA3MjEyNDU5XX0=
 -->
