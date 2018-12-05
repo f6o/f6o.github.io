@@ -167,12 +167,12 @@ int fwide(FILE *stream, int mode);
 #### `echol.c`: 行バッファ ver
 
 | real | user | system |
-|  .060 | .050 | .015 |
-|  .062 | .052 | .014 |
-|  .058 | .046 | .016 |
-|  .055 | .042 | .018 |
-|  .055 | .046 | .013 |
-|  .056 | .047 | .012 |
+| .017 | .003 | .019 |
+| .012 | .003 | .013 |
+| .019 | .008 | .017 |
+| .017 | .004 | .017 |
+| .018 | .005 | .018 |
+| .015 | .006 | .014 |
 
 ## 5.9-5.10 バイナリ操作
 
@@ -212,11 +212,11 @@ int fwide(FILE *stream, int mode);
 	* uClibc C ライブラリhttps://uclibc.org/
 	* Newlibc C ライブラリ https://www.sourceware.org/newlib/libc.html
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTExMTU5OTI4MywtOTg2MzUxOTgsLTc1OT
-c3ODA3LDEzMDYxNDgwODMsODQ4NjYxNDc5LDIzMDIyMDc4MSw5
-NjI0ODYxNzUsLTExMDQ0OTc1MzQsLTk0NjA0ODM4NSwxMjA3Mj
-E0ODAyLC0xODE3NjQ1OTgyLDIxNDA3MTk2NTYsLTU2MDg5NzE0
-LC05NDg1NzkxMDMsMTkwMTE2MDg5NCwtMTgwMjg1NzY0MiwtOD
-AwNTY0OTIsMTg5Nzc2MjM4MCw4NzYyMDkyNywxMjA3MjEyNDU5
-XX0=
+eyJoaXN0b3J5IjpbNzc4MTAyNTA5LC05ODYzNTE5OCwtNzU5Nz
+c4MDcsMTMwNjE0ODA4Myw4NDg2NjE0NzksMjMwMjIwNzgxLDk2
+MjQ4NjE3NSwtMTEwNDQ5NzUzNCwtOTQ2MDQ4Mzg1LDEyMDcyMT
+Q4MDIsLTE4MTc2NDU5ODIsMjE0MDcxOTY1NiwtNTYwODk3MTQs
+LTk0ODU3OTEwMywxOTAxMTYwODk0LC0xODAyODU3NjQyLC04MD
+A1NjQ5MiwxODk3NzYyMzgwLDg3NjIwOTI3LDEyMDcyMTI0NTld
+fQ==
 -->
