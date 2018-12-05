@@ -196,14 +196,20 @@ int fwide(FILE *stream, int mode);
 ```
 float data[10];
 if ( fwrite(&data[2], sizeof(float), 4, fp) != 4 ) {
-   // error handing ...
+   // error handing...
 }
 ``` 
 * 構造体の読み書き
 ```
 struct {
-  short
-};
+  short count;
+  long total;
+  char name[NAMESIZE]
+} item;
+if (fwrite(&item, sizeof(item), 1, fp) != 1) {
+   // error handing...
+}
+```
 
 ## 5.11 書式付き入出力
 
@@ -238,7 +244,7 @@ struct {
 	* uClibc C ライブラリhttps://uclibc.org/
 	* Newlibc C ライブラリ https://www.sourceware.org/newlib/libc.html
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg4NTI0NzMzNiwtMTI0NzY0NjE5MCw1Nz
+eyJoaXN0b3J5IjpbMTA2NzIzMjk2OSwtMTI0NzY0NjE5MCw1Nz
 g3Mzk2MzMsMTA4NDA5Mjg0NywxNzUyNDYxMDIzLC05ODYzNTE5
 OCwtNzU5Nzc4MDcsMTMwNjE0ODA4Myw4NDg2NjE0NzksMjMwMj
 IwNzgxLDk2MjQ4NjE3NSwtMTEwNDQ5NzUzNCwtOTQ2MDQ4Mzg1
