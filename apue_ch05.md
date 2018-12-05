@@ -142,6 +142,7 @@ int fwide(FILE *stream, int mode);
 
 * TODO: `echo.c` と `echof.c` の比較
 	* time で計ったけど、あんまり大差なさそう
+	* 387669 bytes のファイル
 
 #### `echof.c`
 
@@ -201,7 +202,7 @@ int fwide(FILE *stream, int mode);
 	* uClibc C ライブラリhttps://uclibc.org/
 	* Newlibc C ライブラリ https://www.sourceware.org/newlib/libc.html
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA5MzA3NDQyNywtNzU5Nzc4MDcsMTMwNj
+eyJoaXN0b3J5IjpbLTgzMTE3ODU3OCwtNzU5Nzc4MDcsMTMwNj
 E0ODA4Myw4NDg2NjE0NzksMjMwMjIwNzgxLDk2MjQ4NjE3NSwt
 MTEwNDQ5NzUzNCwtOTQ2MDQ4Mzg1LDEyMDcyMTQ4MDIsLTE4MT
 c2NDU5ODIsMjE0MDcxOTY1NiwtNTYwODk3MTQsLTk0ODU3OTEw
