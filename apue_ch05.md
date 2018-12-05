@@ -173,6 +173,8 @@ int fwide(FILE *stream, int mode);
 | .018 | .005 | .018 |
 | .015 | .006 | .014 |
 
+#### `s`
+
 ## 5.9-5.10 バイナリ操作
 
 * fread
@@ -211,11 +213,11 @@ int fwide(FILE *stream, int mode);
 	* uClibc C ライブラリhttps://uclibc.org/
 	* Newlibc C ライブラリ https://www.sourceware.org/newlib/libc.html
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc1MjQ2MTAyMywtOTg2MzUxOTgsLTc1OT
-c3ODA3LDEzMDYxNDgwODMsODQ4NjYxNDc5LDIzMDIyMDc4MSw5
-NjI0ODYxNzUsLTExMDQ0OTc1MzQsLTk0NjA0ODM4NSwxMjA3Mj
-E0ODAyLC0xODE3NjQ1OTgyLDIxNDA3MTk2NTYsLTU2MDg5NzE0
-LC05NDg1NzkxMDMsMTkwMTE2MDg5NCwtMTgwMjg1NzY0MiwtOD
-AwNTY0OTIsMTg5Nzc2MjM4MCw4NzYyMDkyNywxMjA3MjEyNDU5
-XX0=
+eyJoaXN0b3J5IjpbLTIxMjM1NTI0MzIsMTc1MjQ2MTAyMywtOT
+g2MzUxOTgsLTc1OTc3ODA3LDEzMDYxNDgwODMsODQ4NjYxNDc5
+LDIzMDIyMDc4MSw5NjI0ODYxNzUsLTExMDQ0OTc1MzQsLTk0Nj
+A0ODM4NSwxMjA3MjE0ODAyLC0xODE3NjQ1OTgyLDIxNDA3MTk2
+NTYsLTU2MDg5NzE0LC05NDg1NzkxMDMsMTkwMTE2MDg5NCwtMT
+gwMjg1NzY0MiwtODAwNTY0OTIsMTg5Nzc2MjM4MCw4NzYyMDky
+N119
 -->
