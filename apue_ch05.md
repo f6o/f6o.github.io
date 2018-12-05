@@ -140,7 +140,7 @@ int fwide(FILE *stream, int mode);
 
 ### 効率
 
-* TODO: `echo.c` と `echof.c` の比較
+* `echo.c` と `echof.c` の比較
 	* time で計ったけど、あんまり大差なさそう
 	* 387669 bytes のファイル
 
@@ -202,10 +202,10 @@ int fwide(FILE *stream, int mode);
 	* uClibc C ライブラリhttps://uclibc.org/
 	* Newlibc C ライブラリ https://www.sourceware.org/newlib/libc.html
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgzMTE3ODU3OCwtNzU5Nzc4MDcsMTMwNj
-E0ODA4Myw4NDg2NjE0NzksMjMwMjIwNzgxLDk2MjQ4NjE3NSwt
-MTEwNDQ5NzUzNCwtOTQ2MDQ4Mzg1LDEyMDcyMTQ4MDIsLTE4MT
-c2NDU5ODIsMjE0MDcxOTY1NiwtNTYwODk3MTQsLTk0ODU3OTEw
-MywxOTAxMTYwODk0LC0xODAyODU3NjQyLC04MDA1NjQ5MiwxOD
-k3NzYyMzgwLDg3NjIwOTI3LDEyMDcyMTI0NTldfQ==
+eyJoaXN0b3J5IjpbLTk4NjM1MTk4LC03NTk3NzgwNywxMzA2MT
+Q4MDgzLDg0ODY2MTQ3OSwyMzAyMjA3ODEsOTYyNDg2MTc1LC0x
+MTA0NDk3NTM0LC05NDYwNDgzODUsMTIwNzIxNDgwMiwtMTgxNz
+Y0NTk4MiwyMTQwNzE5NjU2LC01NjA4OTcxNCwtOTQ4NTc5MTAz
+LDE5MDExNjA4OTQsLTE4MDI4NTc2NDIsLTgwMDU2NDkyLDE4OT
+c3NjIzODAsODc2MjA5MjcsMTIwNzIxMjQ1OV19
 -->
