@@ -211,6 +211,10 @@ if (fwrite(&item, sizeof(item), 1, fp) != 1) {
 }
 ```
 
+* 異なるシステム間でつか汎用的じゃない
+* 構造体のメンバのオフセットがコンパイラやシステムで異なる
+* 
+
 ## 5.11 書式付き入出力
 
 * printf
@@ -244,11 +248,11 @@ if (fwrite(&item, sizeof(item), 1, fp) != 1) {
 	* uClibc C ライブラリhttps://uclibc.org/
 	* Newlibc C ライブラリ https://www.sourceware.org/newlib/libc.html
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA2NzIzMjk2OSwtMTI0NzY0NjE5MCw1Nz
-g3Mzk2MzMsMTA4NDA5Mjg0NywxNzUyNDYxMDIzLC05ODYzNTE5
-OCwtNzU5Nzc4MDcsMTMwNjE0ODA4Myw4NDg2NjE0NzksMjMwMj
-IwNzgxLDk2MjQ4NjE3NSwtMTEwNDQ5NzUzNCwtOTQ2MDQ4Mzg1
-LDEyMDcyMTQ4MDIsLTE4MTc2NDU5ODIsMjE0MDcxOTY1NiwtNT
-YwODk3MTQsLTk0ODU3OTEwMywxOTAxMTYwODk0LC0xODAyODU3
-NjQyXX0=
+eyJoaXN0b3J5IjpbLTUyNjA2MTcyMywxMDY3MjMyOTY5LC0xMj
+Q3NjQ2MTkwLDU3ODczOTYzMywxMDg0MDkyODQ3LDE3NTI0NjEw
+MjMsLTk4NjM1MTk4LC03NTk3NzgwNywxMzA2MTQ4MDgzLDg0OD
+Y2MTQ3OSwyMzAyMjA3ODEsOTYyNDg2MTc1LC0xMTA0NDk3NTM0
+LC05NDYwNDgzODUsMTIwNzIxNDgwMiwtMTgxNzY0NTk4MiwyMT
+QwNzE5NjU2LC01NjA4OTcxNCwtOTQ4NTc5MTAzLDE5MDExNjA4
+OTRdfQ==
 -->
