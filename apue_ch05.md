@@ -173,7 +173,9 @@ int fwide(FILE *stream, int mode);
 | .018 | .005 | .018 |
 | .015 | .006 | .014 |
 
-#### `s`
+#### `echosys.c`: read システムコール ver
+
+
 
 ## 5.9-5.10 バイナリ操作
 
@@ -213,11 +215,11 @@ int fwide(FILE *stream, int mode);
 	* uClibc C ライブラリhttps://uclibc.org/
 	* Newlibc C ライブラリ https://www.sourceware.org/newlib/libc.html
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMjM1NTI0MzIsMTc1MjQ2MTAyMywtOT
-g2MzUxOTgsLTc1OTc3ODA3LDEzMDYxNDgwODMsODQ4NjYxNDc5
-LDIzMDIyMDc4MSw5NjI0ODYxNzUsLTExMDQ0OTc1MzQsLTk0Nj
-A0ODM4NSwxMjA3MjE0ODAyLC0xODE3NjQ1OTgyLDIxNDA3MTk2
-NTYsLTU2MDg5NzE0LC05NDg1NzkxMDMsMTkwMTE2MDg5NCwtMT
-gwMjg1NzY0MiwtODAwNTY0OTIsMTg5Nzc2MjM4MCw4NzYyMDky
-N119
+eyJoaXN0b3J5IjpbMTA4NDA5Mjg0NywxNzUyNDYxMDIzLC05OD
+YzNTE5OCwtNzU5Nzc4MDcsMTMwNjE0ODA4Myw4NDg2NjE0Nzks
+MjMwMjIwNzgxLDk2MjQ4NjE3NSwtMTEwNDQ5NzUzNCwtOTQ2MD
+Q4Mzg1LDEyMDcyMTQ4MDIsLTE4MTc2NDU5ODIsMjE0MDcxOTY1
+NiwtNTYwODk3MTQsLTk0ODU3OTEwMywxOTAxMTYwODk0LC0xOD
+AyODU3NjQyLC04MDA1NjQ5MiwxODk3NzYyMzgwLDg3NjIwOTI3
+XX0=
 -->
