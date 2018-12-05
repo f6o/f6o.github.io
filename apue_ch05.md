@@ -142,7 +142,7 @@ int fwide(FILE *stream, int mode);
 
 * time で計ったけど、`getc`/`putc` は関数とマクロではあんまり大差なさそう
 * システムコールはコストがかかる操作
-* 
+* 実行バイナリの text 領域のサイズ
 
 
 * 読み込んだファイル `5717  34215 387669 /var/log/dpkg.log` 
@@ -227,7 +227,7 @@ int fwide(FILE *stream, int mode);
 	* uClibc C ライブラリhttps://uclibc.org/
 	* Newlibc C ライブラリ https://www.sourceware.org/newlib/libc.html
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1MTE5NjgyMDgsNTc4NzM5NjMzLDEwOD
+eyJoaXN0b3J5IjpbLTEyNDc2NDYxOTAsNTc4NzM5NjMzLDEwOD
 QwOTI4NDcsMTc1MjQ2MTAyMywtOTg2MzUxOTgsLTc1OTc3ODA3
 LDEzMDYxNDgwODMsODQ4NjYxNDc5LDIzMDIyMDc4MSw5NjI0OD
 YxNzUsLTExMDQ0OTc1MzQsLTk0NjA0ODM4NSwxMjA3MjE0ODAy
