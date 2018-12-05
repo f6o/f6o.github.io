@@ -142,13 +142,13 @@ int fwide(FILE *stream, int mode);
 
 * time で計ったけど、`getc`/`putc` は関数とマクロではあんまり大差なさそう
 * システムコールはコストがかかる操作
-* 実行バイナリの text 領域のサイズ
-
+* 実行バイナリの `main` 関数の text 領域のサイズ
+	* `objdump -d` でみたけど、差はなかった。
 
 * 読み込んだファイル `5717  34215 387669 /var/log/dpkg.log` 
 * `/dev/null` に読み捨て
 
-#### `echof.c`
+#### `echof.c`: 関数 ver
 
 | real | user | system | 
 |  .068 | .058 | .014 |
@@ -158,7 +158,7 @@ int fwide(FILE *stream, int mode);
 |  .065 | .051 | .017 |
 |  .058 | .047 | .016 |
 
-#### `echo.c`
+#### `echo.c`: 
 
 | real | user | system |
 |  .060 | .050 | .015 |
@@ -227,11 +227,11 @@ int fwide(FILE *stream, int mode);
 	* uClibc C ライブラリhttps://uclibc.org/
 	* Newlibc C ライブラリ https://www.sourceware.org/newlib/libc.html
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNDc2NDYxOTAsNTc4NzM5NjMzLDEwOD
-QwOTI4NDcsMTc1MjQ2MTAyMywtOTg2MzUxOTgsLTc1OTc3ODA3
-LDEzMDYxNDgwODMsODQ4NjYxNDc5LDIzMDIyMDc4MSw5NjI0OD
-YxNzUsLTExMDQ0OTc1MzQsLTk0NjA0ODM4NSwxMjA3MjE0ODAy
-LC0xODE3NjQ1OTgyLDIxNDA3MTk2NTYsLTU2MDg5NzE0LC05ND
-g1NzkxMDMsMTkwMTE2MDg5NCwtMTgwMjg1NzY0MiwtODAwNTY0
-OTJdfQ==
+eyJoaXN0b3J5IjpbLTE1MDU0Mjc3MTAsLTEyNDc2NDYxOTAsNT
+c4NzM5NjMzLDEwODQwOTI4NDcsMTc1MjQ2MTAyMywtOTg2MzUx
+OTgsLTc1OTc3ODA3LDEzMDYxNDgwODMsODQ4NjYxNDc5LDIzMD
+IyMDc4MSw5NjI0ODYxNzUsLTExMDQ0OTc1MzQsLTk0NjA0ODM4
+NSwxMjA3MjE0ODAyLC0xODE3NjQ1OTgyLDIxNDA3MTk2NTYsLT
+U2MDg5NzE0LC05NDg1NzkxMDMsMTkwMTE2MDg5NCwtMTgwMjg1
+NzY0Ml19
 -->
