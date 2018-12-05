@@ -140,9 +140,8 @@ int fwide(FILE *stream, int mode);
 
 ### 効率
 
-* `echo.c` と `echof.c` の比較
-	* time で計ったけど、あんまり大差なさそう
-	* 387669 bytes のファイル
+* time で計ったけど、`getc`/`putc` は関数とマクロではあんまり大差なさそう
+* 387669 bytes のファイル
 
 #### `echof.c`
 
@@ -212,11 +211,11 @@ int fwide(FILE *stream, int mode);
 	* uClibc C ライブラリhttps://uclibc.org/
 	* Newlibc C ライブラリ https://www.sourceware.org/newlib/libc.html
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzc4MTAyNTA5LC05ODYzNTE5OCwtNzU5Nz
-c4MDcsMTMwNjE0ODA4Myw4NDg2NjE0NzksMjMwMjIwNzgxLDk2
-MjQ4NjE3NSwtMTEwNDQ5NzUzNCwtOTQ2MDQ4Mzg1LDEyMDcyMT
-Q4MDIsLTE4MTc2NDU5ODIsMjE0MDcxOTY1NiwtNTYwODk3MTQs
-LTk0ODU3OTEwMywxOTAxMTYwODk0LC0xODAyODU3NjQyLC04MD
-A1NjQ5MiwxODk3NzYyMzgwLDg3NjIwOTI3LDEyMDcyMTI0NTld
-fQ==
+eyJoaXN0b3J5IjpbMTc1MjQ2MTAyMywtOTg2MzUxOTgsLTc1OT
+c3ODA3LDEzMDYxNDgwODMsODQ4NjYxNDc5LDIzMDIyMDc4MSw5
+NjI0ODYxNzUsLTExMDQ0OTc1MzQsLTk0NjA0ODM4NSwxMjA3Mj
+E0ODAyLC0xODE3NjQ1OTgyLDIxNDA3MTk2NTYsLTU2MDg5NzE0
+LC05NDg1NzkxMDMsMTkwMTE2MDg5NCwtMTgwMjg1NzY0MiwtOD
+AwNTY0OTIsMTg5Nzc2MjM4MCw4NzYyMDkyNywxMjA3MjEyNDU5
+XX0=
 -->
