@@ -145,10 +145,11 @@ int fwide(FILE *stream, int mode);
 
 | source | real | user | system | 
 | `echof.c` |  .068 | .058 | .014 |
-| `echof.c` |  .068 | .058 | .014 |
-| `echof.c` |  .068 | .058 | .014 |
-| `echof.c` |  .068 | .058 | .014 |
-| 
+| `echof.c` |  .057 | .049 | .014 |
+| `echof.c` |  .058 | .046 | .014 |
+| `echof.c` |  .065 | .053 | .020 |
+| `echof.c` |  .065 | .051 | .017 |
+| `echof.c` |  .058 | .047 | .016 | 
 
 ## 5.9-5.10 バイナリ操作
 
@@ -188,10 +189,10 @@ int fwide(FILE *stream, int mode);
 	* uClibc C ライブラリhttps://uclibc.org/
 	* Newlibc C ライブラリ https://www.sourceware.org/newlib/libc.html
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3OTE4NTc2MjIsMTMwNjE0ODA4Myw4ND
-g2NjE0NzksMjMwMjIwNzgxLDk2MjQ4NjE3NSwtMTEwNDQ5NzUz
-NCwtOTQ2MDQ4Mzg1LDEyMDcyMTQ4MDIsLTE4MTc2NDU5ODIsMj
-E0MDcxOTY1NiwtNTYwODk3MTQsLTk0ODU3OTEwMywxOTAxMTYw
-ODk0LC0xODAyODU3NjQyLC04MDA1NjQ5MiwxODk3NzYyMzgwLD
-g3NjIwOTI3LDEyMDcyMTI0NTldfQ==
+eyJoaXN0b3J5IjpbLTE5NTg2OTM5LDEzMDYxNDgwODMsODQ4Nj
+YxNDc5LDIzMDIyMDc4MSw5NjI0ODYxNzUsLTExMDQ0OTc1MzQs
+LTk0NjA0ODM4NSwxMjA3MjE0ODAyLC0xODE3NjQ1OTgyLDIxND
+A3MTk2NTYsLTU2MDg5NzE0LC05NDg1NzkxMDMsMTkwMTE2MDg5
+NCwtMTgwMjg1NzY0MiwtODAwNTY0OTIsMTg5Nzc2MjM4MCw4Nz
+YyMDkyNywxMjA3MjEyNDU5XX0=
 -->
