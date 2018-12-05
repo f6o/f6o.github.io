@@ -216,6 +216,8 @@ if (fwrite(&item, sizeof(item), 1, fp) != 1) {
 * 構造体のメンバのオフセットは、アラインメント条件が異なるためコンパイラやシステムによって異なることがある
 * 複数バイトの整数値とfloat値を保存するバイナリ形式はマシンアーキテクチャによってことなる
 
+TODO: chromeos 上で書き出した構造体を gcp のインスタンス上で読み込んでみる
+
 ## 5.11 書式付き入出力
 
 * printf
@@ -249,7 +251,7 @@ if (fwrite(&item, sizeof(item), 1, fp) != 1) {
 	* uClibc C ライブラリhttps://uclibc.org/
 	* Newlibc C ライブラリ https://www.sourceware.org/newlib/libc.html
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM0OTI0Mzk3LDEwNjcyMzI5NjksLTEyND
+eyJoaXN0b3J5IjpbNTYyNjA4MDEzLDEwNjcyMzI5NjksLTEyND
 c2NDYxOTAsNTc4NzM5NjMzLDEwODQwOTI4NDcsMTc1MjQ2MTAy
 MywtOTg2MzUxOTgsLTc1OTc3ODA3LDEzMDYxNDgwODMsODQ4Nj
 YxNDc5LDIzMDIyMDc4MSw5NjI0ODYxNzUsLTExMDQ0OTc1MzQs
