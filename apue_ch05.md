@@ -211,9 +211,10 @@ if (fwrite(&item, sizeof(item), 1, fp) != 1) {
 }
 ```
 
-* 異なるシステム間でつか汎用的じゃない
-* 構造体のメンバのオフセットがコンパイラやシステムで異なる
-* 
+#### 異なるシステム間で使いにくい
+
+* 構造体のメンバのオフセットは、アラインメント条件が異なるためコンパイラやシステムによって異なることがある
+* 複数バイトの整数値とfloat値を保存するバイナリ形式はマシンアーキテクチャによってことなる
 
 ## 5.11 書式付き入出力
 
@@ -248,11 +249,11 @@ if (fwrite(&item, sizeof(item), 1, fp) != 1) {
 	* uClibc C ライブラリhttps://uclibc.org/
 	* Newlibc C ライブラリ https://www.sourceware.org/newlib/libc.html
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUyNjA2MTcyMywxMDY3MjMyOTY5LC0xMj
-Q3NjQ2MTkwLDU3ODczOTYzMywxMDg0MDkyODQ3LDE3NTI0NjEw
-MjMsLTk4NjM1MTk4LC03NTk3NzgwNywxMzA2MTQ4MDgzLDg0OD
-Y2MTQ3OSwyMzAyMjA3ODEsOTYyNDg2MTc1LC0xMTA0NDk3NTM0
-LC05NDYwNDgzODUsMTIwNzIxNDgwMiwtMTgxNzY0NTk4MiwyMT
-QwNzE5NjU2LC01NjA4OTcxNCwtOTQ4NTc5MTAzLDE5MDExNjA4
-OTRdfQ==
+eyJoaXN0b3J5IjpbLTM0OTI0Mzk3LDEwNjcyMzI5NjksLTEyND
+c2NDYxOTAsNTc4NzM5NjMzLDEwODQwOTI4NDcsMTc1MjQ2MTAy
+MywtOTg2MzUxOTgsLTc1OTc3ODA3LDEzMDYxNDgwODMsODQ4Nj
+YxNDc5LDIzMDIyMDc4MSw5NjI0ODYxNzUsLTExMDQ0OTc1MzQs
+LTk0NjA0ODM4NSwxMjA3MjE0ODAyLC0xODE3NjQ1OTgyLDIxND
+A3MTk2NTYsLTU2MDg5NzE0LC05NDg1NzkxMDMsMTkwMTE2MDg5
+NF19
 -->
