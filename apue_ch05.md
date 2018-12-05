@@ -180,8 +180,9 @@ int fwide(FILE *stream, int mode);
 | .742 | .092 | .654 |
 | .715 | .085 | .632 |
 | .721 | .094 | .631 |
-| .750 | .084 | .647 |
-
+| .750 | .084 | .670 |
+| .709 | .094 | .618 |
+| .743 | .094 | .652 |
 
 ## 5.9-5.10 バイナリ操作
 
@@ -221,11 +222,11 @@ int fwide(FILE *stream, int mode);
 	* uClibc C ライブラリhttps://uclibc.org/
 	* Newlibc C ライブラリ https://www.sourceware.org/newlib/libc.html
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODA4MDQwNjE3LDEwODQwOTI4NDcsMTc1Mj
-Q2MTAyMywtOTg2MzUxOTgsLTc1OTc3ODA3LDEzMDYxNDgwODMs
-ODQ4NjYxNDc5LDIzMDIyMDc4MSw5NjI0ODYxNzUsLTExMDQ0OT
-c1MzQsLTk0NjA0ODM4NSwxMjA3MjE0ODAyLC0xODE3NjQ1OTgy
-LDIxNDA3MTk2NTYsLTU2MDg5NzE0LC05NDg1NzkxMDMsMTkwMT
-E2MDg5NCwtMTgwMjg1NzY0MiwtODAwNTY0OTIsMTg5Nzc2MjM4
-MF19
+eyJoaXN0b3J5IjpbLTI0OTQ0NzAzNSwxMDg0MDkyODQ3LDE3NT
+I0NjEwMjMsLTk4NjM1MTk4LC03NTk3NzgwNywxMzA2MTQ4MDgz
+LDg0ODY2MTQ3OSwyMzAyMjA3ODEsOTYyNDg2MTc1LC0xMTA0ND
+k3NTM0LC05NDYwNDgzODUsMTIwNzIxNDgwMiwtMTgxNzY0NTk4
+MiwyMTQwNzE5NjU2LC01NjA4OTcxNCwtOTQ4NTc5MTAzLDE5MD
+ExNjA4OTQsLTE4MDI4NTc2NDIsLTgwMDU2NDkyLDE4OTc3NjIz
+ODBdfQ==
 -->
