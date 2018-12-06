@@ -216,7 +216,8 @@ if (fwrite(&item, sizeof(item), 1, fp) != 1) {
 * 構造体のメンバのオフセットは、アラインメント条件が異なるためコンパイラやシステムによって異なることがある
 * 複数バイトの整数値とfloat値を保存するバイナリ形式はマシンアーキテクチャによってことなる
 
-TODO: chromeos 上で書き出した構造体を gcp のインスタンス上で読み込んでみる
+chromeos 上で書き出した構造体を gcp のインスタンス上で読み込んでみる
+`spit.c`, `slurp.c` を書いた。
 
 ## 5.11 書式付き入出力
 
@@ -251,11 +252,11 @@ TODO: chromeos 上で書き出した構造体を gcp のインスタンス上で
 	* uClibc C ライブラリhttps://uclibc.org/
 	* Newlibc C ライブラリ https://www.sourceware.org/newlib/libc.html
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTYyNjA4MDEzLDEwNjcyMzI5NjksLTEyND
-c2NDYxOTAsNTc4NzM5NjMzLDEwODQwOTI4NDcsMTc1MjQ2MTAy
-MywtOTg2MzUxOTgsLTc1OTc3ODA3LDEzMDYxNDgwODMsODQ4Nj
-YxNDc5LDIzMDIyMDc4MSw5NjI0ODYxNzUsLTExMDQ0OTc1MzQs
-LTk0NjA0ODM4NSwxMjA3MjE0ODAyLC0xODE3NjQ1OTgyLDIxND
-A3MTk2NTYsLTU2MDg5NzE0LC05NDg1NzkxMDMsMTkwMTE2MDg5
-NF19
+eyJoaXN0b3J5IjpbLTE3MDAyMDAwNzgsNTYyNjA4MDEzLDEwNj
+cyMzI5NjksLTEyNDc2NDYxOTAsNTc4NzM5NjMzLDEwODQwOTI4
+NDcsMTc1MjQ2MTAyMywtOTg2MzUxOTgsLTc1OTc3ODA3LDEzMD
+YxNDgwODMsODQ4NjYxNDc5LDIzMDIyMDc4MSw5NjI0ODYxNzUs
+LTExMDQ0OTc1MzQsLTk0NjA0ODM4NSwxMjA3MjE0ODAyLC0xOD
+E3NjQ1OTgyLDIxNDA3MTk2NTYsLTU2MDg5NzE0LC05NDg1Nzkx
+MDNdfQ==
 -->
