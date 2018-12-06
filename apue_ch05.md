@@ -217,9 +217,7 @@ if (fwrite(&item, sizeof(item), 1, fp) != 1) {
 * 複数バイトの整数値とfloat値を保存するバイナリ形式はマシンアーキテクチャによってことなる
 
 * chromeos 上で書き出した構造体を gcp のインスタンス上で読み込んでみる
-	* `spit.c`, `slurp.c` を書いた
-		https://gist.github.com/f6o/a5f8f96353a16efe464c1e2e6946ea86
-
+	* `spit.c`, `slurp.c` を書いた [gist](https://gist.github.com/f6o/a5f8f96353a16efe464c1e2e6946ea86)
 
 ## 5.11 書式付き入出力
 
@@ -254,7 +252,7 @@ if (fwrite(&item, sizeof(item), 1, fp) != 1) {
 	* uClibc C ライブラリhttps://uclibc.org/
 	* Newlibc C ライブラリ https://www.sourceware.org/newlib/libc.html
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg2NDE3MDM4OCwtMTcwMDIwMDA3OCw1Nj
+eyJoaXN0b3J5IjpbMTg3ODg5NzczMCwtMTcwMDIwMDA3OCw1Nj
 I2MDgwMTMsMTA2NzIzMjk2OSwtMTI0NzY0NjE5MCw1Nzg3Mzk2
 MzMsMTA4NDA5Mjg0NywxNzUyNDYxMDIzLC05ODYzNTE5OCwtNz
 U5Nzc4MDcsMTMwNjE0ODA4Myw4NDg2NjE0NzksMjMwMjIwNzgx
