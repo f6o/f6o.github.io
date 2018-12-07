@@ -219,6 +219,40 @@ if (fwrite(&item, sizeof(item), 1, fp) != 1) {
 * chromeos 上で書き出した構造体を gcp のインスタンス上で読み込んでみる
 	* `spit.c`, `slurp.c` を書いた [gist](https://gist.github.com/f6o/a5f8f96353a16efe464c1e2e6946ea86)
 
+fluffy6h@playground-2:~/spsl$ od -t cx1 user.bin 
+0000000      \0  \0  \0   f   f   f   ?   a   n   n  \0                
+         20  00  00  00  66  66  66  3f  61  6e  6e  00  20  20  20  20
+0000020                
+         20  20  20  20
+0000024
+fluffy6h@playground-2:~/spsl$ ls
+data.h  slurp  slurp.c  spit  spit.c  spsl.tar.gz  user.bin
+fluffy6h@playground-2:~/spsl$ exit
+logout
+Connection to 35.243.101.211 closed.
+fluffy6h@penguin:~/root$ od -t cx1 user.bin 
+0000000      \0  \0  \0   f   f   f   ?   a   n   n  \0                
+         20  00  00  00  66  66  66  3f  61  6e  6e  00  20  20  20  20
+0000020                
+         20  20  20  20
+0000024
+fluffy6h@penguin:~/root$ uname -a
+Linux penguin 4.14.74-07727-g7815dfea1ba2 #1 SMP PREEMPT Tue Oct 16 17:26:41 PDT 2018 aarch64 GNU/Linux
+fluffy6h@penguin:~/root$ ssh 35.243.101.211
+Enter passphrase for key '/home/fluffy6h/.ssh/id_rsa': 
+Linux playground-2 4.9.0-8-amd64 #1 SMP Debian 4.9.110-3+deb9u6 (2018-10-08) x86_64
+
+The programs included with the Debian GNU/Linux system are free software;
+the exact distribution terms for each program are described in the
+individual files in /usr/share/doc/*/copyright.
+
+Debian GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent
+permitted by applicable law.
+Last login: Fri Dec  7 11:43:05 2018 from 49.239.67.10
+fluffy6h@playground-2:~$ uname -a
+Linux playground-2 4.9.0-8-amd64 #1 SMP Debian 4.9.110-3+deb9u6 (2018-10-08) x86_64 GNU/Linux
+fluffy6h@playground-2:~$
+
 ## 5.11 書式付き入出力
 
 * printf
@@ -252,11 +286,11 @@ if (fwrite(&item, sizeof(item), 1, fp) != 1) {
 	* uClibc C ライブラリhttps://uclibc.org/
 	* Newlibc C ライブラリ https://www.sourceware.org/newlib/libc.html
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg3ODg5NzczMCwtMTcwMDIwMDA3OCw1Nj
-I2MDgwMTMsMTA2NzIzMjk2OSwtMTI0NzY0NjE5MCw1Nzg3Mzk2
-MzMsMTA4NDA5Mjg0NywxNzUyNDYxMDIzLC05ODYzNTE5OCwtNz
-U5Nzc4MDcsMTMwNjE0ODA4Myw4NDg2NjE0NzksMjMwMjIwNzgx
-LDk2MjQ4NjE3NSwtMTEwNDQ5NzUzNCwtOTQ2MDQ4Mzg1LDEyMD
-cyMTQ4MDIsLTE4MTc2NDU5ODIsMjE0MDcxOTY1NiwtNTYwODk3
-MTRdfQ==
+eyJoaXN0b3J5IjpbMTA2MzQzMTQ4LDE4Nzg4OTc3MzAsLTE3MD
+AyMDAwNzgsNTYyNjA4MDEzLDEwNjcyMzI5NjksLTEyNDc2NDYx
+OTAsNTc4NzM5NjMzLDEwODQwOTI4NDcsMTc1MjQ2MTAyMywtOT
+g2MzUxOTgsLTc1OTc3ODA3LDEzMDYxNDgwODMsODQ4NjYxNDc5
+LDIzMDIyMDc4MSw5NjI0ODYxNzUsLTExMDQ0OTc1MzQsLTk0Nj
+A0ODM4NSwxMjA3MjE0ODAyLC0xODE3NjQ1OTgyLDIxNDA3MTk2
+NTZdfQ==
 -->
