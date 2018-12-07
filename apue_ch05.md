@@ -218,6 +218,7 @@ if (fwrite(&item, sizeof(item), 1, fp) != 1) {
 
 * chromeos 上で書き出した構造体を gcp のインスタンス上で読み込んでみる
 	* `spit.c`, `slurp.c` を書いた [gist](https://gist.github.com/f6o/a5f8f96353a16efe464c1e2e6946ea86)
+	* 一緒だった。
 
 ```
 $ od -t cx1 user.bin 
@@ -234,7 +235,6 @@ $ od -t cx1 user.bin
 0000024
 ```
 
-Linux penguin 4.14.74-07727-g7815dfea1ba2 #1 SMP PREEMPT Tue Oct 16 17:26:41 PDT 2018 aarch64 Linux playground-2 4.9.0-8-amd64 #1 SMP Debian 4.9.110-3+deb9u6 (2018-10-08) x86_64 GNU/Linux
 
 ## 5.11 書式付き入出力
 
@@ -269,7 +269,7 @@ Linux penguin 4.14.74-07727-g7815dfea1ba2 #1 SMP PREEMPT Tue Oct 16 17:26:41 PDT
 	* uClibc C ライブラリhttps://uclibc.org/
 	* Newlibc C ライブラリ https://www.sourceware.org/newlib/libc.html
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY4MDg2MjMyMiwxODc4ODk3NzMwLC0xNz
+eyJoaXN0b3J5IjpbLTk5MDgwOTc1MCwxODc4ODk3NzMwLC0xNz
 AwMjAwMDc4LDU2MjYwODAxMywxMDY3MjMyOTY5LC0xMjQ3NjQ2
 MTkwLDU3ODczOTYzMywxMDg0MDkyODQ3LDE3NTI0NjEwMjMsLT
 k4NjM1MTk4LC03NTk3NzgwNywxMzA2MTQ4MDgzLDg0ODY2MTQ3
