@@ -237,19 +237,7 @@ fluffy6h@penguin:~/root$ od -t cx1 user.bin
          20  20  20  20
 0000024
 fluffy6h@penguin:~/root$ uname -a
-Linux penguin 4.14.74-07727-g7815dfea1ba2 #1 SMP PREEMPT Tue Oct 16 17:26:41 PDT 2018 aarch64 GNU/Linux
-fluffy6h@penguin:~/root$ ssh 35.243.101.211
-Enter passphrase for key '/home/fluffy6h/.ssh/id_rsa': 
-Linux playground-2 4.9.0-8-amd64 #1 SMP Debian 4.9.110-3+deb9u6 (2018-10-08) x86_64
-
-The programs included with the Debian GNU/Linux system are free software;
-the exact distribution terms for each program are described in the
-individual files in /usr/share/doc/*/copyright.
-
-Debian GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent
-permitted by applicable law.
-Last login: Fri Dec  7 11:43:05 2018 from 49.239.67.10
-fluffy6h@playground-2:~$ uname -a
+Linux penguin 4.14.74-07727-g7815dfea1ba2 #1 SMP PREEMPT Tue Oct 16 17:26:41 PDT 2018 aarch64 fluffy6h@playground-2:~$ uname -a
 Linux playground-2 4.9.0-8-amd64 #1 SMP Debian 4.9.110-3+deb9u6 (2018-10-08) x86_64 GNU/Linux
 fluffy6h@playground-2:~$
 
@@ -286,11 +274,11 @@ fluffy6h@playground-2:~$
 	* uClibc C ライブラリhttps://uclibc.org/
 	* Newlibc C ライブラリ https://www.sourceware.org/newlib/libc.html
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA2MzQzMTQ4LDE4Nzg4OTc3MzAsLTE3MD
-AyMDAwNzgsNTYyNjA4MDEzLDEwNjcyMzI5NjksLTEyNDc2NDYx
-OTAsNTc4NzM5NjMzLDEwODQwOTI4NDcsMTc1MjQ2MTAyMywtOT
-g2MzUxOTgsLTc1OTc3ODA3LDEzMDYxNDgwODMsODQ4NjYxNDc5
-LDIzMDIyMDc4MSw5NjI0ODYxNzUsLTExMDQ0OTc1MzQsLTk0Nj
-A0ODM4NSwxMjA3MjE0ODAyLC0xODE3NjQ1OTgyLDIxNDA3MTk2
-NTZdfQ==
+eyJoaXN0b3J5IjpbLTE5NjYyNTE0NDgsMTg3ODg5NzczMCwtMT
+cwMDIwMDA3OCw1NjI2MDgwMTMsMTA2NzIzMjk2OSwtMTI0NzY0
+NjE5MCw1Nzg3Mzk2MzMsMTA4NDA5Mjg0NywxNzUyNDYxMDIzLC
+05ODYzNTE5OCwtNzU5Nzc4MDcsMTMwNjE0ODA4Myw4NDg2NjE0
+NzksMjMwMjIwNzgxLDk2MjQ4NjE3NSwtMTEwNDQ5NzUzNCwtOT
+Q2MDQ4Mzg1LDEyMDcyMTQ4MDIsLTE4MTc2NDU5ODIsMjE0MDcx
+OTY1Nl19
 -->
