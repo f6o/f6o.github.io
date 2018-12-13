@@ -248,6 +248,7 @@ $ od -t cx1 user.bin
 	* K&R の 8.5 節
 	* Plauger1992 の 12章
 	* GNU for free
+	* 
 
 ## 5.13 temp file
 
@@ -276,11 +277,11 @@ $ od -t cx1 user.bin
 	* uClibc C ライブラリhttps://uclibc.org/
 	* Newlibc C ライブラリ https://www.sourceware.org/newlib/libc.html
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTE2NjMxOTk0LC0xMzU2ODE2NDA0LDE4Nz
-g4OTc3MzAsLTE3MDAyMDAwNzgsNTYyNjA4MDEzLDEwNjcyMzI5
-NjksLTEyNDc2NDYxOTAsNTc4NzM5NjMzLDEwODQwOTI4NDcsMT
-c1MjQ2MTAyMywtOTg2MzUxOTgsLTc1OTc3ODA3LDEzMDYxNDgw
-ODMsODQ4NjYxNDc5LDIzMDIyMDc4MSw5NjI0ODYxNzUsLTExMD
-Q0OTc1MzQsLTk0NjA0ODM4NSwxMjA3MjE0ODAyLC0xODE3NjQ1
-OTgyXX0=
+eyJoaXN0b3J5IjpbLTE5Mzk0NzY4Niw5MTY2MzE5OTQsLTEzNT
+Y4MTY0MDQsMTg3ODg5NzczMCwtMTcwMDIwMDA3OCw1NjI2MDgw
+MTMsMTA2NzIzMjk2OSwtMTI0NzY0NjE5MCw1Nzg3Mzk2MzMsMT
+A4NDA5Mjg0NywxNzUyNDYxMDIzLC05ODYzNTE5OCwtNzU5Nzc4
+MDcsMTMwNjE0ODA4Myw4NDg2NjE0NzksMjMwMjIwNzgxLDk2Mj
+Q4NjE3NSwtMTEwNDQ5NzUzNCwtOTQ2MDQ4Mzg1LDEyMDcyMTQ4
+MDJdfQ==
 -->
