@@ -252,6 +252,71 @@ $ od -t cx1 user.bin
 	* Plauger1992 の 12章
 	* GNU for free
 
+### サンプル: 標準入出力ライブラリバッファリングの表示
+
+```
+#include <stdio.h>
+
+void pr_stdio(const char *, FILE *);
+int buffer_size(FILE *fp);
+
+int main(int argc, char *argv[])
+{
+  FILE *fp;
+
+  fputs("enter any char\n", stdout);
+  if ( getchar() == EOF )
+    return 0;
+  fputs("one line to stderr\n", stderr);
+
+  pr_stdio("stdin", stdin);
+  pr_stdio("stdout", stdout);
+  pr_stdio("stderr", stderr);
+}
+
+void pr_stdio(const char* name, FILE *fp)
+{
+  printf("stream = %s ", name);
+  printf("%x, ", fp->_flags);
+  if ( fp->_flags & _IO_UNBUFFERED ) {
+    printf("unbuffered");
+  } else if ( fp->_flags & _IO_LINE_BUF ) {
+    printf("line buffered");
+  } else {
+    printf("fully buffered");
+  }
+  printf(", buffer size=%d\n", buffer_size(fp));
+}
+
+int buffer_size(FILE *fp)
+{
+  return(fp->_IO_buf_end - fp->_IO_buf_base);
+}
+```
+
+* Linux penguin 4.14.74-07776-gac52e5f750c8 #1 SMP PREEMPT Thu Dec 6 17:33:34 PST 2018 aarch64 GNU/Linux
+* `/usr/include/stdio.h` と `/usr/include/libio.h` を参考にした 
+* 結果はこんな感じ
+
+```
+xxx@penguin:~/root$ ./chk_bfr 
+enter any char
+
+one line to stderr
+stream = stdin fbad2288, line buffered, buffer size=1024
+stream = stdout fbad2a84, line buffered, buffer size=1024
+stream = stderr fbad2887, unbuffered, buffer size=1
+```
+
+```
+xxx@penguin:~/root$ ./chk_bfr <./chk_bfr.c >chk_bfr.log 2>chk_bfr.err
+xxx@penguin:~/root$ cat chk_bfr.log
+enter any char
+stream = stdin fbad2088, fully buffered, buffer size=4096
+stream = stdout fbad2884, fully buffered, buffer size=4096
+stream = stderr fbad2887, unbuffered, buffer size=1
+```
+
 ## 5.13 temp file
 
 ## 5.14 メモリストリーム
@@ -279,11 +344,11 @@ $ od -t cx1 user.bin
 	* uClibc C ライブラリhttps://uclibc.org/
 	* Newlibc C ライブラリ https://www.sourceware.org/newlib/libc.html
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMTk5NTI0MjAsMjQyMTQ5OTMwLDkxNj
-YzMTk5NCwtMTM1NjgxNjQwNCwxODc4ODk3NzMwLC0xNzAwMjAw
-MDc4LDU2MjYwODAxMywxMDY3MjMyOTY5LC0xMjQ3NjQ2MTkwLD
-U3ODczOTYzMywxMDg0MDkyODQ3LDE3NTI0NjEwMjMsLTk4NjM1
-MTk4LC03NTk3NzgwNywxMzA2MTQ4MDgzLDg0ODY2MTQ3OSwyMz
-AyMjA3ODEsOTYyNDg2MTc1LC0xMTA0NDk3NTM0LC05NDYwNDgz
-ODVdfQ==
+eyJoaXN0b3J5IjpbMTY5MTY2OTM4MywtMjAxOTk1MjQyMCwyND
+IxNDk5MzAsOTE2NjMxOTk0LC0xMzU2ODE2NDA0LDE4Nzg4OTc3
+MzAsLTE3MDAyMDAwNzgsNTYyNjA4MDEzLDEwNjcyMzI5NjksLT
+EyNDc2NDYxOTAsNTc4NzM5NjMzLDEwODQwOTI4NDcsMTc1MjQ2
+MTAyMywtOTg2MzUxOTgsLTc1OTc3ODA3LDEzMDYxNDgwODMsOD
+Q4NjYxNDc5LDIzMDIyMDc4MSw5NjI0ODYxNzUsLTExMDQ0OTc1
+MzRdfQ==
 -->
