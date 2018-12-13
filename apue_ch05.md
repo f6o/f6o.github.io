@@ -243,6 +243,10 @@ $ od -t cx1 user.bin
 
 ## 5.12 FILE ストリームの定義
 
+* `fileno` が使えるのは POSIX.1 拡張から
+* システムの標準入出力関数が知りたいなら `stdio.h` から
+	* K&R の 8.5 節, 
+
 ## 5.13 temp file
 
 ## 5.14 メモリストリーム
@@ -270,11 +274,11 @@ $ od -t cx1 user.bin
 	* uClibc C ライブラリhttps://uclibc.org/
 	* Newlibc C ライブラリ https://www.sourceware.org/newlib/libc.html
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNTY4MTY0MDQsMTg3ODg5NzczMCwtMT
-cwMDIwMDA3OCw1NjI2MDgwMTMsMTA2NzIzMjk2OSwtMTI0NzY0
-NjE5MCw1Nzg3Mzk2MzMsMTA4NDA5Mjg0NywxNzUyNDYxMDIzLC
-05ODYzNTE5OCwtNzU5Nzc4MDcsMTMwNjE0ODA4Myw4NDg2NjE0
-NzksMjMwMjIwNzgxLDk2MjQ4NjE3NSwtMTEwNDQ5NzUzNCwtOT
-Q2MDQ4Mzg1LDEyMDcyMTQ4MDIsLTE4MTc2NDU5ODIsMjE0MDcx
-OTY1Nl19
+eyJoaXN0b3J5IjpbLTY0OTkyNzY1NywtMTM1NjgxNjQwNCwxOD
+c4ODk3NzMwLC0xNzAwMjAwMDc4LDU2MjYwODAxMywxMDY3MjMy
+OTY5LC0xMjQ3NjQ2MTkwLDU3ODczOTYzMywxMDg0MDkyODQ3LD
+E3NTI0NjEwMjMsLTk4NjM1MTk4LC03NTk3NzgwNywxMzA2MTQ4
+MDgzLDg0ODY2MTQ3OSwyMzAyMjA3ODEsOTYyNDg2MTc1LC0xMT
+A0NDk3NTM0LC05NDYwNDgzODUsMTIwNzIxNDgwMiwtMTgxNzY0
+NTk4Ml19
 -->
