@@ -245,6 +245,7 @@ $ od -t cx1 user.bin
 
 * `fileno` が使えるのは POSIX.1 拡張から
 * システムの標準入出力関数が知りたいなら `stdio.h` から
+	* `struct _IO_FILE` のコメント `Define outside of namespace so the C++ is happy.` とはどういうこと？
 * `man stdio` でも良さそう
 * 参考資料
 	* K&R の 8.5 節
@@ -278,11 +279,11 @@ $ od -t cx1 user.bin
 	* uClibc C ライブラリhttps://uclibc.org/
 	* Newlibc C ライブラリ https://www.sourceware.org/newlib/libc.html
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjQyMTQ5OTMwLDkxNjYzMTk5NCwtMTM1Nj
-gxNjQwNCwxODc4ODk3NzMwLC0xNzAwMjAwMDc4LDU2MjYwODAx
-MywxMDY3MjMyOTY5LC0xMjQ3NjQ2MTkwLDU3ODczOTYzMywxMD
-g0MDkyODQ3LDE3NTI0NjEwMjMsLTk4NjM1MTk4LC03NTk3Nzgw
-NywxMzA2MTQ4MDgzLDg0ODY2MTQ3OSwyMzAyMjA3ODEsOTYyND
-g2MTc1LC0xMTA0NDk3NTM0LC05NDYwNDgzODUsMTIwNzIxNDgw
-Ml19
+eyJoaXN0b3J5IjpbLTIwMTk5NTI0MjAsMjQyMTQ5OTMwLDkxNj
+YzMTk5NCwtMTM1NjgxNjQwNCwxODc4ODk3NzMwLC0xNzAwMjAw
+MDc4LDU2MjYwODAxMywxMDY3MjMyOTY5LC0xMjQ3NjQ2MTkwLD
+U3ODczOTYzMywxMDg0MDkyODQ3LDE3NTI0NjEwMjMsLTk4NjM1
+MTk4LC03NTk3NzgwNywxMzA2MTQ4MDgzLDg0ODY2MTQ3OSwyMz
+AyMjA3ODEsOTYyNDg2MTc1LC0xMTA0NDk3NTM0LC05NDYwNDgz
+ODVdfQ==
 -->
