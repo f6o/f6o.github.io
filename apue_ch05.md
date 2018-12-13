@@ -245,7 +245,9 @@ $ od -t cx1 user.bin
 
 * `fileno` が使えるのは POSIX.1 拡張から
 * システムの標準入出力関数が知りたいなら `stdio.h` から
-	* K&R の 8.5 節, 
+	* K&R の 8.5 節
+	* Plauger1992 の 12章
+	* GNU for free
 
 ## 5.13 temp file
 
@@ -274,11 +276,11 @@ $ od -t cx1 user.bin
 	* uClibc C ライブラリhttps://uclibc.org/
 	* Newlibc C ライブラリ https://www.sourceware.org/newlib/libc.html
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY0OTkyNzY1NywtMTM1NjgxNjQwNCwxOD
-c4ODk3NzMwLC0xNzAwMjAwMDc4LDU2MjYwODAxMywxMDY3MjMy
-OTY5LC0xMjQ3NjQ2MTkwLDU3ODczOTYzMywxMDg0MDkyODQ3LD
-E3NTI0NjEwMjMsLTk4NjM1MTk4LC03NTk3NzgwNywxMzA2MTQ4
-MDgzLDg0ODY2MTQ3OSwyMzAyMjA3ODEsOTYyNDg2MTc1LC0xMT
-A0NDk3NTM0LC05NDYwNDgzODUsMTIwNzIxNDgwMiwtMTgxNzY0
-NTk4Ml19
+eyJoaXN0b3J5IjpbOTE2NjMxOTk0LC0xMzU2ODE2NDA0LDE4Nz
+g4OTc3MzAsLTE3MDAyMDAwNzgsNTYyNjA4MDEzLDEwNjcyMzI5
+NjksLTEyNDc2NDYxOTAsNTc4NzM5NjMzLDEwODQwOTI4NDcsMT
+c1MjQ2MTAyMywtOTg2MzUxOTgsLTc1OTc3ODA3LDEzMDYxNDgw
+ODMsODQ4NjYxNDc5LDIzMDIyMDc4MSw5NjI0ODYxNzUsLTExMD
+Q0OTc1MzQsLTk0NjA0ODM4NSwxMjA3MjE0ODAyLC0xODE3NjQ1
+OTgyXX0=
 -->
