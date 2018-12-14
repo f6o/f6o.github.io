@@ -321,7 +321,8 @@ stream = stderr fbad2887, unbuffered, buffer size=1
 
 * `char *tmpnam(char *ptr)` で一意なパス名（へのポインタ）を返す
 * `tmpnam(NULL)`だと静的領域にパス名は保存され、呼び出しごとにその領域は上書きされる
-* ｄ
+* でも使うべきではない: 2つプロセスで同じパス名が作られる可能性があり、衝突する可能性がある
+	* 代わりに ``
 
 ## 5.14 メモリストリーム
 
@@ -348,11 +349,11 @@ stream = stderr fbad2887, unbuffered, buffer size=1
 	* uClibc C ライブラリhttps://uclibc.org/
 	* Newlibc C ライブラリ https://www.sourceware.org/newlib/libc.html
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjY0NDE1NTEyLDEyMTc2MzU2NDAsMTY5MT
-Y2OTM4MywtMjAxOTk1MjQyMCwyNDIxNDk5MzAsOTE2NjMxOTk0
-LC0xMzU2ODE2NDA0LDE4Nzg4OTc3MzAsLTE3MDAyMDAwNzgsNT
-YyNjA4MDEzLDEwNjcyMzI5NjksLTEyNDc2NDYxOTAsNTc4NzM5
-NjMzLDEwODQwOTI4NDcsMTc1MjQ2MTAyMywtOTg2MzUxOTgsLT
-c1OTc3ODA3LDEzMDYxNDgwODMsODQ4NjYxNDc5LDIzMDIyMDc4
-MV19
+eyJoaXN0b3J5IjpbMTY5NzkwNDg5NSwxMjE3NjM1NjQwLDE2OT
+E2NjkzODMsLTIwMTk5NTI0MjAsMjQyMTQ5OTMwLDkxNjYzMTk5
+NCwtMTM1NjgxNjQwNCwxODc4ODk3NzMwLC0xNzAwMjAwMDc4LD
+U2MjYwODAxMywxMDY3MjMyOTY5LC0xMjQ3NjQ2MTkwLDU3ODcz
+OTYzMywxMDg0MDkyODQ3LDE3NTI0NjEwMjMsLTk4NjM1MTk4LC
+03NTk3NzgwNywxMzA2MTQ4MDgzLDg0ODY2MTQ3OSwyMzAyMjA3
+ODFdfQ==
 -->
