@@ -317,7 +317,9 @@ stream = stdout fbad2884, fully buffered, buffer size=4096
 stream = stderr fbad2887, unbuffered, buffer size=1
 ```
 
-## 5.13 temp file
+## 5.13 一時ファイル
+
+* `chtmpnam()`
 
 ## 5.14 メモリストリーム
 
@@ -344,11 +346,11 @@ stream = stderr fbad2887, unbuffered, buffer size=1
 	* uClibc C ライブラリhttps://uclibc.org/
 	* Newlibc C ライブラリ https://www.sourceware.org/newlib/libc.html
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY5MTY2OTM4MywtMjAxOTk1MjQyMCwyND
-IxNDk5MzAsOTE2NjMxOTk0LC0xMzU2ODE2NDA0LDE4Nzg4OTc3
-MzAsLTE3MDAyMDAwNzgsNTYyNjA4MDEzLDEwNjcyMzI5NjksLT
-EyNDc2NDYxOTAsNTc4NzM5NjMzLDEwODQwOTI4NDcsMTc1MjQ2
-MTAyMywtOTg2MzUxOTgsLTc1OTc3ODA3LDEzMDYxNDgwODMsOD
-Q4NjYxNDc5LDIzMDIyMDc4MSw5NjI0ODYxNzUsLTExMDQ0OTc1
-MzRdfQ==
+eyJoaXN0b3J5IjpbLTIwODcxMzUzNywxNjkxNjY5MzgzLC0yMD
+E5OTUyNDIwLDI0MjE0OTkzMCw5MTY2MzE5OTQsLTEzNTY4MTY0
+MDQsMTg3ODg5NzczMCwtMTcwMDIwMDA3OCw1NjI2MDgwMTMsMT
+A2NzIzMjk2OSwtMTI0NzY0NjE5MCw1Nzg3Mzk2MzMsMTA4NDA5
+Mjg0NywxNzUyNDYxMDIzLC05ODYzNTE5OCwtNzU5Nzc4MDcsMT
+MwNjE0ODA4Myw4NDg2NjE0NzksMjMwMjIwNzgxLDk2MjQ4NjE3
+NV19
 -->
