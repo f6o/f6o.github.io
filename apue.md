@@ -9,7 +9,8 @@
 
 * Chapter 2 UNIX Standardization and Imprementations
 	* refer as needed
-* Chapter 3 File I/O
+* [Chapter 3 File I/O](./apue_ch03)
+	* read half
 	* do exercise
 * [Chapter 4 Files and Directories](./apue_ch04)
 	* do exercise
@@ -20,7 +21,7 @@
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA3MDAxNjg5Niw4NzQxNTMwNCwtMTIzNT
+eyJoaXN0b3J5IjpbLTQwODUwNDc4OSw4NzQxNTMwNCwtMTIzNT
 IzOTQ1OCw1MTkxNzIxNDYsMTc1NzY2NTcxNiwtMTE4NDkyMzY4
 NiwxMjk1NjAyNzIwLDEwNzgxOTUwNCwtMTIzNTIzNTYyMCwtOT
 k2MzI0MTQ3LDE0MzQ5NjQwMSwtMTg3ODA5MzY0MSwtMTI2MjIx
