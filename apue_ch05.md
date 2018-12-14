@@ -319,7 +319,8 @@ stream = stderr fbad2887, unbuffered, buffer size=1
 
 ## 5.13 一時ファイル
 
-* `chtmpnam()`
+* `char *tmpnam(char *ptr)` で一意なパス名（へのポインタ）を返す
+* `tmpnam(NULL)`だと静的領域に
 
 ## 5.14 メモリストリーム
 
@@ -346,7 +347,7 @@ stream = stderr fbad2887, unbuffered, buffer size=1
 	* uClibc C ライブラリhttps://uclibc.org/
 	* Newlibc C ライブラリ https://www.sourceware.org/newlib/libc.html
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwODcxMzUzNywxNjkxNjY5MzgzLC0yMD
+eyJoaXN0b3J5IjpbLTgzNTU4MjY4MiwxNjkxNjY5MzgzLC0yMD
 E5OTUyNDIwLDI0MjE0OTkzMCw5MTY2MzE5OTQsLTEzNTY4MTY0
 MDQsMTg3ODg5NzczMCwtMTcwMDIwMDA3OCw1NjI2MDgwMTMsMT
 A2NzIzMjk2OSwtMTI0NzY0NjE5MCw1Nzg3Mzk2MzMsMTA4NDA5
