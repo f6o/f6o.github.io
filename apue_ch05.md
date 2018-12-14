@@ -324,9 +324,8 @@ stream = stderr fbad2887, unbuffered, buffer size=1
 * でも使うべきではない: 2つプロセスで同じパス名が作られる可能性があり、衝突する可能性がある
 	* `man tmpnam` によれば代わりに `mkstemp` か `tmpfile` を使うべき
 
-* `mkdtmp` は一意なディレクトリ名を返す
-	* ユーザがよ
-* `mkstmp` は一意な名前のファイルを作成し、オープンし記述子を返す
+* `mkdtmp` は一意なディレクトリ名を返す (パーミッションは0700)
+* `mkstmp` は一意な名前のファイルを作成し、オープンし記述子を返す (パーミッションは0600)
 
 ## 5.14 メモリストリーム
 
@@ -353,7 +352,7 @@ stream = stderr fbad2887, unbuffered, buffer size=1
 	* uClibc C ライブラリhttps://uclibc.org/
 	* Newlibc C ライブラリ https://www.sourceware.org/newlib/libc.html
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQyNjQ0NzU1NCwxMjE3NjM1NjQwLDE2OT
+eyJoaXN0b3J5IjpbLTk2OTg3MDg1NSwxMjE3NjM1NjQwLDE2OT
 E2NjkzODMsLTIwMTk5NTI0MjAsMjQyMTQ5OTMwLDkxNjYzMTk5
 NCwtMTM1NjgxNjQwNCwxODc4ODk3NzMwLC0xNzAwMjAwMDc4LD
 U2MjYwODAxMywxMDY3MjMyOTY5LC0xMjQ3NjQ2MTkwLDU3ODcz
