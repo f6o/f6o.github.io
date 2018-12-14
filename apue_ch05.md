@@ -330,6 +330,8 @@ stream = stderr fbad2887, unbuffered, buffer size=1
 	* `mkdtmp` は一意なディレクトリ名を返す (パーミッションは0700)
 	* `mkstmp` は一意な名前のファイルを作成し、オープンし記述子を返す (パーミッションは0600)
 	* どちらのフォルダ・ファイルも自動削除されない
+	* 引数には `_XXXXXX` を含む文字列へのポインタを。
+		* ｓ 
 
 関係ないけど、 `man fcntl` に File and Directory change notification (dnotify) があった。
 シグナルで教えてくれるらしいが、どこのプロセスへのシグナル？
@@ -360,7 +362,7 @@ stream = stderr fbad2887, unbuffered, buffer size=1
 	* uClibc C ライブラリhttps://uclibc.org/
 	* Newlibc C ライブラリ https://www.sourceware.org/newlib/libc.html
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4ODQzMjgzMTksLTk2OTg3MDg1NSwxMj
+eyJoaXN0b3J5IjpbLTE0MzE2NjIzNzUsLTk2OTg3MDg1NSwxMj
 E3NjM1NjQwLDE2OTE2NjkzODMsLTIwMTk5NTI0MjAsMjQyMTQ5
 OTMwLDkxNjYzMTk5NCwtMTM1NjgxNjQwNCwxODc4ODk3NzMwLC
 0xNzAwMjAwMDc4LDU2MjYwODAxMywxMDY3MjMyOTY5LC0xMjQ3
