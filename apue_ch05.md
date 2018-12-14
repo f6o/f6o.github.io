@@ -323,7 +323,10 @@ stream = stderr fbad2887, unbuffered, buffer size=1
 * `tmpnam(NULL)`だと静的領域にパス名は保存され、呼び出しごとにその領域は上書きされる
 * でも使うべきではない: 2つプロセスで同じパス名が作られる可能性があり、衝突する可能性がある
 	* `man tmpnam` によれば代わりに `mkstemp` か `tmpfile` を使うべき
-		* 
+
+* `mkdtmp` は一意なディレクトリ名を返す
+	* ユーザがよ
+* `mkstmp` は一意な名前のファイルを作成し、オープンし記述子を返す
 
 ## 5.14 メモリストリーム
 
@@ -350,11 +353,11 @@ stream = stderr fbad2887, unbuffered, buffer size=1
 	* uClibc C ライブラリhttps://uclibc.org/
 	* Newlibc C ライブラリ https://www.sourceware.org/newlib/libc.html
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzUzNTY5NzM1LDEyMTc2MzU2NDAsMTY5MT
-Y2OTM4MywtMjAxOTk1MjQyMCwyNDIxNDk5MzAsOTE2NjMxOTk0
-LC0xMzU2ODE2NDA0LDE4Nzg4OTc3MzAsLTE3MDAyMDAwNzgsNT
-YyNjA4MDEzLDEwNjcyMzI5NjksLTEyNDc2NDYxOTAsNTc4NzM5
-NjMzLDEwODQwOTI4NDcsMTc1MjQ2MTAyMywtOTg2MzUxOTgsLT
-c1OTc3ODA3LDEzMDYxNDgwODMsODQ4NjYxNDc5LDIzMDIyMDc4
-MV19
+eyJoaXN0b3J5IjpbLTQyNjQ0NzU1NCwxMjE3NjM1NjQwLDE2OT
+E2NjkzODMsLTIwMTk5NTI0MjAsMjQyMTQ5OTMwLDkxNjYzMTk5
+NCwtMTM1NjgxNjQwNCwxODc4ODk3NzMwLC0xNzAwMjAwMDc4LD
+U2MjYwODAxMywxMDY3MjMyOTY5LC0xMjQ3NjQ2MTkwLDU3ODcz
+OTYzMywxMDg0MDkyODQ3LDE3NTI0NjEwMjMsLTk4NjM1MTk4LC
+03NTk3NzgwNywxMzA2MTQ4MDgzLDg0ODY2MTQ3OSwyMzAyMjA3
+ODFdfQ==
 -->
