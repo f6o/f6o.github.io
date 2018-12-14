@@ -319,13 +319,21 @@ stream = stderr fbad2887, unbuffered, buffer size=1
 
 ## 5.13 一時ファイル
 
-* `char *tmpnam(char *ptr)` で一意なパス名（へのポインタ）を返す
-* `tmpnam(NULL)`だと静的領域にパス名は保存され、呼び出しごとにその領域は上書きされる
-* でも使うべきではない: 2つプロセスで同じパス名が作られる可能性があり、衝突する可能性がある
-	* `man tmpnam` によれば代わりに `mkstemp` か `tmpfile` を使うべき
+* ISO C
+	* `char *tmpnam(char *ptr)` で一意なパス名（へのポインタ）を返す
+	* `tmpnam(NULL)`だと静的領域にパス名は保存され、呼び出しごとにその領域は上書きされる
+	* でも使うべきではない: 2つプロセスで同じパス名が作られる可能性があり、衝突する可能性がある
+		* `man tmpnam` によれば代わりに `mkstemp` か `tmpfile` を使うべき
+	* `tmpfile` は適当に作って、適当に消えてくれる
 
-* `mkdtmp` は一意なディレクトリ名を返す (パーミッションは0700)
-* `mkstmp` は一意な名前のファイルを作成し、オープンし記述子を返す (パーミッションは0600)
+* SUSv4
+	* `mkdtmp` は一意なディレクトリ名を返す (パーミッションは0700)
+	* `mkstmp` は一意な名前のファイルを作成し、オープンし記述子を返す (パーミッションは0600)
+	* どちらのフォルダ・ファイルも自動削除されない
+
+関係ないけど、 `man fcntl` に File and Directory change notification (dnotify) があった。
+シグナルで教えてくれるらしいが、どこのプロセスへのシグナル？
+
 
 ## 5.14 メモリストリーム
 
@@ -352,11 +360,11 @@ stream = stderr fbad2887, unbuffered, buffer size=1
 	* uClibc C ライブラリhttps://uclibc.org/
 	* Newlibc C ライブラリ https://www.sourceware.org/newlib/libc.html
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk2OTg3MDg1NSwxMjE3NjM1NjQwLDE2OT
-E2NjkzODMsLTIwMTk5NTI0MjAsMjQyMTQ5OTMwLDkxNjYzMTk5
-NCwtMTM1NjgxNjQwNCwxODc4ODk3NzMwLC0xNzAwMjAwMDc4LD
-U2MjYwODAxMywxMDY3MjMyOTY5LC0xMjQ3NjQ2MTkwLDU3ODcz
-OTYzMywxMDg0MDkyODQ3LDE3NTI0NjEwMjMsLTk4NjM1MTk4LC
-03NTk3NzgwNywxMzA2MTQ4MDgzLDg0ODY2MTQ3OSwyMzAyMjA3
-ODFdfQ==
+eyJoaXN0b3J5IjpbNDMyMzc1MTI0LC05Njk4NzA4NTUsMTIxNz
+YzNTY0MCwxNjkxNjY5MzgzLC0yMDE5OTUyNDIwLDI0MjE0OTkz
+MCw5MTY2MzE5OTQsLTEzNTY4MTY0MDQsMTg3ODg5NzczMCwtMT
+cwMDIwMDA3OCw1NjI2MDgwMTMsMTA2NzIzMjk2OSwtMTI0NzY0
+NjE5MCw1Nzg3Mzk2MzMsMTA4NDA5Mjg0NywxNzUyNDYxMDIzLC
+05ODYzNTE5OCwtNzU5Nzc4MDcsMTMwNjE0ODA4Myw4NDg2NjE0
+NzldfQ==
 -->
