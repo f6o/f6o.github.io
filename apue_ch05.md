@@ -343,8 +343,10 @@ stream = stderr fbad2887, unbuffered, buffer size=1
 * バッファを割り当てて、ストリーム操作を行う
 * 文字列作成
 * ファイルではなく、メモリを使うので、一時ファイルの代わりに使える
+
 * SUSv4 に追加された
-* 対応するファイルのない標準入出力ストリームで ``
+* 対応するファイルのない標準入出力ストリームで `FILE *`でアクセスできるよ
+* バイト転送
 
 ## 5.15 欠点
 
@@ -364,7 +366,7 @@ stream = stderr fbad2887, unbuffered, buffer size=1
 	* uClibc C ライブラリhttps://uclibc.org/
 	* Newlibc C ライブラリ https://www.sourceware.org/newlib/libc.html
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY5OTA2NzQ2MSwyMzI4ODgwNjQsLTEwMD
+eyJoaXN0b3J5IjpbLTY4NzMxODY5MSwyMzI4ODgwNjQsLTEwMD
 Y3NTMxODAsLTk2OTg3MDg1NSwxMjE3NjM1NjQwLDE2OTE2Njkz
 ODMsLTIwMTk5NTI0MjAsMjQyMTQ5OTMwLDkxNjYzMTk5NCwtMT
 M1NjgxNjQwNCwxODc4ODk3NzMwLC0xNzAwMjAwMDc4LDU2MjYw
