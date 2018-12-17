@@ -352,6 +352,7 @@ stream = stderr fbad2887, unbuffered, buffer size=1
 * `w+` のとき先頭に `\0` を置く。
 * 追加書き `a` では最初の`\0`のバイトに置く。なければ、バッファ最後尾のつぎのバイト。n
 * 追加書きではない場合、バッファの先頭に置く
+* 書き込みの場合は注意が必要（`\0`が書き込まれる）
 
 ## 5.15 欠点
 
@@ -371,11 +372,11 @@ stream = stderr fbad2887, unbuffered, buffer size=1
 	* uClibc C ライブラリhttps://uclibc.org/
 	* Newlibc C ライブラリ https://www.sourceware.org/newlib/libc.html
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzQxMjQ1Nzg2LC02ODczMTg2OTEsMjMyOD
-g4MDY0LC0xMDA2NzUzMTgwLC05Njk4NzA4NTUsMTIxNzYzNTY0
-MCwxNjkxNjY5MzgzLC0yMDE5OTUyNDIwLDI0MjE0OTkzMCw5MT
-Y2MzE5OTQsLTEzNTY4MTY0MDQsMTg3ODg5NzczMCwtMTcwMDIw
-MDA3OCw1NjI2MDgwMTMsMTA2NzIzMjk2OSwtMTI0NzY0NjE5MC
-w1Nzg3Mzk2MzMsMTA4NDA5Mjg0NywxNzUyNDYxMDIzLC05ODYz
-NTE5OF19
+eyJoaXN0b3J5IjpbLTYxNzA2OTUxMywzNDEyNDU3ODYsLTY4Nz
+MxODY5MSwyMzI4ODgwNjQsLTEwMDY3NTMxODAsLTk2OTg3MDg1
+NSwxMjE3NjM1NjQwLDE2OTE2NjkzODMsLTIwMTk5NTI0MjAsMj
+QyMTQ5OTMwLDkxNjYzMTk5NCwtMTM1NjgxNjQwNCwxODc4ODk3
+NzMwLC0xNzAwMjAwMDc4LDU2MjYwODAxMywxMDY3MjMyOTY5LC
+0xMjQ3NjQ2MTkwLDU3ODczOTYzMywxMDg0MDkyODQ3LDE3NTI0
+NjEwMjNdfQ==
 -->
