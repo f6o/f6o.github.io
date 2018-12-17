@@ -346,7 +346,12 @@ stream = stderr fbad2887, unbuffered, buffer size=1
 
 * SUSv4 に追加された
 * 対応するファイルのない標準入出力ストリームで `FILE *`でアクセスできるよ
-* バイト転送
+
+### `fmemopen` した後のファイル位置
+
+* `w+` のとき先頭に `\0` を置く。
+* 追加書き `a` では最初の`\0`のバイトに置く。なければ、バッファ最後尾のつぎのバイト。n
+* 追加書きではない場合、バッファの先頭に置く
 
 ## 5.15 欠点
 
@@ -366,11 +371,11 @@ stream = stderr fbad2887, unbuffered, buffer size=1
 	* uClibc C ライブラリhttps://uclibc.org/
 	* Newlibc C ライブラリ https://www.sourceware.org/newlib/libc.html
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY4NzMxODY5MSwyMzI4ODgwNjQsLTEwMD
-Y3NTMxODAsLTk2OTg3MDg1NSwxMjE3NjM1NjQwLDE2OTE2Njkz
-ODMsLTIwMTk5NTI0MjAsMjQyMTQ5OTMwLDkxNjYzMTk5NCwtMT
-M1NjgxNjQwNCwxODc4ODk3NzMwLC0xNzAwMjAwMDc4LDU2MjYw
-ODAxMywxMDY3MjMyOTY5LC0xMjQ3NjQ2MTkwLDU3ODczOTYzMy
-wxMDg0MDkyODQ3LDE3NTI0NjEwMjMsLTk4NjM1MTk4LC03NTk3
-NzgwN119
+eyJoaXN0b3J5IjpbMzQxMjQ1Nzg2LC02ODczMTg2OTEsMjMyOD
+g4MDY0LC0xMDA2NzUzMTgwLC05Njk4NzA4NTUsMTIxNzYzNTY0
+MCwxNjkxNjY5MzgzLC0yMDE5OTUyNDIwLDI0MjE0OTkzMCw5MT
+Y2MzE5OTQsLTEzNTY4MTY0MDQsMTg3ODg5NzczMCwtMTcwMDIw
+MDA3OCw1NjI2MDgwMTMsMTA2NzIzMjk2OSwtMTI0NzY0NjE5MC
+w1Nzg3Mzk2MzMsMTA4NDA5Mjg0NywxNzUyNDYxMDIzLC05ODYz
+NTE5OF19
 -->
