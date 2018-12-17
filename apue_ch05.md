@@ -343,6 +343,8 @@ stream = stderr fbad2887, unbuffered, buffer size=1
 * バッファを割り当てて、ストリーム操作を行う
 * 文字列作成
 * ファイルではなく、メモリを使うので、一時ファイルの代わりに使える
+* SUSv4 に追加された
+* 対応するファイルのない標準入出力ストリームで ``
 
 ## 5.15 欠点
 
@@ -362,11 +364,11 @@ stream = stderr fbad2887, unbuffered, buffer size=1
 	* uClibc C ライブラリhttps://uclibc.org/
 	* Newlibc C ライブラリ https://www.sourceware.org/newlib/libc.html
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjMyODg4MDY0LC0xMDA2NzUzMTgwLC05Nj
-k4NzA4NTUsMTIxNzYzNTY0MCwxNjkxNjY5MzgzLC0yMDE5OTUy
-NDIwLDI0MjE0OTkzMCw5MTY2MzE5OTQsLTEzNTY4MTY0MDQsMT
-g3ODg5NzczMCwtMTcwMDIwMDA3OCw1NjI2MDgwMTMsMTA2NzIz
-Mjk2OSwtMTI0NzY0NjE5MCw1Nzg3Mzk2MzMsMTA4NDA5Mjg0Ny
-wxNzUyNDYxMDIzLC05ODYzNTE5OCwtNzU5Nzc4MDcsMTMwNjE0
-ODA4M119
+eyJoaXN0b3J5IjpbLTY5OTA2NzQ2MSwyMzI4ODgwNjQsLTEwMD
+Y3NTMxODAsLTk2OTg3MDg1NSwxMjE3NjM1NjQwLDE2OTE2Njkz
+ODMsLTIwMTk5NTI0MjAsMjQyMTQ5OTMwLDkxNjYzMTk5NCwtMT
+M1NjgxNjQwNCwxODc4ODk3NzMwLC0xNzAwMjAwMDc4LDU2MjYw
+ODAxMywxMDY3MjMyOTY5LC0xMjQ3NjQ2MTkwLDU3ODczOTYzMy
+wxMDg0MDkyODQ3LDE3NTI0NjEwMjMsLTk4NjM1MTk4LC03NTk3
+NzgwN119
 -->
