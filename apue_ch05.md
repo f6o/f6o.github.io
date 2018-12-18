@@ -359,7 +359,7 @@ stream = stderr fbad2887, unbuffered, buffer size=1
 * `open_memstream` バイトオリエンテーション
 * `open_wmemstream` ワイドオリエンテーション
 	* マルチバイト文字 (5.2節)
-	* 
+* 
 
 ## 5.15 欠点
 
@@ -379,11 +379,11 @@ stream = stderr fbad2887, unbuffered, buffer size=1
 	* uClibc C ライブラリhttps://uclibc.org/
 	* Newlibc C ライブラリ https://www.sourceware.org/newlib/libc.html
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0MTM3ODc5MDksLTYxNzA2OTUxMywzND
-EyNDU3ODYsLTY4NzMxODY5MSwyMzI4ODgwNjQsLTEwMDY3NTMx
-ODAsLTk2OTg3MDg1NSwxMjE3NjM1NjQwLDE2OTE2NjkzODMsLT
-IwMTk5NTI0MjAsMjQyMTQ5OTMwLDkxNjYzMTk5NCwtMTM1Njgx
-NjQwNCwxODc4ODk3NzMwLC0xNzAwMjAwMDc4LDU2MjYwODAxMy
-wxMDY3MjMyOTY5LC0xMjQ3NjQ2MTkwLDU3ODczOTYzMywxMDg0
-MDkyODQ3XX0=
+eyJoaXN0b3J5IjpbLTgyNjA5MDE1NywtNjE3MDY5NTEzLDM0MT
+I0NTc4NiwtNjg3MzE4NjkxLDIzMjg4ODA2NCwtMTAwNjc1MzE4
+MCwtOTY5ODcwODU1LDEyMTc2MzU2NDAsMTY5MTY2OTM4MywtMj
+AxOTk1MjQyMCwyNDIxNDk5MzAsOTE2NjMxOTk0LC0xMzU2ODE2
+NDA0LDE4Nzg4OTc3MzAsLTE3MDAyMDAwNzgsNTYyNjA4MDEzLD
+EwNjcyMzI5NjksLTEyNDc2NDYxOTAsNTc4NzM5NjMzLDEwODQw
+OTI4NDddfQ==
 -->
