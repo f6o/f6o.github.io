@@ -354,6 +354,13 @@ stream = stderr fbad2887, unbuffered, buffer size=1
 * 追加書きではない場合、バッファの先頭に置く
 * 書き込みの場合は注意が必要（`\0`が書き込まれる）
 
+### 他のメモリストリーム
+
+* `open_memstream` バイトオリエンテーション
+* `open_wmemstream` ワイドオリエンテーション
+	* マルチバイト文字 (5.2節)
+	* 
+
 ## 5.15 欠点
 
 * `fgets` と `fputs` ではデータは2回コピーされる
@@ -372,11 +379,11 @@ stream = stderr fbad2887, unbuffered, buffer size=1
 	* uClibc C ライブラリhttps://uclibc.org/
 	* Newlibc C ライブラリ https://www.sourceware.org/newlib/libc.html
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYxNzA2OTUxMywzNDEyNDU3ODYsLTY4Nz
-MxODY5MSwyMzI4ODgwNjQsLTEwMDY3NTMxODAsLTk2OTg3MDg1
-NSwxMjE3NjM1NjQwLDE2OTE2NjkzODMsLTIwMTk5NTI0MjAsMj
-QyMTQ5OTMwLDkxNjYzMTk5NCwtMTM1NjgxNjQwNCwxODc4ODk3
-NzMwLC0xNzAwMjAwMDc4LDU2MjYwODAxMywxMDY3MjMyOTY5LC
-0xMjQ3NjQ2MTkwLDU3ODczOTYzMywxMDg0MDkyODQ3LDE3NTI0
-NjEwMjNdfQ==
+eyJoaXN0b3J5IjpbLTE0MTM3ODc5MDksLTYxNzA2OTUxMywzND
+EyNDU3ODYsLTY4NzMxODY5MSwyMzI4ODgwNjQsLTEwMDY3NTMx
+ODAsLTk2OTg3MDg1NSwxMjE3NjM1NjQwLDE2OTE2NjkzODMsLT
+IwMTk5NTI0MjAsMjQyMTQ5OTMwLDkxNjYzMTk5NCwtMTM1Njgx
+NjQwNCwxODc4ODk3NzMwLC0xNzAwMjAwMDc4LDU2MjYwODAxMy
+wxMDY3MjMyOTY5LC0xMjQ3NjQ2MTkwLDU3ODczOTYzMywxMDg0
+MDkyODQ3XX0=
 -->
