@@ -22,7 +22,7 @@
 * シェルログインさせたくないユーザ
 	* 他の選択肢として `/bin/false` や `/bin/true`
 	* `nologin` コマンドも使える
-* `nobody` ユーザは歴史的に uid/gid=65534
+* `nobody` ユーザは歴史的に uid/gid=65534 ?
 
 ### 6.3 シャドーパスワードファイル
 
@@ -111,5 +111,5 @@ FreeBSD/Linux/MacOSX/Solaris での比較
 		* これは `sys/time.h`
 * `struct timespec`
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI1MTgxNjY1MiwtMTA2NjM2NDYxOF19
+eyJoaXN0b3J5IjpbNDc3MjM4ODY3LC0xMDY2MzY0NjE4XX0=
 -->
