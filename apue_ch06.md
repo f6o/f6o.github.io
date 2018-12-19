@@ -24,6 +24,8 @@
 	* `nologin` コマンドも使える
 * `nobody` ユーザは歴史的に uid/gid=65534 ?
 
+
+
 ### 6.3 シャドーパスワードファイル
 
 * `shadow.h`
@@ -111,5 +113,5 @@ FreeBSD/Linux/MacOSX/Solaris での比較
 		* これは `sys/time.h`
 * `struct timespec`
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDc3MjM4ODY3LC0xMDY2MzY0NjE4XX0=
+eyJoaXN0b3J5IjpbNDg2OTIzOSwtMTA2NjM2NDYxOF19
 -->
