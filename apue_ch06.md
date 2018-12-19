@@ -17,8 +17,12 @@
 ### 6.2 パスワードファイル
 
 * `pwd.h` で定義されている `struct passwd` のファイル
-* POSIX.1 だと5種類のフィールドだけだよ
-* BSD なら10種類フルで使えるよ
+* POSIX.1 だと5種類のフィールドだけ
+* BSD なら10種類フルで使える
+* ログインさせたくないユーザ
+	* `squid` ユーザには `/dev/null`
+	* 他の選択肢として `/bin/false` や `/bin/true`
+	* `nologin` コマンドがつかえｒ
 
 ### 6.3 シャドーパスワードファイル
 
@@ -107,5 +111,5 @@ FreeBSD/Linux/MacOSX/Solaris での比較
 		* これは `sys/time.h`
 * `struct timespec`
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwNjYzNjQ2MThdfQ==
+eyJoaXN0b3J5IjpbMTQzNzc2MTM1MCwtMTA2NjM2NDYxOF19
 -->
