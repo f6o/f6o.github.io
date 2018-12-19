@@ -28,6 +28,9 @@
 
 * `getpwuid` ユーザID
 * `getpwnam` 名前から
+* `getpwent` 1つずつエントリを取る
+	* いずれも static な領域にあるので、呼び出しごとに上書きされる
+
 
 ### 6.3 シャドーパスワードファイル
 
@@ -116,5 +119,5 @@ FreeBSD/Linux/MacOSX/Solaris での比較
 		* これは `sys/time.h`
 * `struct timespec`
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE0MjgwMjQyNiwtMTA2NjM2NDYxOF19
+eyJoaXN0b3J5IjpbNzYwNzQ1MTA4LC0xMDY2MzY0NjE4XX0=
 -->
