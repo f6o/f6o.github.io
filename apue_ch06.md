@@ -24,7 +24,10 @@
 	* `nologin` コマンドも使える
 * `nobody` ユーザは歴史的に uid/gid=65534 ?
 
+#### `struct passwd` を取得する
 
+* `getpwuid` ユーザID
+* `getpwnam` 名前から
 
 ### 6.3 シャドーパスワードファイル
 
@@ -113,5 +116,5 @@ FreeBSD/Linux/MacOSX/Solaris での比較
 		* これは `sys/time.h`
 * `struct timespec`
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDg2OTIzOSwtMTA2NjM2NDYxOF19
+eyJoaXN0b3J5IjpbMTE0MjgwMjQyNiwtMTA2NjM2NDYxOF19
 -->
