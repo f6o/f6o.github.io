@@ -15,17 +15,17 @@
 * [Chapter 4 Files and Directories](./apue_ch04)
 	* do exercise
 * [Chapter 5 Standard I/O Library](./apue_ch05)
-* Chapter 6 System Data Files and Information
+* [Chapter 6 System Data Files and Information](./apue_ch06.md)
 	* read
 * Chapter 7 Process Environment
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5MDE0NzcwNTksODc0MTUzMDQsLTEyMz
-UyMzk0NTgsNTE5MTcyMTQ2LDE3NTc2NjU3MTYsLTExODQ5MjM2
-ODYsMTI5NTYwMjcyMCwxMDc4MTk1MDQsLTEyMzUyMzU2MjAsLT
-k5NjMyNDE0NywxNDM0OTY0MDEsLTE4NzgwOTM2NDEsLTEyNjIy
-MTg2NDgsLTM5ODkwNzU5MCwtMTI2MjIxODY0OCwyODM3NTE1Nj
-QsMTkzNzIwMjc4Myw3NDk0MDU5NDYsLTMyNDU5ODM4LDE5NTgx
-MDA2NjJdfQ==
+eyJoaXN0b3J5IjpbMTYwNTQ3NjkxLDg3NDE1MzA0LC0xMjM1Mj
+M5NDU4LDUxOTE3MjE0NiwxNzU3NjY1NzE2LC0xMTg0OTIzNjg2
+LDEyOTU2MDI3MjAsMTA3ODE5NTA0LC0xMjM1MjM1NjIwLC05OT
+YzMjQxNDcsMTQzNDk2NDAxLC0xODc4MDkzNjQxLC0xMjYyMjE4
+NjQ4LC0zOTg5MDc1OTAsLTEyNjIyMTg2NDgsMjgzNzUxNTY0LD
+E5MzcyMDI3ODMsNzQ5NDA1OTQ2LC0zMjQ1OTgzOCwxOTU4MTAw
+NjYyXX0=
 -->
