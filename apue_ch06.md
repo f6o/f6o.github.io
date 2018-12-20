@@ -35,6 +35,7 @@
 
 * `shadow.h`
 * `/etc/shadow`
+	* TODO: いろんな環境で見てみたい
 * ユーザパスワードを一方向性暗号で暗号化したもの
 * パスワードを推測するハック
 	* Garfinkel et al. [2003] の4章
@@ -118,5 +119,5 @@ FreeBSD/Linux/MacOSX/Solaris での比較
 		* これは `sys/time.h`
 * `struct timespec`
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUwMzE4OTc2MiwtMTA2NjM2NDYxOF19
+eyJoaXN0b3J5IjpbNzczMjkxOTcxLC0xMDY2MzY0NjE4XX0=
 -->
