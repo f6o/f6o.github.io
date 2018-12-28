@@ -68,6 +68,18 @@
 * 特定の環境変数に対しては `getenv`と`setenv`
 * 環境全体を扱うには `environ` が便利
 
+#### `env` コマンドの簡単な実装
+
+```
+#include <stdio.h>
+extern char** environ;
+int main(int argc, char *argv[]) {                                                                                               
+  char **envp = environ;
+  while ( *envp )
+    printf("%s\n", *envp++);
+}
+```
+
 ### 7.6 C プログラムのメモリ配置
 
 * テキストセグメント
@@ -114,5 +126,5 @@
 * 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTczODkyNzIwNF19
+eyJoaXN0b3J5IjpbLTE4NDI3MDY2MzMsLTczODkyNzIwNF19
 -->
