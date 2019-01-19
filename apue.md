@@ -5,6 +5,8 @@
 * My notes on the book, Advanced Programming in the UNIX® Environment, Third Edition
 * [Table of Contents](http://apuebook.com/toc3e.html)
 
+## 
+
 ## Roadmap
 
 * Chapter 2 UNIX Standardization and Imprementations
@@ -20,11 +22,11 @@
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNDM3MzMxMTgsNjc4MzgxNjIxLDg3ND
-E1MzA0LC0xMjM1MjM5NDU4LDUxOTE3MjE0NiwxNzU3NjY1NzE2
-LC0xMTg0OTIzNjg2LDEyOTU2MDI3MjAsMTA3ODE5NTA0LC0xMj
-M1MjM1NjIwLC05OTYzMjQxNDcsMTQzNDk2NDAxLC0xODc4MDkz
-NjQxLC0xMjYyMjE4NjQ4LC0zOTg5MDc1OTAsLTEyNjIyMTg2ND
-gsMjgzNzUxNTY0LDE5MzcyMDI3ODMsNzQ5NDA1OTQ2LC0zMjQ1
-OTgzOF19
+eyJoaXN0b3J5IjpbMTI4NjY0MDU4LC0xMjQzNzMzMTE4LDY3OD
+M4MTYyMSw4NzQxNTMwNCwtMTIzNTIzOTQ1OCw1MTkxNzIxNDYs
+MTc1NzY2NTcxNiwtMTE4NDkyMzY4NiwxMjk1NjAyNzIwLDEwNz
+gxOTUwNCwtMTIzNTIzNTYyMCwtOTk2MzI0MTQ3LDE0MzQ5NjQw
+MSwtMTg3ODA5MzY0MSwtMTI2MjIxODY0OCwtMzk4OTA3NTkwLC
+0xMjYyMjE4NjQ4LDI4Mzc1MTU2NCwxOTM3MjAyNzgzLDc0OTQw
+NTk0Nl19
 -->
