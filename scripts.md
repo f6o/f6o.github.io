@@ -8,7 +8,31 @@
 awk '{print $1}' /var/log/nginx/access.log | sort | uniq -c | sort -n | tail -n 5
 ```
 
+### nginx-logs.sh
 
+ログ閲覧まとめ
+
+```
+#!/bin/bash
+set -e
+
+AWKSCRIPT='{print}'
+case "$1" in
+        "path" ) AWKSCRIPT='{print $7}' ;;
+        "ip" ) AWKSCRIPT='{print $1}' ;;
+esac
+
+PRINT_LINES="5"
+if [ -n "$2" ];
+then
+        PRINT_LINES="$2"
+fi
+
+pushd /var/log/nginx > /dev/null
+cat access.log.1 access.log | awk "$AWKSCRIPT" | sort | uniq -c | sort -n | tail -n "$PRINT_LINES"
+popd > /dev/null
+~                                     
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg2MTAxMzZdfQ==
+eyJoaXN0b3J5IjpbLTE3NTg5NjU3MzUsLTg2MTAxMzZdfQ==
 -->
