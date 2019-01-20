@@ -8,9 +8,7 @@
 awk '{print $1}' /var/log/nginx/access.log | sort | uniq -c | sort -n | tail -n 5
 ```
 
-### nginx-logs.sh
-
-ログ閲覧まとめ
+### nginxログ閲覧用スクリプト
 
 ```
 #!/bin/bash
@@ -31,8 +29,7 @@ fi
 pushd /var/log/nginx > /dev/null
 cat access.log.1 access.log | awk "$AWKSCRIPT" | sort | uniq -c | sort -n | tail -n "$PRINT_LINES"
 popd > /dev/null
-~                                     
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3NTg5NjU3MzUsLTg2MTAxMzZdfQ==
+eyJoaXN0b3J5IjpbLTIwNjMwMjY4OTgsLTg2MTAxMzZdfQ==
 -->
