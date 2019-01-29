@@ -130,7 +130,8 @@ int main(int argc, char *argv[]) {
 	* サイズを増やす場合、追加分の場所を核をするために既存の領域の移動をともなう場合がある
 	* サイズを増やす場合、増えた部分の初期値は不定
 
-3つの関数が返すポインタは任意のオブジェクト対して使用できる適切なアラインメントである 例. あるシステムで double は 8の倍数のメモリ位置から始まるのであれば、そのようなアライメントになるということ
+3つの関数が返すポインタは任意のオブジェクト対して使用できる適切なアラインメントである.
+例. あるシステムで double は 8の倍数のメモリ位置から始まるのであれば、そのようなアライメントになるということ
 
 * `free`
 *
@@ -141,6 +142,6 @@ int main(int argc, char *argv[]) {
 
 ### 7.11 getrlimit と setrlimit 関数
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjEzOTA0NjMzOSwxNjE1ODI2NTYxLC0xOD
-QyNzA2NjMzLC03Mzg5MjcyMDRdfQ==
+eyJoaXN0b3J5IjpbLTEzNzc5ODE3ODksMTYxNTgyNjU2MSwtMT
+g0MjcwNjYzMywtNzM4OTI3MjA0XX0=
 -->
