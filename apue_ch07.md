@@ -127,8 +127,10 @@ int main(int argc, char *argv[]) {
 
 ### 7.9 環境変数
 
-### 7.10 setjmp とse=
+### 7.10 setjmp と longjmp 関数
+
+### 7.11 getrlimit と setrlimit 関数
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgzNDA4MzU1MywtMTg0MjcwNjYzMywtNz
+eyJoaXN0b3J5IjpbMTYxNTgyNjU2MSwtMTg0MjcwNjYzMywtNz
 M4OTI3MjA0XX0=
 -->
