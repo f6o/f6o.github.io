@@ -125,6 +125,10 @@ int main(int argc, char *argv[]) {
 * `free`
 * 
 
+### 7.9 環境変数
+
+### 7.10 setjmp とse=
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4NDI3MDY2MzMsLTczODkyNzIwNF19
+eyJoaXN0b3J5IjpbMTgzNDA4MzU1MywtMTg0MjcwNjYzMywtNz
+M4OTI3MjA0XX0=
 -->
