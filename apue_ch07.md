@@ -134,7 +134,8 @@ int main(int argc, char *argv[]) {
 例. あるシステムで double は 8の倍数のメモリ位置から始まるのであれば、そのようなアライメントになるということ
 
 * `free`
-*
+	* _ptr_ が指す領域を解放する
+	* 解放した領域は、利用可能なメモリプールに置かれ、次のXalloc
 
 ### 7.9 環境変数
 
@@ -142,6 +143,6 @@ int main(int argc, char *argv[]) {
 
 ### 7.11 getrlimit と setrlimit 関数
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNzc5ODE3ODksMTYxNTgyNjU2MSwtMT
+eyJoaXN0b3J5IjpbLTEwNzM0NzY0NzIsMTYxNTgyNjU2MSwtMT
 g0MjcwNjYzMywtNzM4OTI3MjA0XX0=
 -->
