@@ -121,16 +121,19 @@ int main(int argc, char *argv[]) {
 
 * `malloc`
 	* 指定したバイト数分だけ割付
-	* 初期値は未定
+	* 初期値は不定
 * `calloc`
 	* 指定したサイズのオブジェクト用に指定した個数分の領域を割り当て
 	* 領域は0フィルされる
 * `realloc`
 	* すでに割り付けた領域のサイズを増減させる
 	* サイズを増やす場合、追加分の場所を核をするために既存の領域の移動をともなう場合がある
-	* サイズを増やす場合、
+	* サイズを増やす場合、増えた部分の初期値は不定
+
+3つの関数が返すポインタは任意のオブジェクト対して使用できる適切なアラインメントである 例. あるシステムで double は 8の倍数のメモリ位置から始まるのであれば、そのようなアライメントになるということ
+
 * `free`
-* 
+*
 
 ### 7.9 環境変数
 
@@ -138,6 +141,6 @@ int main(int argc, char *argv[]) {
 
 ### 7.11 getrlimit と setrlimit 関数
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg5OTg1NTUwNCwxNjE1ODI2NTYxLC0xOD
+eyJoaXN0b3J5IjpbMjEzOTA0NjMzOSwxNjE1ODI2NTYxLC0xOD
 QyNzA2NjMzLC03Mzg5MjcyMDRdfQ==
 -->
