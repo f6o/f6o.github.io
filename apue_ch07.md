@@ -124,8 +124,11 @@ int main(int argc, char *argv[]) {
 	* 初期値は未定
 * `calloc`
 	* 指定したサイズのオブジェクト用に指定した個数分の領域を割り当て
-	* 領域は
+	* 領域は0フィルされる
 * `realloc`
+	* すでに割り付けた領域のサイズを増減させる
+	* サイズを増やす場合、追加分の場所を核をするために既存の領域の移動をともなう場合がある
+	* サイズを増やす場合、
 * `free`
 * 
 
@@ -135,6 +138,6 @@ int main(int argc, char *argv[]) {
 
 ### 7.11 getrlimit と setrlimit 関数
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI1ODU5NzY3NSwxNjE1ODI2NTYxLC0xOD
+eyJoaXN0b3J5IjpbLTg5OTg1NTUwNCwxNjE1ODI2NTYxLC0xOD
 QyNzA2NjMzLC03Mzg5MjcyMDRdfQ==
 -->
