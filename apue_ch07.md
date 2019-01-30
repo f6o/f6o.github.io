@@ -133,6 +133,7 @@ int main(int argc, char *argv[]) {
 3つの関数が返すポインタは任意のオブジェクト対して使用できる適切なアラインメントである.
 例. あるシステムで double は 8の倍数のメモリ位置から始まるのであれば、そのようなアライメントになるということ
 
+
 * `free`
 	* _ptr_ が指す領域を解放する
 	* 解放した領域は、利用可能なメモリプールに置かれ、次のXalloc関数で呼ばれたときに使われる
@@ -143,6 +144,6 @@ int main(int argc, char *argv[]) {
 
 ### 7.11 getrlimit と setrlimit 関数
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY3NzcwNzkwMSwxNjE1ODI2NTYxLC0xOD
-QyNzA2NjMzLC03Mzg5MjcyMDRdfQ==
+eyJoaXN0b3J5IjpbNjY0NjY2MTkxLDE2Nzc3MDc5MDEsMTYxNT
+gyNjU2MSwtMTg0MjcwNjYzMywtNzM4OTI3MjA0XX0=
 -->
