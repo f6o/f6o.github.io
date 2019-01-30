@@ -134,6 +134,8 @@ int main(int argc, char *argv[]) {
 例. あるシステムで double は 8の倍数のメモリ位置から始まるのであれば、そのようなアライメントになるということ
 
 
+Strace はbn
+
 * `free`
 	* _ptr_ が指す領域を解放する
 	* 解放した領域は、利用可能なメモリプールに置かれ、次のXalloc関数で呼ばれたときに使われる
@@ -144,6 +146,6 @@ int main(int argc, char *argv[]) {
 
 ### 7.11 getrlimit と setrlimit 関数
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjY0NjY2MTkxLDE2Nzc3MDc5MDEsMTYxNT
-gyNjU2MSwtMTg0MjcwNjYzMywtNzM4OTI3MjA0XX0=
+eyJoaXN0b3J5IjpbMTU5MTA3MTQ1NiwxNjc3NzA3OTAxLDE2MT
+U4MjY1NjEsLTE4NDI3MDY2MzMsLTczODkyNzIwNF19
 -->
