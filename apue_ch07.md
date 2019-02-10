@@ -133,8 +133,8 @@ int main(int argc, char *argv[]) {
 3つの関数が返すポインタは任意のオブジェクト対して使用できる適切なアラインメントである.
 例. あるシステムで double は 8の倍数のメモリ位置から始まるのであれば、そのようなアライメントになるということ
 
-
-Strace はbn
+* strace は便利 `strace -e brk,mmap <your program>`
+* 
 
 * `free`
 	* _ptr_ が指す領域を解放する
@@ -146,6 +146,6 @@ Strace はbn
 
 ### 7.11 getrlimit と setrlimit 関数
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU5MTA3MTQ1NiwxNjc3NzA3OTAxLDE2MT
-U4MjY1NjEsLTE4NDI3MDY2MzMsLTczODkyNzIwNF19
+eyJoaXN0b3J5IjpbMTcyOTcwMjAxLDE2Nzc3MDc5MDEsMTYxNT
+gyNjU2MSwtMTg0MjcwNjYzMywtNzM4OTI3MjA0XX0=
 -->
