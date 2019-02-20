@@ -3,10 +3,9 @@
 #### 情報量
 
 $$f(A)+f(B)=f(AB)$$
+情報量の加法性
 
-情報の加法性
-
-
+$f(x)$ は $x$ 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUzNjkwNjk3NSwtMzI3NjQwNjU3XX0=
+eyJoaXN0b3J5IjpbMTkzNDUwNTA1NCwtMzI3NjQwNjU3XX0=
 -->
