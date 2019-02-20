@@ -15,7 +15,7 @@ $$H(p_1,p_2,...,p_n)=-\sum_{i}{p_i\log{p_i}}$$
 エントロピーの性質
 
 * 非負
-* 最大値は $H=\log{n}$ で, 
+* 最大値は $H=\log{n}$ で, すべての事象が$p=1/n$で起こる時
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMwMTE3MDgwOSwtMzI3NjQwNjU3XX0=
+eyJoaXN0b3J5IjpbMTc2NTI0MzMwNiwtMzI3NjQwNjU3XX0=
 -->
