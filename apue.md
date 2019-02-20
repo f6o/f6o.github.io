@@ -3,7 +3,7 @@
 # APUE memo
 
 * My notes on the book, Advanced Programming in the UNIX® Environment, Third Edition
-* [Table of Contents](http://apuebook.com/toc3e.html)
+* [Table of Contents](http://apuebook.com/toc3e.html) {}
 
 ## Roadmap
 
@@ -20,11 +20,11 @@
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNDM3MzMxMTgsLTEyNDM3MzMxMTgsNj
-c4MzgxNjIxLDg3NDE1MzA0LC0xMjM1MjM5NDU4LDUxOTE3MjE0
-NiwxNzU3NjY1NzE2LC0xMTg0OTIzNjg2LDEyOTU2MDI3MjAsMT
-A3ODE5NTA0LC0xMjM1MjM1NjIwLC05OTYzMjQxNDcsMTQzNDk2
-NDAxLC0xODc4MDkzNjQxLC0xMjYyMjE4NjQ4LC0zOTg5MDc1OT
-AsLTEyNjIyMTg2NDgsMjgzNzUxNTY0LDE5MzcyMDI3ODMsNzQ5
-NDA1OTQ2XX0=
+eyJoaXN0b3J5IjpbLTE0OTEyOTUwMDgsLTEyNDM3MzMxMTgsLT
+EyNDM3MzMxMTgsNjc4MzgxNjIxLDg3NDE1MzA0LC0xMjM1MjM5
+NDU4LDUxOTE3MjE0NiwxNzU3NjY1NzE2LC0xMTg0OTIzNjg2LD
+EyOTU2MDI3MjAsMTA3ODE5NTA0LC0xMjM1MjM1NjIwLC05OTYz
+MjQxNDcsMTQzNDk2NDAxLC0xODc4MDkzNjQxLC0xMjYyMjE4Nj
+Q4LC0zOTg5MDc1OTAsLTEyNjIyMTg2NDgsMjgzNzUxNTY0LDE5
+MzcyMDI3ODNdfQ==
 -->
