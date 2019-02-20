@@ -12,8 +12,10 @@ $$-\log_2{p}$$
 起こるかどうかについて知りたい時が多いよねということで、*エントロピー*を$n$個の事象の確率を$p_i$とおいて、次のように定義する。
 $$H(p_1,p_2,...,p_n)=-\sum_{i}{p_i\log{p_i}}$$
 
+エントロピーの性質
 
-
+* 非負
+* 最大値は $H=\log{n}$ で, 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg2MzA3ODQ5MCwtMzI3NjQwNjU3XX0=
+eyJoaXN0b3J5IjpbLTMwMTE3MDgwOSwtMzI3NjQwNjU3XX0=
 -->
