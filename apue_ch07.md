@@ -193,9 +193,12 @@ RLIMIT_STACK
    対話的なら行バッファリングなので、改行後。ファイルにリダイレクトされているなら、完全バッファリングなので、標準入出力の後始末のとき。
 7.3 ない
 7.4 null ポインタとして使えるように終端を与える。
+7.5 スキップ
+7.6 calloc なら0フィルなので、どちらも初期化される
+7.7 ヒープやスタックが必要になるのは実行時だから
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjMxNjIwNTk5LDY2ODA0NTkxMiwxNzI5Nz
-AyMDEsMTY3NzcwNzkwMSwxNjE1ODI2NTYxLC0xODQyNzA2NjMz
-LC03Mzg5MjcyMDRdfQ==
+eyJoaXN0b3J5IjpbMTY5NTc2OTk3NCw2NjgwNDU5MTIsMTcyOT
+cwMjAxLDE2Nzc3MDc5MDEsMTYxNTgyNjU2MSwtMTg0MjcwNjYz
+MywtNzM4OTI3MjA0XX0=
 -->
