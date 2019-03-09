@@ -186,8 +186,12 @@ resident set size
 RLIMIT_STACK
 スタックの最大サイズ
 
+### 演習
+
+7.1 printf の戻り値が返った。
+7.2 exit からy
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjY4MDQ1OTEyLDE3Mjk3MDIwMSwxNjc3Nz
-A3OTAxLDE2MTU4MjY1NjEsLTE4NDI3MDY2MzMsLTczODkyNzIw
-NF19
+eyJoaXN0b3J5IjpbOTE4NTkyMjg5LDY2ODA0NTkxMiwxNzI5Nz
+AyMDEsMTY3NzcwNzkwMSwxNjE1ODI2NTYxLC0xODQyNzA2NjMz
+LC03Mzg5MjcyMDRdfQ==
 -->
