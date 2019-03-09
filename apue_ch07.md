@@ -191,9 +191,9 @@ RLIMIT_STACK
 7.1 printf の戻り値が返った。
 7.2 exit から呼ばれる fclose での flush 後
 7.3 ない
-7.4 
+7.4 null ポインタとしてしゅう
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDU5NDY0MjUzLDY2ODA0NTkxMiwxNzI5Nz
-AyMDEsMTY3NzcwNzkwMSwxNjE1ODI2NTYxLC0xODQyNzA2NjMz
-LC03Mzg5MjcyMDRdfQ==
+eyJoaXN0b3J5IjpbLTczODY5MDI5NCw2NjgwNDU5MTIsMTcyOT
+cwMjAxLDE2Nzc3MDc5MDEsMTYxNTgyNjU2MSwtMTg0MjcwNjYz
+MywtNzM4OTI3MjA0XX0=
 -->
