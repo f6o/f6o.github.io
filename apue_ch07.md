@@ -190,10 +190,11 @@ RLIMIT_STACK
 
 7.1 printf の戻り値が返った。
 7.2 exit から呼ばれる fclose での flush 後
+   対話的なら行バッファリングなので、改行後。ファイルにリダイレクトされているなら、完全バッファリングなにで
 7.3 ない
-7.4 null ポインタとしてしゅう
+7.4 null ポインタとして使えるように終端を与える。
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTczODY5MDI5NCw2NjgwNDU5MTIsMTcyOT
-cwMjAxLDE2Nzc3MDc5MDEsMTYxNTgyNjU2MSwtMTg0MjcwNjYz
-MywtNzM4OTI3MjA0XX0=
+eyJoaXN0b3J5IjpbLTE2NzAzOTIzNjEsNjY4MDQ1OTEyLDE3Mj
+k3MDIwMSwxNjc3NzA3OTAxLDE2MTU4MjY1NjEsLTE4NDI3MDY2
+MzMsLTczODkyNzIwNF19
 -->
