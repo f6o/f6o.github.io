@@ -142,10 +142,50 @@ int main(int argc, char *argv[]) {
 
 ### 7.9 環境変数
 
+Todo
+
 ### 7.10 setjmp と longjmp 関数
 
+### 7.11 getrlimit と setrlimit 関数* 非ローカルのgoto
+* setjmp で戻る場所を決める
+* 直接呼ばれたら、0を返し、longjmp に呼ばれたら、0以外を返す
+* env はスタックを戻すための jmp_buf 型の大域変数
+* longjmp には env と戻り元を表す int 型の値を渡す
+
+#### 自動変数はどうなるの？
+以下の2つには影響あり。
+* auto 自動変数
+* registerレジスタ変数
+
+setjmp の頃に戻るか、longjmp の直前に戻るかは処理系に依存する
+
+TODO: jmp_buf には何が入っている？
+
 ### 7.11 getrlimit と setrlimit 関数
+
+各プロセスについて、資源の利用制限
+
+* プロセスは、自身のハードリミットまでならば、自身のソフトリミットを変更できる
+* プロセスは、自身のソフトリミットまでなら、自身のハードリミットを減らすことができる
+* スーパユーザプロセスのみが、ハードリミットを増やせる
+
+#### どういう資源？
+
+RLIMIT_AS
+プロセスの全使用可能メモリの最大サイズ(バイト単位)
+
+RLIMIT_DATA
+データセグメントの最大サイズ
+初期データ・非初期化データ・ヒープの総和
+
+RLIMIT_RSS
+resident set size
+プロセスが実際に使用している物理メモリ量
+
+RLIMIT_STACK
+スタックの最大サイズ
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTcyOTcwMjAxLDE2Nzc3MDc5MDEsMTYxNT
-gyNjU2MSwtMTg0MjcwNjYzMywtNzM4OTI3MjA0XX0=
+eyJoaXN0b3J5IjpbMTQ0ODA5MzQ2NCwxNzI5NzAyMDEsMTY3Nz
+cwNzkwMSwxNjE1ODI2NTYxLC0xODQyNzA2NjMzLC03Mzg5Mjcy
+MDRdfQ==
 -->
