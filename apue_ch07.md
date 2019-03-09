@@ -196,9 +196,10 @@ RLIMIT_STACK
 7.5 スキップ
 7.6 calloc なら0フィルなので、どちらも初期化される
 7.7 ヒープやスタックが必要になるのは実行時だから
-
+7.8 アライメントが必要だから
+7.9 共有ライブラリのにひつよ全てがリンク
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY5NTc2OTk3NCw2NjgwNDU5MTIsMTcyOT
-cwMjAxLDE2Nzc3MDc5MDEsMTYxNTgyNjU2MSwtMTg0MjcwNjYz
-MywtNzM4OTI3MjA0XX0=
+eyJoaXN0b3J5IjpbNTk3MTUxNjU5LDY2ODA0NTkxMiwxNzI5Nz
+AyMDEsMTY3NzcwNzkwMSwxNjE1ODI2NTYxLC0xODQyNzA2NjMz
+LC03Mzg5MjcyMDRdfQ==
 -->
