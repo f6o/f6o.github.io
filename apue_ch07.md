@@ -169,6 +169,7 @@ TODO: jmp_buf には何が入っている？
 * プロセスは、自身のソフトリミットまでなら、自身のハードリミットを減らすことができる
 * スーパユーザプロセスのみが、ハードリミットを増やせる
 
+
 #### どういう資源？
 
 RLIMIT_AS
@@ -184,8 +185,9 @@ resident set size
 
 RLIMIT_STACK
 スタックの最大サイズ
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ0ODA5MzQ2NCwxNzI5NzAyMDEsMTY3Nz
-cwNzkwMSwxNjE1ODI2NTYxLC0xODQyNzA2NjMzLC03Mzg5Mjcy
-MDRdfQ==
+eyJoaXN0b3J5IjpbNjY4MDQ1OTEyLDE3Mjk3MDIwMSwxNjc3Nz
+A3OTAxLDE2MTU4MjY1NjEsLTE4NDI3MDY2MzMsLTczODkyNzIw
+NF19
 -->
