@@ -195,14 +195,15 @@ RLIMIT_STACK
 7.4 null ポインタとして使えるように終端を与える。
 7.5 スキップ
 7.6 calloc なら0フィルなので、どちらも初期化される
-→0に初期化するが、ISO Cだとこの0が浮動小数のゼロ
+→0に初期化するが、ISO Cだとこの0が浮動小数のゼロかnull ptrかは保証しない。
 7.7 ヒープやスタックが必要になるのは実行時だから
 7.8 アライメントが必要だから
 →デバッグ用のシンボルテーブルがあるから。strip コマンドでなくせる。
 7.9 共有ライブラリのに必要な全てのコードがリンクされるから
+→大部分が標準入出力ライブラリに閉められるから
 7.10 val が 0 以外なら不正。
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk1ODQwMTIxMiw2NjgwNDU5MTIsMTcyOT
-cwMjAxLDE2Nzc3MDc5MDEsMTYxNTgyNjU2MSwtMTg0MjcwNjYz
-MywtNzM4OTI3MjA0XX0=
+eyJoaXN0b3J5IjpbLTEyODYzMTY1NDksNjY4MDQ1OTEyLDE3Mj
+k3MDIwMSwxNjc3NzA3OTAxLDE2MTU4MjY1NjEsLTE4NDI3MDY2
+MzMsLTczODkyNzIwNF19
 -->
