@@ -32,9 +32,9 @@ exec 時オープンしている記述子をどうするかというフラグも
 
 ### exit
 
-main からの return は exit
-`exit` では標準入出力の後始末がある
-`_Exit`
+* main からの return は exit
+* `exit` では標準入出力の後始末がある
+* `_Exit`
 `_exit` はシステムコール
 
 ### setuid/setgid
@@ -42,5 +42,5 @@ main からの return は exit
 setuid でそのプロセスの実効ユーザIDを変えることができる。
 スーパユーザ特権があるプロセスなら、3つのIDを変更することができる。
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwODUyNTQ5ODJdfQ==
+eyJoaXN0b3J5IjpbMjg3NTc4MTYwLC0xMDg1MjU0OTgyXX0=
 -->
