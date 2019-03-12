@@ -17,13 +17,13 @@
 * [Chapter 5 Standard I/O Library](./apue_ch05)
 * [Chapter 6 System Data Files and Information](./apue_ch06.md)
 * [Chapter 7 Process Environment](./apue_ch07.md)
-* [Chapter 8 Process Control](./apue_
+* [Chapter 8 Process Control](./apue_08.md)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg0NzQ1NjIyNywyNzcyNDM3MDMsLTEyND
-M3MzMxMTgsLTEyNDM3MzMxMTgsNjc4MzgxNjIxLDg3NDE1MzA0
-LC0xMjM1MjM5NDU4LDUxOTE3MjE0NiwxNzU3NjY1NzE2LC0xMT
-g0OTIzNjg2LDEyOTU2MDI3MjAsMTA3ODE5NTA0LC0xMjM1MjM1
-NjIwLC05OTYzMjQxNDcsMTQzNDk2NDAxLC0xODc4MDkzNjQxLC
-0xMjYyMjE4NjQ4LC0zOTg5MDc1OTAsLTEyNjIyMTg2NDgsMjgz
-NzUxNTY0XX0=
+eyJoaXN0b3J5IjpbLTE4MzcxMDY2NjUsMjc3MjQzNzAzLC0xMj
+QzNzMzMTE4LC0xMjQzNzMzMTE4LDY3ODM4MTYyMSw4NzQxNTMw
+NCwtMTIzNTIzOTQ1OCw1MTkxNzIxNDYsMTc1NzY2NTcxNiwtMT
+E4NDkyMzY4NiwxMjk1NjAyNzIwLDEwNzgxOTUwNCwtMTIzNTIz
+NTYyMCwtOTk2MzI0MTQ3LDE0MzQ5NjQwMSwtMTg3ODA5MzY0MS
+wtMTI2MjIxODY0OCwtMzk4OTA3NTkwLC0xMjYyMjE4NjQ4LDI4
+Mzc1MTU2NF19
 -->
