@@ -50,6 +50,7 @@ fork, exec 系, _exit, wait, waitpid をマスターすれば良い。
 * ページテーブルをコピーしない `fork`
 	* 子は親のページテーブルを参照する
 	* `clone` システムコールと似ている？
+		* glibc について: [https://linuxjf.osdn.jp/JFdocs/libc-intro.html](https://linuxjf.osdn.jp/JFdocs/libc-intro.html)
 * 子は exec を呼ぶなどする
 * 親は勝手に sleep するので、子が親の処理を待つと、デッドロックになる
 * 子がメモリ内容を書き換えたり、関数を呼び出す（親のスタックを使うことになる？）と結果は不定
@@ -88,6 +89,6 @@ exec 時オープンしている記述子をどうするかというフラグも
 
 `#!`から始まるファイル
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUzODQ0NDMsLTM2NDUyNTg5MywyMDU3Nz
-A2NzgsLTEwODUyNTQ5ODJdfQ==
+eyJoaXN0b3J5IjpbMTEzMjAwMjM5OCwxNTM4NDQ0MywtMzY0NT
+I1ODkzLDIwNTc3MDY3OCwtMTA4NTI1NDk4Ml19
 -->
