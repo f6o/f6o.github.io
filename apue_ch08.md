@@ -21,9 +21,12 @@ fork, exec 系, _exit, wait, waitpid をマスターすれば良い。
 	* `top` でみたら `systemd` という名前だけど、実行されているのは`/sbin/init`だったりする
 		* `man init` は `systemd` だった
 
+### getpid/getppid
 
+### 実ユーザIDと実効ユーザ ID
 
-### 実ユーザID
+`chmod u+s` と実行ファイルにセットユーザIDビットフラグを立てて、
+実行すると、そのプロセスの
 
 ### fork
 
@@ -66,6 +69,6 @@ exec 時オープンしている記述子をどうするかというフラグも
 
 `#!`から始まるファイル
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExNzEyNzY3ODIsMjA1NzcwNjc4LC0xMD
-g1MjU0OTgyXX0=
+eyJoaXN0b3J5IjpbLTYyMDY3NTg2NiwyMDU3NzA2NzgsLTEwOD
+UyNTQ5ODJdfQ==
 -->
