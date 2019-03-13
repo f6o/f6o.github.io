@@ -47,8 +47,8 @@ fork, exec 系, _exit, wait, waitpid をマスターすれば良い。
 
 ### vfork
 
-* メモリ空間をコピーしない fork
-	* 子は親のメモリ空間を参照する
+* ページテーブルをコピーしない fork
+	* 子は親のページテーブルを参照する
 * 子は exec を呼ぶなどする
 * 親は勝手に sleep するので、子が親の処理を待つと、デッドロックになる
 * 子がメモリ内容を書き換えたり、関数を呼び出す（親のスタックを使うことになる？）と結果は不定
@@ -87,6 +87,6 @@ exec 時オープンしている記述子をどうするかというフラグも
 
 `#!`から始まるファイル
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzYxODk0MzcyLC0zNjQ1MjU4OTMsMjA1Nz
-cwNjc4LC0xMDg1MjU0OTgyXX0=
+eyJoaXN0b3J5IjpbLTExODM0NTY4MjgsLTM2NDUyNTg5MywyMD
+U3NzA2NzgsLTEwODUyNTQ5ODJdfQ==
 -->
