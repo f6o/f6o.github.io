@@ -11,7 +11,14 @@ fork, exec 系, _exit, wait, waitpid をマスターすれば良い。
 * 再利用されるが、すぐにはされないようになっている
 * プロセスごとのファイル名などに利用される
 
-* 0 
+* PID=0 はプロセス・スケジューラ
+	* カーネル内部のシステムプロセス
+* PID=1 は `init` プロセス
+	* カーネルがブート手続きの最後によぶ
+	* 設定ファイル群を読み込む
+	* マルチユーザモードなどに持っていく
+	* システムによって`launchd`だったり`systemd`だったりする
+	* `top` でみたら `systemd` という名前だけど、実行されているのは`/sbin/init`だったりする
 
 ### fork
 
@@ -54,6 +61,6 @@ exec 時オープンしている記述子をどうするかというフラグも
 
 `#!`から始まるファイル
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY4MjU5MDUxOCwyMDU3NzA2NzgsLTEwOD
+eyJoaXN0b3J5IjpbMjA5NTU4Nzg2NSwyMDU3NzA2NzgsLTEwOD
 UyNTQ5ODJdfQ==
 -->
