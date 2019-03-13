@@ -29,9 +29,9 @@ fork, exec 系, _exit, wait, waitpid をマスターすれば良い。
 実行すると、そのプロセスのEUIDにファイルのオーナーをセットする。
 
 たとえば、`passwd` や `login`
-実行中のプロセスで権限を細かく変えたい場合もある `at` コマンド
-`root` 
-
+実行中のプロセスの実効ユーザIDを変えることで、細かな権限処理を行えるようにする `at` コマンド
+ `setuid`, `seteuid` で行うことができる。
+ 
 ### fork
 
 アドレス空間をコピーする
@@ -73,6 +73,6 @@ exec 時オープンしている記述子をどうするかというフラグも
 
 `#!`から始まるファイル
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzg2OTEyNjU3LDIwNTc3MDY3OCwtMTA4NT
-I1NDk4Ml19
+eyJoaXN0b3J5IjpbLTE0OTU2NDU3NTYsMjA1NzcwNjc4LC0xMD
+g1MjU0OTgyXX0=
 -->
