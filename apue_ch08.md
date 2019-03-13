@@ -39,6 +39,8 @@ fork, exec 系, _exit, wait, waitpid をマスターすれば良い。
 	* テキストセグメントは共有される
 	* 効率の観点からCopy on Writeで必要になったらコピーする
 * 親と子のどちらが先に呼ばれるかは不定
+* 標準入出力のバッファリングに注意
+* ファイル記述子も共有される
 
 #### fork のポイント
 
@@ -77,6 +79,6 @@ exec 時オープンしている記述子をどうするかというフラグも
 
 `#!`から始まるファイル
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgwMzkxMDI1NiwyMDU3NzA2NzgsLTEwOD
+eyJoaXN0b3J5IjpbLTU2Mjc2NDQ5MiwyMDU3NzA2NzgsLTEwOD
 UyNTQ5ODJdfQ==
 -->
