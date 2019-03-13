@@ -26,7 +26,9 @@ fork, exec 系, _exit, wait, waitpid をマスターすれば良い。
 ### 実ユーザIDと実効ユーザ ID
 
 `chmod u+s` と実行ファイルにセットユーザIDビットフラグを立てて、
-実行すると、そのプロセスの
+実行すると、そのプロセスのEUIDにファイルのオーナーをセットする。
+
+たとえば、`passwd` や `login` , `at`のような実行中のぷろせ
 
 ### fork
 
@@ -69,6 +71,6 @@ exec 時オープンしている記述子をどうするかというフラグも
 
 `#!`から始まるファイル
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYyMDY3NTg2NiwyMDU3NzA2NzgsLTEwOD
-UyNTQ5ODJdfQ==
+eyJoaXN0b3J5IjpbMTc2ODI2NTY0LDIwNTc3MDY3OCwtMTA4NT
+I1NDk4Ml19
 -->
