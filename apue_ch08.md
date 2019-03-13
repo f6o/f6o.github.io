@@ -32,12 +32,16 @@ fork, exec 系, _exit, wait, waitpid をマスターすれば良い。
 実行中のプロセスの実効ユーザIDを変えることで、細かな権限処理を行えるようにする `at` コマンド
  `setuid`, `seteuid` で行うことができる。
  
-### fork
+### fork/vfork
 
 * アドレス空間をコピーする
 	* データ/スタック/ヒープをコピーするが共有しない
 	* テキストセグメントは共有される
 	* 効率の観点からCopy on Writeで必要になったらコピーする
+* 親と子のどちらが先に呼ばれるかは不定
+
+#### fork のポイント
+
 * fork した後、親プロセスが終了したら、子プロセスの親は何に変わるか。
 * 待つ親がいなく、終了していない子プロセスは何というか。
 
@@ -73,6 +77,6 @@ exec 時オープンしている記述子をどうするかというフラグも
 
 `#!`から始まるファイル
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIwMDcxODE3MywyMDU3NzA2NzgsLTEwOD
+eyJoaXN0b3J5IjpbLTgwMzkxMDI1NiwyMDU3NzA2NzgsLTEwOD
 UyNTQ5ODJdfQ==
 -->
