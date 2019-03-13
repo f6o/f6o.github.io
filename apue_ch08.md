@@ -41,9 +41,9 @@ fork, exec 系, _exit, wait, waitpid をマスターすれば良い。
 * 親と子のどちらが先に呼ばれるかは不定
 * 標準入出力のバッファリングに注意
 * ファイル記述子もコピーされるけど、（その中の）ファイルポインタは共有される
+	* 同じ記述子なら、`wait` で待たないと、たとえば出力内容が混ざる。
 	* 親と子で同一のファイルオフセットを持っておくと便利なことがある
 		* ログの書き込みとか
-* 
 
 #### fork のポイント
 
@@ -82,6 +82,6 @@ exec 時オープンしている記述子をどうするかというフラグも
 
 `#!`から始まるファイル
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MjY1Nzg2NDQsMjA1NzcwNjc4LC0xMD
-g1MjU0OTgyXX0=
+eyJoaXN0b3J5IjpbLTM2NDUyNTg5MywyMDU3NzA2NzgsLTEwOD
+UyNTQ5ODJdfQ==
 -->
