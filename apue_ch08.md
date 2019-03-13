@@ -52,6 +52,8 @@ fork, exec 系, _exit, wait, waitpid をマスターすれば良い。
 * 子は exec を呼ぶなどする
 * 親は勝手に sleep するので、子が親の処理を待つと、デッドロックになる
 * 子がメモリ内容を書き換えたり、関数を呼び出す（親のスタックを使うことになる？）と結果は不定
+	* 子が`exit` を呼んだり、呼んだ関数から戻るのもダメ
+	* `_exit` なら呼んでよい
 
 #### fork のポイント
 
@@ -85,6 +87,6 @@ exec 時オープンしている記述子をどうするかというフラグも
 
 `#!`から始まるファイル
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE3MzM3MDE1MiwtMzY0NTI1ODkzLDIwNT
-c3MDY3OCwtMTA4NTI1NDk4Ml19
+eyJoaXN0b3J5IjpbNzYxODk0MzcyLC0zNjQ1MjU4OTMsMjA1Nz
+cwNjc4LC0xMDg1MjU0OTgyXX0=
 -->
