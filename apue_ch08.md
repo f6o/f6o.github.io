@@ -45,15 +45,17 @@ fork, exec 系, _exit, wait, waitpid をマスターすれば良い。
 	* 親と子で同一のファイルオフセットを持っておくと便利なことがある
 		* ログの書き込みとか
 
+### vfork
+
+* メモリ空間をコピーしない fork
+	* 子は親のメモリ空間を参照する
+* 子は exec を呼ぶなどする
+* 親は勝手に sleep するので、子が親の処理を待つと、デッドロックになる
+
 #### fork のポイント
 
 * fork した後、親プロセスが終了したら、子プロセスの親は何に変わるか。
 * 待つ親がいなく、終了していない子プロセスは何というか。
-
-### vfork
-
-親のアドレス空間を共有する
-書き換えたらダメ
 
 ### exec 関数群
 
@@ -82,6 +84,6 @@ exec 時オープンしている記述子をどうするかというフラグも
 
 `#!`から始まるファイル
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM2NDUyNTg5MywyMDU3NzA2NzgsLTEwOD
-UyNTQ5ODJdfQ==
+eyJoaXN0b3J5IjpbLTYyMTgzOTczMSwtMzY0NTI1ODkzLDIwNT
+c3MDY3OCwtMTA4NTI1NDk4Ml19
 -->
