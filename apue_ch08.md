@@ -21,6 +21,10 @@ fork, exec 系, _exit, wait, waitpid をマスターすれば良い。
 	* `top` でみたら `systemd` という名前だけど、実行されているのは`/sbin/init`だったりする
 		* `man init` は `systemd` だった
 
+
+
+### 実ユーザID
+
 ### fork
 
 アドレス空間をコピーする
@@ -62,6 +66,6 @@ exec 時オープンしている記述子をどうするかというフラグも
 
 `#!`から始まるファイル
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAwNjQ2MjU0NSwyMDU3NzA2NzgsLTEwOD
-UyNTQ5ODJdfQ==
+eyJoaXN0b3J5IjpbLTExNzEyNzY3ODIsMjA1NzcwNjc4LC0xMD
+g1MjU0OTgyXX0=
 -->
