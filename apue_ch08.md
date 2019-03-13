@@ -5,6 +5,14 @@
 fork, exec 系, _exit, wait, waitpid をマスターすれば良い。
 レースコンディションについても fork 関数で学べる
 
+### プロセスID
+
+* 一意のもの
+* 再利用されるが、すぐにはされないようになっている
+* プロセスごとのファイル名などに利用される
+
+* 0 
+
 ### fork
 
 アドレス空間をコピーする
@@ -46,5 +54,6 @@ exec 時オープンしている記述子をどうするかというフラグも
 
 `#!`から始まるファイル
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA1NzcwNjc4LC0xMDg1MjU0OTgyXX0=
+eyJoaXN0b3J5IjpbLTY4MjU5MDUxOCwyMDU3NzA2NzgsLTEwOD
+UyNTQ5ODJdfQ==
 -->
