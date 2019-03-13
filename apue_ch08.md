@@ -19,6 +19,7 @@ fork, exec 系, _exit, wait, waitpid をマスターすれば良い。
 	* マルチユーザモードなどに持っていく
 	* システムによって`launchd`だったり`systemd`だったりする
 	* `top` でみたら `systemd` という名前だけど、実行されているのは`/sbin/init`だったりする
+		* `man init` は `systemd` だった
 
 ### fork
 
@@ -61,6 +62,6 @@ exec 時オープンしている記述子をどうするかというフラグも
 
 `#!`から始まるファイル
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA5NTU4Nzg2NSwyMDU3NzA2NzgsLTEwOD
+eyJoaXN0b3J5IjpbMTAwNjQ2MjU0NSwyMDU3NzA2NzgsLTEwOD
 UyNTQ5ODJdfQ==
 -->
