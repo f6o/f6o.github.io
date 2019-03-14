@@ -59,8 +59,30 @@ fork, exec 系, _exit, wait, waitpid をマスターすれば良い。
 
 #### fork のポイント
 
-* fork した後、親プロセスが終了したら、子プロセスの親は何に変わるか。
-* 待つ親がいなく、終了していない子プロセスは何というか。
+* 子の前に親プロセスが終了するとき
+	* init プロセスが子プロセスの親になる
+		* プロセスが終わるとき、カーネルはすべての生きているプロセスについて、終了するプロセスが任意のプロセスの親かどうかを調べる
+		* もしそうなら、そのプロセスの親プロセスIDを 1 = init に変える
+* 親の前に子プロセスが終了するとき
+	* カーネルは終了したプロセスに関する情報を保持している
+		* プロセスID
+		* 終了状態
+		* CPU時間
+	* `wait`や`waitpid`で取り出せるようにしている
+	* カーネルはそのプロセスが使っていたすべてのメモリを開放し、開いているファイル記述子を閉じることができる
+
+#### `man 2 waitpid` の NOTES
+
+> A child that terminates, but has not been waited for becomes a "zombie". The kernel maintains a minimal set of information about the zombie process (PID, termination status, resource usage information) in order to allow the parent to later perform a wait to obtain information about the child.
+> As long as a zombie process is not removed from the system via a wait, it will consume a slot in the kernel process table, and if this tables fills, it will not be possible to create further processes.
+> If a parent process terminates, them its "zombie" children (if any) are adopt by `init(1)`, which automatically perform a wait to remove zombies
+
+### wait/waitpid
+
+* プロセスが呼ばれると、その親プロセスに `SIGCHLD` を送る
+* そのシグナルは非同期シグナル
+* 
+* そのシグナルはデフォルトで無視される
 
 ### exec 関数群
 
@@ -79,6 +101,11 @@ exec 時オープンしている記述子をどうするかというフラグも
 * `exit` では標準入出力の後始末がある
 * `_Exit` はそれをしない。
 * `_exit` はシステムコール
+	* `man 2 exit` の NOTES
+	> but does not call any functions registered with `atexit(3)` or `on_exit(3)`.
+	> Open `stdio(3)` streams are not flushed.
+	> ... does close open file descriptors, and this may cause unknown delay, waiting for pending output to finish.
+* glibc 2.3を境目にして、ただの？システムコールのラッパー関数から、`exit_group(2)`を、プロセス内のスレッドを停止するために、呼ぶ。
 
 ### setuid/setgid
 
@@ -89,6 +116,7 @@ exec 時オープンしている記述子をどうするかというフラグも
 
 `#!`から始まるファイル
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTEzMjAwMjM5OCwxNTM4NDQ0MywtMzY0NT
-I1ODkzLDIwNTc3MDY3OCwtMTA4NTI1NDk4Ml19
+eyJoaXN0b3J5IjpbLTIwNTIzOTYyODEsMTEzMjAwMjM5OCwxNT
+M4NDQ0MywtMzY0NTI1ODkzLDIwNTc3MDY3OCwtMTA4NTI1NDk4
+Ml19
 -->
