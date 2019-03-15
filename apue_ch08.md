@@ -81,7 +81,6 @@ fork, exec 系, _exit, wait, waitpid をマスターすれば良い。
 
 * プロセスが呼ばれると、その親プロセスに `SIGCHLD` を送る
 * そのシグナルは非同期シグナル
-* 
 * そのシグナルはデフォルトで無視される
 
 ### exec 関数群
@@ -116,7 +115,7 @@ exec 時オープンしている記述子をどうするかというフラグも
 
 `#!`から始まるファイル
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNTIzOTYyODEsMTEzMjAwMjM5OCwxNT
-M4NDQ0MywtMzY0NTI1ODkzLDIwNTc3MDY3OCwtMTA4NTI1NDk4
-Ml19
+eyJoaXN0b3J5IjpbLTIxMDg0NjA1OTMsLTIwNTIzOTYyODEsMT
+EzMjAwMjM5OCwxNTM4NDQ0MywtMzY0NTI1ODkzLDIwNTc3MDY3
+OCwtMTA4NTI1NDk4Ml19
 -->
