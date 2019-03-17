@@ -93,7 +93,7 @@ fork, exec 系, _exit, wait, waitpid をマスターすれば良い。
 
 * `wait` 子プロセスが終了数まで呼び出し側をブロック
 * `waitpid` ブロックを防ぐオプションがあり、どのプロセスを待つかをコントロールできる
-* 
+*
 
 ### exec 関数群
 
@@ -127,7 +127,7 @@ exec 時オープンしている記述子をどうするかというフラグも
 
 `#!`から始まるファイル
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAzMTQ1MjM1MywtMjEwODQ2MDU5MywtMj
-A1MjM5NjI4MSwxMTMyMDAyMzk4LDE1Mzg0NDQzLC0zNjQ1MjU4
-OTMsMjA1NzcwNjc4LC0xMDg1MjU0OTgyXX0=
+eyJoaXN0b3J5IjpbMTM0ODY3ODcxLDEwMzE0NTIzNTMsLTIxMD
+g0NjA1OTMsLTIwNTIzOTYyODEsMTEzMjAwMjM5OCwxNTM4NDQ0
+MywtMzY0NTI1ODkzLDIwNTc3MDY3OCwtMTA4NTI1NDk4Ml19
 -->
