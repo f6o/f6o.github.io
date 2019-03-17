@@ -197,7 +197,9 @@ TODO
 * ここでは、ナイス値を調整するインターフェースのみ
 * `NZERO` が初期値
 
-#### ナイス値の取得
+#### ナイス値の取得/設定
+
+* `nice` はそのぷろせす
 
 ```
 #include <unistd.h>
@@ -205,13 +207,14 @@ int nice(int incr);
 
 #include <sys/resource.h>
 int getpriority(int which, id_t who);
+int setpriority(int which, id_t who);
 ```
 
 ### プロセス時間
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg0NjE4NTkyNSw1MDI1NzQ2NzEsMjAwOD
+eyJoaXN0b3J5IjpbLTI0MTI0NTY1NSw1MDI1NzQ2NzEsMjAwOD
 gzNjI0NiwxNTQ2MzcxNDgzLC0zNjQ3NDk2NzUsMTAzMTQ1MjM1
 MywtMjEwODQ2MDU5MywtMjA1MjM5NjI4MSwxMTMyMDAyMzk4LD
 E1Mzg0NDQzLC0zNjQ1MjU4OTMsMjA1NzcwNjc4LC0xMDg1MjU0
