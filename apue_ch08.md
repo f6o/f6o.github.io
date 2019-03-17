@@ -143,11 +143,13 @@ exec 時オープンしている記述子をどうするかというフラグも
 
 ### 解釈実行ファイル
 
-* `#!`が最初の行の始まるファイル
-* 
+* `#!`が最初の行のテキストファイル
+* 最初の行の文字数に制限がある
+	* 制限以上だとどうなるのか？
+	* 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTU2NTEwMTg4LC0zNjQ3NDk2NzUsMTAzMT
-Q1MjM1MywtMjEwODQ2MDU5MywtMjA1MjM5NjI4MSwxMTMyMDAy
-Mzk4LDE1Mzg0NDQzLC0zNjQ1MjU4OTMsMjA1NzcwNjc4LC0xMD
-g1MjU0OTgyXX0=
+eyJoaXN0b3J5IjpbLTE5NzQzMjg5NDQsLTM2NDc0OTY3NSwxMD
+MxNDUyMzUzLC0yMTA4NDYwNTkzLC0yMDUyMzk2MjgxLDExMzIw
+MDIzOTgsMTUzODQ0NDMsLTM2NDUyNTg5MywyMDU3NzA2NzgsLT
+EwODUyNTQ5ODJdfQ==
 -->
