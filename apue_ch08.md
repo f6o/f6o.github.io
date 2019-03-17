@@ -196,6 +196,7 @@ TODO
 * POSIXのリアルタイム拡張の話はまた別
 * ここでは、ナイス値を調整するインターフェースのみ
 * `NZERO` が初期値
+* `2*NZERO`
 
 #### ナイス値の取得/設定
 ```
@@ -210,13 +211,14 @@ int setpriority(int which, id_t who);
 * `nice` はそのプロセスのナイス値を設定/変更できる
 * 引数 _incr_ は現状の値に足される。
 * 引数 _incr_ が大きすぎたり、小さすぎたりすると、勝手に適正な値に変更される。
-* 
+* `-1` も正当な戻り値なので、`errno` をクリアして、確かめる必要がある。
+
 
 ### プロセス時間
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0NzY2MjQxMDgsNTAyNTc0NjcxLDIwMD
+eyJoaXN0b3J5IjpbLTEwNTg1NzI1MDQsNTAyNTc0NjcxLDIwMD
 g4MzYyNDYsMTU0NjM3MTQ4MywtMzY0NzQ5Njc1LDEwMzE0NTIz
 NTMsLTIxMDg0NjA1OTMsLTIwNTIzOTYyODEsMTEzMjAwMjM5OC
 wxNTM4NDQ0MywtMzY0NTI1ODkzLDIwNTc3MDY3OCwtMTA4NTI1
