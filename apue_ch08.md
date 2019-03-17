@@ -224,13 +224,18 @@ int setpriority(int which, id_t who);
 * 10秒後、どちらのプロセスもカウンタの値を印字して終了する。
 	* 異なるナイス値がカウンタの値を比較することで、プロセススケジューリングへの影響を見る
 
+1. デフォルトのナイス値を印字
+2. fork する
+3. 子では `nice` を引数の値で変更する
+4. 
+
 ### プロセス時間
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1ODUwMzMzMiwtMzg4MDk1NjMxLDUwMj
-U3NDY3MSwyMDA4ODM2MjQ2LDE1NDYzNzE0ODMsLTM2NDc0OTY3
-NSwxMDMxNDUyMzUzLC0yMTA4NDYwNTkzLC0yMDUyMzk2MjgxLD
-ExMzIwMDIzOTgsMTUzODQ0NDMsLTM2NDUyNTg5MywyMDU3NzA2
-NzgsLTEwODUyNTQ5ODJdfQ==
+eyJoaXN0b3J5IjpbMTc3MTM2NDY4OCwtMTU4NTAzMzMyLC0zOD
+gwOTU2MzEsNTAyNTc0NjcxLDIwMDg4MzYyNDYsMTU0NjM3MTQ4
+MywtMzY0NzQ5Njc1LDEwMzE0NTIzNTMsLTIxMDg0NjA1OTMsLT
+IwNTIzOTYyODEsMTEzMjAwMjM5OCwxNTM4NDQ0MywtMzY0NTI1
+ODkzLDIwNTc3MDY3OCwtMTA4NTI1NDk4Ml19
 -->
