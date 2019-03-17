@@ -89,7 +89,24 @@ fork, exec 系, _exit, wait, waitpid をマスターすれば良い。
 * 子がすでに終了し、終了状態が取得されるのを待っているなら、状態を取得し、`wait` から戻る
 * 子がいなければ、エラーで戻る
 
-<
+```
+#include <errno.h>
+#include <stdio.h>
+#include <sys/types.h>
+#include <sys/wait.h>
+
+int main(int argc, char **argv)
+{
+  printf("ECHILD=%d\n", ECHILD);
+  int stat;
+  pid_t w = wait(&stat);
+
+  printf("error no=%d\n", errno);
+  printf("done: pid=%ld and stat = %d\n", (long) w, stat);
+
+  return 0;
+}
+```
 
 #### 違い
 
@@ -128,7 +145,7 @@ exec 時オープンしている記述子をどうするかというフラグも
 
 `#!`から始まるファイル
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYyNTA1OTQ4NywxMDMxNDUyMzUzLC0yMT
+eyJoaXN0b3J5IjpbLTM2NDc0OTY3NSwxMDMxNDUyMzUzLC0yMT
 A4NDYwNTkzLC0yMDUyMzk2MjgxLDExMzIwMDIzOTgsMTUzODQ0
 NDMsLTM2NDUyNTg5MywyMDU3NzA2NzgsLTEwODUyNTQ5ODJdfQ
 ==
