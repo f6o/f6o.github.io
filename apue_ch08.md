@@ -193,15 +193,23 @@ TODO
 * プロセス自身でナイス値を調整し、CPUの共有度を下げる
 * 特権プロセスのみがスケジューリングの優先度上げることができた
 
-* POSIXのり
+* POSIXのリアルタイム拡張の話はまた別
+* ここでは、ナイス値を調整するインターフェースのみ
+* 
+
+#### ナイス値の取得
+```
+#include <unistd.h>
+int nice(int incr);
+```
 
 ### プロセス時間
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM0NzE2MDk5Nyw1MDI1NzQ2NzEsMjAwOD
-gzNjI0NiwxNTQ2MzcxNDgzLC0zNjQ3NDk2NzUsMTAzMTQ1MjM1
-MywtMjEwODQ2MDU5MywtMjA1MjM5NjI4MSwxMTMyMDAyMzk4LD
-E1Mzg0NDQzLC0zNjQ1MjU4OTMsMjA1NzcwNjc4LC0xMDg1MjU0
-OTgyXX0=
+eyJoaXN0b3J5IjpbLTE4MjA2NDA3NDMsNTAyNTc0NjcxLDIwMD
+g4MzYyNDYsMTU0NjM3MTQ4MywtMzY0NzQ5Njc1LDEwMzE0NTIz
+NTMsLTIxMDg0NjA1OTMsLTIwNTIzOTYyODEsMTEzMjAwMjM5OC
+wxNTM4NDQ0MywtMzY0NTI1ODkzLDIwNTc3MDY3OCwtMTA4NTI1
+NDk4Ml19
 -->
