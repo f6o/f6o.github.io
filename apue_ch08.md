@@ -176,10 +176,11 @@ exec 時オープンしている記述子をどうするかというフラグも
 * 書き出される内容は `sys/acct.h` に構造体として定義されている
 * 正確な開始順序はわからない
 	* レコード内の順序が終了したプロセスから書き出されるため、そのようになっている
-	* 開始時刻は秒単位で記録され、けいかｊ
+	* 開始時刻は秒単位で記録され、経過時間はクロックティック単位で記録される
+	* 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNTQ5MDU4NjcsMTU0NjM3MTQ4MywtMz
-Y0NzQ5Njc1LDEwMzE0NTIzNTMsLTIxMDg0NjA1OTMsLTIwNTIz
-OTYyODEsMTEzMjAwMjM5OCwxNTM4NDQ0MywtMzY0NTI1ODkzLD
-IwNTc3MDY3OCwtMTA4NTI1NDk4Ml19
+eyJoaXN0b3J5IjpbMjAwODgzNjI0NiwxNTQ2MzcxNDgzLC0zNj
+Q3NDk2NzUsMTAzMTQ1MjM1MywtMjEwODQ2MDU5MywtMjA1MjM5
+NjI4MSwxMTMyMDAyMzk4LDE1Mzg0NDQzLC0zNjQ1MjU4OTMsMj
+A1NzcwNjc4LC0xMDg1MjU0OTgyXX0=
 -->
