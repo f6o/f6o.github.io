@@ -195,7 +195,11 @@ TODO
 
 * POSIXのリアルタイム拡張の話はまた別
 * ここでは、ナイス値を調整するインターフェースのみ
-* `NZERO` が初期値, `0` から `2*NZERO-1` の間 (SUS)
+* `NZERO` が初期値, `0` から `2*NZERO-1` の間 (SUSによる)
+* `man 2 getpriority` によると
+> C library/kernel differences
+ > Within the kernel, nice values are actually represented using the range 40..1 (since negative numbers are error codes) and these are the values employed by the setpriority()  and  getpriority() system calls.  The glibc wrapper functions for these system calls handle the translations between the user-land and kernel representations of the nice value according to the formula unice = 20 - knice.  (Thus,  the kernel's 40..1 range corresponds to the range -20..19 as seen by user space.)
+
 
 #### ナイス値の取得/設定
 ```
@@ -217,7 +221,7 @@ int setpriority(int which, id_t who);
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk1NzUwMzkzOSwtMzg4MDk1NjMxLDUwMj
+eyJoaXN0b3J5IjpbMTk5NDY0NDQ5NCwtMzg4MDk1NjMxLDUwMj
 U3NDY3MSwyMDA4ODM2MjQ2LDE1NDYzNzE0ODMsLTM2NDc0OTY3
 NSwxMDMxNDUyMzUzLC0yMTA4NDYwNTkzLC0yMDUyMzk2MjgxLD
 ExMzIwMDIzOTgsMTUzODQ0NDMsLTM2NDUyNTg5MywyMDU3NzA2
