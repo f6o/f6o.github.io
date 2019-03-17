@@ -181,10 +181,22 @@ exec 時オープンしている記述子をどうするかというフラグも
 	* 経過時間はクロックティック単位で記録される
 		* カレンダー時間 `time_t` で秒単位 1970/1/1 00:00:00 からの経過時間
 		* プロセス時間(=CPU時間) `clock_t` 1秒あたり50, 60, 100 クロックティック
-	* 
+
+### 8.15 ユーザの識別
+
+TODO
+
+### プロセススケジューリング
+
+
+
+### プロセス時間
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTAyNTc0NjcxLDIwMDg4MzYyNDYsMTU0Nj
-M3MTQ4MywtMzY0NzQ5Njc1LDEwMzE0NTIzNTMsLTIxMDg0NjA1
-OTMsLTIwNTIzOTYyODEsMTEzMjAwMjM5OCwxNTM4NDQ0MywtMz
-Y0NTI1ODkzLDIwNTc3MDY3OCwtMTA4NTI1NDk4Ml19
+eyJoaXN0b3J5IjpbLTIwOTExOTI0NDAsNTAyNTc0NjcxLDIwMD
+g4MzYyNDYsMTU0NjM3MTQ4MywtMzY0NzQ5Njc1LDEwMzE0NTIz
+NTMsLTIxMDg0NjA1OTMsLTIwNTIzOTYyODEsMTEzMjAwMjM5OC
+wxNTM4NDQ0MywtMzY0NTI1ODkzLDIwNTc3MDY3OCwtMTA4NTI1
+NDk4Ml19
 -->
