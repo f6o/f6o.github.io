@@ -219,15 +219,19 @@ int setpriority(int which, id_t who);
 
 #### 例
 
-* 
+* 親はデフォルトのナイス値で動作する
+* 子はコマンドライン引数の値で調整したナイス値で動作する
+* 10秒後、どちらのプロセスもカウンタの値を印字して終了する。
+	* 異なるナイス値がカウンタの値にどういう影響を及ぼすかを見ることで、
+	* ぷｒ
 
 ### プロセス時間
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAyNTk4MjU5MywtMzg4MDk1NjMxLDUwMj
-U3NDY3MSwyMDA4ODM2MjQ2LDE1NDYzNzE0ODMsLTM2NDc0OTY3
-NSwxMDMxNDUyMzUzLC0yMTA4NDYwNTkzLC0yMDUyMzk2MjgxLD
-ExMzIwMDIzOTgsMTUzODQ0NDMsLTM2NDUyNTg5MywyMDU3NzA2
-NzgsLTEwODUyNTQ5ODJdfQ==
+eyJoaXN0b3J5IjpbNDc5OTU2MjIyLC0zODgwOTU2MzEsNTAyNT
+c0NjcxLDIwMDg4MzYyNDYsMTU0NjM3MTQ4MywtMzY0NzQ5Njc1
+LDEwMzE0NTIzNTMsLTIxMDg0NjA1OTMsLTIwNTIzOTYyODEsMT
+EzMjAwMjM5OCwxNTM4NDQ0MywtMzY0NTI1ODkzLDIwNTc3MDY3
+OCwtMTA4NTI1NDk4Ml19
 -->
