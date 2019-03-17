@@ -77,11 +77,14 @@ fork, exec 系, _exit, wait, waitpid をマスターすれば良い。
 > As long as a zombie process is not removed from the system via a wait, it will consume a slot in the kernel process table, and if this tables fills, it will not be possible to create further processes.
 > If a parent process terminates, them its "zombie" children (if any) are adopt by `init(1)`, which automatically perform a wait to remove zombies
 
-### wait/waitpid
+### wait/waitpid/waitid
 
 * プロセスが呼ばれると、その親プロセスに `SIGCHLD` を送る
 * そのシグナルは非同期シグナル
 * そのシグナルはデフォルトで無視される
+
+#### 違い
+
 
 ### exec 関数群
 
@@ -115,7 +118,7 @@ exec 時オープンしている記述子をどうするかというフラグも
 
 `#!`から始まるファイル
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMDg0NjA1OTMsLTIwNTIzOTYyODEsMT
-EzMjAwMjM5OCwxNTM4NDQ0MywtMzY0NTI1ODkzLDIwNTc3MDY3
-OCwtMTA4NTI1NDk4Ml19
+eyJoaXN0b3J5IjpbMTg4OTE2MzY1MywtMjEwODQ2MDU5MywtMj
+A1MjM5NjI4MSwxMTMyMDAyMzk4LDE1Mzg0NDQzLC0zNjQ1MjU4
+OTMsMjA1NzcwNjc4LC0xMDg1MjU0OTgyXX0=
 -->
