@@ -198,7 +198,8 @@ TODO
 * `NZERO` が初期値, `0` から `2*NZERO-1` の間 (SUSによる)
 * `man 2 getpriority` によると
 > C library/kernel differences
- > Within the kernel, nice values are actually represented using the range 40..1 (since negative numbers are error codes) and these are the values employed by the setpriority()  and  getpriority() system calls.  The glibc wrapper functions for these system calls handle the translations between the user-land and kernel representations of the nice value according to the formula unice = 20 - knice.  (Thus,  the kernel's 40..1 range corresponds to the range -20..19 as seen by user space.)
+ > Within the kernel, nice values are actually represented using the range 40..1 (since negative numbers are error codes) and these are the values employed by the setpriority()  and  getpriority() system calls.
+ > The glibc wrapper functions for these system calls handle the translations between the user-land and kernel representations of the nice value according to the formula unice = 20 - knice.  (Thus,  the kernel's 40..1 range corresponds to the range -20..19 as seen by user space.)
 
 
 #### ナイス値の取得/設定
@@ -216,12 +217,15 @@ int setpriority(int which, id_t who);
 * 引数 _incr_ が大きすぎたり、小さすぎたりすると、勝手に適正な値に変更される。
 * `-1` も正当な戻り値なので、`errno` をクリアして、確かめる必要がある。
 
+#### 例
+
+* 
 
 ### プロセス時間
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk5NDY0NDQ5NCwtMzg4MDk1NjMxLDUwMj
+eyJoaXN0b3J5IjpbMjAyNTk4MjU5MywtMzg4MDk1NjMxLDUwMj
 U3NDY3MSwyMDA4ODM2MjQ2LDE1NDYzNzE0ODMsLTM2NDc0OTY3
 NSwxMDMxNDUyMzUzLC0yMTA4NDYwNTkzLC0yMDUyMzk2MjgxLD
 ExMzIwMDIzOTgsMTUzODQ0NDMsLTM2NDUyNTg5MywyMDU3NzA2
