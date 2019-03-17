@@ -143,10 +143,11 @@ exec 時オープンしている記述子をどうするかというフラグも
 
 ### 解釈実行ファイル
 
-`#!`から始まるファイル
+* `#!`が最初の行の始まるファイル
+* 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM2NDc0OTY3NSwxMDMxNDUyMzUzLC0yMT
-A4NDYwNTkzLC0yMDUyMzk2MjgxLDExMzIwMDIzOTgsMTUzODQ0
-NDMsLTM2NDUyNTg5MywyMDU3NzA2NzgsLTEwODUyNTQ5ODJdfQ
-==
+eyJoaXN0b3J5IjpbNTU2NTEwMTg4LC0zNjQ3NDk2NzUsMTAzMT
+Q1MjM1MywtMjEwODQ2MDU5MywtMjA1MjM5NjI4MSwxMTMyMDAy
+Mzk4LDE1Mzg0NDQzLC0zNjQ1MjU4OTMsMjA1NzcwNjc4LC0xMD
+g1MjU0OTgyXX0=
 -->
