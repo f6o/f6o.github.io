@@ -16,13 +16,15 @@
 * [Chapter 6 System Data Files and Information](./apue_ch06.md)
 * [Chapter 7 Process Environment](./apue_ch07.md)
 * [Chapter 8 Process Control](./apue_ch08.md)
-* [Chapter 9 Process Relationships]
+* [Chapter 9 Process Relationships](./apue_ch09.md)
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk3Njc0MDI1NCwyMDI4Nzk2NzkwLC0xOD
-M3MTA2NjY1LDI3NzI0MzcwMywtMTI0MzczMzExOCwtMTI0Mzcz
-MzExOCw2NzgzODE2MjEsODc0MTUzMDQsLTEyMzUyMzk0NTgsNT
-E5MTcyMTQ2LDE3NTc2NjU3MTYsLTExODQ5MjM2ODYsMTI5NTYw
-MjcyMCwxMDc4MTk1MDQsLTEyMzUyMzU2MjAsLTk5NjMyNDE0Ny
-wxNDM0OTY0MDEsLTE4NzgwOTM2NDEsLTEyNjIyMTg2NDgsLTM5
-ODkwNzU5MF19
+eyJoaXN0b3J5IjpbLTIxMzgyNjA3NTEsMjAyODc5Njc5MCwtMT
+gzNzEwNjY2NSwyNzcyNDM3MDMsLTEyNDM3MzMxMTgsLTEyNDM3
+MzMxMTgsNjc4MzgxNjIxLDg3NDE1MzA0LC0xMjM1MjM5NDU4LD
+UxOTE3MjE0NiwxNzU3NjY1NzE2LC0xMTg0OTIzNjg2LDEyOTU2
+MDI3MjAsMTA3ODE5NTA0LC0xMjM1MjM1NjIwLC05OTYzMjQxND
+csMTQzNDk2NDAxLC0xODc4MDkzNjQxLC0xMjYyMjE4NjQ4LC0z
+OTg5MDc1OTBdfQ==
 -->
