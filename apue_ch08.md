@@ -196,7 +196,7 @@ TODO
 * POSIXのリアルタイム拡張の話はまた別
 * ここでは、ナイス値を調整するインターフェースのみ
 * `NZERO` が初期値
-* `2*NZERO`
+* `0` から `2*NZERO-1` の間
 
 #### ナイス値の取得/設定
 ```
@@ -218,9 +218,9 @@ int setpriority(int which, id_t who);
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwNTg1NzI1MDQsNTAyNTc0NjcxLDIwMD
-g4MzYyNDYsMTU0NjM3MTQ4MywtMzY0NzQ5Njc1LDEwMzE0NTIz
-NTMsLTIxMDg0NjA1OTMsLTIwNTIzOTYyODEsMTEzMjAwMjM5OC
-wxNTM4NDQ0MywtMzY0NTI1ODkzLDIwNTc3MDY3OCwtMTA4NTI1
-NDk4Ml19
+eyJoaXN0b3J5IjpbLTM4ODA5NTYzMSw1MDI1NzQ2NzEsMjAwOD
+gzNjI0NiwxNTQ2MzcxNDgzLC0zNjQ3NDk2NzUsMTAzMTQ1MjM1
+MywtMjEwODQ2MDU5MywtMjA1MjM5NjI4MSwxMTMyMDAyMzk4LD
+E1Mzg0NDQzLC0zNjQ1MjU4OTMsMjA1NzcwNjc4LC0xMDg1MjU0
+OTgyXX0=
 -->
