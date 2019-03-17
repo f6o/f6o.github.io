@@ -146,10 +146,14 @@ exec 時オープンしている記述子をどうするかというフラグも
 * `#!`が最初の行のテキストファイル
 * 最初の行の文字数に制限がある
 	* 制限以上だとどうなるのか？
-	* 
+
+関係ないけど chromeos 上の linux の `sh` は `dash` である。
+
+> dash is a POSIX-compliant implementation of /bin/sh that aims to be as small as possible.  dash is a direct descendant of the NetBSD version of ash (the Almquist SHell), ported to Linux in early 1997.  It was renamed to dash in 2002.
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5NzQzMjg5NDQsLTM2NDc0OTY3NSwxMD
-MxNDUyMzUzLC0yMTA4NDYwNTkzLC0yMDUyMzk2MjgxLDExMzIw
-MDIzOTgsMTUzODQ0NDMsLTM2NDUyNTg5MywyMDU3NzA2NzgsLT
-EwODUyNTQ5ODJdfQ==
+eyJoaXN0b3J5IjpbMTU0NjM3MTQ4MywtMzY0NzQ5Njc1LDEwMz
+E0NTIzNTMsLTIxMDg0NjA1OTMsLTIwNTIzOTYyODEsMTEzMjAw
+MjM5OCwxNTM4NDQ0MywtMzY0NTI1ODkzLDIwNTc3MDY3OCwtMT
+A4NTI1NDk4Ml19
 -->
