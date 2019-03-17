@@ -174,16 +174,17 @@ exec 時オープンしている記述子をどうするかというフラグも
 * `accton` プログラムで記録モードにする
 * Linux だと `/var/log/account/pacct` に書き出される
 * 書き出される内容は `sys/acct.h` に構造体として定義されている
+	* `man 5 acct`
 * 正確な開始順序はわからない
 	* レコード内の順序が終了したプロセスから書き出されるため、そのようになっている
-	* カレンダー時間は開始時刻は秒単位で記録されている
+	* 開始時刻はカレンダー時刻(秒単位)で記録されている
 	* 経過時間はクロックティック単位で記録される
 		* カレンダー時間 `time_t` で秒単位 1970/1/1 00:00:00 からの経過時間
 		* プロセス時間(=CPU時間) `clock_t` 1秒あたり50, 60, 100 クロックティック
-	*
+	* 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc1NDgzMTU1NSwyMDA4ODM2MjQ2LDE1ND
-YzNzE0ODMsLTM2NDc0OTY3NSwxMDMxNDUyMzUzLC0yMTA4NDYw
-NTkzLC0yMDUyMzk2MjgxLDExMzIwMDIzOTgsMTUzODQ0NDMsLT
-M2NDUyNTg5MywyMDU3NzA2NzgsLTEwODUyNTQ5ODJdfQ==
+eyJoaXN0b3J5IjpbNTAyNTc0NjcxLDIwMDg4MzYyNDYsMTU0Nj
+M3MTQ4MywtMzY0NzQ5Njc1LDEwMzE0NTIzNTMsLTIxMDg0NjA1
+OTMsLTIwNTIzOTYyODEsMTEzMjAwMjM5OCwxNTM4NDQ0MywtMz
+Y0NTI1ODkzLDIwNTc3MDY3OCwtMTA4NTI1NDk4Ml19
 -->
