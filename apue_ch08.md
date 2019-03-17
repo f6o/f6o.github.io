@@ -249,9 +249,11 @@ struct tms {
 * 時計時間を得るためには、差分を取る必要がある
 	* 差分でオーバーフローになることが稀にある (演習 1.5)
 
+> プロセス時間を符号付き32ビット整数として保持し、1秒あたりのティック数を100とした場合、値がオーバーフローするのは何日後か。
+
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5MzkzNDkxNjgsNzE5MDIyMzMyLC0xNT
+eyJoaXN0b3J5IjpbLTE5MTIzOTY0NzAsNzE5MDIyMzMyLC0xNT
 g1MDMzMzIsLTM4ODA5NTYzMSw1MDI1NzQ2NzEsMjAwODgzNjI0
 NiwxNTQ2MzcxNDgzLC0zNjQ3NDk2NzUsMTAzMTQ1MjM1MywtMj
 EwODQ2MDU5MywtMjA1MjM5NjI4MSwxMTMyMDAyMzk4LDE1Mzg0
