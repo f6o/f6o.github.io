@@ -236,16 +236,18 @@ int setpriority(int which, id_t who);
 clock_t times(struct tms *buf);
 
 struct tms {
-  clock_t tms_utime;
-  clock_t tms_stime;
-  clock_t tms_cutime;
+  clock_t tms_utime; /* ユーザCPU時間 */
+  clock_t tms_stime; /* システムCPU時間 */
+  
+  /* 終了した子のCPU時間 */
+  clock_t tms_cutime; 
   clock_t tms_cstime;
 }
 ```
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMTExMzE4NzcsNzE5MDIyMzMyLC0xNT
+eyJoaXN0b3J5IjpbLTIxMDE4NTg5MTYsNzE5MDIyMzMyLC0xNT
 g1MDMzMzIsLTM4ODA5NTYzMSw1MDI1NzQ2NzEsMjAwODgzNjI0
 NiwxNTQ2MzcxNDgzLC0zNjQ3NDk2NzUsMTAzMTQ1MjM1MywtMj
 EwODQ2MDU5MywtMjA1MjM5NjI4MSwxMTMyMDAyMzk4LDE1Mzg0
