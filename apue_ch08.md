@@ -170,11 +170,15 @@ exec 時オープンしている記述子をどうするかというフラグも
 ### プロセスの実行記録
 
 * UNIXシステムには実行記録を取るオプションがある
-* プロセスが終わるたび、カーネルはそれを書き出す
+* プロセスが終わるたび、カーネルはそれをバイナリレコードとして書き出す
 * `accton` プログラムで記録モードにする
-* Linux だと `/
+* Linux だと `/var/log/account/pacct` に書き出される
+* 書き出される内容は `sys/acct.h` に構造体として定義されている
+* 正確な開始順序はわからない
+	* レコード内の順序が終了したプロセスから書き出されるため、そのようになっている
+	* 開始時刻は秒単位で記録され、けいかｊ
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzMjMxMjcwNDAsMTU0NjM3MTQ4MywtMz
+eyJoaXN0b3J5IjpbLTEzNTQ5MDU4NjcsMTU0NjM3MTQ4MywtMz
 Y0NzQ5Njc1LDEwMzE0NTIzNTMsLTIxMDg0NjA1OTMsLTIwNTIz
 OTYyODEsMTEzMjAwMjM5OCwxNTM4NDQ0MywtMzY0NTI1ODkzLD
 IwNTc3MDY3OCwtMTA4NTI1NDk4Ml19
