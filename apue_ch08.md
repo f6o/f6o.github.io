@@ -225,17 +225,18 @@ int setpriority(int which, id_t who);
 	* 異なるナイス値がカウンタの値を比較することで、プロセススケジューリングへの影響を見る
 
 1. デフォルトのナイス値を印字
-2. fork する
-3. 子では `nice` を引数の値で変更する
+2. `fork` する
+3. 子では引数の値でナイス値を変更する
 4. 10秒間カウンタを回し続け、最後に結果を印字
 
 ### プロセス時間
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzE5MDIyMzMyLC0xNTg1MDMzMzIsLTM4OD
-A5NTYzMSw1MDI1NzQ2NzEsMjAwODgzNjI0NiwxNTQ2MzcxNDgz
-LC0zNjQ3NDk2NzUsMTAzMTQ1MjM1MywtMjEwODQ2MDU5MywtMj
-A1MjM5NjI4MSwxMTMyMDAyMzk4LDE1Mzg0NDQzLC0zNjQ1MjU4
-OTMsMjA1NzcwNjc4LC0xMDg1MjU0OTgyXX0=
+eyJoaXN0b3J5IjpbLTQ3NTYyNjk4Niw3MTkwMjIzMzIsLTE1OD
+UwMzMzMiwtMzg4MDk1NjMxLDUwMjU3NDY3MSwyMDA4ODM2MjQ2
+LDE1NDYzNzE0ODMsLTM2NDc0OTY3NSwxMDMxNDUyMzUzLC0yMT
+A4NDYwNTkzLC0yMDUyMzk2MjgxLDExMzIwMDIzOTgsMTUzODQ0
+NDMsLTM2NDUyNTg5MywyMDU3NzA2NzgsLTEwODUyNTQ5ODJdfQ
+==
 -->
