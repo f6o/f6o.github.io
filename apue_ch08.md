@@ -89,11 +89,12 @@ fork, exec 系, _exit, wait, waitpid をマスターすれば良い。
 * 子がすでに終了し、終了状態が取得されるのを待っているなら、状態を取得し、`wait` から戻る
 * 子がいなければ、エラーで戻る
 
+<
+
 #### 違い
 
 * `wait` 子プロセスが終了数まで呼び出し側をブロック
 * `waitpid` ブロックを防ぐオプションがあり、どのプロセスを待つかをコントロールできる
-*
 
 ### exec 関数群
 
@@ -127,7 +128,8 @@ exec 時オープンしている記述子をどうするかというフラグも
 
 `#!`から始まるファイル
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM0ODY3ODcxLDEwMzE0NTIzNTMsLTIxMD
-g0NjA1OTMsLTIwNTIzOTYyODEsMTEzMjAwMjM5OCwxNTM4NDQ0
-MywtMzY0NTI1ODkzLDIwNTc3MDY3OCwtMTA4NTI1NDk4Ml19
+eyJoaXN0b3J5IjpbMTYyNTA1OTQ4NywxMDMxNDUyMzUzLC0yMT
+A4NDYwNTkzLC0yMDUyMzk2MjgxLDExMzIwMDIzOTgsMTUzODQ0
+NDMsLTM2NDUyNTg5MywyMDU3NzA2NzgsLTEwODUyNTQ5ODJdfQ
+==
 -->
