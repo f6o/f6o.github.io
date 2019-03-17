@@ -165,11 +165,17 @@ exec 時オープンしている記述子をどうするかというフラグも
 
 * fork, exec, waitpid を呼んでくれる
 * SUIDプログラムの場合は「絶対」使わないこと
-	* 逆に言えば、`system`を使うプログラムのセットユーザIDビットフラグを立ててｈということ
+	* 逆に言えば「`system`を使うプログラムのセットユーザIDビットフラグを立ててはならぬ」ということ
 
+### プロセスの実行記録
+
+* UNIXシステムには実行記録を取るオプションがある
+* プロセスが終わるたび、カーネルはそれを書き出す
+* `accton` プログラムで記録モードにする
+* Linux だと `/
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY3MTU3MDAzNiwxNTQ2MzcxNDgzLC0zNj
-Q3NDk2NzUsMTAzMTQ1MjM1MywtMjEwODQ2MDU5MywtMjA1MjM5
-NjI4MSwxMTMyMDAyMzk4LDE1Mzg0NDQzLC0zNjQ1MjU4OTMsMj
-A1NzcwNjc4LC0xMDg1MjU0OTgyXX0=
+eyJoaXN0b3J5IjpbLTEzMjMxMjcwNDAsMTU0NjM3MTQ4MywtMz
+Y0NzQ5Njc1LDEwMzE0NTIzNTMsLTIxMDg0NjA1OTMsLTIwNTIz
+OTYyODEsMTEzMjAwMjM5OCwxNTM4NDQ0MywtMzY0NTI1ODkzLD
+IwNTc3MDY3OCwtMTA4NTI1NDk4Ml19
 -->
