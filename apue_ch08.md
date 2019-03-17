@@ -253,13 +253,16 @@ struct tms {
 
 ### 演習
 
-####
+#### 8.2
 
 * main以外の関数 `func`から`vfork` を呼ぶ
 * 子が `func` に戻ると何が起きるか（メモリアドレス空間など）
 
+#### 8.6
+
+* ゾンビを作成し、当該プロセスがゾンビであることを確認するために、`ps` こま
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA0OTY3NTU2OSw3MTkwMjIzMzIsLTE1OD
+eyJoaXN0b3J5IjpbMTc2NDY3MDU5MCw3MTkwMjIzMzIsLTE1OD
 UwMzMzMiwtMzg4MDk1NjMxLDUwMjU3NDY3MSwyMDA4ODM2MjQ2
 LDE1NDYzNzE0ODMsLTM2NDc0OTY3NSwxMDMxNDUyMzUzLC0yMT
 A4NDYwNTkzLC0yMDUyMzk2MjgxLDExMzIwMDIzOTgsMTUzODQ0
