@@ -83,10 +83,11 @@ fork, exec 系, _exit, wait, waitpid をマスターすれば良い。
 * そのシグナルは非同期シグナル
 * そのシグナルはデフォルトで無視される
 
-#### 単純化して wait の動作
+#### 単純化した `wait` の動作
 
 * すべての子が動作しているとブロックする
-* 
+* 子がすでに終了し、終了状態が取得されるのを待っているなら、状態を取得し、`wait` から戻る
+* 子がいなければ、エラーで戻る
 
 #### 違い
 
@@ -126,7 +127,7 @@ exec 時オープンしている記述子をどうするかというフラグも
 
 `#!`から始まるファイル
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1NDQwOTc4MDksLTIxMDg0NjA1OTMsLT
-IwNTIzOTYyODEsMTEzMjAwMjM5OCwxNTM4NDQ0MywtMzY0NTI1
-ODkzLDIwNTc3MDY3OCwtMTA4NTI1NDk4Ml19
+eyJoaXN0b3J5IjpbMTAzMTQ1MjM1MywtMjEwODQ2MDU5MywtMj
+A1MjM5NjI4MSwxMTMyMDAyMzk4LDE1Mzg0NDQzLC0zNjQ1MjU4
+OTMsMjA1NzcwNjc4LC0xMDg1MjU0OTgyXX0=
 -->
