@@ -195,8 +195,7 @@ TODO
 
 * POSIXのリアルタイム拡張の話はまた別
 * ここでは、ナイス値を調整するインターフェースのみ
-* `NZERO` が初期値
-* `0` から `2*NZERO-1` の間
+* `NZERO` が初期値, `0` から `2*NZERO-1` の間 (SUS)
 
 #### ナイス値の取得/設定
 ```
@@ -218,9 +217,9 @@ int setpriority(int which, id_t who);
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM4ODA5NTYzMSw1MDI1NzQ2NzEsMjAwOD
-gzNjI0NiwxNTQ2MzcxNDgzLC0zNjQ3NDk2NzUsMTAzMTQ1MjM1
-MywtMjEwODQ2MDU5MywtMjA1MjM5NjI4MSwxMTMyMDAyMzk4LD
-E1Mzg0NDQzLC0zNjQ1MjU4OTMsMjA1NzcwNjc4LC0xMDg1MjU0
-OTgyXX0=
+eyJoaXN0b3J5IjpbLTk1NzUwMzkzOSwtMzg4MDk1NjMxLDUwMj
+U3NDY3MSwyMDA4ODM2MjQ2LDE1NDYzNzE0ODMsLTM2NDc0OTY3
+NSwxMDMxNDUyMzUzLC0yMTA4NDYwNTkzLC0yMDUyMzk2MjgxLD
+ExMzIwMDIzOTgsMTUzODQ0NDMsLTM2NDUyNTg5MywyMDU3NzA2
+NzgsLTEwODUyNTQ5ODJdfQ==
 -->
