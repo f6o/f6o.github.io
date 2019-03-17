@@ -245,16 +245,16 @@ struct tms {
 }
 ```
 
-* `struct tms` ｈ
+* `struct tms` は相対的な時間
 * 時計時間を得るためには、差分を取る必要がある
-* 
+	* 差分でオーバーフローになることが稀にある (演習 1.5)
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTEyNzQ5NzEyMyw3MTkwMjIzMzIsLTE1OD
-UwMzMzMiwtMzg4MDk1NjMxLDUwMjU3NDY3MSwyMDA4ODM2MjQ2
-LDE1NDYzNzE0ODMsLTM2NDc0OTY3NSwxMDMxNDUyMzUzLC0yMT
-A4NDYwNTkzLC0yMDUyMzk2MjgxLDExMzIwMDIzOTgsMTUzODQ0
-NDMsLTM2NDUyNTg5MywyMDU3NzA2NzgsLTEwODUyNTQ5ODJdfQ
-==
+eyJoaXN0b3J5IjpbLTE5MzkzNDkxNjgsNzE5MDIyMzMyLC0xNT
+g1MDMzMzIsLTM4ODA5NTYzMSw1MDI1NzQ2NzEsMjAwODgzNjI0
+NiwxNTQ2MzcxNDgzLC0zNjQ3NDk2NzUsMTAzMTQ1MjM1MywtMj
+EwODQ2MDU5MywtMjA1MjM5NjI4MSwxMTMyMDAyMzk4LDE1Mzg0
+NDQzLC0zNjQ1MjU4OTMsMjA1NzcwNjc4LC0xMDg1MjU0OTgyXX
+0=
 -->
