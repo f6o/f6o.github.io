@@ -188,15 +188,18 @@ TODO
 
 ### プロセススケジューリング
 
-
+* スケジューリング方針と優先度はカーネルが決定
+* プロセスは自身の nice value を持っている
+* プロセス自身で調整し、低い優先度にすることができる
+* 特権プロセスのみがすけじゅーりんｇ上げることができた
 
 ### プロセス時間
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwOTExOTI0NDAsNTAyNTc0NjcxLDIwMD
-g4MzYyNDYsMTU0NjM3MTQ4MywtMzY0NzQ5Njc1LDEwMzE0NTIz
-NTMsLTIxMDg0NjA1OTMsLTIwNTIzOTYyODEsMTEzMjAwMjM5OC
-wxNTM4NDQ0MywtMzY0NTI1ODkzLDIwNTc3MDY3OCwtMTA4NTI1
-NDk4Ml19
+eyJoaXN0b3J5IjpbNjY1OTg5MDYwLDUwMjU3NDY3MSwyMDA4OD
+M2MjQ2LDE1NDYzNzE0ODMsLTM2NDc0OTY3NSwxMDMxNDUyMzUz
+LC0yMTA4NDYwNTkzLC0yMDUyMzk2MjgxLDExMzIwMDIzOTgsMT
+UzODQ0NDMsLTM2NDUyNTg5MywyMDU3NzA2NzgsLTEwODUyNTQ5
+ODJdfQ==
 -->
