@@ -163,10 +163,12 @@ exec 時オープンしている記述子をどうするかというフラグも
 
 ### system
 
-* これもお手軽機能
-* fork/
+* fork, exec, waitpid を呼んでくれる
+* SUIDプログラムの場合は「絶対」使わないこと
+	* 逆に言えば、`system`を使うプログラムのセットユーザIDビットフラグを立ててｈということ
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTcxMzY2NDk1NCwxNTQ2MzcxNDgzLC0zNj
+eyJoaXN0b3J5IjpbLTY3MTU3MDAzNiwxNTQ2MzcxNDgzLC0zNj
 Q3NDk2NzUsMTAzMTQ1MjM1MywtMjEwODQ2MDU5MywtMjA1MjM5
 NjI4MSwxMTMyMDAyMzk4LDE1Mzg0NDQzLC0zNjQ1MjU4OTMsMj
 A1NzcwNjc4LC0xMDg1MjU0OTgyXX0=
