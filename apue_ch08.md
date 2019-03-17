@@ -208,15 +208,17 @@ int setpriority(int which, id_t who);
 ```
 
 * `nice` はそのプロセスのナイス値を設定/変更できる
-* 引数の _incr_ は現状の値に足される。引数が大きすぎたり、ちいさすぎ
+* 引数 _incr_ は現状の値に足される。
+* 引数 _incr_ が大きすぎたり、小さすぎたりすると、勝手に適正な値に変更される。
+* 
 
 ### プロセス時間
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwODY2MjA4Nyw1MDI1NzQ2NzEsMjAwOD
-gzNjI0NiwxNTQ2MzcxNDgzLC0zNjQ3NDk2NzUsMTAzMTQ1MjM1
-MywtMjEwODQ2MDU5MywtMjA1MjM5NjI4MSwxMTMyMDAyMzk4LD
-E1Mzg0NDQzLC0zNjQ1MjU4OTMsMjA1NzcwNjc4LC0xMDg1MjU0
-OTgyXX0=
+eyJoaXN0b3J5IjpbLTE0NzY2MjQxMDgsNTAyNTc0NjcxLDIwMD
+g4MzYyNDYsMTU0NjM3MTQ4MywtMzY0NzQ5Njc1LDEwMzE0NTIz
+NTMsLTIxMDg0NjA1OTMsLTIwNTIzOTYyODEsMTEzMjAwMjM5OC
+wxNTM4NDQ0MywtMzY0NTI1ODkzLDIwNTc3MDY3OCwtMTA4NTI1
+NDk4Ml19
 -->
