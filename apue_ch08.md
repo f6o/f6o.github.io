@@ -146,14 +146,16 @@ exec 時オープンしている記述子をどうするかというフラグも
 * `#!`が最初の行のテキストファイル
 * 最初の行の文字数に制限がある
 	* 制限以上だとどうなるのか？
+* システムコールの exec は解釈実行ファイルの先頭行を読んで、そのファイルを実行する
+	* システムコールの節約
 
-関係ないけど chromeos 上の linux の `sh` は `dash` である。
+関係ないけど chromeos 上の linux の `sh` は `dash` である（Debianベースだからかもしれない）
 
 > dash is a POSIX-compliant implementation of /bin/sh that aims to be as small as possible.  dash is a direct descendant of the NetBSD version of ash (the Almquist SHell), ported to Linux in early 1997.  It was renamed to dash in 2002.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU0NjM3MTQ4MywtMzY0NzQ5Njc1LDEwMz
-E0NTIzNTMsLTIxMDg0NjA1OTMsLTIwNTIzOTYyODEsMTEzMjAw
-MjM5OCwxNTM4NDQ0MywtMzY0NTI1ODkzLDIwNTc3MDY3OCwtMT
-A4NTI1NDk4Ml19
+eyJoaXN0b3J5IjpbLTE4MjcwOTk5ODQsMTU0NjM3MTQ4MywtMz
+Y0NzQ5Njc1LDEwMzE0NTIzNTMsLTIxMDg0NjA1OTMsLTIwNTIz
+OTYyODEsMTEzMjAwMjM5OCwxNTM4NDQ0MywtMzY0NTI1ODkzLD
+IwNTc3MDY3OCwtMTA4NTI1NDk4Ml19
 -->
