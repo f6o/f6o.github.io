@@ -261,11 +261,35 @@ struct tms {
 #### 8.6
 
 * ゾンビを作成し、当該プロセスがゾンビであることを確認するために、`ps` コマンドを実行するように `system` 関数を呼ぶプログラムを書きなさい。
+
+```
+#include <stdio.h>
+#include <stdlib.h>
+#include <unistd.h>
+
+int main(int argc, char **argv)
+{
+  pid_t d = fork();
+  char ps_command[100];
+
+  if ( d == -1 ) {
+    // no                                                                                                                                           
+  } else if ( d == 0 ) {
+    _exit(0);
+  } else {
+    sprintf(ps_command, "ps -ly %ld", (long) d);
+    printf("child process id=%ld\n", (long) d);
+    system(ps_command);
+    sleep(3);
+  }
+
+  return 0;
+}
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzOTM4MjQzNTgsNzE5MDIyMzMyLC0xNT
-g1MDMzMzIsLTM4ODA5NTYzMSw1MDI1NzQ2NzEsMjAwODgzNjI0
-NiwxNTQ2MzcxNDgzLC0zNjQ3NDk2NzUsMTAzMTQ1MjM1MywtMj
-EwODQ2MDU5MywtMjA1MjM5NjI4MSwxMTMyMDAyMzk4LDE1Mzg0
-NDQzLC0zNjQ1MjU4OTMsMjA1NzcwNjc4LC0xMDg1MjU0OTgyXX
-0=
+eyJoaXN0b3J5IjpbNjcwNjc4ODcxLDcxOTAyMjMzMiwtMTU4NT
+AzMzMyLC0zODgwOTU2MzEsNTAyNTc0NjcxLDIwMDg4MzYyNDYs
+MTU0NjM3MTQ4MywtMzY0NzQ5Njc1LDEwMzE0NTIzNTMsLTIxMD
+g0NjA1OTMsLTIwNTIzOTYyODEsMTEzMjAwMjM5OCwxNTM4NDQ0
+MywtMzY0NTI1ODkzLDIwNTc3MDY3OCwtMTA4NTI1NDk4Ml19
 -->
