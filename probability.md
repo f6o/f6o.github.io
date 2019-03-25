@@ -1,8 +1,7 @@
 ---
-to
+title: 『確率と計算』まとめ
+layout: post
 ---
-
-## 『確率と計算』まとめ
 
 Upfal, Mitzenmacher
 
@@ -67,6 +66,6 @@ $$\text{Pr}(\bigcup_{i\ge1}{E_i})=\sum_{i\ge1}\text{Pr}(E_i)$$
 2.6 Exercises
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk2NjEzODU5Miw4MTI2OTQzNDEsLTE2OT
-M0MDE1NzAsLTE2OTM0MDE1NzAsLTk4MTU0MTc2MF19
+eyJoaXN0b3J5IjpbLTMyMjk4NTM3LDgxMjY5NDM0MSwtMTY5Mz
+QwMTU3MCwtMTY5MzQwMTU3MCwtOTgxNTQxNzYwXX0=
 -->
