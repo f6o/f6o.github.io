@@ -36,6 +36,11 @@ N個の単項式の積を展開するアルゴリズムを考える
 * $\text{Pr}(\Omega) =  1$
 * for finite or countably infinite sequence of pairwise mutually disjoint events $E_1, E_2, E_3, ...$
 
+1.1 での間違える確率の議論を定式化して確かめる。
+
+
+
+
 $$\text{Pr}(\bigcup_{i\ge1}{E_i})=\sum_{i\ge1}\text{Pr}(E_i)$$
 
 1.3 Application: Verifying Matrix Multiplication
@@ -55,6 +60,6 @@ $$\text{Pr}(\bigcup_{i\ge1}{E_i})=\sum_{i\ge1}\text{Pr}(E_i)$$
 2.6 Exercises
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2OTM0MDE1NzAsLTE2OTM0MDE1NzAsLT
-k4MTU0MTc2MF19
+eyJoaXN0b3J5IjpbMTM2ODA3MDkwLC0xNjkzNDAxNTcwLC0xNj
+kzNDAxNTcwLC05ODE1NDE3NjBdfQ==
 -->
