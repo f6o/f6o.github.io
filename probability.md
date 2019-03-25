@@ -8,7 +8,7 @@ Upfal, Mitzenmacher
 N個の単項式の積を展開するアルゴリズムを考える
 そのアルゴリズムから導かれる結果（＝多項式）を検査したい
 
-真面目にやれば、展開後の最高の次数を $$d$$ とすると $$\Theta(d^2)$$ の係数同士の掛け算が必要。
+真面目にやれば、展開後の最高の次数を $d$$ とすると $$\Theta(d^2)$$ の係数同士の掛け算が必要。
 じゃあ、$$[1,...,100d]$$ の中から _uniformly at random_ (均一的にランダム) に $$r$$ を選んで（選ぶコストは１ステップとする）、
 展開前の式と展開後の式に代入し $F(r)=G(r)$ だったら検査OKとみなす。
 ただ、これだと間違えることもある。
@@ -55,5 +55,6 @@ $$\text{Pr}(\bigcup_{i\ge1}{E_i})=\sum_{i\ge1}\text{Pr}(E_i)$$
 2.6 Exercises
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2OTM0MDE1NzAsLTk4MTU0MTc2MF19
+eyJoaXN0b3J5IjpbMTc0ODUwOTAxNCwtMTY5MzQwMTU3MCwtOT
+gxNTQxNzYwXX0=
 -->
