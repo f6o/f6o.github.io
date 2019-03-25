@@ -5,13 +5,13 @@
 * Text Classification using String Kernels [Lodhi et al. 2002]
 * [Git Internals](./git_internals)
 * [情報理論](./informationtheory)
-* [Proba]
+* [Probability and Computing](./probability)
 
 ## メモ
 
 * [シェルスクリプト](scripts)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA1NDQwNzU5MywtMzM3MDM3NDc3LC0xMT
-g0ODM3MzIzLDczOTgxNDEzOCwtMTE1NTgyNTUyOSw2MDM0OTA5
-M119
+eyJoaXN0b3J5IjpbMTI3NzcyODYsLTMzNzAzNzQ3NywtMTE4ND
+gzNzMyMyw3Mzk4MTQxMzgsLTExNTU4MjU1MjksNjAzNDkwOTNd
+fQ==
 -->
