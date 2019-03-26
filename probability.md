@@ -1,4 +1,6 @@
 ---
+title: 『確率と計算』まとめ
+layout: default
 ---
 
 ## 『確率と計算』まとめ
@@ -66,7 +68,7 @@ $$\text{Pr}(\bigcup_{i\ge1}{E_i})=\sum_{i\ge1}\text{Pr}(E_i)$$
 2.6 Exercises
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODA4MTg0MDE5LDExNDQxMjM0MjgsODEyNj
-k0MzQxLC0zMjI5ODUzNyw4MTI2OTQzNDEsLTE2OTM0MDE1NzAs
-LTE2OTM0MDE1NzAsLTk4MTU0MTc2MF19
+eyJoaXN0b3J5IjpbLTIxMTAzMDUwNTIsMTE0NDEyMzQyOCw4MT
+I2OTQzNDEsLTMyMjk4NTM3LDgxMjY5NDM0MSwtMTY5MzQwMTU3
+MCwtMTY5MzQwMTU3MCwtOTgxNTQxNzYwXX0=
 -->
