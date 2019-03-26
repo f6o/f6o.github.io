@@ -46,7 +46,7 @@ N個の単項式の積を展開するアルゴリズムを考える
 * 1.1 での間違える確率の議論を定式化して確かめる。
 * 確率を改善するにはどうすればいいか
 	* $[1,...,1000d]$ まで引き上げる
-	* 
+	* 同じアルゴリズムを繰り返す
 
 
 $$\text{Pr}(\bigcup_{i\ge1}{E_i})=\sum_{i\ge1}\text{Pr}(E_i)$$
@@ -68,7 +68,7 @@ $$\text{Pr}(\bigcup_{i\ge1}{E_i})=\sum_{i\ge1}\text{Pr}(E_i)$$
 2.6 Exercises
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE0NDEyMzQyOCw4MTI2OTQzNDEsLTMyMj
-k4NTM3LDgxMjY5NDM0MSwtMTY5MzQwMTU3MCwtMTY5MzQwMTU3
-MCwtOTgxNTQxNzYwXX0=
+eyJoaXN0b3J5IjpbMTMxNjc2MTk1NCwxMTQ0MTIzNDI4LDgxMj
+Y5NDM0MSwtMzIyOTg1MzcsODEyNjk0MzQxLC0xNjkzNDAxNTcw
+LC0xNjkzNDAxNTcwLC05ODE1NDE3NjBdfQ==
 -->
