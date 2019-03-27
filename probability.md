@@ -72,6 +72,13 @@ $k$ 回試行した結果、このアルゴリズムが間違えた答えを出�
 =\text{Pr}(E_k|E_1 \cap E_2 \cap ... \cap E_{k-1})\text{Pr}(E_1 \cap E_2 \cap ... \cap E_{k-1})
 \\]
 
+これを繰り返すと
+
+\\[
+\text{Pr}(E_1 \cap E_2 \cap ... \cap E_k)
+=\text{Pr}(E_1)\text{Pr}(E_2|E_1)\te
+\\]
+
 （以下はなんの定義？）
 
 \\[
@@ -95,9 +102,9 @@ $k$ 回試行した結果、このアルゴリズムが間違えた答えを出�
 2.6 Exercises
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzc2ODgyMjIwLDEwOTQ4NDk5NzUsLTE4MD
-k1NzI4NDUsLTIxMTk0MDY3MiwtNjY4MDcxNTkwLC03OTg2MzUz
-OTYsNTYwMzU1MDA0LC0yMTEwMzA1MDUyLDExNDQxMjM0MjgsOD
-EyNjk0MzQxLC0zMjI5ODUzNyw4MTI2OTQzNDEsLTE2OTM0MDE1
-NzAsLTE2OTM0MDE1NzAsLTk4MTU0MTc2MF19
+eyJoaXN0b3J5IjpbLTMzNTc3MTIxMCwxMDk0ODQ5OTc1LC0xOD
+A5NTcyODQ1LC0yMTE5NDA2NzIsLTY2ODA3MTU5MCwtNzk4NjM1
+Mzk2LDU2MDM1NTAwNCwtMjExMDMwNTA1MiwxMTQ0MTIzNDI4LD
+gxMjY5NDM0MSwtMzIyOTg1MzcsODEyNjk0MzQxLC0xNjkzNDAx
+NTcwLC0xNjkzNDAxNTcwLC05ODE1NDE3NjBdfQ==
 -->
