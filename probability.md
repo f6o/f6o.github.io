@@ -53,7 +53,12 @@ N個の単項式の積を展開するアルゴリズムを考える
 * 重複なしの場合は、sampling without replacement
 
 それぞれについて、間違える確率を計算する
-重複ありの場合は $k$ 回繰り返すと、それぞれの試行は独立なので、 $1$
+
+* 重複ありの場合は $k$ 回繰り返すと、それぞれの試行は独立なので、 $(1/100)^k$ となる
+* 重複なしの場合は、条件付き確率を考える
+
+\[
+\text{Pr}(E|F)=\text{Pr}(E \cap F)
 
 \\[
 \text{Pr}(\bigcup_{i\ge1}{E_i})=\sum_{i\ge1}\text{Pr}(E_i)
@@ -76,7 +81,7 @@ N個の単項式の積を展開するアルゴリズムを考える
 2.6 Exercises
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQxNjUzNjc2NCwtMjExOTQwNjcyLC02Nj
+eyJoaXN0b3J5IjpbMTA2OTExNDYzMywtMjExOTQwNjcyLC02Nj
 gwNzE1OTAsLTc5ODYzNTM5Niw1NjAzNTUwMDQsLTIxMTAzMDUw
 NTIsMTE0NDEyMzQyOCw4MTI2OTQzNDEsLTMyMjk4NTM3LDgxMj
 Y5NDM0MSwtMTY5MzQwMTU3MCwtMTY5MzQwMTU3MCwtOTgxNTQx
