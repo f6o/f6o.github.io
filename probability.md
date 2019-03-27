@@ -92,7 +92,11 @@ $\text{Pr}(E_j|E_1 \cap E_2 \cap ... \cap E_{j-1}) \le d-(j-1)/100d-(j-1)$ の�
 1.3 Application: Verifying Matrix Multiplication
 
 * principle of diferred decisions (決定保留の原則？)
-* law of total probability $E_1,E_2,...E_n$ を標本空間 $\Omega$ での mutually disjoint events とし、 $\$
+* law of total probability $E_1,E_2,...E_n$ を標本空間 $\Omega$ での mutually disjoint events とし、 $\bigcup_{i=1}^{n}E_i=\Omega$ とすると
+
+\[
+\text{Pr}(B)=\sum_{i=1}^n\text{Pr}
+\]
 
 
 1.4 Application: Naïve Bayesian Classifier
@@ -111,10 +115,10 @@ $\text{Pr}(E_j|E_1 \cap E_2 \cap ... \cap E_{j-1}) \le d-(j-1)/100d-(j-1)$ の�
 2.6 Exercises
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgwNDMyNzQwMCwtNTM0NTg4OTgzLDI1ND
-Y3NjEzMSwtNDc4NzkzNDE4LC0xMjY5MTc4MzE4LDEwOTQ4NDk5
-NzUsLTE4MDk1NzI4NDUsLTIxMTk0MDY3MiwtNjY4MDcxNTkwLC
-03OTg2MzUzOTYsNTYwMzU1MDA0LC0yMTEwMzA1MDUyLDExNDQx
-MjM0MjgsODEyNjk0MzQxLC0zMjI5ODUzNyw4MTI2OTQzNDEsLT
-E2OTM0MDE1NzAsLTE2OTM0MDE1NzAsLTk4MTU0MTc2MF19
+eyJoaXN0b3J5IjpbODcwMzg3ODkwLC01MzQ1ODg5ODMsMjU0Nj
+c2MTMxLC00Nzg3OTM0MTgsLTEyNjkxNzgzMTgsMTA5NDg0OTk3
+NSwtMTgwOTU3Mjg0NSwtMjExOTQwNjcyLC02NjgwNzE1OTAsLT
+c5ODYzNTM5Niw1NjAzNTUwMDQsLTIxMTAzMDUwNTIsMTE0NDEy
+MzQyOCw4MTI2OTQzNDEsLTMyMjk4NTM3LDgxMjY5NDM0MSwtMT
+Y5MzQwMTU3MCwtMTY5MzQwMTU3MCwtOTgxNTQxNzYwXX0=
 -->
