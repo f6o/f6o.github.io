@@ -81,7 +81,7 @@ $k$ 回試行した結果、このアルゴリズムが間違えた答えを出�
 
 たかだか $d$ 個の解しかないので、 $j$ 回目までに $j-1$ 個あれば、
 $\text{Pr}(E_j|E_1 \cap E_2 \cap ... \cap E_{j-1}) \le d-(j-1)/100d-(j-1)$ のはず。
-あとは、
+あとは確率 $P$ の上限も重複ありのときより「厳しく」見積もれる。
 
 （以下はなんの定義？）
 
@@ -106,7 +106,7 @@ $\text{Pr}(E_j|E_1 \cap E_2 \cap ... \cap E_{j-1}) \le d-(j-1)/100d-(j-1)$ の�
 2.6 Exercises
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE1OTkxNzUwMCwtMTI2OTE3ODMxOCwxMD
+eyJoaXN0b3J5IjpbLTQ3ODc5MzQxOCwtMTI2OTE3ODMxOCwxMD
 k0ODQ5OTc1LC0xODA5NTcyODQ1LC0yMTE5NDA2NzIsLTY2ODA3
 MTU5MCwtNzk4NjM1Mzk2LDU2MDM1NTAwNCwtMjExMDMwNTA1Mi
 wxMTQ0MTIzNDI4LDgxMjY5NDM0MSwtMzIyOTg1MzcsODEyNjk0
