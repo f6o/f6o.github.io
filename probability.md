@@ -57,9 +57,9 @@ N個の単項式の積を展開するアルゴリズムを考える
 * 重複ありの場合は $k$ 回繰り返すと、それぞれの試行は独立なので、 $(1/100)^k$ となる
 * 重複なしの場合は、条件付き確率を考える
 
-\[
+\\[
 \text{Pr}(E|F)=\text{Pr}(E\capF)/\text{Pr}(F)
-\]
+\\]
 
 これは事象 $F$ が起こったときに、事象 $E$ が起こる確率（＝条件付き確率）の定義
 
@@ -84,9 +84,9 @@ N個の単項式の積を展開するアルゴリズムを考える
 2.6 Exercises
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MDk1NzI4NDUsLTIxMTk0MDY3MiwtNj
-Y4MDcxNTkwLC03OTg2MzUzOTYsNTYwMzU1MDA0LC0yMTEwMzA1
-MDUyLDExNDQxMjM0MjgsODEyNjk0MzQxLC0zMjI5ODUzNyw4MT
-I2OTQzNDEsLTE2OTM0MDE1NzAsLTE2OTM0MDE1NzAsLTk4MTU0
-MTc2MF19
+eyJoaXN0b3J5IjpbLTExMTM0MzQ5MjUsLTE4MDk1NzI4NDUsLT
+IxMTk0MDY3MiwtNjY4MDcxNTkwLC03OTg2MzUzOTYsNTYwMzU1
+MDA0LC0yMTEwMzA1MDUyLDExNDQxMjM0MjgsODEyNjk0MzQxLC
+0zMjI5ODUzNyw4MTI2OTQzNDEsLTE2OTM0MDE1NzAsLTE2OTM0
+MDE1NzAsLTk4MTU0MTc2MF19
 -->
