@@ -79,6 +79,8 @@ $k$ 回試行した結果、このアルゴリズムが間違えた答えを出�
 =\text{Pr}(E_1)\text{Pr}(E_2|E_1)\text{Pr}(E_3|E_2 \cap E_1)...\text{Pr}(E_k|E_1 \cap E_2 \cap ... \cap E_{k-1})
 \\]
 
+あとは、 $\text{Pr}(E_j|E_1 \cap E_2 \cap ... \cap E_{j-1}) \le $
+
 （以下はなんの定義？）
 
 \\[
@@ -102,9 +104,10 @@ $k$ 回試行した結果、このアルゴリズムが間違えた答えを出�
 2.6 Exercises
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNjkxNzgzMTgsMTA5NDg0OTk3NSwtMT
-gwOTU3Mjg0NSwtMjExOTQwNjcyLC02NjgwNzE1OTAsLTc5ODYz
-NTM5Niw1NjAzNTUwMDQsLTIxMTAzMDUwNTIsMTE0NDEyMzQyOC
-w4MTI2OTQzNDEsLTMyMjk4NTM3LDgxMjY5NDM0MSwtMTY5MzQw
-MTU3MCwtMTY5MzQwMTU3MCwtOTgxNTQxNzYwXX0=
+eyJoaXN0b3J5IjpbODMwODYzMDEwLC0xMjY5MTc4MzE4LDEwOT
+Q4NDk5NzUsLTE4MDk1NzI4NDUsLTIxMTk0MDY3MiwtNjY4MDcx
+NTkwLC03OTg2MzUzOTYsNTYwMzU1MDA0LC0yMTEwMzA1MDUyLD
+ExNDQxMjM0MjgsODEyNjk0MzQxLC0zMjI5ODUzNyw4MTI2OTQz
+NDEsLTE2OTM0MDE1NzAsLTE2OTM0MDE1NzAsLTk4MTU0MTc2MF
+19
 -->
