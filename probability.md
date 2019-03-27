@@ -48,9 +48,9 @@ N個の単項式の積を展開するアルゴリズムを考える
 	* $[1,...,1000d]$ まで引き上げる
 	* 同じアルゴリズムを繰り返す
 
-\[
+\\[
 \text{Pr}(\bigcup_{i\ge1}{E_i})=\sum_{i\ge1}\text{Pr}(E_i)
-\]
+\\]
 
 1.3 Application: Verifying Matrix Multiplication
 1.4 Application: Naïve Bayesian Classifier
@@ -69,7 +69,8 @@ N個の単項式の積を展開するアルゴリズムを考える
 2.6 Exercises
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTYwMzU1MDA0LC0yMTEwMzA1MDUyLDExND
-QxMjM0MjgsODEyNjk0MzQxLC0zMjI5ODUzNyw4MTI2OTQzNDEs
-LTE2OTM0MDE1NzAsLTE2OTM0MDE1NzAsLTk4MTU0MTc2MF19
+eyJoaXN0b3J5IjpbLTc5ODYzNTM5Niw1NjAzNTUwMDQsLTIxMT
+AzMDUwNTIsMTE0NDEyMzQyOCw4MTI2OTQzNDEsLTMyMjk4NTM3
+LDgxMjY5NDM0MSwtMTY5MzQwMTU3MCwtMTY5MzQwMTU3MCwtOT
+gxNTQxNzYwXX0=
 -->
