@@ -14,8 +14,7 @@ N個の単項式の積を展開するアルゴリズムを考える
 そのアルゴリズムから導かれる結果（＝多項式）を検査したい
 
 真面目にやれば、展開後の最高の次数を $d$ とすると $\Theta(d^2)$ の係数同士の掛け算が必要。
-じゃあ、$[1,...,100d]$ の中から _uniformly at random_ (均一的にランダム) に $r$ を選んで（選ぶコストは１ステップとする）、
-展開前の式と展開後の式に代入し $F(r)=G(r)$ だったら検査OKとみなす。
+じゃあ、 $[1,...,100d]$ の中から _uniformly at random_ (均一的にランダム) に $r$ を選んで（選ぶコストは１ステップとする）、展開前の式と展開後の式に代入し $F(r)=G(r)$ だったら検査OKとみなす。
 ただ、これだと間違えることもある。
 
 1. $F \equiv G$ で $F(r)=G(r)$ のとき
@@ -24,7 +23,7 @@ N個の単項式の積を展開するアルゴリズムを考える
 4. $F \not\equiv G$ で $F(r)\not=G(r)$ のとき
 
 上の 3. のときはよろしくない。
-詳しく見ていくと、このとき、$F(x)-G(x)=0$ という方程式に少なくとも１つの解($x=r$)がある。また、最高次数は$d$ なので、この方程式はたかだか $d$ 個の解しか持ちえない。よって $[1,...,100d]$ から選ぶので、$d/100d=1/100$ の確率でそうなる。
+詳しく見ていくと、このとき、 $F(x)-G(x)=0$ という方程式に少なくとも１つの解( $x=r$)がある。また、最高次数は $d$ なので、この方程式はたかだか $d$ 個の解しか持ちえない。よって $[1,...,100d]$ から選ぶので、$d/100d=1/100$ の確率でそうなる。
 
 1.2 Axioms of Probability
 
@@ -69,8 +68,8 @@ N個の単項式の積を展開するアルゴリズムを考える
 2.6 Exercises
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY2ODA3MTU5MCwtNzk4NjM1Mzk2LDU2MD
-M1NTAwNCwtMjExMDMwNTA1MiwxMTQ0MTIzNDI4LDgxMjY5NDM0
-MSwtMzIyOTg1MzcsODEyNjk0MzQxLC0xNjkzNDAxNTcwLC0xNj
-kzNDAxNTcwLC05ODE1NDE3NjBdfQ==
+eyJoaXN0b3J5IjpbMTc0NDM2NDAwNCwtNjY4MDcxNTkwLC03OT
+g2MzUzOTYsNTYwMzU1MDA0LC0yMTEwMzA1MDUyLDExNDQxMjM0
+MjgsODEyNjk0MzQxLC0zMjI5ODUzNyw4MTI2OTQzNDEsLTE2OT
+M0MDE1NzAsLTE2OTM0MDE1NzAsLTk4MTU0MTc2MF19
 -->
