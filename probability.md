@@ -64,7 +64,7 @@ N個の単項式の積を展開するアルゴリズムを考える
 これは事象 $F$ が起こったときに、事象 $E$ が起こる確率（＝条件付き確率）の定義
 
 これをもとに、 $i$ 回目の試行で選ばれた数 $r_i$ が $F(x)-G(x)$ の根になっている事象を $E_i$ とすると、
-$k$ 回試行した結果、このアルゴリズムが間違えた答えを出す確率は $\text{Pr}(E_1 \cap E_2 \cap ... \cap E_k)$ となる。
+$k$ 回試行した結果、このアルゴリズムが間違えた答えを出す確率 $P=\text{Pr}(E_1 \cap E_2 \cap ... \cap E_k)$ となる。
 条件付き確率を使うと、
 
 \\[
@@ -79,7 +79,9 @@ $k$ 回試行した結果、このアルゴリズムが間違えた答えを出�
 =\text{Pr}(E_1)\text{Pr}(E_2|E_1)\text{Pr}(E_3|E_2 \cap E_1)...\text{Pr}(E_k|E_1 \cap E_2 \cap ... \cap E_{k-1})
 \\]
 
-あとは $j-1 \le d$ で $\text{Pr}(E_j|E_1 \cap E_2 \cap ... \cap E_{j-1}) \le d-(j-1)/100d-(j-1)$ なので
+たかだか $d$ 個の解しかないので、 $j$ 回目までに $j-1$ 個あれば、
+$\text{Pr}(E_j|E_1 \cap E_2 \cap ... \cap E_{j-1}) \le d-(j-1)/100d-(j-1)$ のはず。
+あとは、
 
 （以下はなんの定義？）
 
@@ -104,7 +106,7 @@ $k$ 回試行した結果、このアルゴリズムが間違えた答えを出�
 2.6 Exercises
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkzMTgyNDg5MCwtMTI2OTE3ODMxOCwxMD
+eyJoaXN0b3J5IjpbMTE1OTkxNzUwMCwtMTI2OTE3ODMxOCwxMD
 k0ODQ5OTc1LC0xODA5NTcyODQ1LC0yMTE5NDA2NzIsLTY2ODA3
 MTU5MCwtNzk4NjM1Mzk2LDU2MDM1NTAwNCwtMjExMDMwNTA1Mi
 wxMTQ0MTIzNDI4LDgxMjY5NDM0MSwtMzIyOTg1MzcsODEyNjk0
