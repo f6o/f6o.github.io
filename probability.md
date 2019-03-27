@@ -23,7 +23,7 @@ N個の単項式の積を展開するアルゴリズムを考える
 4. $F \not\equiv G$ で $F(r)\not=G(r)$ のとき
 
 上の 3. のときはよろしくない。
-詳しく見ていくと、このとき、 $F(x)-G(x)=0$ という方程式に少なくとも１つの解( $x=r$)がある。また、最高次数は $d$ なので、この方程式はたかだか $d$ 個の解しか持ちえない。よって $[1,...,100d]$ から選ぶので、$d/100d=1/100$ の確率でそうなる。
+詳しく見ていくと、このとき、 $F(x)-G(x)=0$ という方程式に少なくとも１つの解 $x=r$ がある。また、最高次数は $d$ なので、この方程式はたかだか $d$ 個の解しか持ちえない。よって $[1,...,100d]$ から選ぶので $d/100d=1/100$ の確率でそうなる。
 
 1.2 Axioms of Probability
 
@@ -68,7 +68,7 @@ N個の単項式の積を展開するアルゴリズムを考える
 2.6 Exercises
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc0NDM2NDAwNCwtNjY4MDcxNTkwLC03OT
+eyJoaXN0b3J5IjpbLTIxMTk0MDY3MiwtNjY4MDcxNTkwLC03OT
 g2MzUzOTYsNTYwMzU1MDA0LC0yMTEwMzA1MDUyLDExNDQxMjM0
 MjgsODEyNjk0MzQxLC0zMjI5ODUzNyw4MTI2OTQzNDEsLTE2OT
 M0MDE1NzAsLTE2OTM0MDE1NzAsLTk4MTU0MTc2MF19
