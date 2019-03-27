@@ -91,7 +91,7 @@ $\text{Pr}(E_j|E_1 \cap E_2 \cap ... \cap E_{j-1}) \le d-(j-1)/100d-(j-1)$ の�
 
 1.3 Application: Verifying Matrix Multiplication
 
-principle of differed dicisions 
+principle of differed dicisions (けｔ)
 
 1.4 Application: Naïve Bayesian Classifier
 1.5 Application: A Randomized Min-Cut Algorithm
@@ -109,10 +109,10 @@ principle of differed dicisions
 2.6 Exercises
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjU0Njc2MTMxLC00Nzg3OTM0MTgsLTEyNj
-kxNzgzMTgsMTA5NDg0OTk3NSwtMTgwOTU3Mjg0NSwtMjExOTQw
-NjcyLC02NjgwNzE1OTAsLTc5ODYzNTM5Niw1NjAzNTUwMDQsLT
-IxMTAzMDUwNTIsMTE0NDEyMzQyOCw4MTI2OTQzNDEsLTMyMjk4
-NTM3LDgxMjY5NDM0MSwtMTY5MzQwMTU3MCwtMTY5MzQwMTU3MC
-wtOTgxNTQxNzYwXX0=
+eyJoaXN0b3J5IjpbLTE2MzgwNDU1OTksMjU0Njc2MTMxLC00Nz
+g3OTM0MTgsLTEyNjkxNzgzMTgsMTA5NDg0OTk3NSwtMTgwOTU3
+Mjg0NSwtMjExOTQwNjcyLC02NjgwNzE1OTAsLTc5ODYzNTM5Ni
+w1NjAzNTUwMDQsLTIxMTAzMDUwNTIsMTE0NDEyMzQyOCw4MTI2
+OTQzNDEsLTMyMjk4NTM3LDgxMjY5NDM0MSwtMTY5MzQwMTU3MC
+wtMTY5MzQwMTU3MCwtOTgxNTQxNzYwXX0=
 -->
