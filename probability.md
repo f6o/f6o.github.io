@@ -63,6 +63,11 @@ N個の単項式の積を展開するアルゴリズムを考える
 
 これは事象 $F$ が起こったときに、事象 $E$ が起こる確率（＝条件付き確率）の定義
 
+これをもとに、 $i$ 回目の試行で選ばれた数 $r_i$ が $F(x)-$
+
+
+（以下はなんの定義？）
+
 \\[
 \text{Pr}(\bigcup_{i\ge1}{E_i})=\sum_{i\ge1}\text{Pr}(E_i)
 \\]
@@ -84,9 +89,9 @@ N個の単項式の積を展開するアルゴリズムを考える
 2.6 Exercises
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA5NDg0OTk3NSwtMTgwOTU3Mjg0NSwtMj
-ExOTQwNjcyLC02NjgwNzE1OTAsLTc5ODYzNTM5Niw1NjAzNTUw
-MDQsLTIxMTAzMDUwNTIsMTE0NDEyMzQyOCw4MTI2OTQzNDEsLT
-MyMjk4NTM3LDgxMjY5NDM0MSwtMTY5MzQwMTU3MCwtMTY5MzQw
-MTU3MCwtOTgxNTQxNzYwXX0=
+eyJoaXN0b3J5IjpbLTE3MTMyOTE0NTAsMTA5NDg0OTk3NSwtMT
+gwOTU3Mjg0NSwtMjExOTQwNjcyLC02NjgwNzE1OTAsLTc5ODYz
+NTM5Niw1NjAzNTUwMDQsLTIxMTAzMDUwNTIsMTE0NDEyMzQyOC
+w4MTI2OTQzNDEsLTMyMjk4NTM3LDgxMjY5NDM0MSwtMTY5MzQw
+MTU3MCwtMTY5MzQwMTU3MCwtOTgxNTQxNzYwXX0=
 -->
