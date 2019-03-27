@@ -91,7 +91,7 @@ $\text{Pr}(E_j|E_1 \cap E_2 \cap ... \cap E_{j-1}) \le d-(j-1)/100d-(j-1)$ の�
 
 1.3 Application: Verifying Matrix Multiplication
 
-principle of differed decisions (決定保留の原則？)
+principle of diferred decisions (決定保留の原則？)
 
 1.4 Application: Naïve Bayesian Classifier
 1.5 Application: A Randomized Min-Cut Algorithm
@@ -109,10 +109,10 @@ principle of differed decisions (決定保留の原則？)
 2.6 Exercises
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3MjMzNTQwMjEsMjU0Njc2MTMxLC00Nz
-g3OTM0MTgsLTEyNjkxNzgzMTgsMTA5NDg0OTk3NSwtMTgwOTU3
-Mjg0NSwtMjExOTQwNjcyLC02NjgwNzE1OTAsLTc5ODYzNTM5Ni
-w1NjAzNTUwMDQsLTIxMTAzMDUwNTIsMTE0NDEyMzQyOCw4MTI2
-OTQzNDEsLTMyMjk4NTM3LDgxMjY5NDM0MSwtMTY5MzQwMTU3MC
-wtMTY5MzQwMTU3MCwtOTgxNTQxNzYwXX0=
+eyJoaXN0b3J5IjpbLTUzNDU4ODk4MywyNTQ2NzYxMzEsLTQ3OD
+c5MzQxOCwtMTI2OTE3ODMxOCwxMDk0ODQ5OTc1LC0xODA5NTcy
+ODQ1LC0yMTE5NDA2NzIsLTY2ODA3MTU5MCwtNzk4NjM1Mzk2LD
+U2MDM1NTAwNCwtMjExMDMwNTA1MiwxMTQ0MTIzNDI4LDgxMjY5
+NDM0MSwtMzIyOTg1MzcsODEyNjk0MzQxLC0xNjkzNDAxNTcwLC
+0xNjkzNDAxNTcwLC05ODE1NDE3NjBdfQ==
 -->
