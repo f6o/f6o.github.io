@@ -47,10 +47,13 @@ N個の単項式の積を展開するアルゴリズムを考える
 	* $[1,...,1000d]$ まで引き上げる
 	* 同じアルゴリズムを繰り返す
 
-同じアルゴリズムを繰り返すとき、 $[1,...,100d]$ の中から重複を許すか、許さないかの話。
+同じアルゴリズムを繰り返すとき、 $[1,...,100d]$ をランダムに選ぶとき、重複を許すか、許さないか。
 
 * 重複ありの試行のことを sampling with replacement
 * 重複なしの場合は、sampling without replacement
+
+それぞれについて、間違える確率を計算する
+重複ありの場合は $k$ 回繰り返すと、それぞれの試行は独立なので、 $1$
 
 \\[
 \text{Pr}(\bigcup_{i\ge1}{E_i})=\sum_{i\ge1}\text{Pr}(E_i)
@@ -73,9 +76,9 @@ N個の単項式の積を展開するアルゴリズムを考える
 2.6 Exercises
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMDMyMjUzNTEsLTIxMTk0MDY3MiwtNj
-Y4MDcxNTkwLC03OTg2MzUzOTYsNTYwMzU1MDA0LC0yMTEwMzA1
-MDUyLDExNDQxMjM0MjgsODEyNjk0MzQxLC0zMjI5ODUzNyw4MT
-I2OTQzNDEsLTE2OTM0MDE1NzAsLTE2OTM0MDE1NzAsLTk4MTU0
-MTc2MF19
+eyJoaXN0b3J5IjpbMTQxNjUzNjc2NCwtMjExOTQwNjcyLC02Nj
+gwNzE1OTAsLTc5ODYzNTM5Niw1NjAzNTUwMDQsLTIxMTAzMDUw
+NTIsMTE0NDEyMzQyOCw4MTI2OTQzNDEsLTMyMjk4NTM3LDgxMj
+Y5NDM0MSwtMTY5MzQwMTU3MCwtMTY5MzQwMTU3MCwtOTgxNTQx
+NzYwXX0=
 -->
