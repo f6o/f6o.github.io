@@ -13,8 +13,8 @@ Upfal, Mitzenmacher
 N個の単項式の積を展開するアルゴリズムを考える
 そのアルゴリズムから導かれる結果（＝多項式）を検査したい
 
-真面目にやれば、展開後の最高の次数を $$d$$ とすると $$\Theta(d^2)$$ の係数同士の掛け算が必要。
-じゃあ、$$[1,...,100d]$$ の中から _uniformly at random_ (均一的にランダム) に $$r$$ を選んで（選ぶコストは１ステップとする）、
+真面目にやれば、展開後の最高の次数を $d$ とすると $\Theta(d^2)$ の係数同士の掛け算が必要。
+じゃあ、$[1,...,100d]$ の中から _uniformly at random_ (均一的にランダム) に $r$ を選んで（選ぶコストは１ステップとする）、
 展開前の式と展開後の式に代入し $F(r)=G(r)$ だったら検査OKとみなす。
 ただ、これだと間違えることもある。
 
@@ -69,8 +69,8 @@ N個の単項式の積を展開するアルゴリズムを考える
 2.6 Exercises
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc5ODYzNTM5Niw1NjAzNTUwMDQsLTIxMT
-AzMDUwNTIsMTE0NDEyMzQyOCw4MTI2OTQzNDEsLTMyMjk4NTM3
-LDgxMjY5NDM0MSwtMTY5MzQwMTU3MCwtMTY5MzQwMTU3MCwtOT
-gxNTQxNzYwXX0=
+eyJoaXN0b3J5IjpbLTY2ODA3MTU5MCwtNzk4NjM1Mzk2LDU2MD
+M1NTAwNCwtMjExMDMwNTA1MiwxMTQ0MTIzNDI4LDgxMjY5NDM0
+MSwtMzIyOTg1MzcsODEyNjk0MzQxLC0xNjkzNDAxNTcwLC0xNj
+kzNDAxNTcwLC05ODE1NDE3NjBdfQ==
 -->
