@@ -63,7 +63,8 @@ N個の単項式の積を展開するアルゴリズムを考える
 
 これは事象 $F$ が起こったときに、事象 $E$ が起こる確率（＝条件付き確率）の定義
 
-これをもとに、 $i$ 回目の試行で選ばれた数 $r_i$ が $F(x)-$
+これをもとに、 $i$ 回目の試行で選ばれた数 $r_i$ が $F(x)-G(x)$ の根になっている事象を $E_i$ とすると、
+このアルゴリズムが間違えた答えを出す確率は $\text{Pr}(E_1 \cap E_2 \cap ... \cap #)
 
 
 （以下はなんの定義？）
@@ -89,7 +90,7 @@ N個の単項式の積を展開するアルゴリズムを考える
 2.6 Exercises
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3MTMyOTE0NTAsMTA5NDg0OTk3NSwtMT
+eyJoaXN0b3J5IjpbLTExNTM2NzQzMTgsMTA5NDg0OTk3NSwtMT
 gwOTU3Mjg0NSwtMjExOTQwNjcyLC02NjgwNzE1OTAsLTc5ODYz
 NTM5Niw1NjAzNTUwMDQsLTIxMTAzMDUwNTIsMTE0NDEyMzQyOC
 w4MTI2OTQzNDEsLTMyMjk4NTM3LDgxMjY5NDM0MSwtMTY5MzQw
