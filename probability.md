@@ -95,7 +95,9 @@ $\text{Pr}(E_j|E_1 \cap E_2 \cap ... \cap E_{j-1}) \le d-(j-1)/100d-(j-1)$ の�
 * law of total probability $E_1,E_2,...E_n$ を標本空間 $\Omega$ での mutually disjoint events とし、 $\bigcup_{i=1}^{n}E_i=\Omega$ とすると
 
 \[
-\text{Pr}(B)=\sum_{i=1}^n\text{Pr}
+\text{Pr}(B)
+=\sum_{i=1}^n\text{Pr}(B\cap E_i)
+=\sum_{i=1}^n\text{Pr}(B|E_i)\text{Pr}(E_i)
 \]
 
 
@@ -115,7 +117,7 @@ $\text{Pr}(E_j|E_1 \cap E_2 \cap ... \cap E_{j-1}) \le d-(j-1)/100d-(j-1)$ の�
 2.6 Exercises
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODcwMzg3ODkwLC01MzQ1ODg5ODMsMjU0Nj
+eyJoaXN0b3J5IjpbNTU5Mzg2NTA4LC01MzQ1ODg5ODMsMjU0Nj
 c2MTMxLC00Nzg3OTM0MTgsLTEyNjkxNzgzMTgsMTA5NDg0OTk3
 NSwtMTgwOTU3Mjg0NSwtMjExOTQwNjcyLC02NjgwNzE1OTAsLT
 c5ODYzNTM5Niw1NjAzNTUwMDQsLTIxMTAzMDUwNTIsMTE0NDEy
