@@ -90,6 +90,9 @@ $\text{Pr}(E_j|E_1 \cap E_2 \cap ... \cap E_{j-1}) \le d-(j-1)/100d-(j-1)$ „ÅÆ„Å
 \\]
 
 1.3 Application: Verifying Matrix Multiplication
+
+principle of differed dicisions 
+
 1.4 Application: Na√Øve Bayesian Classifier
 1.5 Application: A Randomized Min-Cut Algorithm
 1.6 Exercises
@@ -106,10 +109,10 @@ $\text{Pr}(E_j|E_1 \cap E_2 \cap ... \cap E_{j-1}) \le d-(j-1)/100d-(j-1)$ „ÅÆ„Å
 2.6 Exercises
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ3ODc5MzQxOCwtMTI2OTE3ODMxOCwxMD
-k0ODQ5OTc1LC0xODA5NTcyODQ1LC0yMTE5NDA2NzIsLTY2ODA3
-MTU5MCwtNzk4NjM1Mzk2LDU2MDM1NTAwNCwtMjExMDMwNTA1Mi
-wxMTQ0MTIzNDI4LDgxMjY5NDM0MSwtMzIyOTg1MzcsODEyNjk0
-MzQxLC0xNjkzNDAxNTcwLC0xNjkzNDAxNTcwLC05ODE1NDE3Nj
-BdfQ==
+eyJoaXN0b3J5IjpbMjU0Njc2MTMxLC00Nzg3OTM0MTgsLTEyNj
+kxNzgzMTgsMTA5NDg0OTk3NSwtMTgwOTU3Mjg0NSwtMjExOTQw
+NjcyLC02NjgwNzE1OTAsLTc5ODYzNTM5Niw1NjAzNTUwMDQsLT
+IxMTAzMDUwNTIsMTE0NDEyMzQyOCw4MTI2OTQzNDEsLTMyMjk4
+NTM3LDgxMjY5NDM0MSwtMTY5MzQwMTU3MCwtMTY5MzQwMTU3MC
+wtOTgxNTQxNzYwXX0=
 -->
