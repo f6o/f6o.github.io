@@ -47,6 +47,9 @@ N個の単項式の積を展開するアルゴリズムを考える
 	* $[1,...,1000d]$ まで引き上げる
 	* 同じアルゴリズムを繰り返す
 
+同じアルゴリズムを繰り返すとき、 $[1,...,100d]$ の中から重複を許すか、許さないかの話。
+Sampling with replace の話
+
 \\[
 \text{Pr}(\bigcup_{i\ge1}{E_i})=\sum_{i\ge1}\text{Pr}(E_i)
 \\]
@@ -68,8 +71,9 @@ N個の単項式の積を展開するアルゴリズムを考える
 2.6 Exercises
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMTk0MDY3MiwtNjY4MDcxNTkwLC03OT
-g2MzUzOTYsNTYwMzU1MDA0LC0yMTEwMzA1MDUyLDExNDQxMjM0
-MjgsODEyNjk0MzQxLC0zMjI5ODUzNyw4MTI2OTQzNDEsLTE2OT
-M0MDE1NzAsLTE2OTM0MDE1NzAsLTk4MTU0MTc2MF19
+eyJoaXN0b3J5IjpbMTMwMjYwNjY2OSwtMjExOTQwNjcyLC02Nj
+gwNzE1OTAsLTc5ODYzNTM5Niw1NjAzNTUwMDQsLTIxMTAzMDUw
+NTIsMTE0NDEyMzQyOCw4MTI2OTQzNDEsLTMyMjk4NTM3LDgxMj
+Y5NDM0MSwtMTY5MzQwMTU3MCwtMTY5MzQwMTU3MCwtOTgxNTQx
+NzYwXX0=
 -->
