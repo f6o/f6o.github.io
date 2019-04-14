@@ -6,12 +6,13 @@
 * [Git Internals](./git_internals)
 * [情報理論](./informationtheory)
 * [Probability and Computing](./probability)
+* [RFC](./rfc)
 
 ## メモ
 
 * [シェルスクリプト](scripts)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI3NzcyODYsLTMzNzAzNzQ3NywtMTE4ND
-gzNzMyMyw3Mzk4MTQxMzgsLTExNTU4MjU1MjksNjAzNDkwOTNd
-fQ==
+eyJoaXN0b3J5IjpbLTE4MDk1OTMxODAsMTI3NzcyODYsLTMzNz
+AzNzQ3NywtMTE4NDgzNzMyMyw3Mzk4MTQxMzgsLTExNTU4MjU1
+MjksNjAzNDkwOTNdfQ==
 -->
