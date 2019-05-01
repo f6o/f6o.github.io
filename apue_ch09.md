@@ -2,8 +2,20 @@
 
 ## Chapter. 9 プロセスの関係
 
+
+### 端末ログイン
+
+```
+init -> login ->
+
+```
+
+### ネットワークログイン
+### プロセスグループ
+### セッション
+### 制御端末
+### ジョブコントロール
+### プログラムのシェル実行
+
 セッションとジョブ制御
 
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMDI3MzgwNzMsMTM4NzM1OTk5MF19
--->
