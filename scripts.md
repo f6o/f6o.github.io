@@ -1,3 +1,14 @@
+## common lisp for dummies
+
+* Practical Common Lisp
+  * http://www.gigamonkeys.com/book/
+  * http://www.ohmsha.co.jp/book/9784274067211/
+* cl-cookbook
+  * https://lispcookbook.github.io/cl-cookbook/
+* HyperSpec
+  * http://www.lispworks.com/documentation/common-lisp.html
+  * http://www.lispworks.com/documentation/HyperSpec/Front/index.htm
+
 ## shell scripts
 
 ### アクセスが多いIPを並べる
