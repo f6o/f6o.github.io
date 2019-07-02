@@ -42,5 +42,6 @@ cat access.log.1 access.log | awk "$AWKSCRIPT" | sort | uniq -c | sort -n | tail
 popd > /dev/null
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNjMwMjY4OTgsLTg2MTAxMzZdfQ==
+eyJoaXN0b3J5IjpbOTMxOTAyMDU2LC0yMDYzMDI2ODk4LC04Nj
+EwMTM2XX0=
 -->
