@@ -7,12 +7,13 @@
 * [情報理論](./informationtheory)
 * [Probability and Computing](./probability)
 * [RFC](./rfc)
+* [Opus](./opus)
 
 ## メモ
 
 * [シェルスクリプト](scripts)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MDk1OTMxODAsMTI3NzcyODYsLTMzNz
-AzNzQ3NywtMTE4NDgzNzMyMyw3Mzk4MTQxMzgsLTExNTU4MjU1
-MjksNjAzNDkwOTNdfQ==
+eyJoaXN0b3J5IjpbODYyMTkyODg4LC0xODA5NTkzMTgwLDEyNz
+c3Mjg2LC0zMzcwMzc0NzcsLTExODQ4MzczMjMsNzM5ODE0MTM4
+LC0xMTU1ODI1NTI5LDYwMzQ5MDkzXX0=
 -->
