@@ -7,17 +7,17 @@
 
 * Chapter 2 UNIX Standardization and Imprementations
 	* refer as needed
-* [Chapter 3 File I/O](./apue_ch03)
+* [Chapter 3 File I/O](./ch03)
 	* read from 3.1 to 3.9
 	* do exercise
-* [Chapter 4 Files and Directories](./apue_ch04)
+* [Chapter 4 Files and Directories](./ch04)
 	* do exercise
-* [Chapter 5 Standard I/O Library](./apue_ch05)
-* [Chapter 6 System Data Files and Information](./apue_ch06.md)
-* [Chapter 7 Process Environment](./apue_ch07.md)
-* [Chapter 8 Process Control](./apue_ch08.md)
-* [Chapter 9 Process Relationships](./apue_ch09.md)
-* [Chapter 10 Signals](./apue_ch10.md)
+* [Chapter 5 Standard I/O Library](./ch05)
+* [Chapter 6 System Data Files and Information](./ch06)
+* [Chapter 7 Process Environment](./ch07)
+* [Chapter 8 Process Control](./ch08)
+* [Chapter 9 Process Relationships](./ch09)
+* [Chapter 10 Signals](./ch10)
 
 
 <!--stackedit_data:
