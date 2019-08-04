@@ -9,6 +9,7 @@
 * [情報理論](./informationtheory)
 * [Probability and Computing](./probability)
 * [Opus](./opus)
+* [RISC-V](./riscv)
 
 ## メモ
 
