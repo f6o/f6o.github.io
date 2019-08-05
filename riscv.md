@@ -1,6 +1,10 @@
-# RISC-V
+# RISC-V にっき
 
-## RISC-V 向けのビルドツールのインストール
+夏らしく日記っぽく。したのほうがあたらしいです。
+
+## 2019/8/5
+
+### RISC-V 向けのビルドツールのインストール
 
 ```
 $ sudo apt-get install git autoconf automake autotools-dev curl libmpc-dev libmpfr-dev libgmp-dev gawk build-essential bison flex texinfo gperf libtool patchutils bc zlib1g-dev libexpat-dev
@@ -13,7 +17,9 @@ $ ./configure --prefix=/opt/riscv
 $ sudo make
 ```
 
-## binaries
+## 2019/8/6
+
+### インストールできたバイナリたち
 
 ```
 $ find /opt/riscv/bin -type f
@@ -49,6 +55,26 @@ $ find /opt/riscv/bin -type f
 /opt/riscv/bin/riscv64-unknown-elf-c++filt
 ```
 
-## エミュレータのインストール
+不要な git レポジトリは削除しておくのがいい。
+今回はgcp上につくったので、ストレージの費用は大切。
 
-TODO: Spike?
+### Spike(エミュレータ)のインストール
+
+ビルド後でも300MBちょっと。おさいふにやさしい。
+
+```
+$ sudo apt install device-tree-compiler
+$ git clone https://github.com/riscv/riscv-isa-sim.git
+$ cd riscv-isa-sim
+$ mkdir build
+$ cd build
+$ ../configure --prefix=/opt/riscv
+$ make
+$ sudo make install
+```
+
+Hello World プログラムをつくって `spike pk hello` とでためしてみるとエラー。
+どうやら riscv-tools をわすれているようだ。
+
+https://forums.sifive.com/t/an-error-when-running-spike/1247
+
