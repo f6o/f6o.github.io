@@ -74,7 +74,20 @@ $ sudo make install
 ```
 
 Hello World プログラムをつくって `spike pk hello` とでためしてみるとエラー。
-どうやら riscv-tools をわすれているようだ。
+どうやら riscv-pk (proxy kernel) をわすれているようだ。
 
 https://forums.sifive.com/t/an-error-when-running-spike/1247
 
+### riscv-pk のインストール
+
+```
+$ git clone https://github.com/riscv/riscv-pk.git
+$ cd riscv-pk
+$ mkdir build
+$ cd build
+$ ../configure --prefix=/opt/riscv --host=riscv64-unknown-elf
+$ make
+$ sudo make install
+```
+
+これでひとあんしん。hello, world ができた。
