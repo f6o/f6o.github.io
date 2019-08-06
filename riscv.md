@@ -91,3 +91,183 @@ $ sudo make install
 ```
 
 これでひとあんしん。hello, world ができた。
+
+## 2019/8/7
+
+### bbl loader とはなにか
+
+ハローワールドでもそうだが、なにもしないプログラムでも
+`bbl loader` という文字列が標準出力される。
+
+```
+$ cat main.c
+int main () { return 0; }
+$ riscv64-unknown-elf-gcc main.c
+$ spike pk ./a.out 
+bbl loader
+```
+
+pk とはなにかという話になるとおもうんだけど、
+pk は Proxy Kernel とのことで、どうやらホストのカーネルで実行させている雰囲気。
+`ltrace` でなにが呼ばれているかみようとしたが、6MB程度のファイルになった。
+
+```
+$ ltrace -o ltrace.log spike pk ./a.out
+$ ls -lh ltrace.log
+-rw-r--r-- 1 user user 5.7M Aug  6 23:06 ltrace.log
+```
+
+みてみると、`bbl loader` は write システムコールで出力されているようだ。
+ちなみに `_Znwm` と `_ZdlPv` は C++ の `new` と `delete` に対応するらしい。
+https://stackoverflow.com/questions/47337760/what-does-znwm-and-zdlpv-mean-in-assembly
+
+```
+write(1, "b", 1)                                                                                                     = 1
+_ZdlPv(0x559ed3ed5f10, 0x7ffc89064960, 3, 0x7f7e2fb021b0)                                                            = 0
+_ZdlPv(0x559ed3ed5ef0, 0x7ffc89064a00, 3, 0)                                                                         = 0x559ed3ed5f00
+_ZdlPv(0x559ed3ed5ed0, 0x7ffc89064b30, 3, 0x559ed3ed5f00)                                                            = 0x559ed3ed5ee0
+_ZdlPv(0x559ed3ed5eb0, 0x7ffc89064ab0, 3, 0x559ed3ed5ee0)                                                            = 0x559ed3ed5ec0
+swapcontext(0x559ed3ec5470, 0x559ed3e7a7c0, 0x559ed3ea0ec0, 0x8000a)                                                 = 0
+swapcontext(0x559ed3e7a7c0, 0x559ed3ec5470, 0x7ffc89065028, 0x7f7e2fee5010)                                          = 0
+memset(0x7ffc89064940, '\0', 8)                                                                                      = 0x7ffc89064940
+_Znwm(16, 0x7ffc89064a60, 2, 0)                                                                                      = 0x559ed3ed5eb0
+_Znwm(16, 0x7ffc89064a80, 2, 0x7f7e2f04bb00)                                                                         = 0x559ed3ed5ed0
+_ZdlPv(0x559ed3ed5eb0, 0x7ffc89064a80, 3, 0x7f7e2f04bb00)                                                            = 0x559ed3ed5ee0
+_Znwm(16, 0x7ffc89064ab0, 2, 0x559ed3ed5ee0)                                                                         = 0x559ed3ed5eb0
+_Znwm(16, 0x7ffc89064b30, 2, 0x7f7e2f04bb00)                                                                         = 0x559ed3ed5ef0
+_Znwm(16, 0x7ffc89064a00, 2, 0x7f7e2f04bb00)                                                                         = 0x559ed3ed5f10
+write(1, "b", 1)                                                                                                     = 1
+_ZdlPv(0x559ed3ed5f10, 0x7ffc89064960, 3, 0x7f7e2fb021b0)                                                            = 0
+_ZdlPv(0x559ed3ed5ef0, 0x7ffc89064a00, 3, 0)                                                                         = 0x559ed3ed5f00
+_ZdlPv(0x559ed3ed5eb0, 0x7ffc89064b30, 3, 0x559ed3ed5f00)                                                            = 0x559ed3ed5ee0
+_ZdlPv(0x559ed3ed5ed0, 0x7ffc89064ab0, 3, 0x559ed3ed5ee0)                                                            = 0x559ed3ed5ea0
+swapcontext(0x559ed3ec5470, 0x559ed3e7a7c0, 0x559ed3ea0ec0, 0x8000a)                                                 = 0
+swapcontext(0x559ed3e7a7c0, 0x559ed3ec5470, 0x7ffc89065028, 0x7f7e2fee5010)                                          = 0
+memset(0x7ffc89064940, '\0', 8)                                                                                      = 0x7ffc89064940
+_Znwm(16, 0x7ffc89064a60, 2, 0)                                                                                      = 0x559ed3ed5ed0
+_Znwm(16, 0x7ffc89064a80, 2, 0x7f7e2f04bb00)                                                                         = 0x559ed3ed5eb0
+_ZdlPv(0x559ed3ed5ed0, 0x7ffc89064a80, 3, 0x7f7e2f04bb00)                                                            = 0x559ed3ed5ee0
+_Znwm(16, 0x7ffc89064ab0, 2, 0x559ed3ed5ee0)                                                                         = 0x559ed3ed5ed0
+_Znwm(16, 0x7ffc89064b30, 2, 0x7f7e2f04bb00)                                                                         = 0x559ed3ed5ef0
+_Znwm(16, 0x7ffc89064a00, 2, 0x7f7e2f04bb00)                                                                         = 0x559ed3ed5f10
+write(1, "l", 1)                                                                                                     = 1
+_ZdlPv(0x559ed3ed5f10, 0x7ffc89064960, 3, 0x7f7e2fb021b0)                                                            = 0
+_ZdlPv(0x559ed3ed5ef0, 0x7ffc89064a00, 3, 0)                                                                         = 0x559ed3ed5f00
+_ZdlPv(0x559ed3ed5ed0, 0x7ffc89064b30, 3, 0x559ed3ed5f00)                                                            = 0x559ed3ed5ee0
+_ZdlPv(0x559ed3ed5eb0, 0x7ffc89064ab0, 3, 0x559ed3ed5ee0)                                                            = 0x559ed3ed5ec0
+swapcontext(0x559ed3ec5470, 0x559ed3e7a7c0, 0x559ed3ea0ec0, 0x8000a)                                                 = 0
+swapcontext(0x559ed3e7a7c0, 0x559ed3ec5470, 0x7ffc89065028, 0x7f7e2fee5010)                                          = 0
+memset(0x7ffc89064940, '\0', 8)                                                                                      = 0x7ffc89064940
+_Znwm(16, 0x7ffc89064a60, 2, 0)                                                                                      = 0x559ed3ed5eb0
+_Znwm(16, 0x7ffc89064a80, 2, 0x7f7e2f04bb00)                                                                         = 0x559ed3ed5ed0
+_ZdlPv(0x559ed3ed5eb0, 0x7ffc89064a80, 3, 0x7f7e2f04bb00)                                                            = 0x559ed3ed5ee0
+_Znwm(16, 0x7ffc89064ab0, 2, 0x559ed3ed5ee0)                                                                         = 0x559ed3ed5eb0
+_Znwm(16, 0x7ffc89064b30, 2, 0x7f7e2f04bb00)                                                                         = 0x559ed3ed5ef0
+_Znwm(16, 0x7ffc89064a00, 2, 0x7f7e2f04bb00)                                                                         = 0x559ed3ed5f10
+write(1, " ", 1)                                                                                                     = 1
+_ZdlPv(0x559ed3ed5f10, 0x7ffc89064960, 3, 0x7f7e2fb021b0)                                                            = 0
+_ZdlPv(0x559ed3ed5ef0, 0x7ffc89064a00, 3, 0)                                                                         = 0x559ed3ed5f00
+_ZdlPv(0x559ed3ed5eb0, 0x7ffc89064b30, 3, 0x559ed3ed5f00)                                                            = 0x559ed3ed5ee0
+_ZdlPv(0x559ed3ed5ed0, 0x7ffc89064ab0, 3, 0x559ed3ed5ee0)                                                            = 0x559ed3ed5ea0
+swapcontext(0x559ed3ec5470, 0x559ed3e7a7c0, 0x559ed3ea0ec0, 0x8000a)                                                 = 0
+swapcontext(0x559ed3e7a7c0, 0x559ed3ec5470, 0x7ffc89065028, 0x7f7e2fee5010)                                          = 0
+memset(0x7ffc89064940, '\0', 8)                                                                                      = 0x7ffc89064940
+_Znwm(16, 0x7ffc89064a60, 2, 0)                                                                                      = 0x559ed3ed5ed0
+_Znwm(16, 0x7ffc89064a80, 2, 0x7f7e2f04bb00)                                                                         = 0x559ed3ed5eb0
+_ZdlPv(0x559ed3ed5ed0, 0x7ffc89064a80, 3, 0x7f7e2f04bb00)                                                            = 0x559ed3ed5ee0
+_Znwm(16, 0x7ffc89064ab0, 2, 0x559ed3ed5ee0)                                                                         = 0x559ed3ed5ed0
+_Znwm(16, 0x7ffc89064b30, 2, 0x7f7e2f04bb00)                                                                         = 0x559ed3ed5ef0
+_Znwm(16, 0x7ffc89064a00, 2, 0x7f7e2f04bb00)                                                                         = 0x559ed3ed5f10
+write(1, "l", 1)                                                                                                     = 1
+_ZdlPv(0x559ed3ed5f10, 0x7ffc89064960, 3, 0x7f7e2fb021b0)                                                            = 0
+_ZdlPv(0x559ed3ed5ef0, 0x7ffc89064a00, 3, 0)                                                                         = 0x559ed3ed5f00
+_ZdlPv(0x559ed3ed5ed0, 0x7ffc89064b30, 3, 0x559ed3ed5f00)                                                            = 0x559ed3ed5ee0
+_ZdlPv(0x559ed3ed5eb0, 0x7ffc89064ab0, 3, 0x559ed3ed5ee0)                                                            = 0x559ed3ed5ec0
+swapcontext(0x559ed3ec5470, 0x559ed3e7a7c0, 0x559ed3ea0ec0, 0x8000a)                                                 = 0
+swapcontext(0x559ed3e7a7c0, 0x559ed3ec5470, 0x7ffc89065028, 0x7f7e2fee5010)                                          = 0
+memset(0x7ffc89064940, '\0', 8)                                                                                      = 0x7ffc89064940
+_Znwm(16, 0x7ffc89064a60, 2, 0)                                                                                      = 0x559ed3ed5eb0
+_Znwm(16, 0x7ffc89064a80, 2, 0x7f7e2f04bb00)                                                                         = 0x559ed3ed5ed0
+_ZdlPv(0x559ed3ed5eb0, 0x7ffc89064a80, 3, 0x7f7e2f04bb00)                                                            = 0x559ed3ed5ee0
+_Znwm(16, 0x7ffc89064ab0, 2, 0x559ed3ed5ee0)                                                                         = 0x559ed3ed5eb0
+_Znwm(16, 0x7ffc89064b30, 2, 0x7f7e2f04bb00)                                                                         = 0x559ed3ed5ef0
+_Znwm(16, 0x7ffc89064a00, 2, 0x7f7e2f04bb00)                                                                         = 0x559ed3ed5f10
+write(1, "o", 1)                                                                                                     = 1
+_ZdlPv(0x559ed3ed5f10, 0x7ffc89064960, 3, 0x7f7e2fb021b0)                                                            = 0
+_ZdlPv(0x559ed3ed5ef0, 0x7ffc89064a00, 3, 0)                                                                         = 0x559ed3ed5f00
+_ZdlPv(0x559ed3ed5eb0, 0x7ffc89064b30, 3, 0x559ed3ed5f00)                                                            = 0x559ed3ed5ee0
+_ZdlPv(0x559ed3ed5ed0, 0x7ffc89064ab0, 3, 0x559ed3ed5ee0)                                                            = 0x559ed3ed5ea0
+swapcontext(0x559ed3ec5470, 0x559ed3e7a7c0, 0x559ed3ea0ec0, 0x8000a)                                                 = 0
+swapcontext(0x559ed3e7a7c0, 0x559ed3ec5470, 0x7ffc89065028, 0x7f7e2fee5010)                                          = 0
+memset(0x7ffc89064940, '\0', 8)                                                                                      = 0x7ffc89064940
+_Znwm(16, 0x7ffc89064a60, 2, 0)                                                                                      = 0x559ed3ed5ed0
+_Znwm(16, 0x7ffc89064a80, 2, 0x7f7e2f04bb00)                                                                         = 0x559ed3ed5eb0
+_ZdlPv(0x559ed3ed5ed0, 0x7ffc89064a80, 3, 0x7f7e2f04bb00)                                                            = 0x559ed3ed5ee0
+_Znwm(16, 0x7ffc89064ab0, 2, 0x559ed3ed5ee0)                                                                         = 0x559ed3ed5ed0
+_Znwm(16, 0x7ffc89064b30, 2, 0x7f7e2f04bb00)                                                                         = 0x559ed3ed5ef0
+_Znwm(16, 0x7ffc89064a00, 2, 0x7f7e2f04bb00)                                                                         = 0x559ed3ed5f10
+write(1, "a", 1)                                                                                                     = 1
+_ZdlPv(0x559ed3ed5f10, 0x7ffc89064960, 3, 0x7f7e2fb021b0)                                                            = 0
+_ZdlPv(0x559ed3ed5ef0, 0x7ffc89064a00, 3, 0)                                                                         = 0x559ed3ed5f00
+_ZdlPv(0x559ed3ed5ed0, 0x7ffc89064b30, 3, 0x559ed3ed5f00)                                                            = 0x559ed3ed5ee0
+_ZdlPv(0x559ed3ed5eb0, 0x7ffc89064ab0, 3, 0x559ed3ed5ee0)                                                            = 0x559ed3ed5ec0
+swapcontext(0x559ed3ec5470, 0x559ed3e7a7c0, 0x559ed3ea0ec0, 0x8000a)                                                 = 0
+swapcontext(0x559ed3e7a7c0, 0x559ed3ec5470, 0x7ffc89065028, 0x7f7e2fee5010)                                          = 0
+memset(0x7ffc89064940, '\0', 8)                                                                                      = 0x7ffc89064940
+_Znwm(16, 0x7ffc89064a60, 2, 0)                                                                                      = 0x559ed3ed5eb0
+_Znwm(16, 0x7ffc89064a80, 2, 0x7f7e2f04bb00)                                                                         = 0x559ed3ed5ed0
+_ZdlPv(0x559ed3ed5eb0, 0x7ffc89064a80, 3, 0x7f7e2f04bb00)                                                            = 0x559ed3ed5ee0
+_Znwm(16, 0x7ffc89064ab0, 2, 0x559ed3ed5ee0)                                                                         = 0x559ed3ed5eb0
+_Znwm(16, 0x7ffc89064b30, 2, 0x7f7e2f04bb00)                                                                         = 0x559ed3ed5ef0
+_Znwm(16, 0x7ffc89064a00, 2, 0x7f7e2f04bb00)                                                                         = 0x559ed3ed5f10
+write(1, "d", 1)                                                                                                     = 1
+_ZdlPv(0x559ed3ed5f10, 0x7ffc89064960, 3, 0x7f7e2fb021b0)                                                            = 0
+_ZdlPv(0x559ed3ed5ef0, 0x7ffc89064a00, 3, 0)                                                                         = 0x559ed3ed5f00
+_ZdlPv(0x559ed3ed5eb0, 0x7ffc89064b30, 3, 0x559ed3ed5f00)                                                            = 0x559ed3ed5ee0
+_ZdlPv(0x559ed3ed5ed0, 0x7ffc89064ab0, 3, 0x559ed3ed5ee0)                                                            = 0x559ed3ed5ea0
+swapcontext(0x559ed3ec5470, 0x559ed3e7a7c0, 0x559ed3ea0ec0, 0x8000a)                                                 = 0
+swapcontext(0x559ed3e7a7c0, 0x559ed3ec5470, 0x7ffc89065028, 0x7f7e2fee5010)                                          = 0
+memset(0x7ffc89064940, '\0', 8)                                                                                      = 0x7ffc89064940
+_Znwm(16, 0x7ffc89064a60, 2, 0)                                                                                      = 0x559ed3ed5ed0
+_Znwm(16, 0x7ffc89064a80, 2, 0x7f7e2f04bb00)                                                                         = 0x559ed3ed5eb0
+_ZdlPv(0x559ed3ed5ed0, 0x7ffc89064a80, 3, 0x7f7e2f04bb00)                                                            = 0x559ed3ed5ee0
+_Znwm(16, 0x7ffc89064ab0, 2, 0x559ed3ed5ee0)                                                                         = 0x559ed3ed5ed0
+_Znwm(16, 0x7ffc89064b30, 2, 0x7f7e2f04bb00)                                                                         = 0x559ed3ed5ef0
+_Znwm(16, 0x7ffc89064a00, 2, 0x7f7e2f04bb00)                                                                         = 0x559ed3ed5f10
+write(1, "e", 1)                                                                                                     = 1
+_ZdlPv(0x559ed3ed5f10, 0x7ffc89064960, 3, 0x7f7e2fb021b0)                                                            = 0
+_ZdlPv(0x559ed3ed5ef0, 0x7ffc89064a00, 3, 0)                                                                         = 0x559ed3ed5f00
+_ZdlPv(0x559ed3ed5ed0, 0x7ffc89064b30, 3, 0x559ed3ed5f00)                                                            = 0x559ed3ed5ee0
+_ZdlPv(0x559ed3ed5eb0, 0x7ffc89064ab0, 3, 0x559ed3ed5ee0)                                                            = 0x559ed3ed5ec0
+swapcontext(0x559ed3ec5470, 0x559ed3e7a7c0, 0x559ed3ea0ec0, 0x8000a)                                                 = 0
+swapcontext(0x559ed3e7a7c0, 0x559ed3ec5470, 0x7ffc89065028, 0x7f7e2fee5010)                                          = 0
+memset(0x7ffc89064940, '\0', 8)                                                                                      = 0x7ffc89064940
+_Znwm(16, 0x7ffc89064a60, 2, 0)                                                                                      = 0x559ed3ed5eb0
+_Znwm(16, 0x7ffc89064a80, 2, 0x7f7e2f04bb00)                                                                         = 0x559ed3ed5ed0
+_ZdlPv(0x559ed3ed5eb0, 0x7ffc89064a80, 3, 0x7f7e2f04bb00)                                                            = 0x559ed3ed5ee0
+_Znwm(16, 0x7ffc89064ab0, 2, 0x559ed3ed5ee0)                                                                         = 0x559ed3ed5eb0
+_Znwm(16, 0x7ffc89064b30, 2, 0x7f7e2f04bb00)                                                                         = 0x559ed3ed5ef0
+_Znwm(16, 0x7ffc89064a00, 2, 0x7f7e2f04bb00)                                                                         = 0x559ed3ed5f10
+write(1, "r", 1)                                                                                                     = 1
+_ZdlPv(0x559ed3ed5f10, 0x7ffc89064960, 3, 0x7f7e2fb021b0)                                                            = 0
+_ZdlPv(0x559ed3ed5ef0, 0x7ffc89064a00, 3, 0)                                                                         = 0x559ed3ed5f00
+_ZdlPv(0x559ed3ed5eb0, 0x7ffc89064b30, 3, 0x559ed3ed5f00)                                                            = 0x559ed3ed5ee0
+_ZdlPv(0x559ed3ed5ed0, 0x7ffc89064ab0, 3, 0x559ed3ed5ee0)                                                            = 0x559ed3ed5ea0
+swapcontext(0x559ed3ec5470, 0x559ed3e7a7c0, 0x559ed3ea0ec0, 0x8000a)                                                 = 0
+swapcontext(0x559ed3e7a7c0, 0x559ed3ec5470, 0x7ffc89065028, 0x7f7e2fee5010)                                          = 0
+memset(0x7ffc89064940, '\0', 8)                                                                                      = 0x7ffc89064940
+_Znwm(16, 0x7ffc89064a60, 2, 0)                                                                                      = 0x559ed3ed5ed0
+_Znwm(16, 0x7ffc89064a80, 2, 0x7f7e2f04bb00)                                                                         = 0x559ed3ed5eb0
+_ZdlPv(0x559ed3ed5ed0, 0x7ffc89064a80, 3, 0x7f7e2f04bb00)                                                            = 0x559ed3ed5ee0
+_Znwm(16, 0x7ffc89064ab0, 2, 0x559ed3ed5ee0)                                                                         = 0x559ed3ed5ed0
+_Znwm(16, 0x7ffc89064b30, 2, 0x7f7e2f04bb00)                                                                         = 0x559ed3ed5ef0
+_Znwm(16, 0x7ffc89064a00, 2, 0x7f7e2f04bb00)                                                                         = 0x559ed3ed5f10
+write(1, "\r", 1)                                                                                                    = 1
+_ZdlPv(0x559ed3ed5f10, 0x7ffc89064960, 3, 0x7f7e2fb021b0)                                                            = 0
+_ZdlPv(0x559ed3ed5ef0, 0x7ffc89064a00, 3, 0)                                                                         = 0x559ed3ed5f00
+_ZdlPv(0x559ed3ed5ed0, 0x7ffc89064b30, 3, 0x559ed3ed5f00)                                                            = 0x559ed3ed5ee0
+_ZdlPv(0x559ed3ed5eb0, 0x7ffc89064ab0, 3, 0x559ed3ed5ee0)                                                            = 0x559ed3ed5ec0
+swapcontext(0x559ed3ec5470, 0x559ed3e7a7c0, 0x559ed3ea0ec0, 0x8000a)                                                 = 0
+```
+
+
