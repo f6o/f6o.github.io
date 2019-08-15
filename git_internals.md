@@ -6,7 +6,14 @@ https://git-scm.com/book/ja/v2
 * シンプルな key-value data store
 * `hash-object` コマンドや `cat-file` コマンドで確認できる
 
-## オブジェクトを作成する
+いかのオブジェクトをもっている
+
+* blob
+* tree
+* commit
+* submodule(?)
+
+## blob の作り方
 
 ```
 $ echo 'hello' | git hash-object -w --stdin
@@ -36,6 +43,8 @@ $ git cat-file -t ce01
 blob
 ```
 
+ファイルの内容をみるのに、わざわざハッシュ値をおぼえないといけないのはつらい。
+
 ## tree
 
 ```
@@ -43,22 +52,14 @@ $ git cat-file -p master^{tree}
 100644 blob b25c15b81fae06e1c55946ac6270bfdb293870e8    .gitignore
 040000 tree c6c687c34491f596c2e03aecd8edc7ae783774db    src
 ```
+tree オブジェクトはファイル名とハッシュ値の橋わたしとなる。
+さらにUNIXファイルシステムのようなモードも含む。上の`100644` は通常のファイルということ。
+ちなみに、`master^{tree}` という表現は master ブランチ上の最後のコミットが指しているツリーオブジェクト。
 
-`master^{tree}` という表現は master ブランチ上の最後のコミットが指しているツリーオブジェクト
+### tree の作り方
 
-## git のオブジェクト
+(TODO)
 
-* blob オブジェクト（ファイル？）
-* tree オブジェクト（UNIXファイルシステムのディレクトリ構造）
-* commit オブジェクト
+ステージングエリアにファイルを追加してから、tree オブジェクトを作成する。
 
-### コミットグラフ
-
-* tree オブジェクトは以下を知っている
-	* blob オブジェクトのSHA-1
-	* ファイル名
-	* ファイルモード
-* commit オブジェクトは tree オブジェクトへのポインタ
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbNzY5NDQ3OF19
--->
+## commit
