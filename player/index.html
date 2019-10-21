@@ -1,0 +1,45 @@
+
+<html>
+    <head>
+      <meta charset="utf-8">
+      <title>radio player</title>
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    </head>
+    <body>
+      <div class="container">
+        <h4>radio player: <span id="filename"></span></h4>
+        <div id="player"></div>
+        filter: <input type="text" id="filter" class="form-control" size="60" />
+        <ul id="files" class="list-group"></ul>
+      </div>
+  <script>
+  $(function(){
+  var files = []
+  function updatePlaylist() {
+  var flt = $('#filter').val()
+  $('#files').empty()
+  for ( var file of files ) {
+    if ( !flt || file.includes(flt) ) {
+      $('#files').append(`<li class="list-group-item audio-file"><a href="${file}">${file}</a></li>`);
+    }
+  }
+  $('.audio-file > a').click(function(e){
+    var fn = $(e.target).text();
+    $('#filename').text(fn);
+    $('#player').empty();
+    $('#player').append(`<audio class="col" controls><source src="${fn}" type="audio/ogg; codec=opus" /></audio>`);
+    e.preventDefault();
+  })
+  }
+  /* files.json: a list of ogg filenames, [ "file.ogg" ]
+  $.getJSON("files.json", function(data) {
+     files = data
+     updatePlaylist()
+  })
+  */
+  $('#filter').on('keyup', updatePlaylist)
+  })    
+  </script>
+    </body>
+  </html>  
