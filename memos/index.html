@@ -2,6 +2,7 @@
 <html>
 
 <head>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
     <meta charset="utf-8">
     <title>in-browser memopad with KaTeX</title>
     <script src="https://cdn.jsdelivr.net/npm/vue"></script>
@@ -30,10 +31,10 @@
 
     <div class="container-fluid">
         <div id="memopad" class="row">
-            <div class="col-sm-5">
-                <p id="preview">{{ preview }}</p>
+            <div class="col-6">
+                <p id="preview" v-html="preview"></p>
             </div>
-            <div class="col-sm-7">
+            <div class="col-6">
                 <textarea v-model="content" id="contents"></textarea>
             </div>
         </div>
@@ -51,9 +52,12 @@
         },
         "watch": {
             "content": function () {
-                this.preview = this.content
-                // TODO: katex + vue.js 
-                //renderMathInElement(document.getElementById("preview"))
+                this.preview = this.content.replace(
+                    /\\\[(.+?)\\\]/,
+                    function (m, x) {
+                        return katex.renderToString(x, { displayMode: true })
+                    }
+                )
             }
         }
     })
