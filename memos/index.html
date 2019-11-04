@@ -53,7 +53,7 @@
         "methods" : {
             "render" : function () {
                 this.preview = this.content.replace(
-                    /\\\[(.+?)\\\]/,
+                    /\\\[(.+?)\\\]/g,
                     function (m, x) {
                         return katex.renderToString(x, { displayMode: true })
                     }
