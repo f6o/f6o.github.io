@@ -52,12 +52,47 @@
         },
         "methods" : {
             "render" : function () {
-                this.preview = this.content.replace(
-                    /\\\[(.+?)\\\]/g,
-                    function (m, x) {
-                        return katex.renderToString(x, { displayMode: true })
+                let s = this.content
+                let n = s.length
+                var state = 0
+                var buf = ''
+                var result = ''
+                for ( var i = 0; i < n; i++ ) {
+                    var c = s[i]
+                    var d = s[i+1]
+                    switch ( state ) {
+                        case 0:
+                            if ( c === '#' ) {
+                                state = 1
+                            } else if ( c === '\\' && d === '[' ) {
+                                state = 2
+                                i++
+                            } else {
+                                result += c
+                            }
+                            break;
+                        case 1:
+                            if ( c === '\n' ) {
+                                result += `<h2>${buf}</h2>`
+                                buf = ''
+                                state = 0
+                            } else {
+                                buf += c
+                            }
+                            break;
+                        case 2:
+                            if ( c === '\\' && d === ']' ) {
+                                result += katex.renderToString(buf, { displayMode: true })
+                                buf = ''
+                                i++
+                                state = 0
+                            } else {
+                                buf += c
+                            }
+                            break;
                     }
-                )
+                }
+                this.preview = result;
             }
         },
         "mounted": function () {
