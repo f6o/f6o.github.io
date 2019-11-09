@@ -11,9 +11,7 @@ class IfLog {
         this.end_time = Date.now()
     }
     toString() {
-//        return JSON.stringify(this)
-        let r = this.remainings()
-        return `fasting since ${ new Date(this.start_time) } and ${ r / 1000 / 60 / 60 } hours to go`
+        return JSON.stringify(this)      
     }
     diff() {
         return this.start_time - Date.now()
@@ -32,15 +30,18 @@ class IfLog {
 Vue.component('current', {
     data: function () {
         var l = new IfLog('16:8')
+        
+        // REMOVE: test code
         l.setStartTime(1573198200 * 1000)
+
         return { iflog: l }
     },
+    // TODO: sample components
 	template: `<div>
 <p>fasting since {{ new Date(iflog.start_time) }}</p>
 <p>rems: {{ iflog.remainings() / 1000 / 60 }} mins</p>
 <p>now {{ Date.now() }} </p>
 </div>
-
 `
 })
 
