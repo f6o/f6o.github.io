@@ -25,6 +25,17 @@ class IfLog {
             break;
         }
     }
+    saveToLocalStorage(lskey) {
+        if ( localStorage.getKey(lskey) == null ) {
+            localStorage.setKey(lskey, this.toString())
+        }
+    }
+}
+
+function loadFromLocalStorage(lskey) {
+    // TODO: multiple constructors are not alloed?
+    //var ifls = JSON.parse(localStorage.getKey(lskey))
+    //return (new IfLog(ifls.type, ifls.start_time, ifls.end_time))
 }
 
 Vue.component('current', {
@@ -33,6 +44,9 @@ Vue.component('current', {
         
         // REMOVE: test code
         l.setStartTime(1573198200 * 1000)
+        
+        // TODO: usable?
+        //l.saveToLocalStorage('l0')
 
         return { iflog: l }
     },
