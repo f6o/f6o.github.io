@@ -16,26 +16,7 @@
       <history></history>
     </div>
 
-    <script>
-      function bfdata() {
-      return {
-        time: Date.now()
-      }
-      }
-
-      function getHistory() {
-      var his = localStorage.getItem('his')
-      return { items: [1,2,3,4,5,6,7,8] }
-      }
-      
-      Vue.component('history', {
-      data: getHistory,
-      template: `<ul class="list-group">
-<li class="list-group-item" v-for="h in items">{{h}}</li>
-      </ul>`
-      })
-      
-      new Vue({el: '#components'})
-    </script>
+    <h4>not deferred</h4>
+    <script src="./intfast.js"></script>
   </body>
 </html>
