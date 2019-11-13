@@ -52,7 +52,7 @@ Vue.component('current', {
     },
     // TODO: sample components
 	template: `<div>
-<p>fasting since {{ new Date(iflog.start_time) }}</p>
+<p>fasting since {{ (new Date(iflog.start_time)).toUTCString() }}</p>
 <p>rems: {{ iflog.remainings() / 1000 / 60 }} mins</p>
 <p>now {{ Date.now() }} </p>
 </div>
@@ -60,7 +60,7 @@ Vue.component('current', {
 })
 
 Vue.component('history', {
-	template: `<p>history: todo</p>`
+    template: `<p>history: todo</p>`
 })
 
 new Vue({ el: '#components'})
