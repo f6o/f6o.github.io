@@ -4,12 +4,12 @@ Vue.component('logs', {
             logs: [ 1, 2, 3 ]
         }
     },
-    // TODO: sample components
-	template: `<div>
-<ul v-if="logs.length">
-<li v-for="l in logs">{{ l }}</li>
-</ul>
-<p v-else>No logs</p>
+	template: `<div class="card-deck">
+<div class="card" v-for="l in logs">
+<div class="card-body">
+<a href="#">{{ l }}</a>
+</div>
+</div>
 </div>`
 })
 

@@ -7,15 +7,23 @@
     <title>if calendar</title>
     <style>
       @import url('https://fonts.googleapis.com/css?family=Sriracha&display=swap');
-      #components { font-family: Sriracha, sans-serif }
+      #components { font-family: Sriracha, sans-serif; }
     </style>
     <script src="https://cdn.jsdelivr.net/npm/vue"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
           integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   </head>
   <body>
-    <div id="components">
-      <logs></logs>
+    <header class="navbar">
+    </header>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-12">
+          <div id="components">
+            <logs></logs>
+          </div>
+        </div>
+      </div>
     </div>
     <script src="./intfast.js"></script>
   </body>
