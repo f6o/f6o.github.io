@@ -6,6 +6,10 @@
     <meta charset="utf-8">
     <title>if calendar</title>
     <style>
+      /*
+        taken from google web font
+        https://fonts.googleapis.com/css?family=Sriracha&display=swap
+      */
       @font-face {
       font-family: 'Sriracha';
       font-style: normal;
@@ -20,16 +24,9 @@
     <link rel="stylesheet" href="./css/bootstrap.min.css">
   </head>
   <body>
-    <header class="navbar">
-    </header>
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-sm-12">
-          <div id="components">
-            <logs></logs>
-          </div>
-        </div>
-      </div>
+    <div id="app">
+      <control></control>
+      <logs></logs>
     </div>
     <script src="./intfast.js"></script>
   </body>
