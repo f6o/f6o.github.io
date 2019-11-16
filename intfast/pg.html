@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <meta charset="utf-8">
+  <title>sample code</title>
+  <script src="./vue.min.js"></script>
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+</head>
+
+<body>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-12">
+        <div id="app">
+          <p v-on:click.ctrl="hello">{{ siteInfo }}</p>
+          <p>
+            <a href="./index.html" v-on:click.once="stopThis">back to index</a>
+          </p>
+          <blog-post v-for="post in posts" v-bind:key="post.id" v-bind:title="post.title">
+          </blog-post>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    Vue.component('blog-post', {
+      props: ['title' ],
+      template: `<h3>{{ title }}</h3>`
+    })
+    var app = new Vue({
+      el: '#app',
+      data: {
+        posts: [
+          { id: 1, title: 'Hello' },
+          { id: 2, title: 'Hello' },
+          { id: 3, title: 'Hello' }
+        ],
+        siteInfo: {
+          title: 'my first blog'
+        }
+      },
+      methods : {
+        stopThis: function (event) {
+          console.log('stopThis method called, but do nothing')
+          console.log(event)
+        },
+        hello: function (event) {
+          console.log('hello')
+          console.log(event)
+        }
+      }
+    })
+    setTimeout(function () {
+      console.log("subject to change...")
+      // this is NOT reactive
+      // app.siteInfo['since'] = new Date()
+
+      // but, this is reactive!
+      app.$set(app.siteInfo, 'since', new Date())
+    }, 5000)
+    setTimeout(function () {
+      console.log("this is reactive")
+      app.posts.push({ id: 4, title: 'Hello, again' })
+    }, 1000)
+    setTimeout(function () {
+      console.log("this is also reactive")
+      app.posts = app.posts.filter(function (e) {
+        return e.id > 2
+      })
+    }, 2000)
+    setTimeout(function () {
+      console.log("this is NOT reactive")
+      app.posts[3] = { id: 5, title: 'Manually editted' }
+    }, 3000)
+    setTimeout(function () {
+      console.log("this is NOT reactive, either")
+      app.posts.length = 1
+      console.log(app.posts)
+    }, 4000)
+  </script>
+</body>
+
+</html>
