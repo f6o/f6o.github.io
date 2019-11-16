@@ -6,12 +6,18 @@
     <meta charset="utf-8">
     <title>if calendar</title>
     <style>
-      @import url('https://fonts.googleapis.com/css?family=Sriracha&display=swap');
+      @font-face {
+      font-family: 'Sriracha';
+      font-style: normal;
+      font-weight: 400;
+      font-display: swap;
+      src: url(Sriracha-Regular.ttf) format('truetype');
+      unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+      }
       #components { font-family: Sriracha, sans-serif; }
     </style>
-    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="./vue.min.js"></script>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
   </head>
   <body>
     <header class="navbar">
