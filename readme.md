@@ -1,15 +1,19 @@
 # f6o.github.io
 
-## 読書ノート
+## Software
 
 * [Advance Programming in the UNIX Environment](./apue)
 * [A Fast File System for UNIX](./fastfilesystemforunix)
 * Text Classification using String Kernels [Lodhi et al. 2002]
 * [Git Internals](./git_internals)
-* [情報理論](./informationtheory)
-* [Probability and Computing](./probability)
 * [Opus](./opus)
 * [RISC-V](./riscv)
+
+## Math
+
+* [Information Theory](./informationtheory)
+* [Probability and Computing](./probability)
+* [Group Theory](./groups)
 
 ## メモ
 
