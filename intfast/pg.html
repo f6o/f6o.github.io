@@ -7,6 +7,13 @@
   <title>sample code</title>
   <script src="./vue.js"></script>
   <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <style>
+    h1 {
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
+    }
+  </style>
 </head>
 
 <body>
@@ -16,6 +23,8 @@
         <div id="app">
           <!-- vuejs 2.6+: Dynamic Arguments! -->
           <h1 v-bind:[k]="v" v-on:[ename]="hello">{{ siteInfo }}</h1>
+          <!-- v-once sample -->
+          <span v-once style="font-size: 12px">{{ siteInfo.disclaimer }}</span>
           <p>
             <a href="./index.html" v-on:click.once="stopThis">back to index</a>
           </p>
@@ -27,7 +36,7 @@
   </div>
   <script>
     Vue.component('blog-post', {
-      props: [ 'title' ],
+      props: ['title'],
       template: `<h3>{{ title }}</h3>`
     })
     var app = new Vue({
@@ -39,13 +48,14 @@
           { id: 3, title: 'Hello' }
         ],
         siteInfo: {
-          title: 'my first blog'
+          title: 'my first blog',
+          disclaimer: 'Disclaimer! brah...'
         },
         ename: 'click',
         k: 'style',
         v: 'color: #f0c;'
       },
-      methods : {
+      methods: {
         stopThis: function (event) {
           console.log('stopThis method called, but do nothing')
           console.log(event)
@@ -63,6 +73,7 @@
 
       // but, this is reactive!
       app.$set(app.siteInfo, 'since', new Date())
+      app.$set(app.siteInfo, 'disclaimer', 'Disclaimer: updated!')
     }, 5000)
     setTimeout(function () {
       console.log("this is reactive")
