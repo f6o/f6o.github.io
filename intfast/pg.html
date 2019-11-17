@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width,initial-scale=1.0" />
   <meta charset="utf-8">
   <title>sample code</title>
-  <script src="./vue.min.js"></script>
+  <script src="./vue.js"></script>
   <link rel="stylesheet" href="./css/bootstrap.min.css">
 </head>
 
@@ -14,7 +14,8 @@
     <div class="row">
       <div class="col-sm-12">
         <div id="app">
-          <p v-on:click.ctrl="hello">{{ siteInfo }}</p>
+          <!-- vuejs 2.6+: Dynamic Arguments! -->
+          <h1 v-bind:[k]="v" v-on:[ename]="hello">{{ siteInfo }}</h1>
           <p>
             <a href="./index.html" v-on:click.once="stopThis">back to index</a>
           </p>
@@ -26,7 +27,7 @@
   </div>
   <script>
     Vue.component('blog-post', {
-      props: ['title' ],
+      props: [ 'title' ],
       template: `<h3>{{ title }}</h3>`
     })
     var app = new Vue({
@@ -39,7 +40,10 @@
         ],
         siteInfo: {
           title: 'my first blog'
-        }
+        },
+        ename: 'click',
+        k: 'style',
+        v: 'color: #f0c;'
       },
       methods : {
         stopThis: function (event) {
@@ -47,7 +51,7 @@
           console.log(event)
         },
         hello: function (event) {
-          console.log('hello')
+          console.log('hello: ' + this.ename)
           console.log(event)
         }
       }
