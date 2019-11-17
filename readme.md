@@ -1,6 +1,8 @@
 # f6o.github.io
 
-## Software
+## メモ
+
+### Software
 
 * [Advance Programming in the UNIX Environment](./apue)
 * [A Fast File System for UNIX](./fastfilesystemforunix)
@@ -9,13 +11,13 @@
 * [Opus](./opus)
 * [RISC-V](./riscv)
 
-## Math
+### Math
 
 * [Information Theory](./informationtheory)
 * [Probability and Computing](./probability)
 * [Group Theory](./groups)
 
-## メモ
+### etc.
 
 * [シェルスクリプト](./scripts)
 * [自動更新のメモ](./zakki)
