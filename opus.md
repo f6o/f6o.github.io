@@ -73,6 +73,3 @@ DCT (Discrete Cosine Transformation?) について
 * [http://mikeo410.minim.ne.jp/cms/~audioDCT](http://mikeo410.minim.ne.jp/cms/~audioDCT)
 *  [https://ja.wikipedia.org/wiki/%E4%BF%AE%E6%AD%A3%E9%9B%A2%E6%95%A3%E3%82%B3%E3%82%B5%E3%82%A4%E3%83%B3%E5%A4%89%E6%8F%9B](https://ja.wikipedia.org/wiki/%E4%BF%AE%E6%AD%A3%E9%9B%A2%E6%95%A3%E3%82%B3%E3%82%B5%E3%82%A4%E3%83%B3%E5%A4%89%E6%8F%9B)
 * [https://ja.wikipedia.org/wiki/%E9%9B%A2%E6%95%A3%E3%82%B3%E3%82%B5%E3%82%A4%E3%83%B3%E5%A4%89%E6%8F%9B](https://ja.wikipedia.org/wiki/%E9%9B%A2%E6%95%A3%E3%82%B3%E3%82%B5%E3%82%A4%E3%83%B3%E5%A4%89%E6%8F%9B)
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3NzM1OTI2MF19
--->

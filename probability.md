@@ -116,11 +116,3 @@ $\text{Pr}(E_j|E_1 \cap E_2 \cap ... \cap E_{j-1}) \le d-(j-1)/100d-(j-1)$ „ÅÆ„Å
 2.5 Application: The Expected Run-Time of Quicksort 37
 2.6 Exercises
 
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbNTU5Mzg2NTA4LC01MzQ1ODg5ODMsMjU0Nj
-c2MTMxLC00Nzg3OTM0MTgsLTEyNjkxNzgzMTgsMTA5NDg0OTk3
-NSwtMTgwOTU3Mjg0NSwtMjExOTQwNjcyLC02NjgwNzE1OTAsLT
-c5ODYzNTM5Niw1NjAzNTUwMDQsLTIxMTAzMDUwNTIsMTE0NDEy
-MzQyOCw4MTI2OTQzNDEsLTMyMjk4NTM3LDgxMjY5NDM0MSwtMT
-Y5MzQwMTU3MCwtMTY5MzQwMTU3MCwtOTgxNTQxNzYwXX0=
--->

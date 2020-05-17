@@ -43,7 +43,3 @@
 ## New file system organization
 ## Performance
 ## File system functional enhancements
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbNjI1NTcxNjQ2LDIxMjcyMjI4ODksMTQyNT
-E1OTUxNiw5ODM5MjI2ODcsLTI3NDIyMDgzMV19
--->
