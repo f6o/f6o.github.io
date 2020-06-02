@@ -10,6 +10,7 @@
 * [Git Internals](./git_internals)
 * [Opus](./opus)
 * [RISC-V](./riscv)
+* [Linux Desktop](./desktop)
 
 ### Math
 
