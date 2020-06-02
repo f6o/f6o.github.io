@@ -8,47 +8,66 @@
     <script src="https://cdn.jsdelivr.net/npm/vue"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
     <style>
+        .vocab-item h5 {
+            font-size: 2em;
+            font-family: 'Bree Serif', serif;
+        }
+
+        .vocab-item h5>small {
+            font-size: 0.5em;
+        }
     </style>
 </head>
 
 <body>
+    <header class="navbar navbar-expand navbar-dark flex-column flex-md-row bd-navbar">
+        <h1>vocab-list</h1>
+    </header>
     <div class="container-fluid">
         <div class="row">
-            <ul>
-                <li><a href="https://www.cambridgeenglish.org/images/84669-pet-vocabulary-list.pdf">Cambridge English:
-                        Preliminary for Schools (PDF)</a></li>
-            </ul>
+            <div class="ml-auto col-10 mr-auto">
+                <ul>
+                    <li><a href="https://www.cambridgeenglish.org/images/84669-pet-vocabulary-list.pdf">Cambridge
+                            English:
+                            Preliminary for Schools (PDF)</a></li>
+                </ul>
+            </div>
         </div>
-        <div class="row">
-            <ul id="vocab-list">
-                <li class="vocab-item" v-for="(w, index) in words">
-                    <div class="vocab-item-header">
-                        <span class="word">{{ w.word }} <span class="word-type">{{ w.type }}</span></span>
-                        <small class="datetime">{{ w.create_time }}</small>
+        <div class="row" id="vocab-list">
+            <div class="ml-auto col-10 mr-auto list-group list-group-horizontal-sm">
+                <div class="vocab-item list-group-item flex-fill" v-for="w in words">
+                    <div class="d-flex justify-content-between">
+                        <h5>{{ w.word }} <small class="text-secondary">{{ w.type }}</small></h5>
+                        <span class="datetime text-info">{{ w.create_time }}</span>
                     </div>
-                    <p class="meaning">{{ w.meaning }}</p
-                    <p class="memo">{{ w.memo }}</p>
-                </li>
-            </ul>
+                    <p>{{ w.notes }}</p>
+                    <a :href="url.collins + '/' + w.word" target="_blank">Collins</a>
+                </div>
+            </div>
         </div>
+    </div>
     </div>
 
     <script>
         var data = {
-            url: "https://www.collinsdictionary.com/dictionary/english/{word}",
+            url: {
+                collins: "https://www.collinsdictionary.com/dictionary/english"
+            },
             words: [{
                 word: "hello",
                 type: 'noun',
-                meaning: '',
-                memo: '',
+                notes: '',
                 create_time: '2020-01-01T01:01:01'
             }, {
                 word: "world",
                 type: 'noun',
-                meaning: '',
-                memo: '',
+                notes: '',
                 create_time: '2020-02-01T01:01:01'
+            }, {
+                word: 'an', type: 'determiner',
+                create_time: '2020-03-01T01:01:01'
             }]
         }
         var App = new Vue({
