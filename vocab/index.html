@@ -43,7 +43,10 @@
                         <span class="datetime text-info">{{ w.create_time }}</span>
                     </div>
                     <p>{{ w.notes }}</p>
-                    <a :href="url.collins + '/' + w.word" target="_blank">Collins</a>
+                    <ul>
+                    <li><a :href="url.collins + '/' + w.word" target="_blank">Collins</a></li>
+                    <li><a :href="url.wiktionary + '/' + w.word" target="_blank">Wiktionary</a></li>
+                    </ul>
                 </div>
             </div>
         </div>
@@ -53,7 +56,8 @@
     <script>
         var data = {
             url: {
-                collins: "https://www.collinsdictionary.com/dictionary/english"
+                collins: "https://www.collinsdictionary.com/dictionary/english",
+                wiktionary: "https://en.wiktionary.org/wiki"
             },
             words: [{
                 word: "hello",
