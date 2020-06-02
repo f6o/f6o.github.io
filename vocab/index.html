@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <meta charset="utf-8">
+    <title>vocab</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style>
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <ul>
+                <li><a href="https://www.cambridgeenglish.org/images/84669-pet-vocabulary-list.pdf">Cambridge English:
+                        Preliminary for Schools (PDF)</a></li>
+            </ul>
+        </div>
+        <div class="row">
+            <ul id="vocab-list">
+                <li class="vocab-item" v-for="(w, index) in words">
+                    <div class="vocab-item-header">
+                        <span class="word">{{ w.word }} <span class="word-type">{{ w.type }}</span></span>
+                        <small class="datetime">{{ w.create_time }}</small>
+                    </div>
+                    <p class="meaning">{{ w.meaning }}</p
+                    <p class="memo">{{ w.memo }}</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        var data = {
+            url: "https://www.collinsdictionary.com/dictionary/english/{word}",
+            words: [{
+                word: "hello",
+                type: 'noun',
+                meaning: '',
+                memo: '',
+                create_time: '2020-01-01T01:01:01'
+            }, {
+                word: "world",
+                type: 'noun',
+                meaning: '',
+                memo: '',
+                create_time: '2020-02-01T01:01:01'
+            }]
+        }
+        var App = new Vue({
+            el: '#vocab-list',
+            data: data
+        });
+
+    </script>
+</body>
+
+</html>
