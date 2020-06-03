@@ -15,7 +15,7 @@
             font-family: 'Bree Serif', serif;
         }
 
-        .vocab-item h5>small {
+        .vocab-item h5>small, .vocab-item .datetime {
             font-size: 0.5em;
         }
     </style>
@@ -36,7 +36,7 @@
             </div>
         </div>
         <div class="row" id="vocab-list">
-            <div class="ml-auto col-10 mr-auto list-group list-group-horizontal-sm">
+            <div class="ml-auto col-10 mr-auto list-group list-group-horizontal-lg">
                 <div class="vocab-item list-group-item flex-fill" v-for="w in words">
                     <div class="d-flex justify-content-between">
                         <h5>{{ w.word }} <small class="text-secondary">{{ w.type }}</small></h5>
