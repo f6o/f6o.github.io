@@ -40,7 +40,7 @@
                 </ul>
             </div>
         </div>
-        <div class="row" id="vocab-list">
+        <div class="row" id="vocab-list" v-if="shouldShowVocabList">
             <div class="ml-auto col-10 mr-auto list-group list-group-horizontal-lg">
                 <div class="vocab-item list-group-item flex-fill" v-for="w in words">
                     <div class="d-flex justify-content-between">
@@ -88,9 +88,18 @@
         fetch('./data.json')
             .then(response => response.json())
             .then(data => {
+                data['shouldShowVocabList'] = true
                 new Vue({
                     "el": "#vocab-list",
-                    "data": data
+                    "data": data,
+                })
+            })
+            .catch((err) => {
+                new Vue({
+                    "el": "#vocab-list",
+                    "data": {
+                        "shouldShowVocabList": false
+                    }
                 })
             })
     </script>
