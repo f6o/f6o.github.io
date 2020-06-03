@@ -1,0 +1,18 @@
+{
+    "urls": [{
+        "name": "Collins",
+        "url": "https://www.collinsdictionary.com/dictionary/english"
+    }, {
+        "name": "Vocabulary",
+        "url": "https://www.vocabulary.com/dictionary"
+    }, {
+        "name": "Wiktionary",
+        "url": "https://en.wiktionary.org/wiki"
+    }],
+    "words": [{
+        "word": "extra",
+        "type": "adj",
+        "notes": "",
+        "create_time": "2020-06-01T01:01:01"
+    }]
+}

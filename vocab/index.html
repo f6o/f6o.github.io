@@ -19,7 +19,8 @@
         .vocab-item .datetime {
             font-size: 0.5em;
         }
-        .vocab-item ul.vocab-links > li {
+
+        .vocab-item ul.vocab-links>li {
             font-size: 0.8em;
         }
     </style>
@@ -48,7 +49,8 @@
                     </div>
                     <p>{{ w.notes }}</p>
                     <ul class="vocab-links">
-                        <li v-for="exturl in urls"><a :href="exturl.url + '/' + w.word" target="_blank">{{ exturl.name }}</a></li>
+                        <li v-for="exturl in urls"><a :href="exturl.url + '/' + w.word"
+                                target="_blank">{{ exturl.name }}</a></li>
                     </ul>
                 </div>
             </div>
@@ -57,7 +59,7 @@
     </div>
 
     <script>
-        var data = {
+        var embedded_data = {
             urls: [{
                 name: "Collins",
                 url: "https://www.collinsdictionary.com/dictionary/english"
@@ -83,15 +85,14 @@
                 create_time: '2020-03-01T01:01:01'
             }]
         }
-        // TODO: get from url
-        function retrieve_data() {
-            return data;
-        }
-        var App = new Vue({
-            el: '#vocab-list',
-            data: retrieve_data()
-        });
-
+        fetch('./data.json')
+            .then(response => response.json())
+            .then(data => {
+                new Vue({
+                    "el": "#vocab-list",
+                    "data": data
+                })
+            })
     </script>
 </body>
 
