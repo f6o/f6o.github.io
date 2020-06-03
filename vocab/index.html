@@ -83,9 +83,13 @@
                 create_time: '2020-03-01T01:01:01'
             }]
         }
+        // TODO: get from url
+        function retrieve_data() {
+            return data;
+        }
         var App = new Vue({
             el: '#vocab-list',
-            data: data
+            data: retrieve_data()
         });
 
     </script>
