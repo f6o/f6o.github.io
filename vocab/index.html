@@ -48,9 +48,7 @@
                     </div>
                     <p>{{ w.notes }}</p>
                     <ul class="vocab-links">
-                        <li><a :href="url.collins + '/' + w.word" target="_blank">Collins</a></li>
-                        <li><a :href="url.vocabulary + '/' + w.word" target="_blank">Vocabulary.com</a></li>
-                        <li><a :href="url.wiktionary + '/' + w.word" target="_blank">Wiktionary</a></li>
+                        <li v-for="exturl in urls"><a :href="exturl.url + '/' + w.word" target="_blank">{{ exturl.name }}</a></li>
                     </ul>
                 </div>
             </div>
@@ -60,11 +58,16 @@
 
     <script>
         var data = {
-            url: {
-                collins: "https://www.collinsdictionary.com/dictionary/english",
-                wiktionary: "https://en.wiktionary.org/wiki",
-                vocabulary: "https://www.vocabulary.com/dictionary"
-            },
+            urls: [{
+                name: "Collins",
+                url: "https://www.collinsdictionary.com/dictionary/english"
+            }, {
+                name: "Vocabulary",
+                url: "https://www.vocabulary.com/dictionary"
+            }, {
+                name: "Wiktionary",
+                url: "https://en.wiktionary.org/wiki"
+            }],
             words: [{
                 word: "hello",
                 type: 'noun',
