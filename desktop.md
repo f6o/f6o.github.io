@@ -17,3 +17,13 @@ what `setup.sh` does:
 
 * https://www.freebsd.org/doc/handbook/
 * https://www.togaware.com/linux/survivor/
+
+## OpenBSD settings
+
+### Trackpad scroll direction
+
+```
+doas wsconsctl mouse.param=134:-40
+```
+
+http://openbsd-archive.7691.n7.nabble.com/trackpad-reversed-scrolling-broken-on-current-td363179.html#a363199

@@ -41,14 +41,3 @@ pushd /var/log/nginx > /dev/null
 cat access.log.1 access.log | awk "$AWKSCRIPT" | sort | uniq -c | sort -n | tail -n "$PRINT_LINES"
 popd > /dev/null
 ```
-
-## OpenBSD settings
-
-### Trackpad scroll direction
-
-```
-doas wsconsctl mouse.param=134:-40
-```
-
-http://openbsd-archive.7691.n7.nabble.com/trackpad-reversed-scrolling-broken-on-current-td363179.html#a363199
-
