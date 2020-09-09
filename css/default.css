@@ -1,0 +1,12 @@
+body { padding: 2em; }
+h1, h2, h3 { padding: 0.5em;}
+p, pre { margin : 0 1em; }
+pre, code { font-family: "Courier New", "Consolas", monospace; }
+pre { overflow: auto; }
+
+body { background : #e7e7e7 }
+a { color: #003cfc; }
+a:visited { color: #9c3c3c; }
+
+h1, h2, h3 { border-bottom: 1px solid #d8d8d8; }
+blockquote { border-left: 3px solid #d8d8d8; }
