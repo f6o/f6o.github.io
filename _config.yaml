@@ -1,0 +1,5 @@
+plugins:
+  - jekyll-feed
+title: f6o.github.io
+description: Welcome to my blog
+author: f6o
