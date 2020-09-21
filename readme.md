@@ -4,6 +4,16 @@
 
 お仕事ではQAエンジニアっぽいことやっていますが、このサイトの内容は基礎固めの記録です (2019-07-09)
 
+## ブログ
+
+<ul>
+{% for post in site.posts %}
+<li>
+  <a href="{{ post.url }}">{{ post.title }}</a>
+</li>
+{% endfor %}
+</ul>
+
 ## メモ
 
 ### Software
