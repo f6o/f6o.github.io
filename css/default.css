@@ -16,7 +16,7 @@ header, article.post, footer { width : 60% }
 
 header { text-align : right }
 header > h1 { text-align : left }
-header > span { font-family : monospace; }
+span.date { font-family : monospace; }
 
 article.post > h1 { font-size : 1em; }
 
