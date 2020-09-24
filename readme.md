@@ -9,7 +9,7 @@
 <ul>
 {% for post in site.posts %}
 <li>
-  <span class="date">{{ post.date }}</span> <a href="{{ post.url }}">{{ post.title }}</a>
+  <span class="date" data-post-date="{{ post.date }}"></span> <a href="{{ post.url }}">{{ post.title }}</a>
 </li>
 {% endfor %}
 </ul>
