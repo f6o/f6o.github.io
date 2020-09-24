@@ -8,8 +8,8 @@
 
 <ul>
 {% for post in site.posts %}
-<li>
-  <span class="date" data-post-date="{{ post.date }}"></span> <a href="{{ post.url }}">{{ post.title }}</a>
+<li class="post" data-post-date="{{ post.date }}">
+  <a href="{{ post.url }}">{{ post.title }}</a>
 </li>
 {% endfor %}
 </ul>
