@@ -12,12 +12,21 @@ blockquote { border-left: 3px solid #d8d8d8; }
 
 h1, h2, h3, h4, h5, h6 { font-size : 1em; }
 
-header, article.post, footer { width : 60% }
+@media screen and (min-width: 1024px) {
+    header, article.post, footer {
+        width : 75%
+    }
+}
 
 header { text-align : right }
 header > h1 { text-align : left }
 span.date { font-family : monospace; }
 
 article.post > h1 { font-size : 1em; }
+
+article.post > p, article.post pre {
+    margin-top: 1em;
+    padding : 0 1em;
+}
 
 footer { text-align : right; }
