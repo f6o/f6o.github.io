@@ -1,4 +1,4 @@
-body { padding: 2em; }
+body { padding: 1em; }
 h1, h2, h3 { padding: 0.5em;}
 p, pre { margin : 0 1em; }
 pre, code { font-family: "Consolas", "Courier New", monospace; }
@@ -16,6 +16,7 @@ h1, h2, h3, h4, h5, h6 { font-size : 1em; }
     header, article.post, footer {
         width : 75%
     }
+    body { padding: 2em; }
 }
 
 header { text-align : right }
