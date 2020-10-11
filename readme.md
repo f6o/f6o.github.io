@@ -30,7 +30,7 @@
 
 * [Information Theory](./informationtheory)
 * [Probability and Computing](./probability)
-* [Group Theory](./groups)
+* [Algebra](./algebra)
 
 ### etc.
 
