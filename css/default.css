@@ -31,3 +31,22 @@ article.post > p, article.post pre {
 }
 
 footer { text-align : right; }
+
+div.def {
+    margin: 1em;
+    padding: 1em;
+    border-style: solid;
+    border-width: thin;
+    border-color: #3d3d3d;
+    border-radius: 1em 2em;
+}
+
+div.def ul, div.def ol {
+    margin : 0;
+}
+
+div.def p + ol, div.def p + ul {
+    margin-top: 1em;
+}
+
+
