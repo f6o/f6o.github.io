@@ -17,15 +17,3 @@
 <li class="page"><a href="{{ page.url }}">{{ page.title }}</a></li>
 {% endfor %}
 </ul>
-
-<ul class="itemlist pages">
-{% for page in site.pages %}
-<li class="page"><a href="{{ page.url }}">{{ page.title }}</a>
-<ul>
-{% for tag in page.tags %}
-<li>{{ tag }}</li>
-{% endfor %}
-</ul>
-</li>
-{% endfor %}
-</ul>
