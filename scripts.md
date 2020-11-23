@@ -1,3 +1,10 @@
+---
+title: script
+tags: page
+---
+
+and also https://gist.github.com/f6o
+
 ## common lisp for dummies
 
 * Practical Common Lisp

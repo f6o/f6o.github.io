@@ -1,3 +1,8 @@
+---
+title: RISC-V にっき
+tags: cpu page
+---
+
 # RISC-V にっき
 
 夏らしく日記っぽく。したのほうがあたらしいです。

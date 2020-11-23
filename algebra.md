@@ -1,3 +1,8 @@
+---
+title: 代数
+tags: math page
+---
+
 # 代数メモ
 
 ## 定義

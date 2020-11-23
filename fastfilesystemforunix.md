@@ -1,3 +1,8 @@
+---
+title: A Fast File System for UNIX
+tags: papers page
+---
+
 # A Fast File System for UNIX
 メモ
 ## Introduction

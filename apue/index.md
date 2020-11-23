@@ -1,3 +1,8 @@
+---
+title: APUE memo
+tags: apue page
+---
+
 # APUE memo
 
 * My notes on the book, Advanced Programming in the UNIX® Environment, Third Edition

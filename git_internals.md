@@ -1,3 +1,8 @@
+---
+title: git internals
+tags: software git page
+---
+
 # git internals
 
 https://git-scm.com/book/ja/v2

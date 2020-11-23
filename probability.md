@@ -1,6 +1,6 @@
 ---
 title: 『確率と計算』まとめ
-layout: default
+tags: math page
 ---
 
 ## 『確率と計算』まとめ
