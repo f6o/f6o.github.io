@@ -1,6 +1,6 @@
 ---
 title: 代数
-tags: math page
+tags: [math, page]
 ---
 
 # 代数メモ
