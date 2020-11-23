@@ -49,4 +49,13 @@ div.def p + ol, div.def p + ul {
     margin-top: 1em;
 }
 
+ul.itemlist {
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    list-style: none;
+}
 
+ul.itemlist li {
+    padding: 0.2em 0.5em;
+}
