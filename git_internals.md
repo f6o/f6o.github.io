@@ -1,6 +1,6 @@
 ---
 title: git internals
-tags: software git page
+tags: [software, git, page]
 ---
 
 # git internals

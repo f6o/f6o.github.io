@@ -1,6 +1,6 @@
 ---
 title: RISC-V にっき
-tags: cpu page
+tags: [cpu, page]
 ---
 
 # RISC-V にっき

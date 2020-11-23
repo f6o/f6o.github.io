@@ -1,6 +1,6 @@
 ---
 title: Desktop
-tags: software page
+tags: [software, page]
 ---
 
 # Desktop

@@ -1,6 +1,6 @@
 ---
 title: opus codec
-tags: rfc opus page
+tags: [rfc, opus, page]
 ---
 
 # opus codec について

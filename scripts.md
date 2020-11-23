@@ -1,6 +1,6 @@
 ---
 title: script
-tags: page
+tags: [page]
 ---
 
 and also https://gist.github.com/f6o

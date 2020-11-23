@@ -1,6 +1,6 @@
 ---
 title: APUE memo
-tags: apue page
+tags: [apue, page]
 ---
 
 # APUE memo
