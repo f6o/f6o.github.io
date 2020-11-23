@@ -17,3 +17,9 @@
 <li class="page"><a href="{{ page.url }}">{{ page.title }}</a></li>
 {% endfor %}
 </ul>
+
+<ul class="itemlist pages">
+{% for page in site.pages %}
+<li class="page"><a href="{{ page.url }}">{{ page.title }}</a> <code>{{ page.tags}}</code></li>
+{% endfor %}
+</ul>
