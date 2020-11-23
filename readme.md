@@ -14,8 +14,6 @@
 
 <ul class="itemlist pages">
 {% for page in markdown_pages %}
-{% if  %}
 <li class="page"><a href="{{ page.url }}">{{ page.title }}</a></li>
-{% endif %}
 {% endfor %}
 </ul>
