@@ -6,7 +6,7 @@
 
 ## ブログ
 
-<ul>
+<ul class="itemlist posts">
 {% for post in site.posts %}
 <li class="post" data-post-date="{{ post.date }}">
   <a href="{{ post.url }}">{{ post.title }}</a>
@@ -15,6 +15,17 @@
 </ul>
 
 ## メモ
+
+<ul class="itemlist pages">
+{% for page in site.pages %}
+<li class="page" data-post-date="{{ page.date }}">
+  <a href="{{ page.url }}">{{ page.title }}</a>
+  {% for cat in page.categories %}
+  <span class="c">{{ cat }}</span>
+  {% endfor %}
+</li>
+{% endfor %}
+</ul>
 
 ### Software
 
