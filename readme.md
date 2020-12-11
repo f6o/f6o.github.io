@@ -1,9 +1,5 @@
 # f6o.github.io
 
-## このサイトについて
-
-お仕事ではQAエンジニアっぽいことやっていますが、このサイトの内容は基礎固めの記録です (2019-07-09)
-
 <ul class="itemlist posts">
 {% for post in site.posts %}
 <li class="post"><a href="{{ post.url }}">{{ post.title }}</a></li>
