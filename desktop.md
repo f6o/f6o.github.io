@@ -33,6 +33,21 @@ what `setup.sh` does:
 * [https://zakaria.org/posts/2021-01-04-xenodm.html](https://zakaria.org/posts/2021-01-04-xenodm.html)
 * [https://mwl.io/archives/873](https://mwl.io/archives/873)
 
+### Unicode fonts on xterm
+
+* https://www.xmisao.com/2013/08/17/mplus-unicode-font.html
+* https://www.xmisao.com/2013/08/17/how-to-add-fonts-on-linux.html
+* http://blawat2015.no-ip.com/~mieki256/diary/201412152.html
+* https://alpha3166.github.io/blog/20110501.html
+
+#### Summary
+
+1. Download BDF font files
+1. Convert BDF files using `jis2unicode` (aux. tool for monafonts)
+1. Concatenate BDF files (alphabets and Japanese chars) and edit BDF headers
+1. Convert BDF files into gzipped PCF files using `bdftopcf` and `gzip`
+1. Install fonts (gzipped PCF files)
+
 ### Secure screen after suspending
 
 ```
