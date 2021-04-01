@@ -9,10 +9,10 @@ tags: [software, page]
 
 ### Unicode fonts on xterm
 
-* https://www.xmisao.com/2013/08/17/mplus-unicode-font.html
-* https://www.xmisao.com/2013/08/17/how-to-add-fonts-on-linux.html
-* http://blawat2015.no-ip.com/~mieki256/diary/201412152.html
-* https://alpha3166.github.io/blog/20110501.html
+* <https://www.xmisao.com/2013/08/17/mplus-unicode-font.html>
+* <https://www.xmisao.com/2013/08/17/how-to-add-fonts-on-linux.html>
+* <http://blawat2015.no-ip.com/~mieki256/diary/201412152.html>
+* <https://alpha3166.github.io/blog/20110501.html>
 
 #### Summary
 
