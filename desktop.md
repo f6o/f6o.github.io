@@ -46,7 +46,13 @@ What does xidle do? `man xidle` says
 * [https://www.freebsd.org/doc/handbook/](https://www.freebsd.org/doc/handbook/)
 * [https://www.togaware.com/linux/survivor/](https://www.togaware.com/linux/survivor/)
 
-## for OpenBSD
+## for OpenBSD (version 6.8)
+
+### Static IP
+
+* `/etc/hostname.<if>` [hostname.if(5)](https://man.openbsd.org/hostname.if)
+* `/etc/mygate` [mygate(5)](https://man.openbsd.org/mygate.5)
+* `sh /etc/netstart` [netstart(8)](https://man.openbsd.org/netstart.8)
 
 ### (for laptop) Trackpad scroll direction
 
