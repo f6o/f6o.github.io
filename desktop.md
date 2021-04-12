@@ -3,7 +3,7 @@ title: Desktop
 tags: [software, page]
 ---
 
-# Desktop
+# Desktop (Linux/BSD)
 
 ## Common settings
 
@@ -39,14 +39,7 @@ What does xidle do? `man xidle` says
 > xidle will also run the program if it is sent a SIGUSR signal, or
 > if the pointer sits in a corder of the screen for an amount of time.
 
-## for FreeBSD
-
-### links
-
-* [https://www.freebsd.org/doc/handbook/](https://www.freebsd.org/doc/handbook/)
-* [https://www.togaware.com/linux/survivor/](https://www.togaware.com/linux/survivor/)
-
-## for OpenBSD (version 6.8)
+## OpenBSD (version 6.8)
 
 ### Static IP
 
@@ -69,7 +62,9 @@ doas wsconsctl mouse.param=134:-40
 
 [http://openbsd-archive.7691.n7.nabble.com/trackpad-reversed-scrolling-broken-on-current-td363179.html#a363199](http://openbsd-archive.7691.n7.nabble.com/trackpad-reversed-scrolling-broken-on-current-td363179.html#a363199)
 
-### links
+## Links
+
+### OpenBSD
 
 * [https://kuchikuu.xyz/openbsd.html](https://kuchikuu.xyz/openbsd.html)
 * [http://astro-gr.org/openbsd-after-install/](http://astro-gr.org/openbsd-after-install/)
@@ -78,3 +73,9 @@ doas wsconsctl mouse.param=134:-40
 * [https://mwl.io/archives/873](https://mwl.io/archives/873)
 * [Setting a STATIC IP In OpenBSD](https://brainsnapped.com/2020/10/01/setting-a-static-ip-in-openbsd/)
 * <https://www.aeronetworks.ca/2017/02/openbsd-on-netbook.html>
+
+### Others
+
+* [https://www.togaware.com/linux/survivor/](https://www.togaware.com/linux/survivor/)
+* [https://www.freebsd.org/doc/handbook/](https://www.freebsd.org/doc/handbook/)
+
