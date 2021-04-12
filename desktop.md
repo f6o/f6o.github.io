@@ -69,3 +69,4 @@ doas wsconsctl mouse.param=134:-40
 * [https://www.k58.uk/openbsd.html](https://www.k58.uk/openbsd.html)
 * [https://zakaria.org/posts/2021-01-04-xenodm.html](https://zakaria.org/posts/2021-01-04-xenodm.html)
 * [https://mwl.io/archives/873](https://mwl.io/archives/873)
+* [Setting a STATIC IP In OpenBSD](https://brainsnapped.com/2020/10/01/setting-a-static-ip-in-openbsd/)
