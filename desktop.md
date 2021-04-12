@@ -77,3 +77,4 @@ doas wsconsctl mouse.param=134:-40
 * [https://zakaria.org/posts/2021-01-04-xenodm.html](https://zakaria.org/posts/2021-01-04-xenodm.html)
 * [https://mwl.io/archives/873](https://mwl.io/archives/873)
 * [Setting a STATIC IP In OpenBSD](https://brainsnapped.com/2020/10/01/setting-a-static-ip-in-openbsd/)
+* <https://www.aeronetworks.ca/2017/02/openbsd-on-netbook.html>
