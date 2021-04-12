@@ -54,6 +54,13 @@ What does xidle do? `man xidle` says
 * `/etc/mygate` [mygate(5)](https://man.openbsd.org/mygate.5)
 * `sh /etc/netstart` [netstart(8)](https://man.openbsd.org/netstart.8)
 
+for resuming, create a script file,  `/etc/apm/resume`
+
+```
+#!/bin/sh
+/etc/netstart
+```
+
 ### (for laptop) Trackpad scroll direction
 
 ```
