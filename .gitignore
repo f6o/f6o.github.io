@@ -2,3 +2,6 @@
 Makefile
 .DS_Store
 *.bak
+
+_site
+.jekyll-cache
