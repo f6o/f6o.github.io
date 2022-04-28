@@ -36,21 +36,44 @@ article.post > p, article.post pre {
 
 footer { text-align : right; }
 
+div.twocolumn {
+    display: flex;
+}
 div.def {
+    flex: 2;
+    border-right: 1px solid #000;
+}
+div.note {
+    flex: 1;
+}
+
+
+div.def, div.note {
     margin: 1em;
-    padding: 1em;
+    padding: 2em 1em 1em 1em;
+    /*
     border-style: solid;
     border-width: thin;
     border-color: #3d3d3d;
-    border-radius: 1em 2em;
+    border-radius: 5px;
+    */
 }
 
-div.def ul, div.def ol {
+div.def ul, div.def ol,
+div.note ul, div.note ol {
     margin : 0;
 }
 
-div.def p + ol, div.def p + ul {
+div.def p + ol, div.def p + ul
+div.note p + ol, div.note p + ul {
     margin-top: 1em;
+}
+
+div.def {
+    background: url("/images/def.png") top left/30px no-repeat;
+}
+div.note {
+    background: url("/images/note.png") top left/40px no-repeat;
 }
 
 ul.itemlist {

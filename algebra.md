@@ -5,11 +5,13 @@ tags: [math, page]
 
 # 代数メモ
 
+{::options parse_block_html="true" /}
+
 ## 定義
 
 ### 群
 
-{::options parse_block_html="true" /}
+<div class="twocolumn">
 
 <div class="def">
 以下の空でない集合 $G$ が3つ条件を満たすとき、 $G$ は算法 $\*$ について群をなすという。
@@ -19,11 +21,16 @@ tags: [math, page]
 1. $G$ の任意の元 $a$ に対して $b\*a=a\*b=e$ となる $G$ の元 $b$ が存在する
 </div>
 
-一般に $a\*b=b\*a$ が成り立つとき、 $a$ と $b$ は可換であるという。
+<div class="note">
+* 一般に $a\*b=b\*a$ が成り立つとき、 $a$ と $b$ は可換であるという。
+* 群 $G$ の任意の2元がいつも可換であるとき、 $G$ は可換群という。
+</div>
 
-群 $G$ の任意の2元がいつも可換であるとき、 $G$ は可換群という。
+</div>
 
 ### 環
+
+<div class="twocolumn">
 
 <div class="def">
 1. $R$ は加法に対して可換群をなす
@@ -32,7 +39,18 @@ tags: [math, page]
 1. $R$ に1つの元 $e$ が存在して、 $R$ のすべての元 $a$ に対し、 $ea=ae=a$ が成り立つ
 </div>
 
-環 $R$ の乗法が可換であるとき、 $R$ を可換環という。
+<div class="note">
+* 環 $R$ の乗法が可換であるとき、 $R$ を可換環という
+* 乗法についての逆元の存在は仮定していない
+</div>
+
+</div>
+
+### 体
+
+<div class="def">
+
+</div>
 
 ## [松坂] s6-6 について
 
