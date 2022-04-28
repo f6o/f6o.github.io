@@ -33,23 +33,31 @@ tags: [math, page]
 <div class="twocolumn">
 
 <div class="def">
-1. $R$ は加法に対して可換群をなす
-1. 任意の $a,b,c \in R$ について $(ab)c=a(bc)$
-1. 任意の $a,b,c \in R$ について $a(b+c)=ab+ac$ , $(b+c)a=ba+ca$
-1. $R$ に1つの元 $e$ が存在して、 $R$ のすべての元 $a$ に対し、 $ea=ae=a$ が成り立つ
+1. $R$ は加法に対して可換群(アーベル群)をなす
+1. (両側分配法則) 任意の $a,b,c \in R$ について $a(b+c)=ab+ac$ , $(b+c)a=ba+ca$
+1. (積の結合法則) 任意の $a,b,c \in R$ について $(ab)c=a(bc)$
+1. (積の単位元) $R$ に1つの元 $e$ が存在して、 $R$ のすべての元 $a$ に対し、 $ea=ae=a$ が成り立つ
 </div>
 
 <div class="note">
-* 環 $R$ の乗法が可換であるとき、 $R$ を可換環という
 * 乗法についての逆元の存在は仮定していない
+* 環 $R$ の乗法が可換であるとき、 $R$ を可換環という
 </div>
 
 </div>
 
 ### 体
 
+<div class="twocolumn">
 <div class="def">
+1. $K$ が可除環とは、 $K$ が環であり, $a \in K, a \ne 0$ なら
+   $\exist b \in K, ab=ba=1$
+1. 可換な可除環を体という
+</div>
 
+<div class="note">
+* 1のみなりたつときは、$K$ を斜体という
+</div>
 </div>
 
 ## [松坂] s6-6 について

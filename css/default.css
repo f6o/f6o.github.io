@@ -51,17 +51,16 @@ div.note {
 div.def, div.note {
     margin: 1em;
     padding: 2em 1em 1em 1em;
-    /*
-    border-style: solid;
-    border-width: thin;
-    border-color: #3d3d3d;
-    border-radius: 5px;
-    */
 }
 
 div.def ul, div.def ol,
 div.note ul, div.note ol {
     margin : 0;
+    padding-left : 1em;
+}
+
+div.def p, div.note p {
+    margin-left: 0;
 }
 
 div.def p + ol, div.def p + ul
