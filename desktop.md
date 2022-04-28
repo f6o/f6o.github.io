@@ -7,6 +7,17 @@ tags: [software, page]
 
 ## Common settings
 
+### MPLUS 1 Code
+
+Download zip from Google Fonts: <https://fonts.google.com/?query=Coji+Morishita&vfonly=true>
+
+```
+unzip M_PLUS_1_Code.zip
+mv static/*.ttf $HOME/.fonts
+fc-cache
+fc-list
+```
+
 ### Unicode fonts on xterm
 
 * <https://www.xmisao.com/2013/08/17/mplus-unicode-font.html>
@@ -39,7 +50,20 @@ What does xidle do? `man xidle` says
 > xidle will also run the program if it is sent a SIGUSR signal, or
 > if the pointer sits in a corder of the screen for an amount of time.
 
-## OpenBSD (version 6.8)
+## OpenBSD
+
+* [OpenBSD Handbook](https://www.openbsdhandbook.com/)
+
+### Packages
+
+```
+pkg_add curl git 
+
+# for desktop
+pkg_add firefox ffmpeg vlc
+pkg_add emacs
+pkg_add st
+```
 
 ### Static IP
 
