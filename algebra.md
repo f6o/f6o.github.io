@@ -7,7 +7,34 @@ tags: [math, page]
 
 {::options parse_block_html="true" /}
 
+## 準備
+
+<div class="twocolumn">
+
+<div class="def">
+写像とは $S, S'$ を集合とし、$S$の各々の元にそれぞれ$S'$の元1つを対応させる対応のことをいう。
+$f: S \to S'$と書く。
+
+このとき、$S$を写像$f$の定義域または始集合、$S'$を終集合という。
+
+$f$によって、$S$の元$x$に対応する$S'$の元を $x$における$f$の値、$f$による$x$の像と呼び、$f(x)$と書く。
+</div>
+
+<div class="note"></div>
+</div>
+
+<div class="twocolumn">
+<div class="def">
+$f: S \rightarrow S'$ とする
+* 単射 (異なる元の像は異なっている) \\[ \forall x, y \in S \quad x \ne y \Rightarrow f(x) \ne f(y) \\]
+* 全射 (像$f(S)$が$S'$と一致する) \\[ \forall x' \in S' \enspace \exists x \in S \quad x' = f(x) \\]
+</div>
+
+<div class="note"></div>
+</div>
+
 ## 定義
+
 
 ### 群
 
@@ -24,6 +51,19 @@ tags: [math, page]
 <div class="note">
 * 一般に $a\*b=b\*a$ が成り立つとき、 $a$ と $b$ は可換であるという。
 * 群 $G$ の任意の2元がいつも可換であるとき、 $G$ は可換群という。
+</div>
+</div>
+
+### 準同型写像
+
+<div class="twocolumn">
+
+<div class="def">
+群 $G, G'$とし、写像 $f: G \rightarrow G'$ が準同型写像であるとは、以下が成立することをいう。
+\\[ \forall x,y \in G \quad f(xy)=f(x)f(y) \\]
+</div>
+
+<div class="note">
 </div>
 
 </div>
@@ -43,7 +83,23 @@ tags: [math, page]
 * 乗法についての逆元の存在は仮定していない
 * 環 $R$ の乗法が可換であるとき、 $R$ を可換環という
 </div>
+</div>
 
+### 環上の加群
+
+<div class="twocolumn">
+<div class="def">
+$R$ を環, $M$をアーベル群とする。 $R \times M$から$M$への写像
+$(a,x) \mapsto ax$が定義され、次の4つの条件を満たすとき、$M$を$R$上の左加群という。
+
+1. $a \in R$, $x,y \in M$ならば $a(x+y)=ax+ay$ 
+1. $a, b \in R$, $x \in M$ならば $(a+b)x=ax+bx$
+1. $a, b \in R$, $x \in M$ならば $(ab)x=a(bx)$
+1. $x \in M$ ならば $1x=x$
+</div>
+
+<div class="note">
+</div>
 </div>
 
 ### 体
@@ -59,6 +115,32 @@ tags: [math, page]
 * 1のみなりたつときは、$K$ を斜体という
 </div>
 </div>
+
+## 講義メモ
+
+### 第1回
+
+* 対称群
+* 置換と互換
+
+### 第2回
+
+* 部分群
+* 核と像
+* 部分群の例 $SO(S)$, $SO(n)$
+* 交代群
+* 群の作用と置換表現
+* 安定化群, 軌道
+* 対称性
+* 共役による作用
+* 巡回置換
+* 置換の型, ヤング図形
+* 既約表現
+* テンソル積, 環準同型
+* 群環
+* 環上の加群
+* 直和
+* 自由加群
 
 ## [松坂] s6-6 について
 
@@ -106,3 +188,13 @@ $xyN \subseteq xNyN$ がいえる。
 * [雪江] 代数学 雪江
 * 見える群論入門 ... あまりよんでないが、遠山っぽいかんじ。
 * シンメトリーとモンスター マークロナン ... れきしものがたり
+
+## 講義動画
+
+* [基礎数学からの展開A](https://ocw.kyoto-u.ac.jp/course/67/?video_id=819)
+* [代数学Ⅱ](https://ocw.kyoto-u.ac.jp/course/66/?video_id=800)
+
+## for fun
+
+* [Group theory, abstraction, and the 196,883-dimensional monster](https://www.youtube.com/watch?v=mH0oCDa74tE)
+* [Monster Group (John Conway) - Numberphile](https://www.youtube.com/watch?v=jsSeoGpiWsw)
