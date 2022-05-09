@@ -47,13 +47,17 @@ div.note {
     flex: 1;
 }
 
-
 div.def, div.note {
     margin: 1em;
     padding: 2em 1em 1em 1em;
+    line-height: 2em;
 }
 
-div.def ul, div.def ol,
+div.def ul, div.def ol {
+    margin : 0;
+    padding-left : 2.5em;
+}
+
 div.note ul, div.note ol {
     margin : 0;
     padding-left : 1em;
