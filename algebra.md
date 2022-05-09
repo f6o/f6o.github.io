@@ -9,6 +9,8 @@ tags: [math, page]
 
 ## 準備
 
+### 写像
+
 <div class="twocolumn">
 
 <div class="def">
@@ -35,7 +37,6 @@ $f: S \rightarrow S'$ とする
 
 ## 定義
 
-
 ### 群
 
 <div class="twocolumn">
@@ -49,9 +50,58 @@ $f: S \rightarrow S'$ とする
 </div>
 
 <div class="note">
+* $\*$は省略して、$ab$ とかける。
+* 単位元 $e$ のことをどの群かをあらわすため $1_G$ と書くことがある。
 * 一般に $a\*b=b\*a$ が成り立つとき、 $a$ と $b$ は可換であるという。
 * 群 $G$ の任意の2元がいつも可換であるとき、 $G$ は可換群という。
 </div>
+</div>
+
+### 部分群
+
+<div class="twocolumn">
+
+<div class="def">
+$G$ が群で、$H \subset G$ のとき、$H$は以下の条件を満たすとき、部分群という。
+
+* $1_G \in H$
+* $a,b \in H \implies ab \in H$
+* $a \in H \implies a^{-1} \in H$
+</div>
+
+<div class="note">
+</div>
+
+</div>
+
+### 剰余類と正規部分群
+
+<div class="twocolumn">
+
+<div class="def">
+$G$ が群で、$H$ を$G$の部分群とする。このとき、$G$のすべての元$a$に対して、
+$aH=Ha$ が成り立つとき、$H$は$G$の正規部分群という。
+</div>
+
+<div class="note">
+ここで $aH = \\{ah|h \in H\\}$ は左剰余類、 $Ha = \\{ha|h \in H\\}$ は右剰余類という
+</div>
+
+</div>
+
+### 共役
+
+<div class="twocolumn">
+
+<div class="def">
+* $a,b \in G$ について $sas^{-1} = b$ となる $s \in G$が存在するとき、$a$は$b$に共役という
+* 部分集合でも同様に、 $A,B \subset G$ について $sAs^{-1} = B$ となる $s \in G$が存在するとき、$A$は$B$に共役という
+</div>
+
+<div class="note">
+ここで $aH = \\{ah|h \in H\\}$ は左剰余類、 $Ha = \\{ha|h \in H\\}$ は右剰余類という
+</div>
+
 </div>
 
 ### 準同型写像
@@ -192,7 +242,13 @@ $xyN \subseteq xNyN$ がいえる。
 ## 講義動画
 
 * [基礎数学からの展開A](https://ocw.kyoto-u.ac.jp/course/67/?video_id=819)
+  群の表現論が講義の中心テーマ
 * [代数学Ⅱ](https://ocw.kyoto-u.ac.jp/course/66/?video_id=800)
+
+## etc
+
+* [KaTeX Supported Functions](https://katex.org/docs/supported.html#overlap-and-spacing)
+  KaTeXはこのページでつかっている数式レンダリング
 
 ## for fun
 
