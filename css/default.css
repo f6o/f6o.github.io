@@ -39,12 +39,21 @@ footer { text-align : right; }
 div.twocolumn {
     display: flex;
 }
+
 div.def {
     flex: 2;
     border-right: 1px solid #000;
 }
 div.note {
     flex: 1;
+}
+
+@media screen and (max-width: 1024px) {
+    div.twocolumn {
+        display: block;
+    }
+
+    div.def { border: none; }
 }
 
 div.def, div.note {
