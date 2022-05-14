@@ -84,7 +84,24 @@ $aH=Ha$ が成り立つとき、$H$は$G$の正規部分群という。
 </div>
 
 <div class="note">
-ここで $aH = \\{ah|h \in H\\}$ は左剰余類、 $Ha = \\{ha|h \in H\\}$ は右剰余類という
+* $aH = \\{ah \vert h \in H \\}$ は左剰余類
+* $Ha = \\{ha \vert h \in H\\}$ は右剰余類
+* 正規部分群は可換なものをあつめたもの
+</div>
+
+</div>
+
+<div class="twocolumn">
+
+<div class="def">
+<p>
+$G$ が群で、$N$ を$G$の正規部分群とする。このとき、 $N$ による剰余類全体は上記の「積」に関して群を
+なし、これを商群といい $G/N$ であらわす。
+</p>
+</div>
+
+<div class="note">
+$S, S'$ を群$G$の部分集合とし、 積 $SS'=\\{ss' \vert s \in S, s' \in S'\\}$ と定義する。
 </div>
 
 </div>
