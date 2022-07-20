@@ -1,12 +1,9 @@
 ---
-title: 代数
-tags: [math, deprecated]
+title: 群論メモ
+tags: [math]
 ---
 
-# 代数メモ
-
-[代数メモ](./algebra) に移動したので、以下は最新の内容ではありません。
-
+# 群論メモ
 
 {::options parse_block_html="true" /}
 
@@ -138,80 +135,6 @@ $S, S'$ を群$G$の部分集合とし、 積 $SS'=\\{ss' \vert s \in S, s' \in 
 
 </div>
 
-### 環
-
-<div class="twocolumn">
-
-<div class="def">
-1. $R$ は加法に対して可換群(アーベル群)をなす
-1. (両側分配法則) 任意の $a,b,c \in R$ について $a(b+c)=ab+ac$ , $(b+c)a=ba+ca$
-1. (積の結合法則) 任意の $a,b,c \in R$ について $(ab)c=a(bc)$
-1. (積の単位元) $R$ に1つの元 $e$ が存在して、 $R$ のすべての元 $a$ に対し、 $ea=ae=a$ が成り立つ
-</div>
-
-<div class="note">
-* 乗法についての逆元の存在は仮定していない
-* 環 $R$ の乗法が可換であるとき、 $R$ を可換環という
-</div>
-</div>
-
-### 環上の加群
-
-<div class="twocolumn">
-<div class="def">
-$R$ を環, $M$をアーベル群とする。 $R \times M$から$M$への写像
-$(a,x) \mapsto ax$が定義され、次の4つの条件を満たすとき、$M$を$R$上の左加群という。
-
-1. $a \in R$, $x,y \in M$ならば $a(x+y)=ax+ay$ 
-1. $a, b \in R$, $x \in M$ならば $(a+b)x=ax+bx$
-1. $a, b \in R$, $x \in M$ならば $(ab)x=a(bx)$
-1. $x \in M$ ならば $1x=x$
-</div>
-
-<div class="note">
-</div>
-</div>
-
-### 体
-
-<div class="twocolumn">
-<div class="def">
-1. $K$ が可除環とは、 $K$ が環であり, $a \in K, a \ne 0$ なら
-   $\exist b \in K, ab=ba=1$
-1. 可換な可除環を体という
-</div>
-
-<div class="note">
-* 1のみなりたつときは、$K$ を斜体という
-</div>
-</div>
-
-## 講義メモ
-
-### 第1回
-
-* 対称群
-* 置換と互換
-
-### 第2回
-
-* 部分群
-* 核と像
-* 部分群の例 $SO(S)$, $SO(n)$
-* 交代群
-* 群の作用と置換表現
-* 安定化群, 軌道
-* 対称性
-* 共役による作用
-* 巡回置換
-* 置換の型, ヤング図形
-* 既約表現
-* テンソル積, 環準同型
-* 群環
-* 環上の加群
-* 直和
-* 自由加群
-
 ## [松坂] s6-6 について
 
 標準的準同型の核がある正規部分群に含まれるときも準同型定理が成立するということ？
@@ -258,19 +181,3 @@ $xyN \subseteq xNyN$ がいえる。
 * [雪江] 代数学 雪江
 * 見える群論入門 ... あまりよんでないが、遠山っぽいかんじ。
 * シンメトリーとモンスター マークロナン ... れきしものがたり
-
-## 講義動画
-
-* [基礎数学からの展開A](https://ocw.kyoto-u.ac.jp/course/67/?video_id=819)
-  群の表現論が講義の中心テーマ
-* [代数学Ⅱ](https://ocw.kyoto-u.ac.jp/course/66/?video_id=800)
-
-## etc
-
-* [KaTeX Supported Functions](https://katex.org/docs/supported.html#overlap-and-spacing)
-  KaTeXはこのページでつかっている数式レンダリング
-
-## for fun
-
-* [Group theory, abstraction, and the 196,883-dimensional monster](https://www.youtube.com/watch?v=mH0oCDa74tE)
-* [Monster Group (John Conway) - Numberphile](https://www.youtube.com/watch?v=jsSeoGpiWsw)
