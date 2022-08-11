@@ -3,27 +3,36 @@ var vm = new Vue({
     data: {
         unit: 100,
         limit: 1600,
-        items: [
-            { ts: 1660175983818, kcal: 1000 },
-            { ts: 1660145983818, kcal: 400 },
-            { ts: 1659015983818, kcal: 1200 }
-        ]
+        form_kcal: 0,
+        items: []
+    },
+    methods: {
+        add: function () {
+            let kcal = document.getElementById('kcal').valueAsNumber
+            console.log(this)
+            if ( kcal > 0 ) {
+                let item = { ts: Date.now(), kcal: kcal }
+                console.log(item)
+                this.items.push(item)
+            }
+        }
     },
     computed: {
         inTwentyFourHours: function () {
             const now = Date.now()
-            const l = []
-            let sum = 0
             // use filter?
-            for (let i = 0; i < this.items.length; i++) {
-                const diff = now - this.items[i].ts
-                if (diff > 0 && diff < 1000 * 60 * 60 * 24) {
-                    const item = this.items[i]
-                    item.count = item.kcal / this.unit
-                    l.push(item)
-                    sum += item.kcal
-                }
-            }
+            const l = this.items.filter((item) => {
+                const diff = now - item.ts
+                return diff > 0 && diff < 1000 * 60 * 60 * 24
+            }).map((item)=>{
+                item.count = Math.ceil(item.kcal / this.unit)
+                return item
+            })
+            const sum = l.reduce((s, item) => {
+                return item.kcal + s
+            }, 0)
+            console.log(l)
+            console.log(sum)
             return { list: l, sum: sum }
         }
     }

@@ -10,19 +10,22 @@
 </head>
 
 <body>
-    <div class="container-fluid">
+    <div id="app" class="container-fluid">
         <div class="row">
             <div class="col-sm-12">
-                <div id="app">
-                    <div v-for="item in inTwentyFourHours.list" :key="item.ts">
-                        <span class="timestamp">{{ new Date(item.ts) }}</span>
-                        <span v-for="n in item.count">🍔
-                    </div>
-                    <div v-if="inTwentyFourHours.sum >= limit">Overdose</div>
+                <input v-model="form_kcal" type="number" id="kcal" name="kcal" placeholder="kcal" step="10">
+                <button v-on:click="add">add</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <div v-if="inTwentyFourHours.sum >= limit">Overdose</div>
+                <div v-for="item in inTwentyFourHours.list" v-bind:key="item.ts">
+                    <span class="timestamp">{{ new Date(item.ts) }}</span>
+                    <span v-for="n in item.count">🍔</span>
                 </div>
             </div>
         </div>
-    </div>
     </div>
     <script src="main.js"></script>
 </body>
