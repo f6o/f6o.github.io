@@ -1,10 +1,14 @@
+const KEY = 'caldata'
+let savedItems = localStorage.getItem(KEY) || ''
+
+
 var vm = new Vue({
     el: '#app',
     data: {
         unit: 100,
         limit: 1600,
         form_kcal: 0,
-        items: []
+        items: savedItems ? JSON.parse(savedItems) : []
     },
     methods: {
         add: function () {
@@ -16,3 +20,8 @@ var vm = new Vue({
         }
     }
 })
+
+
+setInterval(() => {
+    localStorage.setItem(KEY, JSON.stringify(vm.items))   
+}, 5000);
