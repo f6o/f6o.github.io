@@ -13,11 +13,16 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-sm-12">
-                <div id="app">{{ greetings }}</div>
+                <div id="app">
+                    <div v-for="item in inTwentyFourHours" :key="item.ts">
+                        <span class="timestamp">{{ new Date(item.ts) }}</span>
+                        <span v-for="n in item.count">🍔</div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-    <script defer src="main.js"></script>
+    <script src="main.js"></script>
 </body>
 
 </html>
