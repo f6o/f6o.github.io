@@ -14,13 +14,15 @@
         <div class="row">
             <div class="col-sm-12">
                 <div id="app">
-                    <div v-for="item in inTwentyFourHours" :key="item.ts">
+                    <div v-for="item in inTwentyFourHours.list" :key="item.ts">
                         <span class="timestamp">{{ new Date(item.ts) }}</span>
-                        <span v-for="n in item.count">🍔</div>
+                        <span v-for="n in item.count">🍔
                     </div>
+                    <div v-if="inTwentyFourHours.sum >= limit">Overdose</div>
                 </div>
             </div>
         </div>
+    </div>
     </div>
     <script src="main.js"></script>
 </body>
