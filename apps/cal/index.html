@@ -11,17 +11,19 @@
 
 <body>
     <div id="app" class="container-fluid">
-        <div class="row">
-            <div class="col-sm-12">
-                <input v-model="form_kcal" type="number" id="kcal" name="kcal" placeholder="kcal" step="10">
-                <button v-on:click="add">add</button>
+        <div class="row g-0">
+            <div class="col-10">
+                <input class="form-control" v-model="form_kcal" type="number" id="kcal"
+                    name="kcal" placeholder="kcal" step="10">
+            </div>
+            <div class="col-2">
+                <button class="btn btn-primary" v-on:click="add">ADD</button>
             </div>
         </div>
         <div class="row">
             <div class="col-sm-12">
-                <div v-if="inTwentyFourHours.sum >= limit">Overdose</div>
-                <div v-for="item in inTwentyFourHours.list" v-bind:key="item.ts">
-                    <span class="timestamp">{{ new Date(item.ts) }}</span>
+                <div v-for="item in items" v-bind:key="item.ts">
+                    <span class="timestamp"><code>{{ item.ts }}</code></span>
                     <span v-for="n in item.count">🍔</span>
                 </div>
             </div>
