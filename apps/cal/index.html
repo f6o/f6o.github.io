@@ -6,15 +6,28 @@
     <meta charset="utf-8">
     <title>cal</title>
     <script src="./vue.min.js"></script>
+    <script src="./bootstrap-5.2.0-dist/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="./bootstrap-5.2.0-dist/css/bootstrap.min.css">
 </head>
 
 <body>
     <div id="app" class="container-fluid">
+        <div class="modal" id="exportModal">
+            <div class="modal-dialog modal-fullscreen">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                    <div class="modal-body">
+                        <pre>{{ JSON.stringify(items, null, 2) }}</pre>
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class="row g-0">
             <div class="col-10">
-                <input class="form-control" v-model="form_kcal" type="number" id="kcal"
-                    name="kcal" placeholder="kcal" step="10">
+                <input class="form-control" v-model="form_kcal" type="number" id="kcal" name="kcal" placeholder="kcal"
+                    step="10">
             </div>
             <div class="col-2">
                 <button class="btn btn-primary" v-on:click="add">ADD</button>
@@ -26,6 +39,11 @@
                     <span class="timestamp"><code>{{ item.ts }}</code></span>
                     <span v-for="n in item.count">🍔</span>
                 </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12 text-end">
+                <a data-bs-toggle="modal" data-bs-target="#exportModal">export data</a>
             </div>
         </div>
     </div>
