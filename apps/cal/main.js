@@ -11,7 +11,7 @@ var vm = new Vue({
         items: savedItems ? JSON.parse(savedItems) : []
     },
     computed: {
-        shrinked: function () {
+        uint64array: function () {
             return this.items.map((item) => {
                 let arr = new ArrayBuffer(8)
                 let view = new DataView(arr)
@@ -20,6 +20,16 @@ var vm = new Vue({
                 view.setUint16(0, item.kcal)
                 return '0x' + view.getBigInt64().toString(16)
             })
+        },
+        uint8array: function() {
+            return this.items.flatMap((item) => {
+                let arr = new ArrayBuffer(8)
+                let view = new DataView(arr)
+                let n = BigInt(item.ts)
+                view.setBigUint64(0, n)
+                view.setUint16(0, item.kcal)
+                return [ 0, 1, 2, 3, 4, 5, 6, 7 ].map((i) => view.getUint8(i))
+            }).join(' ')
         },
         unpacked: function () {
             // TODO: read from user
