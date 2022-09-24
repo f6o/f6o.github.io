@@ -129,16 +129,89 @@ $k$ 回試行した結果、このアルゴリズムが間違えた答えを出�
 
 #### 1.4 Application: Naïve Bayesian Classifier
 #### 1.5 Application: A Randomized Min-Cut Algorithm
-#### 1.6 Exercises
 
-### 2 Discrete Random Variables and Expectation 23
-#### 2.1 Random Variables and Expectation 23
-##### 2.1.1 Linearity of Expectations 25
-##### 2.1.2 Jensen’s Inequality 26
-#### 2.2 The Bernoulli and Binomial Random Variables 27
-#### 2.3 Conditional Expectation 29
-#### 2.4 The Geometric Distribution 33
-##### 2.4.1 Example: Coupon Collector’s Problem 35
-#### 2.5 Application: The Expected Run-Time of Quicksort 37
-#### 2.6 Exercises
+### 2 Discrete Random Variables and Expectation
+#### 2.1 Random Variables and Expectation
+
+確率の定義。確率変数 $X$ は標本空間 $\Omega$ から実数への関数で、
+
+\\[
+\text{Pr}(X=a) = \sum_{s\in\Omega | X(s)=a}\text{Pr}(s)
+\\]
+
+期待値の定義は、確率変数 $X$ のすべての値について、その値になる確率の積の合計になる。
+
+\\[
+\textbf{E}[X] = \sum_{i}i\text{Pr}(X=i)
+\\]
+
+#### 2.1.1 Linearity of Expectations
+
+\\[
+\textbf{E}\left[\sum_{i=1}^nX_i\right] = \sum_{i=1}^n\textbf{E}[X_i]
+\\]
+
+また、 $c$ は定数として,
+
+\\[
+\textbf{E}[cX] = c\textbf{E}[X]
+\\]
+
+#### 2.1.2 Jensen's Inequality
+
+$f$ が凸(convex)関数であるなら
+
+\\[
+\textbf{E}[f(X)] = f(\textbf{E}[X])
+\\]
+
+#### 2.2 The Bernoulli and Binomial Random Variables
+
+確率 $p$ で成功し、確率 $1-p$ で失敗する試行のことを、ベルヌーイ試行という。
+
+ベルヌーイ試行が成功するとき 1, そうでないとき 0 をとる確率変数 $Y$ を Bernoulli, もしくは an indicator random variable という。
+
+\\[
+\textbf{E}[Y] = \text{Pr}(Y=1)
+\\]
+
+またベルヌーイ試行をくりかえしたとき、確率変数 $X$ を成功した回数とすると、$X$は二項分布となる。
+
+\\[
+\text{Pr}(X=j) = {n \choose j}p^j(1-p)^(n-j)
+\\]
+
+
+#### 2.3 Conditional Expectation
+#### 2.4 The Geometric Distribution
+#### 2.5 Application: The Expected Run-Time of Quicksort
+
+### 3. Moments and Deviations
+#### 3.1 Markov's Inequality
+#### 3.2 Variance and Moments of a Random Variable
+#### 3.3 Chebyshev's Inequality
+#### 3.4 Median and Mean
+#### 3.5 Application: A Randomized Algorithm for Computing the Median
+
+### 4. Chernoff and Hoeffding Bounds
+#### 4.1 Moment Generating Functions
+#### 4.2 Deriving and Applying Chernoff Bounds
+#### 4.3 Better Bounds for Some Special Cases
+#### 4.4 Application: Set Balancing
+#### 4.5 The Hoeffding Bound
+#### 4.6 Application: Packet Routing in Sparse Networks
+
+### 5 Balls, Bins, and Random Graphs
+
+### 6 The Probabilistic Method
+
+### 7 Markov Chains and Random Walks
+
+### 8 Continuous Distributions and the Poisson Process
+
+### 9 The Normal Distribution
+
+### 10 Entropy, Randomness, and Information
+
+### 11 The Monte Carlo Method
 
