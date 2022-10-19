@@ -269,6 +269,23 @@ $X$, $Y$ が独立なら $\mathbf{E}[X \cdot Y]=\mathbf{E}[X]\cdot\mathbf{E}[Y]$
 
 ### 5 Balls, Bins, and Random Graphs
 
+メモ
+
+\\[
+m=n(\mathrm{ln}n+c)
+\\]
+
+\\[
+\frac{2 \sqrt{2m\mathrm{ln} m}}{n}
+\\]
+
+
+```
+(for wolfram)
+m=n(ln(n)+5)
+2sqrt(2(n(ln(n)+5))ln(n(ln(n)+5)))) / n
+```
+
 ### 6 The Probabilistic Method
 
 ### 7 Markov Chains and Random Walks
