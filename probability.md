@@ -269,6 +269,14 @@ $X$, $Y$ が独立なら $\mathbf{E}[X \cdot Y]=\mathbf{E}[X]\cdot\mathbf{E}[Y]$
 
 ### 5 Balls, Bins, and Random Graphs
 
+* 誕生日のパラドックス
+* ビン/ボール問題
+* Poisson Distribution 
+* Poisson 近似: 近似解と正規な解
+* ハッシュアルゴリズム, ビットストリング, ブルームフィルタ
+* ハミルトン閉路をもとめるアルゴリズム
+** 2種類のグラフのつくりかた
+
 メモ
 
 \\[
@@ -278,7 +286,7 @@ m=n(\mathrm{ln}n+c)
 \\[
 \frac{2 \sqrt{2m\mathrm{ln} m}}{n}
 \\]
-
+v
 
 ```
 (for wolfram)
@@ -287,6 +295,19 @@ m=n(ln(n)+5)
 ```
 
 ### 6 The Probabilistic Method
+
+* 完全グラフ: 任意の2頂点間に辺があるグラフ
+* クリーク: あるグラフの点の部分集合について、その集合から誘導されるグラフが完全であること
+* 辺の色塗り問題
+** coloring the edges of a graph with two colors so that there are no large cliques with all edges having the same color.
+
+$K_n$ を $n$ 頂点のグラフとする。$K_n$の $k$-クリークは完全なサブグラフ $K_k$ とおく。
+
+#### 定理 6.1
+
+$(n \choose k) 2^{-(k \choose 2) + 1} < 1$ であるとき、1色だけの $K_k$ がないように、
+$K_n$ の辺を2色で塗りわけることができる。
+
 
 ### 7 Markov Chains and Random Walks
 
