@@ -6,3 +6,6 @@ Makefile
 _site
 .jekyll-cache
 .ruby-version
+
+vendor
+.bundle
