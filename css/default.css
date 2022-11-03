@@ -54,6 +54,7 @@ div.note {
     }
 
     div.def { border: none; }
+    span.katex-display { overflow: auto }
 }
 
 div.def, div.note {
