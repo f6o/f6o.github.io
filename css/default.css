@@ -90,12 +90,6 @@ div.note {
 }
 
 ul.itemlist {
-    display: inline-flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    list-style: none;
+    list-style: circle;
 }
 
-ul.itemlist li {
-    padding: 0.2em 0.5em;
-}
