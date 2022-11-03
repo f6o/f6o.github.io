@@ -1,0 +1,12 @@
+# INSTALL
+
+## On ubuntu
+
+```
+apt install build-essential ruby-all
+git clone <THISREPO> ghpages
+cd ghpages
+bundler config set --local path 'vendor/bundle'
+bundle install
+bundle exec jekyll serve
+```
