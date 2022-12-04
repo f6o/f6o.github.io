@@ -13,8 +13,7 @@ Upfal, Mitzenmacher
 * [4 Chernoff and Hoeffding Bounds](./ch04)
 * [5 Balls, Bins, and Random Graphs](./ch05)
 * [6 The Probabilistic Method](./ch06)
-
-### 7 Markov Chains and Random Walks
+* [7 Markov Chains and Random Walks](./ch07)
 
 ### 8 Continuous Distributions and the Poisson Process
 
