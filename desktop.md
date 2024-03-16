@@ -7,6 +7,16 @@ tags: [software, page]
 
 ## Common settings
 
+### skk
+
+* https://qiita.com/manzyun/items/744c32541836b7ac7f57
+
+```
+sudo apt instal ibus-skk
+sudo sed -i.bak "s|<layout>ja</layout>|<layout>default</layout>|"  /usr/share/ibus/component/skk.xml
+ibus restart
+```
+
 ### MPLUS 1 Code
 
 Download zip from Google Fonts: <https://fonts.google.com/?query=Coji+Morishita&vfonly=true>
