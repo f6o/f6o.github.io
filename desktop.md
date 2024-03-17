@@ -7,16 +7,6 @@ tags: [software, page]
 
 ## Common settings
 
-### skk
-
-* https://qiita.com/manzyun/items/744c32541836b7ac7f57
-
-```
-sudo apt instal ibus-skk
-sudo sed -i.bak "s|<layout>ja</layout>|<layout>default</layout>|"  /usr/share/ibus/component/skk.xml
-ibus restart
-```
-
 ### MPLUS 1 Code
 
 Download zip from Google Fonts: <https://fonts.google.com/?query=Coji+Morishita&vfonly=true>
@@ -60,6 +50,7 @@ What does xidle do? `man xidle` says
 > xidle will also run the program if it is sent a SIGUSR signal, or
 > if the pointer sits in a corder of the screen for an amount of time.
 
+
 ## OpenBSD
 
 * [OpenBSD Handbook](https://www.openbsdhandbook.com/)
@@ -96,9 +87,39 @@ doas wsconsctl mouse.param=134:-40
 
 [http://openbsd-archive.7691.n7.nabble.com/trackpad-reversed-scrolling-broken-on-current-td363179.html#a363199](http://openbsd-archive.7691.n7.nabble.com/trackpad-reversed-scrolling-broken-on-current-td363179.html#a363199)
 
-## Links
 
-### OpenBSD
+## Ubuntu
+
+### Change Window Manager
+
+```
+export XIM=ibus
+export GTK_IM_MODULE=ibus
+export QT_IM_MODULE=ibus
+export XMODIFIERS=@im=ibus
+
+ibus-daemon -r --daemonize --xim --replace
+sleep 1
+
+xrdb -merge $HOME/.Xresources
+
+uxterm -geometry 150x60+970+210 -title main &
+```
+
+### skk
+
+* https://qiita.com/manzyun/items/744c32541836b7ac7f57
+
+```
+sudo apt instal ibus-skk
+sudo sed -i.bak "s|<layout>ja</layout>|<layout>default</layout>|"  /usr/share/ibus/component/skk.xml
+ibus restart
+```
+
+
+# Links
+
+## OpenBSD
 
 * [https://kuchikuu.xyz/openbsd.html](https://kuchikuu.xyz/openbsd.html)
 * [http://astro-gr.org/openbsd-after-install/](http://astro-gr.org/openbsd-after-install/)
@@ -108,7 +129,7 @@ doas wsconsctl mouse.param=134:-40
 * [Setting a STATIC IP In OpenBSD](https://brainsnapped.com/2020/10/01/setting-a-static-ip-in-openbsd/)
 * <https://www.aeronetworks.ca/2017/02/openbsd-on-netbook.html>
 
-### Others
+## Others
 
 * [https://www.togaware.com/linux/survivor/](https://www.togaware.com/linux/survivor/)
 * [https://www.freebsd.org/doc/handbook/](https://www.freebsd.org/doc/handbook/)
