@@ -5,6 +5,11 @@ tags: [software, page]
 
 # Desktop (Linux/BSD)
 
+各OSでの設定で迷いそうなところをまとめておく。
+
+* [.cwmrc, .xinitrc, .Xresources](https://gist.github.com/f6o/953acb72756bc3c9412021b5389c73bd)
+* [.Xresources, .xsession, .zshrc](https://gist.github.com/f6o/c918d2c6465ad3989e3c061c14bc5b21)
+
 ## Common settings
 
 ### MPLUS 1 Code
