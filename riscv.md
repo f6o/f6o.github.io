@@ -1,4 +1,5 @@
 ---
+date: 2020-11-23 12:51:00 +0000
 title: RISC-V にっき
 tags: [cpu, page]
 ---
