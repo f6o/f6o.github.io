@@ -19,8 +19,7 @@ fp = File.open(MDFILE, "r")
 lines = fp.readlines
 fp.close
 
-
-if lines[0].start_with? '---'
+if lines[0].start_with? '---' and not lines[1].start_with? 'date: '
     File.open(MDFILE, "w") {|fp|
         fp.write lines[0]
         fp.puts d.strftime('date: %Y-%m-%d %T %z')
