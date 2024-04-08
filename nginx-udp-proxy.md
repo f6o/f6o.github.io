@@ -1,7 +1,7 @@
 ---
 date: 2024-02-04 18:38:02 +0900
 title: nginx udp proxy
-tags: [nginx, udp]
+tags: [nginx, udp, page]
 ---
 
 
