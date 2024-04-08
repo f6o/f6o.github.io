@@ -1,7 +1,7 @@
 ---
 date: 2024-02-05 18:27:51 +0900
 title: Palworld Server on GCP (Debian12/bookworm)
-tags: [debian, gcp]
+tags: [debian, gcp, page]
 ---
 
 # Palworld Server on GCP (Debian12/bookworm)
