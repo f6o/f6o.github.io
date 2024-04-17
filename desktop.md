@@ -130,7 +130,8 @@ ibus restart
 
 .xprofileに書いてみたがうまくいくか。
 
-https://impsbl.hatenablog.jp/entry/AutoStartAndEnvvarsOnWayland_en#Environment-variables
+* https://impsbl.hatenablog.jp/entry/AutoStartAndEnvvarsOnWayland_en#Environment-variables
+* https://wiki.archlinux.org/title/Desktop_entries
 
 # Links
 
