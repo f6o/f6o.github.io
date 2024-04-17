@@ -1,7 +1,9 @@
 ---
-date: 2024-03-18 13:23:52 +0000
+date: '2024-03-18 13:23:52 +0000'
 title: Desktop (Linux/BSD)
-tags: [software, page]
+tags:
+  - software
+  - page
 ---
 
 # Desktop (Linux/BSD)
@@ -122,6 +124,13 @@ sudo sed -i.bak "s|<layout>ja</layout>|<layout>default</layout>|"  /usr/share/ib
 ibus restart
 ```
 
+## Chrome OS
+
+### xrdbを読み込んでくれない
+
+.xprofileに書いてみたがうまくいくか。
+
+https://impsbl.hatenablog.jp/entry/AutoStartAndEnvvarsOnWayland_en#Environment-variables
 
 # Links
 
@@ -139,4 +148,3 @@ ibus restart
 
 * [https://www.togaware.com/linux/survivor/](https://www.togaware.com/linux/survivor/)
 * [https://www.freebsd.org/doc/handbook/](https://www.freebsd.org/doc/handbook/)
-
