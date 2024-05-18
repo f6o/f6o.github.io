@@ -6,20 +6,9 @@
 <title>f6o.github.io -- {{ page.title }}</title>
 <link rel="alternate" type="application/atom+xml" title="f6o.github.io" href="/feed.xml">
 <link rel="stylesheet" href="/css/default.css">
-<link rel="stylesheet" href="/js/katex/katex.min.css">
-<script defer src="/js/katex/katex.min.js"></script>
-<script defer src="/js/katex/contrib/auto-render.min.js"></script>
-<script>
-    document.addEventListener("DOMContentLoaded", function() {
-        renderMathInElement(document.body, {
-            delimiters: [
-                {left:"\\[", right: "\\]", display:true},
-                {left:"$", right: "$", display:false}
-             ]
-        });
-    });
-</script>
-</head>
+{% if page.tags contains 'math' %}
+{% include math_header.html %}
+{% endif %}
 <body>
 
 <header>
