@@ -15,6 +15,41 @@ tags:
 
 ## Common settings
 
+### uim-skk
+
+`$HOME/.xinitrc`
+
+```
+export XCURSOR_SIZE=24
+
+export XMODIFIERS='@im=uim'
+export GTK_IM_MODULE='uim'
+export QT_IM_MODULE='uim'
+export XIM='uim'
+export XIM_PROGRAM='uim'
+uim-xim &
+```
+
+`$HOME/.Xresources`
+
+```
+UXTerm*scrollBar: false
+UXTerm*cjkWidth: true
+UXTerm*locale: UTF-8 
+UXTerm*utf8: 1
+UXTerm*metaSendsEscape: true
+UXTerm*faceSize: 10 
+UXTerm*faceName: DejaVu Sans Mono
+UXTerm*faceNameDoublesize: M+ 1mn
+```
+
+`$HOME/.uim`
+
+```
+(define uim-xim-use-xft-font? #t)
+(define uim-xim-xft-font-name "M+ 1mn")
+```
+
 ### MPLUS 1 Code
 
 Download zip from Google Fonts: <https://fonts.google.com/?query=Coji+Morishita&vfonly=true>
