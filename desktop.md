@@ -50,6 +50,29 @@ UXTerm*faceNameDoublesize: M+ 1mn
 (define uim-xim-xft-font-name "M+ 1mn")
 ```
 
+### openbsd-cwm
+
+```
+fontname "Noto Sans CJK JP:bold"
+command term uxterm
+
+ignore xclock
+ignore feh
+
+## for emacs
+unbind-key M-slash
+unbind-key C-slash
+unbind-key M-right
+unbind-key M-Left
+unbind-key M-period
+unbind-key M-question
+unbind-key m-h
+unbind-key m-j
+unbind-key M-k
+unbind-key M-l
+unbind-key M-Tab
+```
+
 ### MPLUS 1 Code
 
 Download zip from Google Fonts: <https://fonts.google.com/?query=Coji+Morishita&vfonly=true>
