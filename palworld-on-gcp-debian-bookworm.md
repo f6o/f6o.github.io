@@ -4,6 +4,9 @@ title: Palworld Server on GCP (Debian12/bookworm)
 tags: [debian, gcp, page]
 ---
 
+情報が古くなっているかもしれません。
+These instruction may be outdated because this doc was updated on Feb 2024.
+
 # Palworld Server on GCP (Debian12/bookworm)
 
 * https://tech.palworldgame.com/dedicated-server-guide#linux
