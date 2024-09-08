@@ -8,5 +8,6 @@ git clone <THISREPO> ghpages
 cd ghpages
 bundler config set --local path 'vendor/bundle'
 bundle install
+bundle update
 bundle exec jekyll serve
 ```
