@@ -10,6 +10,11 @@ a:visited { color: #9c3c3c; }
 
 blockquote { border-left: 3px solid #e7e7e7; }
 
+body > p:first-child {
+    background: pink;
+    padding:0.3em;
+}
+
 h1 { font-size: 2em; }
 h2 { font-size: 1.7em; }
 h3 { font-size: 1.4em; }
